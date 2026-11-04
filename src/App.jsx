@@ -55,7 +55,7 @@ function RevisionHubContent() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 selection:bg-[#602d92] selection:text-white font-sans text-gray-800">
-      
+
       {/* 1. OL.LK Navigation */}
       <Navbar />
 
@@ -69,11 +69,11 @@ function RevisionHubContent() {
       {/* 3. Cards Showing All Lessons At Once (Directly after Hero Unit Tabs) */}
       <section id="units" className="py-16 sm:py-20 bg-white border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           {/* Section Heading */}
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-indigo-900 mb-3 tracking-tight">
-              {language === 'en' ? 'All Lessons & Revision Units' : 'සියලුම විද්‍යාව පාඩම් මාලාව'}
+              {language === 'en' ? 'All Lessons' : 'සියලුම පාඩම් මාලාව'}
             </h2>
             <div className="w-20 h-1.5 bg-[#602d92] mx-auto rounded-full mb-3"></div>
             <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/useLanguage';
-import { HelpCircle, Layers, FileText } from 'lucide-react';
+import { HelpCircle, Layers } from 'lucide-react';
 
 export default function UnitCard({ unit, onOpenQuiz, onOpenFlashcards }) {
   const { language, t } = useLanguage();
@@ -79,44 +79,10 @@ export default function UnitCard({ unit, onOpenQuiz, onOpenFlashcards }) {
         <p className="text-xs sm:text-sm text-slate-600 mt-2.5 line-clamp-2 leading-relaxed">
           {description}
         </p>
-
-        {/* Paper Source Coverage Tags */}
-        <div className="mt-4 pt-3 border-t border-slate-100">
-          <div className="flex items-center gap-1 text-[11px] font-semibold text-slate-500 mb-1.5">
-            <FileText className="w-3 h-3 text-slate-400" />
-            <span>{isSinhala ? 'ඉලක්කගත විභාග මූලාශ්‍ර:' : 'Target Exam Papers:'}</span>
-          </div>
-          <div className="flex flex-wrap gap-1.5">
-            {unit.targetPapers.map((paper, idx) => (
-              <span
-                key={idx}
-                className="text-[10px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600 border border-slate-200/70"
-              >
-                {paper}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Bottom Action Area */}
-      <div className="mt-5 pt-4 border-t border-slate-100 space-y-3">
-        {/* Status indicator row */}
-        <div className="flex items-center justify-between text-xs text-slate-500 bg-slate-50/80 px-3 py-1.5 rounded-xl border border-slate-100">
-          <div className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-medium text-slate-600">
-              {unit.totalQuestions > 0 
-                ? `${unit.totalQuestions} Questions` 
-                : isSinhala ? 'ප්‍රශ්න පත්‍ර ඇතුළත් කිරීමට සූදානම්' : 'Ready for Paper Upload'}
-            </span>
-          </div>
-          <span className="text-[10px] font-bold text-[#602d92] uppercase tracking-wider">
-            {isSinhala ? 'AI සක්‍රියයි' : 'AI Ready'}
-          </span>
-        </div>
-
-        {/* Action Buttons */}
+      <div className="mt-5 pt-4 border-t border-slate-100">
         <div className="grid grid-cols-2 gap-2">
           {/* Quiz Runner Button */}
           <button
