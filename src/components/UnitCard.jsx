@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/useLanguage';
-import { HelpCircle, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function UnitCard({ unit, onOpenQuiz }) {
   const { language, t } = useLanguage();
@@ -81,27 +81,15 @@ export default function UnitCard({ unit, onOpenQuiz }) {
         </p>
       </div>
 
-      {/* Bottom Action Area: Go to Lesson & Launch Quiz */}
+      {/* Bottom Action Area: Go to Lesson */}
       <div className="mt-5 pt-4 border-t border-slate-100">
-        <div className="grid grid-cols-2 gap-2">
-          {/* Go to Lesson Button */}
-          <button
-            onClick={() => onOpenQuiz(unit)}
-            className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-purple-50 hover:bg-purple-100 text-[#602d92] text-xs sm:text-sm font-bold border border-purple-200/80 transition-all duration-200 cursor-pointer shadow-2xs hover:shadow-xs"
-          >
-            <span>{isSinhala ? 'පාඩමට යන්න' : 'Go to Lesson'}</span>
-            <ArrowRight className="w-4 h-4" />
-          </button>
-
-          {/* Quiz Runner Button */}
-          <button
-            onClick={() => onOpenQuiz(unit)}
-            className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#602d92] hover:bg-purple-800 text-white text-xs sm:text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
-          >
-            <HelpCircle className="w-4 h-4" />
-            <span>{t.startQuiz}</span>
-          </button>
-        </div>
+        <button
+          onClick={() => onOpenQuiz(unit)}
+          className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-purple-50 hover:bg-[#602d92] text-[#602d92] hover:text-white text-xs sm:text-sm font-bold border border-purple-200/80 hover:border-[#602d92] transition-all duration-200 cursor-pointer shadow-2xs hover:shadow-md group/btn"
+        >
+          <span>{isSinhala ? 'පාඩමට යන්න' : 'Go to Lesson'}</span>
+          <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+        </button>
       </div>
 
     </div>

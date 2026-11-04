@@ -60,10 +60,7 @@ function RevisionHubContent() {
       <Navbar />
 
       {/* 2. Auto-Changing Horizontally Paging Tabs Hero Section (3-second cycle) */}
-      <HeroCarousel
-        onOpenQuiz={(u) => setActiveQuizUnit(u)}
-        allUnits={unitsData}
-      />
+      <HeroCarousel />
 
       {/* 3. Cards Showing All Lessons At Once (Directly after Hero Unit Tabs) */}
       <section id="units" className="py-16 sm:py-20 bg-white border-y border-gray-200">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../context/useLanguage';
-import { HelpCircle, ArrowRight, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 
 const featuredHeroUnits = [
   {
@@ -100,7 +100,7 @@ const featuredHeroUnits = [
   }
 ];
 
-export default function HeroCarousel({ onOpenQuiz, allUnits }) {
+export default function HeroCarousel() {
   const { language } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -109,9 +109,6 @@ export default function HeroCarousel({ onOpenQuiz, allUnits }) {
   const isSinhala = language === 'si';
   const totalTabs = featuredHeroUnits.length;
   const currentUnit = featuredHeroUnits[currentIndex];
-
-  // Match current unit with allUnits to pass the full object to Quiz modal
-  const fullUnitObject = allUnits.find(u => u.id === currentUnit.id) || allUnits[0];
 
   // Auto-advance tabs every 3 seconds (3000ms)
   useEffect(() => {
@@ -273,7 +270,7 @@ export default function HeroCarousel({ onOpenQuiz, allUnits }) {
 
           </div>
 
-          {/* RIGHT HAND SIDE: UNIT DETAILS & DIRECT ACTION BUTTONS */}
+          {/* RIGHT HAND SIDE: UNIT DETAILS & DIRECT ACTION BUTTON */}
           <div className="lg:col-span-7 flex flex-col justify-center space-y-5 lg:pl-6 text-left">
             
             {/* Title & Subtitle */}
@@ -291,27 +288,15 @@ export default function HeroCarousel({ onOpenQuiz, allUnits }) {
               </p>
             </div>
 
-            {/* DIRECT ACTION BUTTONS: GO TO LESSON & LAUNCH QUIZ */}
-            <div className="pt-2 flex flex-wrap items-center gap-3">
-              
-              {/* Button 1: Go to Lesson */}
+            {/* DIRECT ACTION BUTTON: GO TO LESSON */}
+            <div className="pt-2 flex items-center">
               <button
                 onClick={handleGoToLesson}
-                className="px-6 py-3.5 rounded-2xl bg-white hover:bg-slate-100 text-[#602d92] font-bold text-sm sm:text-base shadow-lg shadow-black/20 flex items-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer"
+                className="px-7 py-3.5 rounded-2xl bg-white hover:bg-slate-100 text-[#602d92] font-bold text-sm sm:text-base shadow-lg shadow-black/20 flex items-center gap-2.5 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer"
               >
                 <span>{isSinhala ? 'පාඩමට යන්න' : 'Go to Lesson'}</span>
                 <ArrowRight className="w-5 h-5 text-[#602d92]" />
               </button>
-
-              {/* Button 2: Launch Unit Quiz */}
-              <button
-                onClick={() => onOpenQuiz(fullUnitObject)}
-                className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-[#602d92] via-purple-700 to-indigo-600 hover:from-purple-800 hover:to-indigo-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-purple-900/40 hover:shadow-purple-700/60 flex items-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer"
-              >
-                <HelpCircle className="w-5 h-5 text-cyan-300" />
-                <span>{isSinhala ? 'ප්‍රශ්නාවලිය ආරම්භ කරන්න' : 'Launch Unit Quiz'}</span>
-              </button>
-
             </div>
 
           </div>
