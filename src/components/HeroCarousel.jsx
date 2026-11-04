@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../context/useLanguage';
-import { HelpCircle, Layers, ArrowRight, ChevronLeft, ChevronRight, Sparkles, Clock, CheckCircle2 } from 'lucide-react';
+import { HelpCircle, ArrowRight, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 
 const featuredHeroUnits = [
   {
@@ -20,8 +20,7 @@ const featuredHeroUnits = [
     fgEmoji: "🔬",
     bgPattern: "radial-gradient(circle at 30% 40%, rgba(16, 185, 129, 0.4) 0%, rgba(13, 148, 136, 0.2) 50%, rgba(15, 23, 42, 0.95) 100%)",
     statQuestions: "45+ Questions Ready",
-    statCards: "28 Smart Flashcards",
-    keyConcepts: ["Cell Organelles (සෛල ඉන්ද්‍රියිකා)", "Mitochondria & ATP", "Living Characteristics"]
+    statCards: "28 Smart Flashcards"
   },
   {
     id: "g10-u2",
@@ -40,8 +39,7 @@ const featuredHeroUnits = [
     fgEmoji: "🧪",
     bgPattern: "radial-gradient(circle at 30% 40%, rgba(245, 158, 11, 0.4) 0%, rgba(96, 45, 146, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
     statQuestions: "50+ Questions Ready",
-    statCards: "32 Smart Flashcards",
-    keyConcepts: ["Electron Shells (2,8,8)", "Electronegativity Trends", "Isotopes & Atomic Mass"]
+    statCards: "32 Smart Flashcards"
   },
   {
     id: "g10-u4",
@@ -60,8 +58,7 @@ const featuredHeroUnits = [
     fgEmoji: "⚡",
     bgPattern: "radial-gradient(circle at 30% 40%, rgba(59, 130, 246, 0.4) 0%, rgba(67, 56, 202, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
     statQuestions: "40+ Questions Ready",
-    statCards: "24 Smart Flashcards",
-    keyConcepts: ["v = u + at Formulae", "Velocity-Time Graphs", "Acceleration & Distance"]
+    statCards: "24 Smart Flashcards"
   },
   {
     id: "g11-u4",
@@ -80,8 +77,7 @@ const featuredHeroUnits = [
     fgEmoji: "💡",
     bgPattern: "radial-gradient(circle at 30% 40%, rgba(139, 92, 246, 0.4) 0%, rgba(96, 45, 146, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
     statQuestions: "42+ Questions Ready",
-    statCards: "26 Smart Flashcards",
-    keyConcepts: ["Ohm's Law (V = IR)", "Series & Parallel Circuits", "Electrical Energy (kWh)"]
+    statCards: "26 Smart Flashcards"
   },
   {
     id: "g11-u3",
@@ -100,12 +96,11 @@ const featuredHeroUnits = [
     fgEmoji: "🧬",
     bgPattern: "radial-gradient(circle at 30% 40%, rgba(20, 184, 166, 0.4) 0%, rgba(5, 150, 105, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
     statQuestions: "38+ Questions Ready",
-    statCards: "22 Smart Flashcards",
-    keyConcepts: ["Mendel's First Law", "Punnett Squares 3:1", "DNA & Chromosomes"]
+    statCards: "22 Smart Flashcards"
   }
 ];
 
-export default function HeroCarousel({ onOpenQuiz, onOpenFlashcards, allUnits }) {
+export default function HeroCarousel({ onOpenQuiz, allUnits }) {
   const { language } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -115,7 +110,7 @@ export default function HeroCarousel({ onOpenQuiz, onOpenFlashcards, allUnits })
   const totalTabs = featuredHeroUnits.length;
   const currentUnit = featuredHeroUnits[currentIndex];
 
-  // Match current unit with allUnits to pass the full object to Quiz & Flashcard modals
+  // Match current unit with allUnits to pass the full object to Quiz modal
   const fullUnitObject = allUnits.find(u => u.id === currentUnit.id) || allUnits[0];
 
   // Auto-advance tabs every 3 seconds (3000ms)
@@ -139,8 +134,19 @@ export default function HeroCarousel({ onOpenQuiz, onOpenFlashcards, allUnits })
     setCurrentIndex((prev) => (prev + 1) % totalTabs);
   };
 
-  const handleSelectTab = (idx) => {
-    setCurrentIndex(idx);
+  // Scroll directly to the lesson card below and highlight it
+  const handleGoToLesson = () => {
+    const el = document.getElementById(`lesson-${currentUnit.id}`);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('ring-4', 'ring-[#602d92]', 'shadow-2xl');
+      setTimeout(() => {
+        el.classList.remove('ring-4', 'ring-[#602d92]', 'shadow-2xl');
+      }, 2200);
+    } else {
+      const sec = document.getElementById('units');
+      if (sec) sec.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -166,27 +172,49 @@ export default function HeroCarousel({ onOpenQuiz, onOpenFlashcards, allUnits })
         style={{ background: currentUnit.glowColor }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-12 sm:pb-16 z-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-10 sm:pt-10 sm:pb-14 z-10">
         
-        {/* Top Header Badge */}
-        <div className="flex items-center justify-between gap-4 mb-6">
+        {/* Top Header Badge & Navigation Arrows */}
+        <div className="flex items-center justify-between gap-4 mb-4">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-semibold">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
             <span className="text-[#602d92] font-black bg-white px-2 py-0.5 rounded-md text-[11px]">OL.LK</span>
             <span>{isSinhala ? 'විද්‍යාව පාඩම් මාලා පුනරීක්ෂණය' : 'Interactive Science Revision Hub'}</span>
           </div>
 
-          <div className="flex items-center gap-2 text-xs text-slate-300">
-            <Clock className="w-3.5 h-3.5 text-cyan-400" />
-            <span className="hidden sm:inline">Auto-cycles every 3s</span>
-            <span className="px-2 py-0.5 rounded bg-white/10 text-[11px] font-mono">
-              {currentIndex + 1} / {totalTabs}
-            </span>
+          {/* Minimal Slide Controls */}
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={handlePrev}
+              aria-label="Previous Slide"
+              className="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 border border-white/15 text-white flex items-center justify-center transition cursor-pointer"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <div className="flex items-center gap-1 px-2">
+              {featuredHeroUnits.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentIndex(idx)}
+                  className={`h-1.5 rounded-full transition-all cursor-pointer ${
+                    currentIndex === idx ? 'w-5 bg-white' : 'w-1.5 bg-white/30 hover:bg-white/50'
+                  }`}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
+            <button
+              onClick={handleNext}
+              aria-label="Next Slide"
+              className="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 border border-white/15 text-white flex items-center justify-center transition cursor-pointer"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
 
         {/* Main Unit Card Slide Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[440px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[400px]">
           
           {/* LEFT HAND SIDE: FOREGROUND & BACKGROUND VISUAL COMPOSITION TO ELIMINATE LONELINESS */}
           <div className="lg:col-span-5 relative flex items-center justify-center">
@@ -245,18 +273,11 @@ export default function HeroCarousel({ onOpenQuiz, onOpenFlashcards, allUnits })
 
           </div>
 
-          {/* RIGHT HAND SIDE: UNIT DETAILS, KEY CONCEPTS & DIRECT ACTION BUTTONS */}
+          {/* RIGHT HAND SIDE: UNIT DETAILS & DIRECT ACTION BUTTONS */}
           <div className="lg:col-span-7 flex flex-col justify-center space-y-5 lg:pl-6 text-left">
             
             {/* Title & Subtitle */}
             <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse" />
-                <span className="text-xs font-bold text-cyan-300 tracking-wider uppercase font-mono">
-                  {isSinhala ? 'විෂය නිර්දේශයේ ප්‍රධාන පාඩම' : 'Core Syllabus Revision Unit'}
-                </span>
-              </div>
-
               <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight transition-all duration-300">
                 {isSinhala ? currentUnit.titleSi : currentUnit.titleEn}
               </h1>
@@ -270,28 +291,19 @@ export default function HeroCarousel({ onOpenQuiz, onOpenFlashcards, allUnits })
               </p>
             </div>
 
-            {/* Key Focus Concepts */}
-            <div className="space-y-2 pt-1">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-300">
-                {isSinhala ? 'ප්‍රධාන විභාග සංකල්ප:' : 'Key Examination Competencies:'}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {currentUnit.keyConcepts.map((concept, idx) => (
-                  <span 
-                    key={idx}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/15 text-xs text-white font-medium backdrop-blur-xs transition"
-                  >
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>{concept}</span>
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* DIRECT ACTION BUTTONS TO NAVIGATE SECTIONS OF THIS UNIT */}
-            <div className="pt-3 flex flex-wrap items-center gap-3">
+            {/* DIRECT ACTION BUTTONS: GO TO LESSON & LAUNCH QUIZ */}
+            <div className="pt-2 flex flex-wrap items-center gap-3">
               
-              {/* Button 1: Launch Unit Quiz */}
+              {/* Button 1: Go to Lesson */}
+              <button
+                onClick={handleGoToLesson}
+                className="px-6 py-3.5 rounded-2xl bg-white hover:bg-slate-100 text-[#602d92] font-bold text-sm sm:text-base shadow-lg shadow-black/20 flex items-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer"
+              >
+                <span>{isSinhala ? 'පාඩමට යන්න' : 'Go to Lesson'}</span>
+                <ArrowRight className="w-5 h-5 text-[#602d92]" />
+              </button>
+
+              {/* Button 2: Launch Unit Quiz */}
               <button
                 onClick={() => onOpenQuiz(fullUnitObject)}
                 className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-[#602d92] via-purple-700 to-indigo-600 hover:from-purple-800 hover:to-indigo-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-purple-900/40 hover:shadow-purple-700/60 flex items-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer"
@@ -300,82 +312,10 @@ export default function HeroCarousel({ onOpenQuiz, onOpenFlashcards, allUnits })
                 <span>{isSinhala ? 'ප්‍රශ්නාවලිය ආරම්භ කරන්න' : 'Launch Unit Quiz'}</span>
               </button>
 
-              {/* Button 2: Review Flashcards */}
-              <button
-                onClick={() => onOpenFlashcards(fullUnitObject)}
-                className="px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-sm sm:text-base backdrop-blur-md flex items-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer"
-              >
-                <Layers className="w-5 h-5 text-amber-300" />
-                <span>{isSinhala ? 'මතක කාඩ්පත් (Flashcards)' : 'Unit Flashcards'}</span>
-              </button>
-
-              {/* Button 3: Jump to Unit in All Units Grid */}
-              <a
-                href="#units"
-                className="px-4 py-3.5 rounded-2xl text-slate-300 hover:text-white font-semibold text-xs sm:text-sm flex items-center gap-1.5 transition"
-              >
-                <span>{isSinhala ? 'සියලු පාඩම් බලන්න' : 'View in Explorer'}</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-
             </div>
 
           </div>
 
-        </div>
-
-        {/* HORIZONTAL PAGING TABS WITH 3-SECOND TIMER BAR */}
-        <div className="mt-8 pt-6 border-t border-white/15">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            
-            {/* Horizontal Tabs / Pills */}
-            <div className="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 scrollbar-none w-full sm:w-auto">
-              {featuredHeroUnits.map((unit, idx) => {
-                const isActive = currentIndex === idx;
-                return (
-                  <button
-                    key={unit.id}
-                    onClick={() => handleSelectTab(idx)}
-                    className={`relative px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 flex items-center gap-2 shrink-0 cursor-pointer ${
-                      isActive
-                        ? 'bg-white text-slate-950 shadow-md font-bold'
-                        : 'bg-white/10 hover:bg-white/15 text-slate-300 hover:text-white border border-white/10'
-                    }`}
-                  >
-                    <span>{unit.fgEmoji}</span>
-                    <span>
-                      {isSinhala ? `පාඩම 0${unit.unitNumber}` : `Unit 0${unit.unitNumber}`}: {isSinhala ? unit.disciplineSi : unit.disciplineEn}
-                    </span>
-
-                    {/* Animated 3-second progress line when active */}
-                    {isActive && (
-                      <span className="absolute bottom-0 left-0 h-1 bg-[#602d92] rounded-b-xl w-full animate-[progress_3s_linear_infinite]" />
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Manual Next / Prev Navigation Controls */}
-            <div className="flex items-center justify-end gap-2 shrink-0">
-              <button
-                onClick={handlePrev}
-                aria-label="Previous Slide"
-                className="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-white flex items-center justify-center transition cursor-pointer"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-
-              <button
-                onClick={handleNext}
-                aria-label="Next Slide"
-                className="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-white flex items-center justify-center transition cursor-pointer"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-
-          </div>
         </div>
 
       </div>

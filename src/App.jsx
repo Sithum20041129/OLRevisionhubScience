@@ -62,7 +62,6 @@ function RevisionHubContent() {
       {/* 2. Auto-Changing Horizontally Paging Tabs Hero Section (3-second cycle) */}
       <HeroCarousel
         onOpenQuiz={(u) => setActiveQuizUnit(u)}
-        onOpenFlashcards={(u) => setActiveFlashcardUnit(u)}
         allUnits={unitsData}
       />
 
@@ -78,8 +77,8 @@ function RevisionHubContent() {
             <div className="w-20 h-1.5 bg-[#602d92] mx-auto rounded-full mb-3"></div>
             <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
               {language === 'en'
-                ? 'Explore all Grade 10 & 11 Science lessons at once. Select any lesson card to practice unit quizzes or review active-recall flashcards.'
-                : '10 සහ 11 ශ්‍රේණිවල සියලුම විද්‍යාව පාඩම් මෙතැනින් එකවර බලන්න. ප්‍රශ්නාවලි සහ Flashcards සඳහා අදාළ පාඩමේ කාඩ්පත තෝරන්න.'}
+                ? 'Explore all Grade 10 & 11 Science lessons at once. Select any lesson card to practice unit quizzes.'
+                : '10 සහ 11 ශ්‍රේණිවල සියලුම විද්‍යාව පාඩම් මෙතැනින් එකවර බලන්න. ප්‍රශ්නාවලි සහ පසුගිය විභාග ගැටලු සඳහා අදාළ පාඩමේ කාඩ්පත තෝරන්න.'}
             </p>
           </div>
 
@@ -102,7 +101,6 @@ function RevisionHubContent() {
                   key={unit.id}
                   unit={unit}
                   onOpenQuiz={(u) => setActiveQuizUnit(u)}
-                  onOpenFlashcards={(u) => setActiveFlashcardUnit(u)}
                 />
               ))}
             </div>

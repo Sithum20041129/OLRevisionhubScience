@@ -1,8 +1,8 @@
 import React from 'react';
 import { useLanguage } from '../context/useLanguage';
-import { HelpCircle, Layers } from 'lucide-react';
+import { HelpCircle, ArrowRight } from 'lucide-react';
 
-export default function UnitCard({ unit, onOpenQuiz, onOpenFlashcards }) {
+export default function UnitCard({ unit, onOpenQuiz }) {
   const { language, t } = useLanguage();
 
   const isSinhala = language === 'si';
@@ -81,9 +81,18 @@ export default function UnitCard({ unit, onOpenQuiz, onOpenFlashcards }) {
         </p>
       </div>
 
-      {/* Bottom Action Area */}
+      {/* Bottom Action Area: Go to Lesson & Launch Quiz */}
       <div className="mt-5 pt-4 border-t border-slate-100">
         <div className="grid grid-cols-2 gap-2">
+          {/* Go to Lesson Button */}
+          <button
+            onClick={() => onOpenQuiz(unit)}
+            className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-purple-50 hover:bg-purple-100 text-[#602d92] text-xs sm:text-sm font-bold border border-purple-200/80 transition-all duration-200 cursor-pointer shadow-2xs hover:shadow-xs"
+          >
+            <span>{isSinhala ? 'පාඩමට යන්න' : 'Go to Lesson'}</span>
+            <ArrowRight className="w-4 h-4" />
+          </button>
+
           {/* Quiz Runner Button */}
           <button
             onClick={() => onOpenQuiz(unit)}
@@ -91,15 +100,6 @@ export default function UnitCard({ unit, onOpenQuiz, onOpenFlashcards }) {
           >
             <HelpCircle className="w-4 h-4" />
             <span>{t.startQuiz}</span>
-          </button>
-
-          {/* Flashcard Button */}
-          <button
-            onClick={() => onOpenFlashcards(unit)}
-            className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-purple-50 hover:bg-purple-100 text-[#602d92] text-xs sm:text-sm font-semibold border border-purple-200/80 transition-all duration-200 cursor-pointer"
-          >
-            <Layers className="w-4 h-4" />
-            <span>{t.flashcardsCount}</span>
           </button>
         </div>
       </div>
