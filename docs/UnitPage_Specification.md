@@ -68,3 +68,4 @@ The **Unit Page** is a dedicated learning portal for each science unit in the G.
 
 ### 3.6 Section 4: Sequential Navigation
 - "Previous Unit" and "Next Unit" links at the bottom allowing students to transition through the textbook chapters sequentially.
+
