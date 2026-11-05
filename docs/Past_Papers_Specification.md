@@ -121,3 +121,4 @@ public/
 - [ ] Text in PDF is clear and readable at 100% zoom.
 - [ ] Sinhala Unicode fonts render without missing glyphs.
 - [ ] Questions match the current 2016-to-present NIE syllabus format.
+

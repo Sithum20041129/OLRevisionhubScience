@@ -96,3 +96,4 @@ Builds the production bundle into `/dist`. Always run this command before commit
    - **Biology**: Emerald / Teal (`#10b981`, `#0d9488`) with 🌱 or 🔬
    - **Chemistry**: Amber / Orange / Purple (`#f59e0b`, `#602d92`) with 🧪 or ⚗️
    - **Physics**: Blue / Cyan / Indigo (`#3b82f6`, `#06b6d4`, `#602d92`) with ⚡ or 🚀
+

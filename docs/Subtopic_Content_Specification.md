@@ -146,3 +146,4 @@ Before submitting a new subtopic revision guide:
 - [ ] At least 2 key definitions with exact textbook phrasing are included.
 - [ ] At least 1 common exam pitfall/misconception is highlighted.
 - [ ] All referenced diagrams are saved in SVG or optimized WebP format in `/public/diagrams/`.
+
