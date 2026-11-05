@@ -42,6 +42,18 @@ The **Unit Page** is a dedicated learning portal for each science unit in the G.
 | `g11-u7` | 07 | Chemistry | Acids, Bases and Salts | අම්ල, භස්ම හා ලවණ | 4 |
 | `g11-u8` | 08 | Chemistry | Heat Changes Associated with Chemical Reactions | රසායනික ප්‍රතික්‍රියා ආශ්‍රිත තාප විපර්යාස | 3 |
 
+### 2.4 Grade 11 Part 2 Units (Sri Lanka National Syllabus - Edupub)
+
+| Unit ID | Unit # | Discipline | Title (English) | Title (Sinhala) | Subtopics Count |
+|---|---|---|---|---|---|
+| `g11-u9` | 09 | Physics | Heat | තාපය | 5 |
+| `g11-u10` | 10 | Physics | Power and Energy of Electric Appliances | විද්‍යුත් උපකරණවල ක්ෂමතාව සහ ශක්තිය | 5 |
+| `g11-u11` | 11 | Physics | Electronics | ඉලෙක්ට්‍රොනික විද්‍යාව | 5 |
+| `g11-u12` | 12 | Chemistry | Electrochemistry | විද්‍යුත් රසායනය | 3 |
+| `g11-u13` | 13 | Physics | Electromagnetism and Electromagnetic Induction | විද්‍යුත් චුම්බකත්වය සහ විද්‍යුත් චුම්බක ප්‍රේරණය | 3 |
+| `g11-u14` | 14 | Chemistry | Hydrocarbons and Their Derivatives | හයිඩ්‍රොකාබන සහ ඒවායේ ව්‍යුත්පන්න | 3 |
+| `g11-u15` | 15 | Biology | Biosphere | ජීවගෝලය | 5 |
+
 ---
 
 ## 3. Component Specification (`UnitPage.jsx`)

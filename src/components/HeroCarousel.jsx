@@ -254,6 +254,139 @@ const heroUnitsByGrade = {
       bgPattern: "radial-gradient(circle at 30% 40%, rgba(249, 115, 22, 0.4) 0%, rgba(185, 28, 28, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
       statQuestions: "20 Questions Ready",
       statCards: "3 Subtopics"
+    },
+    {
+      id: "g11-u9",
+      grade: 11,
+      unitNumber: 9,
+      category: "physics",
+      disciplineEn: "Physics",
+      disciplineSi: "භෞතික විද්‍යාව",
+      titleEn: "Heat",
+      titleSi: "තාපය",
+      descEn: "Temperature scales, heat capacity, specific heat capacity (Q = mcθ), state changes, latent heat, thermal expansion, and heat transfer mechanisms.",
+      descSi: "උෂ්ණත්ව පරිමාණ, තාප ධාරිතාව, විශිෂ්ට තාප ධාරිතාව (Q = mcθ), අවස්ථා විපර්යාස, ගුප්ත තාපය, තාප ප්‍රසාරණය සහ තාප සම්ප්‍රේෂණය.",
+      accentColor: "from-red-600 via-orange-800 to-slate-950",
+      badgeBg: "bg-red-50 text-red-800 border-red-300",
+      glowColor: "rgba(239, 68, 68, 0.35)",
+      fgEmoji: "🌡️",
+      bgPattern: "radial-gradient(circle at 30% 40%, rgba(239, 68, 68, 0.4) 0%, rgba(194, 65, 12, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
+      statQuestions: "22 Questions Ready",
+      statCards: "5 Subtopics"
+    },
+    {
+      id: "g11-u10",
+      grade: 11,
+      unitNumber: 10,
+      category: "physics",
+      disciplineEn: "Physics",
+      disciplineSi: "භෞතික විද්‍යාව",
+      titleEn: "Power & Energy of Appliances",
+      titleSi: "විද්‍යුත් උපකරණවල ක්ෂමතාව සහ ශක්තිය",
+      descEn: "Electric power (P = VI), electrical energy consumption in kWh, electricity billing calculations, domestic circuits, and electrical safety.",
+      descSi: "විද්‍යුත් ක්ෂමතාව (P = VI), කිලෝවොට් පැය (kWh) පරිභෝජනය, විදුලි බිල ගණනය, ගෘහ විදුලි පරිපථ සහ විද්‍යුත් ආරක්ෂාව.",
+      accentColor: "from-amber-500 via-yellow-700 to-slate-950",
+      badgeBg: "bg-amber-50 text-amber-800 border-amber-300",
+      glowColor: "rgba(245, 158, 11, 0.35)",
+      fgEmoji: "💡",
+      bgPattern: "radial-gradient(circle at 30% 40%, rgba(245, 158, 11, 0.4) 0%, rgba(180, 83, 9, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
+      statQuestions: "20 Questions Ready",
+      statCards: "5 Subtopics"
+    },
+    {
+      id: "g11-u11",
+      grade: 11,
+      unitNumber: 11,
+      category: "physics",
+      disciplineEn: "Physics",
+      disciplineSi: "භෞතික විද්‍යාව",
+      titleEn: "Electronics",
+      titleSi: "ඉලෙක්ට්‍රොනික විද්‍යාව",
+      descEn: "Semiconductors, p-n junction diode characteristics, AC rectification (half & full wave bridge), filtering, and bipolar junction transistors.",
+      descSi: "අර්ධ සන්නායක, p-n සන්ධි ඩයෝඩය, ප්‍රත්‍යාවර්ත ධාරා සෘජුකරණය (අර්ධ හා පූර්ණ තරංග පාලම්), සුමටනය සහ ට්‍රාන්සිස්ටර.",
+      accentColor: "from-cyan-600 via-indigo-900 to-slate-950",
+      badgeBg: "bg-cyan-50 text-cyan-800 border-cyan-300",
+      glowColor: "rgba(6, 182, 212, 0.35)",
+      fgEmoji: "🔌",
+      bgPattern: "radial-gradient(circle at 30% 40%, rgba(6, 182, 212, 0.4) 0%, rgba(49, 46, 129, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
+      statQuestions: "24 Questions Ready",
+      statCards: "5 Subtopics"
+    },
+    {
+      id: "g11-u12",
+      grade: 11,
+      unitNumber: 12,
+      category: "chemistry",
+      disciplineEn: "Chemistry",
+      disciplineSi: "රසායන විද්‍යාව",
+      titleEn: "Electrochemistry",
+      titleSi: "විද්‍යුත් රසායනය",
+      descEn: "Voltaic and Daniel cells, activity series of metals, electrolysis of solutions, industrial electroplating, and prevention of metal corrosion.",
+      descSi: "සරල හා ඩැනියෙල් කෝෂ, ලෝහවල සක්‍රියතා ශ්‍රේණිය, විද්‍යුත් විච්ඡේදනය, විද්‍යුත් ආලේපනය සහ ලෝහ විඛාදනය වැළැක්වීම.",
+      accentColor: "from-teal-600 via-emerald-900 to-slate-950",
+      badgeBg: "bg-teal-50 text-teal-800 border-teal-300",
+      glowColor: "rgba(20, 184, 166, 0.35)",
+      fgEmoji: "🔋",
+      bgPattern: "radial-gradient(circle at 30% 40%, rgba(20, 184, 166, 0.4) 0%, rgba(6, 95, 70, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
+      statQuestions: "22 Questions Ready",
+      statCards: "3 Subtopics"
+    },
+    {
+      id: "g11-u13",
+      grade: 11,
+      unitNumber: 13,
+      category: "physics",
+      disciplineEn: "Physics",
+      disciplineSi: "භෞතික විද්‍යාව",
+      titleEn: "Electromagnetism & Induction",
+      titleSi: "විද්‍යුත් චුම්බකත්වය සහ ප්‍රේරණය",
+      descEn: "Magnetic fields of currents, Fleming's Left-Hand Rule, DC motors, Faraday's electromagnetic induction, Lenz's law, and step-up/down transformers.",
+      descSi: "ධාරාවක චුම්බක ඵලය, ෆ්ලෙමින්ගේ වමත් නියමය, DC මෝටරය, විද්‍යුත් චුම්බක ප්‍රේරණය, ලෙන්ස් නියමය සහ පරිණාමක.",
+      accentColor: "from-purple-600 via-indigo-900 to-slate-950",
+      badgeBg: "bg-purple-50 text-purple-800 border-purple-300",
+      glowColor: "rgba(168, 85, 247, 0.35)",
+      fgEmoji: "🧲",
+      bgPattern: "radial-gradient(circle at 30% 40%, rgba(168, 85, 247, 0.4) 0%, rgba(30, 27, 75, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
+      statQuestions: "22 Questions Ready",
+      statCards: "3 Subtopics"
+    },
+    {
+      id: "g11-u14",
+      grade: 11,
+      unitNumber: 14,
+      category: "chemistry",
+      disciplineEn: "Chemistry",
+      disciplineSi: "රසායන විද්‍යාව",
+      titleEn: "Hydrocarbons & Derivatives",
+      titleSi: "හයිඩ්‍රොකාබන සහ ඒවායේ ව්‍යුත්පන්න",
+      descEn: "Alkanes, alkenes, alkynes, isomerism, addition reactions, derivatives of ethene, monomers, polymers (polythene, PVC), and plastics recycling.",
+      descSi: "ඇල්කේන, ඇල්කීන, ඇල්කයින, සමඝටකතාව, ආකලන ප්‍රතික්‍රියා, එතීන්හි ව්‍යුත්පන්න, බහුඅවයවික (පොලිතීන්, PVC) සහ ප්ලාස්ටික් ප්‍රතිචක්‍රීකරණය.",
+      accentColor: "from-fuchsia-600 via-rose-900 to-slate-950",
+      badgeBg: "bg-fuchsia-50 text-fuchsia-800 border-fuchsia-300",
+      glowColor: "rgba(217, 70, 239, 0.35)",
+      fgEmoji: "🧪",
+      bgPattern: "radial-gradient(circle at 30% 40%, rgba(217, 70, 239, 0.4) 0%, rgba(136, 19, 55, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
+      statQuestions: "20 Questions Ready",
+      statCards: "3 Subtopics"
+    },
+    {
+      id: "g11-u15",
+      grade: 11,
+      unitNumber: 15,
+      category: "biology",
+      disciplineEn: "Biology",
+      disciplineSi: "ජීව විද්‍යාව",
+      titleEn: "Biosphere",
+      titleSi: "ජීවගෝලය",
+      descEn: "Ecological levels, food webs, ecological pyramids, biogeochemical cycles, pollution (air, water, soil), climate change, and sustainability.",
+      descSi: "පාරිසරික සංවිධාන මට්ටම්, ආහාර ජාල, පාරිසරික පිරමිඩ, ජෛව රසායනික චක්‍ර, පාරිසරික දූෂණය, දේශගුණික විපර්යාස සහ තිරසර කළමනාකරණය.",
+      accentColor: "from-emerald-600 via-teal-800 to-slate-950",
+      badgeBg: "bg-emerald-50 text-emerald-800 border-emerald-300",
+      glowColor: "rgba(16, 185, 129, 0.35)",
+      fgEmoji: "🌍",
+      bgPattern: "radial-gradient(circle at 30% 40%, rgba(16, 185, 129, 0.4) 0%, rgba(13, 148, 136, 0.3) 50%, rgba(15, 23, 42, 0.95) 100%)",
+      statQuestions: "25 Questions Ready",
+      statCards: "5 Subtopics"
     }
   ]
 };
@@ -373,7 +506,7 @@ export default function HeroCarousel() {
                     aria-selected={isActive}
                   >
                     <span className="text-base">{unit.fgEmoji}</span>
-                    <span>{isSinhala ? `පාඩම 0${unit.unitNumber}: ${unit.disciplineSi}` : `Unit 0${unit.unitNumber}: ${unit.disciplineEn}`}</span>
+                    <span>{isSinhala ? `පාඩම ${String(unit.unitNumber).padStart(2, '0')}: ${unit.disciplineSi}` : `Unit ${String(unit.unitNumber).padStart(2, '0')}: ${unit.disciplineEn}`}</span>
                   </button>
                 );
               })}
@@ -432,7 +565,7 @@ export default function HeroCarousel() {
               {/* Top Row: Unit Tag & Discipline */}
               <div className="flex items-center justify-between mb-6">
                 <span className="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-xl bg-white/20 text-white border border-white/30 backdrop-blur-md">
-                  {isSinhala ? `${currentUnit.grade} ශ්‍රේණිය` : `Grade ${currentUnit.grade}`} • {isSinhala ? `පාඩම 0${currentUnit.unitNumber}` : `Unit 0${currentUnit.unitNumber}`}
+                  {isSinhala ? `${currentUnit.grade} ශ්‍රේණිය` : `Grade ${currentUnit.grade}`} • {isSinhala ? `පාඩම ${String(currentUnit.unitNumber).padStart(2, '0')}` : `Unit ${String(currentUnit.unitNumber).padStart(2, '0')}`}
                 </span>
                 <span className="text-xs font-bold text-cyan-300 px-2.5 py-0.5 rounded-lg bg-cyan-950/60 border border-cyan-700/60 flex items-center gap-1">
                   <span>{currentUnit.fgEmoji}</span>

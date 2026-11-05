@@ -1747,6 +1747,816 @@ export const unitsData = [
       tag: "Heat Changes"
     }
   }
+,
+
+  // =========================================================================
+  // GRADE 11 SCIENCE - PART 2 (UNITS 09 TO 15)
+  // Based on official National Institute of Education (NIE) syllabus textbook
+  // =========================================================================
+  {
+    "id": "g11-u9",
+    "grade": 11,
+    "unitNumber": 9,
+    "category": "physics",
+    "titleEn": "Heat",
+    "titleSi": "තාපය",
+    "descriptionEn": "Thermal phenomena: temperature, temperature scales, heat capacity, specific heat capacity (Q = mcθ), change of state, latent heat, thermal expansion, and conduction, convection, radiation heat transfer.",
+    "descriptionSi": "තාප සංසිද්ධි: උෂ්ණත්වය, උෂ්ණත්ව පරිමාණ, තාප ධාරිතාව, විශිෂ්ට තාප ධාරිතාව (Q = mcθ), පදාර්ථයේ අවස්ථා විපර්යාස, ගුප්ත තාපය, තාප ප්‍රසාරණය සහ සන්නයනය, සංවහනය, විකිරණය තාප සම්ප්‍රේෂණය.",
+    "subtopics": [
+      {
+        "id": "9.1",
+        "titleEn": "Temperature",
+        "titleSi": "උෂ්ණත්වය",
+        "descriptionEn": "Definition of temperature, kinetic energy of particles, Celsius, Fahrenheit, and Kelvin temperature scales, and thermometry.",
+        "descriptionSi": "උෂ්ණත්වය පිළිබඳ හැඳින්වීම, අංශුවල චාලක ශක්තිය, සෙල්සියස්, ෆැරන්හයිට් හා කෙල්වින් උෂ්ණත්ව පරිමාණ සහ උෂ්ණත්වමාන භාවිතය."
+      },
+      {
+        "id": "9.2",
+        "titleEn": "Heat",
+        "titleSi": "තාපය",
+        "descriptionEn": "Heat as a form of energy, heat capacity, specific heat capacity (s), heat exchange principle, and heat calculation equation Q = mcθ.",
+        "descriptionSi": "ශක්ති විශේෂයක් ලෙස තාපය, තාප ධාරිතාව, විශිෂ්ට තාප ධාරිතාව (s), තාප හුවමාරු මූලධර්මය සහ Q = mcθ සමීකරණය මඟින් තාපය ගණනය කිරීම."
+      },
+      {
+        "id": "9.3",
+        "titleEn": "Change of State of Matter",
+        "titleSi": "පදාර්ථයේ අවස්ථා විපර්යාස",
+        "descriptionEn": "Melting, boiling, freezing, condensation, heating curves, cooling curves, specific latent heat of fusion, and specific latent heat of vaporisation.",
+        "descriptionSi": "ද්‍රවීභවනය, තාපාංකය, ඝනීභවනය, වාෂ්පීභවනය, රත්කිරීමේ හා සිසිලන ප්‍රස්ථාර, විලයනයේ විශිෂ්ට ගුප්ත තාපය සහ වාෂ්පීභවනයේ විශිෂ්ට ගුප්ත තාපය."
+      },
+      {
+        "id": "9.4",
+        "titleEn": "Thermal Expansion",
+        "titleSi": "තාප ප්‍රසාරණය",
+        "descriptionEn": "Expansion of solids, bimetallic strip applications (thermostats, fire alarms), anomalous expansion of water, and expansion of liquids and gases.",
+        "descriptionSi": "ඝන ද්‍රව්‍යවල ප්‍රසාරණය, ද්විලෝහ පටි භාවිත (තාපස්ථායක, ගිනි අනතුරු ඇඟවුම්), ජලයේ විෂම ප්‍රසාරණය සහ ද්‍රව හා වායුවල ප්‍රසාරණය."
+      },
+      {
+        "id": "9.5",
+        "titleEn": "Heat Transfer",
+        "titleSi": "තාප සම්ප්‍රේෂණය",
+        "descriptionEn": "Conduction in solids, convection in fluids (sea breeze and land breeze), radiation in electromagnetic waves, and vacuum flask operation.",
+        "descriptionSi": "ඝන ද්‍රව්‍ය තුළ සන්නයනය, තරල තුළ සංවහනය (මුහුදු සුළං හා ගොඩබිම් සුළං), විකිරණය සහ රික්ත ප්ලාස්කුවක තාප හානිය වැළැක්වීමේ ක්‍රම."
+      }
+    ],
+    "pastPapers": [
+      {
+        "id": "p11-9-1",
+        "year": "2023",
+        "nameEn": "G.C.E. O/L 2023 - Specific Heat Capacity & Latent Heat",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2023 - විශිෂ්ට තාප ධාරිතාව සහ ගුප්ත තාපය",
+        "fileType": "PDF",
+        "size": "2.1 MB",
+        "coverage": "Q = mcθ calculations, ice-to-water phase changes"
+      },
+      {
+        "id": "p11-9-2",
+        "year": "2022",
+        "nameEn": "G.C.E. O/L 2022 - Thermal Expansion & Convection",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2022 - තාප ප්‍රසාරණය සහ සංවහන ධාරා",
+        "fileType": "PDF",
+        "size": "1.9 MB",
+        "coverage": "Bimetallic strip fire alarm, sea breeze mechanics"
+      },
+      {
+        "id": "p11-9-3",
+        "year": "2021",
+        "nameEn": "Western Province Target Paper 2021",
+        "nameSi": "බස්නාහිර පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        "fileType": "PDF",
+        "size": "2.4 MB",
+        "coverage": "Vacuum flask thermal insulation, cooling curves"
+      }
+    ],
+    "quizInfo": {
+      "totalQuestions": 22,
+      "durationMinutes": 25,
+      "difficulty": "Medium"
+    },
+    "totalQuestions": 22,
+    "totalFlashcards": 18,
+    "targetPapers": [
+      "O/L 2023",
+      "O/L 2022",
+      "Western Prov. 2021"
+    ],
+    "demoQuestion": {
+      "id": "demo-q11-9",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "textEn": "Which physical property of water is responsible for aquatic life surviving under ice in frozen lakes during severe winters?",
+      "textSi": "දැඩි ශීත ඍතුවේදී මිදුණු විල්වල අයිස් තට්ටුව යට ජලජ ජීවීන්ට ජීවත්වීමට ඉඩ සලසන ජලයේ භෞතික ගුණය කුමක්ද?",
+      "optionsEn": [
+        "Anomalous expansion of water between 0 °C and 4 °C (maximum density at 4 °C)",
+        "High specific heat capacity of ice compared to liquid water",
+        "Low thermal conductivity of solid metals",
+        "High latent heat of vaporisation of water"
+      ],
+      "optionsSi": [
+        "0 °C සිට 4 °C අතර ජලයේ විෂම ප්‍රසාරණය (4 °C දී උපරිම ඝනත්වය ලැබීම)",
+        "ද්‍රව ජලයට සාපේක්ෂව අයිස්වල විශිෂ්ට තාප ධාරිතාව ඉහළ වීම",
+        "ඝන ලෝහවල තාප සන්නායකතාව අඩු වීම",
+        "ජලයේ වාෂ්පීභවනයේ විශිෂ්ට ගුප්ත තාපය ඉහළ අගයක් ගැනීම"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "Water reaches its maximum density at 4 °C. As surface water cools below 4 °C, it expands, becomes less dense, and floats as surface ice (insulating layer), while 4 °C liquid water remains at the bottom.",
+      "explanationSi": "ජලය 4 °C දී උපරිම ඝනත්වයට පත් වේ. මතුපිට ජලය 4 °C ට වඩා සිසිල් වන විට ප්‍රසාරණය වී ඝනත්වය අඩුවී මතුපිට පාවෙන අයිස් තට්ටුවක් සාදයි; පතුලේ 4 °C ජලය රැඳී ජලජ ජීවීන්ට ආරක්ෂාව සපයයි.",
+      "competency": "9.4 Explains practical applications and natural consequences of thermal expansion."
+    },
+    "demoFlashcard": {
+      "id": "demo-fc11-9",
+      "topicEn": "Specific Latent Heat",
+      "topicSi": "විශිෂ්ට ගුප්ත තාපය",
+      "frontEn": "What is the SI unit of specific latent heat?",
+      "frontSi": "විශිෂ්ට ගුප්ත තාපයේ ජාත්‍යන්තර (SI) ඒකකය කුමක්ද?",
+      "backEn": "J kg⁻¹ (Joules per kilogram).",
+      "backSi": "J kg⁻¹ (කිලෝග්‍රෑමයට ජූල්).",
+      "tag": "Thermal Physics"
+    }
+  },
+
+  {
+    "id": "g11-u10",
+    "grade": 11,
+    "unitNumber": 10,
+    "category": "physics",
+    "titleEn": "Power and Energy of Electric Appliances",
+    "titleSi": "විද්‍යුත් උපකරණවල ක්ෂමතාව සහ ශක්තිය",
+    "descriptionEn": "Electrical power (P = VI, P = I²R, P = V²/R), electrical energy calculations (E = Pt), kilowatt-hours (kWh), electricity billing, home wiring systems, and domestic electrical safety.",
+    "descriptionSi": "විද්‍යුත් ක්ෂමතාව (P = VI, P = I²R, P = V²/R), විද්‍යුත් ශක්තිය ගණනය (E = Pt), කිලෝවොට් පැය (kWh), විදුලි බිල ගණනය කිරීම, ගෘහ විදුලි පරිපථ සහ විද්‍යුත් ආරක්ෂාව.",
+    "subtopics": [
+      {
+        "id": "10.1",
+        "titleEn": "Power Output of an Electric Appliance",
+        "titleSi": "විද්‍යුත් උපකරණයක ක්ෂමතා ප්‍රතිදානය",
+        "descriptionEn": "Definition of electric power, watt and kilowatt units, appliance power ratings, and relationship between voltage, current, and power.",
+        "descriptionSi": "විද්‍යුත් ක්ෂමතාව පිළිබඳ හැඳින්වීම, වොට් හා කිලෝවොට් ඒකක, උපකරණවල ක්ෂමතා අගයන් සහ වෝල්ටීයතාව, ධාරාව හා ක්ෂමතාව අතර සම්බන්ධය."
+      },
+      {
+        "id": "10.2",
+        "titleEn": "Electric Energy Consumed by Electric Appliances",
+        "titleSi": "විද්‍යුත් උපකරණ මඟින් වැයවන විද්‍යුත් ශක්තිය",
+        "descriptionEn": "Calculating electrical energy consumed (E = Pt = VIt = I²Rt), conversion between joules and kilowatt-hours (kWh).",
+        "descriptionSi": "වැයවන විද්‍යුත් ශක්තිය ගණනය කිරීම (E = Pt = VIt = I²Rt), ජූල් හා කිලෝවොට් පැය අතර පරිවර්තනය."
+      },
+      {
+        "id": "10.3",
+        "titleEn": "Efficiency of Electric Appliances and Conserving Power",
+        "titleSi": "විද්‍යුත් උපකරණවල කාර්යක්ෂමතාව හා විදුලි බලය සංරක්ෂණය",
+        "descriptionEn": "Energy efficiency calculation, energy star ratings, energy losses as heat, and practical tips to minimize household electricity wastage.",
+        "descriptionSi": "ශක්ති කාර්යක්ෂමතාව ගණනය කිරීම, බලශක්ති තරු සලකුණු, තාපය ලෙස සිදුවන ශක්ති හානි අවම කිරීම සහ විදුලි බලය සංරක්ෂණය."
+      },
+      {
+        "id": "10.4",
+        "titleEn": "Home Electric Circuits",
+        "titleSi": "ගෘහ විදුලි පරිපථ",
+        "descriptionEn": "Live, neutral, and earth wires, color coding, distribution board, main switch, circuit breakers (MCB, RCCB), fuses, and three-pin plug wiring.",
+        "descriptionSi": "සජීවී, උදාසීන හා භූගත වයර්, වර්ණ කේත, බෙදාහැරීමේ පුවරුව, ප්‍රධාන ස්විචය, MCB සහ RCCB පරිපථ බිඳින, ෆියුස් සහ තුන්කූරු ප්ලග් රැහැන්ගත කිරීම."
+      },
+      {
+        "id": "10.5",
+        "titleEn": "Measuring Electric Energy in Kilowatt Hours",
+        "titleSi": "කිලෝවොට් පැයවලින් විද්‍යුත් ශක්තිය මැනීම",
+        "descriptionEn": "Electricity meters, calculating electricity bill consumption units, fixed charges, tariff rates, and practical billing problems.",
+        "descriptionSi": "විදුලි මීටර කියවීම, මාසික විදුලි ඒකක පරිභෝජනය ගණනය කිරීම, ස්ථාවර ගාස්තු සහ විදුලි බිල ගණනය කිරීමේ ගැටලු."
+      }
+    ],
+    "pastPapers": [
+      {
+        "id": "p11-10-1",
+        "year": "2023",
+        "nameEn": "G.C.E. O/L 2023 - Domestic Wiring & Circuit Breakers",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2023 - ගෘහ විදුලි රැහැන් හා පරිපථ බිඳින",
+        "fileType": "PDF",
+        "size": "2.3 MB",
+        "coverage": "RCCB / MCB operation, three-pin plug safety"
+      },
+      {
+        "id": "p11-10-2",
+        "year": "2022",
+        "nameEn": "G.C.E. O/L 2022 - Electric Power & Billing Units",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2022 - විද්‍යුත් ක්ෂමතාව සහ බිල්පත් ගණනය",
+        "fileType": "PDF",
+        "size": "2.0 MB",
+        "coverage": "P = VI calculations, kilowatt-hour consumption"
+      },
+      {
+        "id": "p11-10-3",
+        "year": "2021",
+        "nameEn": "Central Province Target Paper 2021",
+        "nameSi": "මධ්‍යම පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        "fileType": "PDF",
+        "size": "2.2 MB",
+        "coverage": "Appliance energy efficiency, fuse wire rating"
+      }
+    ],
+    "quizInfo": {
+      "totalQuestions": 20,
+      "durationMinutes": 25,
+      "difficulty": "Medium"
+    },
+    "totalQuestions": 20,
+    "totalFlashcards": 16,
+    "targetPapers": [
+      "O/L 2023",
+      "O/L 2022",
+      "Central Prov. 2021"
+    ],
+    "demoQuestion": {
+      "id": "demo-q11-10",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "textEn": "An electric kettle rated at 2000 W is used for 30 minutes every day. What is the electrical energy consumed by the kettle in 30 days in kilowatt-hours (units)?",
+      "textSi": "2000 W ක්ෂමතාවක් සහිත විදුලි කේතලයක් දිනකට මිනිත්තු 30 බැගින් භාවිතා කරයි. දින 30 කදී එම කේතලය මඟින් පරිභෝජනය කරන විද්‍යුත් ශක්තිය කිලෝවොට් පැය (ඒකක) කීයක්ද?",
+      "optionsEn": [
+        "15 kWh",
+        "30 kWh",
+        "60 kWh",
+        "120 kWh"
+      ],
+      "optionsSi": [
+        "15 kWh",
+        "30 kWh",
+        "60 kWh",
+        "120 kWh"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Power = 2000 W = 2 kW. Time per day = 0.5 hours. Energy per day = 2 kW × 0.5 h = 1 kWh. For 30 days: 1 kWh × 30 = 30 kWh (30 units).",
+      "explanationSi": "ක්ෂමතාව = 2000 W = 2 kW. දිනකට කාලය = පැය 0.5. දිනකට වැයවන ශක්තිය = 2 kW × පැය 0.5 = 1 kWh. දින 30 සඳහා: 1 kWh × 30 = 30 kWh (ඒකක 30).",
+      "competency": "10.2 Calculates electrical energy consumption in kilowatt-hours."
+    },
+    "demoFlashcard": {
+      "id": "demo-fc11-10",
+      "topicEn": "Safety Devices",
+      "topicSi": "ආරක්ෂිත උපාංග",
+      "frontEn": "What is the primary function of an RCCB (Residual Current Circuit Breaker) in a domestic wiring system?",
+      "frontSi": "ගෘහ විදුලි පරිපථයක RCCB (ඉතිරි ධාරා පරිපථ බිඳිනය) මඟින් ඉටුවන ප්‍රධාන කාර්යය කුමක්ද?",
+      "backEn": "Detects current leakages to ground and rapidly trips the circuit to protect humans from fatal electric shock.",
+      "backSi": "පරිපථයෙන් භූමියට ධාරා කාන්දු වීමක් හඳුනාගෙන වහාම පරිපථය බිඳදමා මිනිසුන් විදුලි සැර වැදීමෙන් ආරක්ෂා කිරීම.",
+      "tag": "Domestic Electricity"
+    }
+  },
+
+  {
+    "id": "g11-u11",
+    "grade": 11,
+    "unitNumber": 11,
+    "category": "physics",
+    "titleEn": "Electronics",
+    "titleSi": "ඉලෙක්ට්‍රොනික විද්‍යාව",
+    "descriptionEn": "Semiconductor fundamentals (p-type, n-type), p-n junction diode characteristics, forward and reverse bias, half-wave and full-wave rectification, filtering, npn and pnp transistors, and switching circuits.",
+    "descriptionSi": "අර්ධ සන්නායක (p-වර්ගය, n-වර්ගය), p-n සන්ධි ඩයෝඩයේ ලක්ෂණ, පෙර හා පසු නැඹුරුව, අර්ධ හා පූර්ණ තරංග සෘජුකරණය, සුමටනය, npn හා pnp ට්‍රාන්සිස්ටර සහ ස්විච පරිපථ.",
+    "subtopics": [
+      {
+        "id": "11.1",
+        "titleEn": "Introduction to Semiconductors",
+        "titleSi": "අර්ධ සන්නායක පිළිබඳ හැඳින්වීම",
+        "descriptionEn": "Conductors, insulators, and semiconductors (Silicon and Germanium), doping process to produce p-type and n-type materials.",
+        "descriptionSi": "සන්නායක, පරිවාරක සහ අර්ධ සන්නායක (සිලිකන් හා ජර්මේනියම්), p-වර්ගයේ හා n-වර්ගයේ අර්ධ සන්නායක සෑදීම සඳහා මාත්‍රණය."
+      },
+      {
+        "id": "11.2",
+        "titleEn": "p-n Junction",
+        "titleSi": "p-n සන්ධිය",
+        "descriptionEn": "Formation of depletion layer, barrier potential, majority and minority charge carriers, forward bias, and reverse bias characteristics.",
+        "descriptionSi": "ක්ෂය ප්‍රදේශය සෑදීම, විභව බාධකය, බහුතර හා සුළුතර ආරෝපණ වාහක, පෙර නැඹුරුව සහ පසු නැඹුරුව."
+      },
+      {
+        "id": "11.3",
+        "titleEn": "p-n Junction Diode",
+        "titleSi": "p-n සන්ධි ඩයෝඩය",
+        "descriptionEn": "Circuit symbol, I-V characteristic curve, forward threshold voltage, reverse breakdown, Light Emitting Diodes (LED), and Zener diodes.",
+        "descriptionSi": "පරිපථ සංකේතය, ධාරා-වෝල්ටීයතා ප්‍රස්ථාරය, දහන වෝල්ටීයතාව, ආලෝක විමෝචක ඩයෝඩ (LED) සහ සීනර් ඩයෝඩ."
+      },
+      {
+        "id": "11.4",
+        "titleEn": "Rectification of Alternating Currents",
+        "titleSi": "ප්‍රත්‍යාවර්ත ධාරා සෘජුකරණය",
+        "descriptionEn": "Half-wave rectification, full-wave bridge rectifier using four diodes, capacitor filtering, and converting AC to smooth DC.",
+        "descriptionSi": "අර්ධ තරංග සෘජුකරණය, ඩයෝඩ 4 ක් යොදාගත් පූර්ණ තරංග පාලම් සෘජුකරණය, ධාරිත්‍රක මඟින් සුමටනය සහ සරල ධාරා සැපයුම්."
+      },
+      {
+        "id": "11.5",
+        "titleEn": "Transistors",
+        "titleSi": "ට්‍රාන්සිස්ටර",
+        "descriptionEn": "Bipolar junction transistors (npn and pnp), emitter, base, and collector terminals, transistor as an automatic electronic switch and amplifier.",
+        "descriptionSi": "ද්විධ්‍රැව සන්ධි ට්‍රාන්සිස්ටර (npn හා pnp), විමෝචකය, පාදම හා සංග්‍රාහකය, ට්‍රාන්සිස්ටරය ස්වයංක්‍රීය ස්විචයක් හා වර්ධකයක් ලෙස භාවිතය (LDR/තර්මිස්ටර් පරිපථ)."
+      }
+    ],
+    "pastPapers": [
+      {
+        "id": "p11-11-1",
+        "year": "2023",
+        "nameEn": "G.C.E. O/L 2023 - Bridge Rectification & Transistor Switching",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2023 - පාලම් සෘජුකරණය සහ ට්‍රාන්සිස්ටර ස්විච",
+        "fileType": "PDF",
+        "size": "2.5 MB",
+        "coverage": "Full-wave diode bridge, LDR light-sensitive circuits"
+      },
+      {
+        "id": "p11-11-2",
+        "year": "2022",
+        "nameEn": "G.C.E. O/L 2022 - Diode Forward/Reverse Bias Curves",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2022 - ඩයෝඩ පෙර හා පසු නැඹුරු ප්‍රස්ථාර",
+        "fileType": "PDF",
+        "size": "1.8 MB",
+        "coverage": "Silicon threshold voltage 0.7 V, LED circuits"
+      },
+      {
+        "id": "p11-11-3",
+        "year": "2021",
+        "nameEn": "Southern Province Target Paper 2021",
+        "nameSi": "දකුණු පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        "fileType": "PDF",
+        "size": "2.1 MB",
+        "coverage": "Capacitor filtering waveform, npn transistor biasing"
+      }
+    ],
+    "quizInfo": {
+      "totalQuestions": 24,
+      "durationMinutes": 25,
+      "difficulty": "Hard"
+    },
+    "totalQuestions": 24,
+    "totalFlashcards": 20,
+    "targetPapers": [
+      "O/L 2023",
+      "O/L 2022",
+      "Southern Prov. 2021"
+    ],
+    "demoQuestion": {
+      "id": "demo-q11-11",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "textEn": "How many p-n junction diodes are connected together to construct a full-wave bridge rectifier?",
+      "textSi": "පූර්ණ තරංග පාලම් සෘජුකාරකයක් නිර්මාණය කිරීම සඳහා p-n සන්ධි ඩයෝඩ කීයක් එකිනෙක සම්බන්ධ කළ යුතුද?",
+      "optionsEn": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "optionsSi": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanationEn": "A full-wave bridge rectifier uses 4 diodes arranged in a bridge loop to conduct current through the load in the same direction during both positive and negative AC half-cycles.",
+      "explanationSi": "පූර්ණ තරංග පාලම් සෘජුකාරකයක් සඳහා ඩයෝඩ 4 ක් පාලම් ආකාරයෙන් සම්බන්ධ කරනු ලැබේ. එමඟින් ප්‍රත්‍යාවර්ත ධාරාවේ ධන හා සෘණ අර්ධ චක්‍ර දෙකේදීම එකම දිශාවකට ධාරාව ගලා යයි.",
+      "competency": "11.4 Analyzes AC rectification circuits using semiconductor diodes."
+    },
+    "demoFlashcard": {
+      "id": "demo-fc11-11",
+      "topicEn": "Transistor Terminals",
+      "topicSi": "ට්‍රාන්සිස්ටර අග්‍ර",
+      "frontEn": "What are the three terminals of a bipolar junction transistor (BJT)?",
+      "frontSi": "ද්විධ්‍රැව සන්ධි ට්‍රාන්සිස්ටරයක (BJT) අග්‍ර 3 නම් කරන්න?",
+      "backEn": "Emitter (E), Base (B), and Collector (C).",
+      "backSi": "විමෝචකය (Emitter - E), පාදම (Base - B), සහ සංග්‍රාහකය (Collector - C).",
+      "tag": "Electronics"
+    }
+  },
+
+  {
+    "id": "g11-u12",
+    "grade": 11,
+    "unitNumber": 12,
+    "category": "chemistry",
+    "titleEn": "Electrochemistry",
+    "titleSi": "විද්‍යුත් රසායනය",
+    "descriptionEn": "Electrochemical cells (simple Voltaic, Daniel cell, dry cells, accumulators), standard electrode potentials and activity series of metals, electrolysis of molten and aqueous solutions, electroplating, and metal corrosion prevention.",
+    "descriptionSi": "විද්‍යුත් රසායනික කෝෂ (සරල කෝෂය, ඩැනියෙල් කෝෂය, වියළි කෝෂ, සංචායක), ලෝහවල සක්‍රියතා ශ්‍රේණිය, විද්‍යුත් විච්ඡේදනය, විද්‍යුත් ආලේපනය සහ ලෝහ විඛාදනය වැළැක්වීම.",
+    "subtopics": [
+      {
+        "id": "12.1",
+        "titleEn": "Electrochemical Cells",
+        "titleSi": "විද්‍යුත් රසායනික කෝෂ",
+        "descriptionEn": "Primary and secondary cells, simple Voltaic cell, Daniel cell, dry cell, lead-acid accumulator, redox reactions at electrodes, and electromotive force (EMF).",
+        "descriptionSi": "ප්‍රාථමික හා ද්විතීයික කෝෂ, සරල කෝෂය, ඩැනියෙල් කෝෂය, වියළි කෝෂය, ඊයම්-අම්ල සංචායකය, අග්‍රවල සිදුවන රෙඩොක්ස් ප්‍රතික්‍රියා සහ විද්‍යුත් ගාමක බලය (EMF)."
+      },
+      {
+        "id": "12.2",
+        "titleEn": "Electrolysis",
+        "titleSi": "විද්‍යුත් විච්ඡේදනය",
+        "descriptionEn": "Electrolytes vs non-electrolytes, electrolysis of molten NaCl, acidified water, and copper sulfate solution; industrial applications: electroplating, copper purification, and extraction of reactive metals.",
+        "descriptionSi": "විද්‍යුත් විච්ඡේද්‍ය හා විද්‍යුත් නොවිච්ඡේද්‍ය, විලයිත NaCl, අම්ලිකෘත ජලය හා CuSO4 ද්‍රාවණ විද්‍යුත් විච්ඡේදනය, විද්‍යුත් ආලේපනය සහ තඹ පිරිසිදු කිරීමේ කාර්මික යෙදීම්."
+      },
+      {
+        "id": "12.3",
+        "titleEn": "Corrosion of Metals",
+        "titleSi": "ලෝහ විඛාදනය",
+        "descriptionEn": "Rusting of iron: conditions required (oxygen and water), electrochemical mechanism of rusting, and rust prevention methods (painting, galvanising, cathodic protection, sacrificial anode).",
+        "descriptionSi": "යකඩ මළබැඳීම: අවශ්‍ය සාධක (ඔක්සිජන් හා ජලය), විද්‍යුත් රසායනික ක්‍රියාවලිය, සහ මළබැඳීම වැළැක්වීමේ ක්‍රම (තීන්ත ආලේපය, ගැල්වනයිස් කිරීම, කැතෝඩික ආරක්ෂණය හා කැපකිරීමේ ඇනෝඩ)."
+      }
+    ],
+    "pastPapers": [
+      {
+        "id": "p11-12-1",
+        "year": "2023",
+        "nameEn": "G.C.E. O/L 2023 - Electrolysis & Electroplating",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2023 - විද්‍යුත් විච්ඡේදනය සහ විද්‍යුත් ආලේපනය",
+        "fileType": "PDF",
+        "size": "2.2 MB",
+        "coverage": "Copper electroplating on iron spoon, anode/cathode reactions"
+      },
+      {
+        "id": "p11-12-2",
+        "year": "2022",
+        "nameEn": "G.C.E. O/L 2022 - Daniel Cell & Activity Series",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2022 - ඩැනියෙල් කෝෂය සහ ලෝහ සක්‍රියතා ශ්‍රේණිය",
+        "fileType": "PDF",
+        "size": "1.9 MB",
+        "coverage": "Zn/Cu half-cell reactions, salt bridge function"
+      },
+      {
+        "id": "p11-12-3",
+        "year": "2021",
+        "nameEn": "North Western Province Target Paper 2021",
+        "nameSi": "වයඹ පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        "fileType": "PDF",
+        "size": "2.3 MB",
+        "coverage": "Iron corrosion mechanisms, sacrificial protection with Mg"
+      }
+    ],
+    "quizInfo": {
+      "totalQuestions": 22,
+      "durationMinutes": 25,
+      "difficulty": "Hard"
+    },
+    "totalQuestions": 22,
+    "totalFlashcards": 18,
+    "targetPapers": [
+      "O/L 2023",
+      "O/L 2022",
+      "North Western 2021"
+    ],
+    "demoQuestion": {
+      "id": "demo-q11-12",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "textEn": "When electroplating an iron spoon with silver, which metal should be used as the anode and what should the electrolyte be?",
+      "textSi": "යකඩ හැන්දක් රිදී ලෝහයෙන් විද්‍යුත් ආලේපනය කිරීමේදී ඇනෝඩය ලෙස යොදාගත යුතු ලෝහය සහ විද්‍යුත් විච්ඡේද්‍යය විය යුත්තේ කුමක්ද?",
+      "optionsEn": [
+        "Anode: Pure Silver; Electrolyte: Silver nitrate solution",
+        "Anode: Iron spoon; Electrolyte: Silver nitrate solution",
+        "Anode: Pure Silver; Electrolyte: Iron sulfate solution",
+        "Anode: Carbon rod; Electrolyte: Dilute sulfuric acid"
+      ],
+      "optionsSi": [
+        "ඇනෝඩය: පිරිසිදු රිදී; විද්‍යුත් විච්ඡේද්‍යය: රිදී නයිට්‍රේට් ද්‍රාවණය",
+        "ඇනෝඩය: යකඩ හැන්ද; විද්‍යුත් විච්ඡේද්‍යය: රිදී නයිට්‍රේට් ද්‍රාවණය",
+        "ඇනෝඩය: පිරිසිදු රිදී; විද්‍යුත් විච්ඡේද්‍යය: අයන් සල්ෆේට් ද්‍රාවණය",
+        "ඇනෝඩය: කාබන් දණ්ඩ; විද්‍යුත් විච්ඡේද්‍යය: තනුක සල්ෆියුරික් අම්ලය"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "In electroplating, the coating metal (pure Silver) must be connected to the anode (positive terminal) so it oxidises to Ag⁺ ions, while the object to be coated (iron spoon) is at the cathode. The electrolyte must contain ions of the coating metal (e.g., AgNO₃).",
+      "explanationSi": "විද්‍යුත් ආලේපනයේදී ආලේප කරන ලෝහය (රිදී) ඇනෝඩය ලෙසත් ආලේප ලබන ද්‍රව්‍යය (යකඩ හැන්ද) කැතෝඩය ලෙසත් තැබිය යුතු අතර, විද්‍යුත් විච්ඡේද්‍යය ආලේප කරන ලෝහයේ ලවණ ද්‍රාවණයක් (AgNO₃) විය යුතුය.",
+      "competency": "12.2 Demonstrates understanding of electroplating and industrial electrolysis."
+    },
+    "demoFlashcard": {
+      "id": "demo-fc11-12",
+      "topicEn": "Daniel Cell",
+      "topicSi": "ඩැනියෙල් කෝෂය",
+      "frontEn": "What is the function of the porous pot or salt bridge in a Daniel cell?",
+      "frontSi": "ඩැනියෙල් කෝෂයක සිදුරු සහිත බඳුනේ හෝ ලවණ පාලමේ කාර්යය කුමක්ද?",
+      "backEn": "Allows ion flow to maintain electrical neutrality while preventing direct mixing of the two electrolytes.",
+      "backSi": "ද්‍රාවණ දෙක සෘජුව මිශ්‍ර වීම වළක්වමින්, අභ්‍යන්තර පරිපථය සම්පූර්ණ කිරීමට අයන ගමන් කිරීමට ඉඩ සැලසීම.",
+      "tag": "Electrochemistry"
+    }
+  },
+
+  {
+    "id": "g11-u13",
+    "grade": 11,
+    "unitNumber": 13,
+    "category": "physics",
+    "titleEn": "Electromagnetism and Electromagnetic Induction",
+    "titleSi": "විද්‍යුත් චුම්බකත්වය සහ විද්‍යුත් චුම්බක ප්‍රේරණය",
+    "descriptionEn": "Magnetic fields of electric currents, Fleming's Left-Hand Rule, electric motors, electromagnetic induction, Faraday's law, Lenz's law, AC/DC generators, and step-up and step-down transformers.",
+    "descriptionSi": "විදුලි ධාරාවල චුම්බක ක්ෂේත්‍ර, ෆ්ලෙමින්ගේ වමත් නියමය, DC විදුලි මෝටරය, විද්‍යුත් චුම්බක ප්‍රේරණය, ෆැරඩේ නියමය, ලෙන්ස් නියමය, විදුලි ජනක යන්ත්‍ර සහ පරිණාමක.",
+    "subtopics": [
+      {
+        "id": "13.1",
+        "titleEn": "Magnetism",
+        "titleSi": "චුම්බකත්වය",
+        "descriptionEn": "Magnetic poles, magnetic field lines, Earth's magnetic field, and magnetic materials (ferromagnetic, paramagnetic, diamagnetic).",
+        "descriptionSi": "චුම්බක ධ්‍රැව, චුම්බක බල රේඛා, පෘථිවි චුම්බක ක්ෂේත්‍රය සහ චුම්බක ද්‍රව්‍ය වර්ගීකරණය."
+      },
+      {
+        "id": "13.2",
+        "titleEn": "Magnetic Effect of a Current",
+        "titleSi": "ධාරාවක චුම්බක ඵලය",
+        "descriptionEn": "Right-hand grip rule for straight conductors and solenoids, electromagnets, Fleming's Left-Hand Rule, force on a current-carrying conductor, and operation of a DC electric motor.",
+        "descriptionSi": "දකුණත් දඟර නියමය, සොලනොයිඩයක චුම්බක ක්ෂේත්‍රය, විද්‍යුත් චුම්බක, ෆ්ලෙමින්ගේ වමත් නියමය, චුම්බක ක්ෂේත්‍රයක ධාරාවක් ගෙන යන සන්නායකයක් මත බලය සහ DC මෝටරයේ ක්‍රියාකාරිත්වය."
+      },
+      {
+        "id": "13.3",
+        "titleEn": "Electromagnetic Induction",
+        "titleSi": "විද්‍යුත් චුම්බක ප්‍රේරණය",
+        "descriptionEn": "Faraday's experiment and law, Lenz's law, Fleming's Right-Hand Rule, AC and DC dynamo generators, and step-up and step-down transformers (Np/Ns = Vp/Vs).",
+        "descriptionSi": "ෆැරඩේගේ පරීක්ෂණ හා නියමය, ලෙන්ස් නියමය, ෆ්ලෙමින්ගේ දකුණත් නියමය, විදුලි ජනක යන්ත්‍ර (AC/DC ඩයිනමෝ) සහ පරිණාමක සමීකරණ (Np/Ns = Vp/Vs)."
+      }
+    ],
+    "pastPapers": [
+      {
+        "id": "p11-13-1",
+        "year": "2023",
+        "nameEn": "G.C.E. O/L 2023 - Transformers & Induction Principles",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2023 - පරිණාමක සහ ප්‍රේරණ මූලධර්ම",
+        "fileType": "PDF",
+        "size": "2.4 MB",
+        "coverage": "Transformer equation Np/Ns = Vp/Vs, power transmission"
+      },
+      {
+        "id": "p11-13-2",
+        "year": "2022",
+        "nameEn": "G.C.E. O/L 2022 - DC Motor vs AC Generator",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2022 - DC මෝටරය සහ AC ජනකය",
+        "fileType": "PDF",
+        "size": "2.1 MB",
+        "coverage": "Fleming's rules, split-ring commutator vs slip rings"
+      },
+      {
+        "id": "p11-13-3",
+        "year": "2021",
+        "nameEn": "Sabaragamuwa Province Target Paper 2021",
+        "nameSi": "සබරගමුව පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        "fileType": "PDF",
+        "size": "2.0 MB",
+        "coverage": "Solenoid polarity determination, electromagnetic relays"
+      }
+    ],
+    "quizInfo": {
+      "totalQuestions": 22,
+      "durationMinutes": 25,
+      "difficulty": "Hard"
+    },
+    "totalQuestions": 22,
+    "totalFlashcards": 18,
+    "targetPapers": [
+      "O/L 2023",
+      "O/L 2022",
+      "Sabaragamuwa 2021"
+    ],
+    "demoQuestion": {
+      "id": "demo-q11-13",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "textEn": "A step-down transformer has 1000 turns in the primary coil and 100 turns in the secondary coil. If an alternating voltage of 240 V is supplied to the primary coil, what is the output voltage from the secondary coil?",
+      "textSi": "අපක්‍රමණ පරිණාමකයක ප්‍රාථමික දඟරයේ පොටවල් 1000 ක් සහ ද්විතීයික දඟරයේ පොටවල් 100 ක් ඇත. ප්‍රාථමික දඟරයට 240 V ප්‍රත්‍යාවර්ත වෝල්ටීයතාවක් ලබාදුනහොත් ද්විතීයික දඟරයෙන් ලැබෙන ප්‍රතිදාන වෝල්ටීයතාව කොපමණද?",
+      "optionsEn": [
+        "12 V",
+        "24 V",
+        "48 V",
+        "2400 V"
+      ],
+      "optionsSi": [
+        "12 V",
+        "24 V",
+        "48 V",
+        "2400 V"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Using the transformer equation Vp / Vs = Np / Ns: 240 / Vs = 1000 / 100 => Vs = 240 / 10 = 24 V.",
+      "explanationSi": "පරිණාමක සමීකරණයට අනුව Vp / Vs = Np / Ns: 240 / Vs = 1000 / 100 => Vs = 240 / 10 = 24 V ලැබේ.",
+      "competency": "13.3 Solves numerical problems related to transformers and induction."
+    },
+    "demoFlashcard": {
+      "id": "demo-fc11-13",
+      "topicEn": "Commutator Function",
+      "topicSi": "කොමියුටේටරයේ කාර්යය",
+      "frontEn": "What is the purpose of the split-ring commutator in a direct current (DC) motor?",
+      "frontSi": "සරල ධාරා (DC) මෝටරයක පැළුම් වලලු කොමියුටේටරයේ කාර්යය කුමක්ද?",
+      "backEn": "Reverses the direction of electric current in the rotating coil every half rotation to keep it rotating continuously in one direction.",
+      "backSi": "දඟරය එකම දිශාවකට අඛණ්ඩව භ්‍රමණය කරවීම සඳහා සෑම අර්ධ භ්‍රමණයකට වරක් දඟරය තුළ ධාරාවේ දිශාව මාරු කිරීම.",
+      "tag": "Electromagnetism"
+    }
+  },
+
+  {
+    "id": "g11-u14",
+    "grade": 11,
+    "unitNumber": 14,
+    "category": "chemistry",
+    "titleEn": "Hydrocarbons and Their Derivatives",
+    "titleSi": "හයිඩ්‍රොකාබන සහ ඒවායේ ව්‍යුත්පන්න",
+    "descriptionEn": "Hydrocarbons: alkanes, alkenes, alkynes; isomerism, combustion and addition reactions; derivatives of ethene, monomers and polymers (polythene, PVC, Teflon), plastics classification, and sustainable recycling.",
+    "descriptionSi": "හයිඩ්‍රොකාබන: ඇල්කේන, ඇල්කීන, ඇල්කයින; සමඝටකතාව, දහන හා ආකලන ප්‍රතික්‍රියා; එතීන්හි ව්‍යුත්පන්න, මොනෝමර හා බහුඅවයවික (පොලිතීන්, PVC, ටෙෆ්ලෝන්), ප්ලාස්ටික් වර්ගීකරණය සහ ප්‍රතිචක්‍රීකරණය.",
+    "subtopics": [
+      {
+        "id": "14.1",
+        "titleEn": "Hydrocarbons",
+        "titleSi": "හයිඩ්‍රොකාබන",
+        "descriptionEn": "Definition of hydrocarbons, saturated vs unsaturated, alkanes (methane, ethane, propane, butane), alkenes (ethene), alkynes (ethyne), IUPAC nomenclature, and combustion reactions.",
+        "descriptionSi": "හයිඩ්‍රොකාබන හැඳින්වීම, සංතෘප්ත හා අසංතෘප්ත හයිඩ්‍රොකාබන, ඇල්කේන, ඇල්කීන, ඇල්කයින, නාමකරණය, දහන ප්‍රතික්‍රියා සහ බ්‍රෝමීන් ජලය සමඟ ආකලන ප්‍රතික්‍රියා."
+      },
+      {
+        "id": "14.2",
+        "titleEn": "Derivatives of Ethene",
+        "titleSi": "එතීන්හි ව්‍යුත්පන්න",
+        "descriptionEn": "Chloroethene (vinyl chloride), tetrafluoroethene, and industrial synthesis of useful organic precursors.",
+        "descriptionSi": "ක්ලෝරෝඑතීන් (වයිනයිල් ක්ලෝරයිඩ්), ටෙට්‍රාෆ්ලෝරෝඑතීන් සහ කාර්මික වශයෙන් වැදගත් කාබනික සංයෝග."
+      },
+      {
+        "id": "14.3",
+        "titleEn": "Polymers",
+        "titleSi": "බහුඅවයවික",
+        "descriptionEn": "Monomers and polymerisation, addition polymers (polythene, PVC, PTFE/Teflon, polystyrene), natural polymers (rubber, cellulose, protein), thermoplastics vs thermosetting plastics, and recycling codes.",
+        "descriptionSi": "මොනෝමර හා බහුඅවයවීකරණය, ආකලන බහුඅවයවික (පොලිතීන්, PVC, ටෙෆ්ලෝන්), ස්වාභාවික බහුඅවයවික (ස්වාභාවික රබර්), තාපස්ථාප්‍ය හා තාපසවි ප්ලාස්ටික් සහ ප්ලාස්ටික් ප්‍රතිචක්‍රීකරණය."
+      }
+    ],
+    "pastPapers": [
+      {
+        "id": "p11-14-1",
+        "year": "2023",
+        "nameEn": "G.C.E. O/L 2023 - Addition Polymerisation & Monomers",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2023 - ආකලන බහුඅවයවීකරණය සහ මොනෝමර",
+        "fileType": "PDF",
+        "size": "2.1 MB",
+        "coverage": "Ethene to polythene, vinyl chloride to PVC structure"
+      },
+      {
+        "id": "p11-14-2",
+        "year": "2022",
+        "nameEn": "G.C.E. O/L 2022 - Saturated vs Unsaturated Hydrocarbons",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2022 - සංතෘප්ත හා අසංතෘප්ත හයිඩ්‍රොකාබන",
+        "fileType": "PDF",
+        "size": "1.9 MB",
+        "coverage": "Bromine water decolourisation test for alkenes"
+      },
+      {
+        "id": "p11-14-3",
+        "year": "2021",
+        "nameEn": "Eastern Province Target Paper 2021",
+        "nameSi": "නැගෙනහිර පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        "fileType": "PDF",
+        "size": "2.3 MB",
+        "coverage": "Thermoplastics vs thermosetting plastics, recycling codes"
+      }
+    ],
+    "quizInfo": {
+      "totalQuestions": 20,
+      "durationMinutes": 25,
+      "difficulty": "Medium"
+    },
+    "totalQuestions": 20,
+    "totalFlashcards": 16,
+    "targetPapers": [
+      "O/L 2023",
+      "O/L 2022",
+      "Eastern Prov. 2021"
+    ],
+    "demoQuestion": {
+      "id": "demo-q11-14",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "textEn": "Which reagent is commonly used in laboratory tests to easily distinguish an unsaturated alkene (ethene) from a saturated alkane (ethane)?",
+      "textSi": "අසංතෘප්ත ඇල්කීනයක් (එතීන්) සහ සංතෘප්ත ඇල්කේනයක් (එතේන්) රසායනාගාරයේදී පහසුවෙන් වෙන්කර හඳුනාගැනීම සඳහා යොදාගන්නා ප්‍රතිකාරකය කුමක්ද?",
+      "optionsEn": [
+        "Bromine water (aqueous bromine solution)",
+        "Lime water (aqueous calcium hydroxide)",
+        "Acidified potassium dichromate solution",
+        "Dilute hydrochloric acid"
+      ],
+      "optionsSi": [
+        "බ්‍රෝමීන් ජලය (රතු-දුඹුරු පැහැති බ්‍රෝමීන් ද්‍රාවණය)",
+        "හුණු දියර (කැල්සියම් හයිඩ්‍රොක්සයිඩ් ද්‍රාවණය)",
+        "අම්ලික පොටෑසියම් ඩයික්‍රෝමේට් ද්‍රාවණය",
+        "තනුක හයිඩ්‍රොක්ලෝරික් අම්ලය"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "Ethene has a reactive carbon-carbon double bond (C=C) that undergoes an addition reaction with red-brown bromine water, rapidly decolourising it without needing sunlight, whereas ethane does not react under normal conditions.",
+      "explanationSi": "එතීන්හි අසංතෘප්ත ද්විත්ව බන්ධනයක් (C=C) ඇති බැවින් බ්‍රෝමීන් ජලය සමඟ ක්ෂණිකව ආකලන ප්‍රතික්‍රියා කර රතු-දුඹුරු පැහැය වර්ණ රහිත කරයි. එතේන් සාමාන්‍ය තත්ත්ව යටතේ එසේ ප්‍රතික්‍රියා නොකරයි.",
+      "competency": "14.1 Distinguishes between saturated and unsaturated hydrocarbons using chemical tests."
+    },
+    "demoFlashcard": {
+      "id": "demo-fc11-14",
+      "topicEn": "Plastics Classification",
+      "topicSi": "ප්ලාස්ටික් වර්ගීකරණය",
+      "frontEn": "What is the key physical difference between thermoplastics and thermosetting plastics when heated?",
+      "frontSi": "තාපය හමුවේ තාපස්ථාප්‍ය ප්ලාස්ටික් සහ තාපසවි ප්ලාස්ටික් අතර ඇති ප්‍රධාන භෞතික වෙනස කුමක්ද?",
+      "backEn": "Thermoplastics soften on heating and can be remoulded repeatedly; thermosetting plastics permanently harden and decompose rather than melt upon heating.",
+      "backSi": "තාපස්ථාප්‍ය ප්ලාස්ටික් රත්කළ විට මෘදු වී නැවත නැවත හැඩගැස්විය හැක; තාපසවි ප්ලාස්ටික් රත්කළ විට දිය නොවී වියෝජනය වන අතර නැවත හැඩගැස්විය නොහැක.",
+      "tag": "Organic Chemistry"
+    }
+  },
+
+  {
+    "id": "g11-u15",
+    "grade": 11,
+    "unitNumber": 15,
+    "category": "biology",
+    "titleEn": "Biosphere",
+    "titleSi": "ජීවගෝලය",
+    "descriptionEn": "Ecological organizational levels, ecosystem equilibrium, energy flow and biogeochemical cycles (carbon, nitrogen, water), environmental pollution (air, water, soil), climate change, and sustainable development.",
+    "descriptionSi": "පාරිසරික සංවිධාන මට්ටම්, පරිසර පද්ධතිවල සමතුලිතතාව, ශක්ති ගලායාම සහ ජෛව රසායනික චක්‍ර (කාබන්, නයිට්‍රජන්, ජල), පාරිසරික දූෂණය (වායු, ජල, පාංශු), දේශගුණික විපර්යාස සහ තිරසර සංවර්ධනය.",
+    "subtopics": [
+      {
+        "id": "15.1",
+        "titleEn": "Organizational Levels & Interactions of Biosphere",
+        "titleSi": "ජීවගෝලයේ සංවිධාන මට්ටම් හා අන්තර්ක්‍රියා",
+        "descriptionEn": "Individual, population, community, ecosystem, biome, and biosphere; symbiotic relationships (mutualism, commensalism, parasitism, predation, competition).",
+        "descriptionSi": "තනි ජීවියා, ගහනය, ප්‍රජාව, පරිසර පද්ධතිය, ජෛව හෝමය සහ ජීවගෝලය; ජීවීන් අතර අන්තර්ක්‍රියා (සහජීවනය, සහභෝජනය, පරපෝෂිතතාව, විලෝපනය, තරගය)."
+      },
+      {
+        "id": "15.2",
+        "titleEn": "Mechanisms Involved in Maintaining Equilibrium of Ecosystems",
+        "titleSi": "පරිසර පද්ධතිවල සමතුලිතතාව පවත්වා ගැනීමේ යාන්ත්‍රණ",
+        "descriptionEn": "Energy flow through trophic levels (10% rule), ecological pyramids (number, biomass, energy), carbon cycle, nitrogen cycle, and water cycle.",
+        "descriptionSi": "පෝෂී මට්ටම් ඔස්සේ ශක්ති ගලායාම (10% නියමය), පාරිසරික පිරමිඩ, කාබන් චක්‍රය, නයිට්‍රජන් චක්‍රය සහ ජල චක්‍රය."
+      },
+      {
+        "id": "15.3",
+        "titleEn": "Different Environmental Pollutants & Their Effects",
+        "titleSi": "පාරිසරික දූෂක සහ ඒවායේ බලපෑම්",
+        "descriptionEn": "Air pollutants (CO₂, SO₂, NOₓ, CFCs, particulates), acid rain, greenhouse effect, global warming, ozone layer depletion, water pollution, eutrophication, bioaccumulation, and soil degradation.",
+        "descriptionSi": "වායු දූෂණය (අම්ල වැසි, හරිතාගාර ආචරණය, ඕසෝන් වියන ක්ෂයවීම), ජල දූෂණය (සුපෝෂණය, ජෛව විශාලනය) සහ පාංශු දූෂණය."
+      },
+      {
+        "id": "15.4",
+        "titleEn": "Factors Affecting Human Lifestyle & Problems Created",
+        "titleSi": "මිනිස් ජීවන රටාව කෙරෙහි බලපාන සාධක හා ගැටලු",
+        "descriptionEn": "Deforestation, loss of biodiversity, desertification, urbanization, resource depletion, and natural disaster frequency.",
+        "descriptionSi": "වන විනාශය, ජෛව විවිධත්වය අහිමිවීම, කාන්තාරකරණය, සම්පත් අධිපරිභෝජනය සහ ස්වාභාවික ආපදා ඉහළ යාම."
+      },
+      {
+        "id": "15.5",
+        "titleEn": "Sustainable Development & Environmental Management",
+        "titleSi": "තිරසර සංවර්ධනය සහ පාරිසරික කළමනාකරණය",
+        "descriptionEn": "Concept of sustainability, 3R/5R practices, conservation of biodiversity, renewable energy resources, environmental legislation, and international conventions.",
+        "descriptionSi": "තිරසර සංවර්ධන සංකල්පය, 3R හා 5R භාවිත, ජෛව විවිධත්ව සංරක්ෂණය, පුනර්ජනනීය බලශක්තිය සහ පාරිසරික නීති."
+      }
+    ],
+    "pastPapers": [
+      {
+        "id": "p11-15-1",
+        "year": "2023",
+        "nameEn": "G.C.E. O/L 2023 - Ecological Pyramids & Nitrogen Cycle",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2023 - පාරිසරික පිරමිඩ සහ නයිට්‍රජන් චක්‍රය",
+        "fileType": "PDF",
+        "size": "2.3 MB",
+        "coverage": "Biomass vs energy pyramid, nitrifying bacteria"
+      },
+      {
+        "id": "p11-15-2",
+        "year": "2022",
+        "nameEn": "G.C.E. O/L 2022 - Global Warming & Acid Rain",
+        "nameSi": "අ.පො.ස. සා/පෙළ 2022 - ගෝලීය උණුසුම සහ අම්ල වැසි",
+        "fileType": "PDF",
+        "size": "1.9 MB",
+        "coverage": "Greenhouse gases, SO2 and NOx chemical impacts"
+      },
+      {
+        "id": "p11-15-3",
+        "year": "2021",
+        "nameEn": "North Central Province Target Paper 2021",
+        "nameSi": "උතුරු මැද පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        "fileType": "PDF",
+        "size": "2.4 MB",
+        "coverage": "Water eutrophication, algae bloom, bioaccumulation"
+      }
+    ],
+    "quizInfo": {
+      "totalQuestions": 25,
+      "durationMinutes": 30,
+      "difficulty": "Medium"
+    },
+    "totalQuestions": 25,
+    "totalFlashcards": 22,
+    "targetPapers": [
+      "O/L 2023",
+      "O/L 2022",
+      "North Central 2021"
+    ],
+    "demoQuestion": {
+      "id": "demo-q11-15",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "textEn": "Which of the following ecological pyramids can NEVER be inverted in any natural, balanced ecosystem?",
+      "textSi": "ස්වාභාවික, සමතුලිත කිසිදු පරිසර පද්ධතියක කණපිට පෙරළුණු (ප්‍රතිලෝම) ස්වභාවයක් නොගන්නේ පහත සඳහන් කුමන පාරිසරික පිරමිඩයද?",
+      "optionsEn": [
+        "Pyramid of Energy",
+        "Pyramid of Numbers",
+        "Pyramid of Biomass in an aquatic ecosystem",
+        "Pyramid of Biomass in a forest ecosystem"
+      ],
+      "optionsSi": [
+        "ශක්ති පිරමිඩය",
+        "සංඛ්‍යා පිරමිඩය",
+        "ජලජ පරිසර පද්ධතියක ජෛව ස්කන්ධ පිරමිඩය",
+        "වනාන්තර පරිසර පද්ධතියක ජෛව ස්කන්ධ පිරමිඩය"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "According to the laws of thermodynamics, energy is always lost as metabolic heat at each trophic transfer (roughly 90% lost, only ~10% transferred), so a Pyramid of Energy is ALWAYS upright and can never be inverted.",
+      "explanationSi": "තාපගති විද්‍යාවේ නියමයන්ට අනුව එක් පෝෂී මට්ටමකින් ඊළඟ මට්ටමට ශක්තිය ගමන් කිරීමේදී ශක්තියෙන් 90% ක් පමණ තාපය ලෙස හානි වන බැවින් ශක්ති පිරමිඩයක් සැමවිටම ඍජු වන අතර කිසිවිටෙකත් ප්‍රතිලෝම නොවේ.",
+      "competency": "15.2 Evaluates energy flow dynamics through ecological pyramids."
+    },
+    "demoFlashcard": {
+      "id": "demo-fc11-15",
+      "topicEn": "Eutrophication",
+      "topicSi": "සුපෝෂණය",
+      "frontEn": "What causes eutrophication in aquatic freshwater bodies?",
+      "frontSi": "ජලජ පරිසර පද්ධතිවල සුපෝෂණය (Eutrophication) ඇතිවීමට හේතුව කුමක්ද?",
+      "backEn": "Excessive enrichment of water with plant nutrients (especially nitrates and phosphates from agricultural runoff/fertilizers), causing explosive algal bloom and severe oxygen depletion.",
+      "backSi": "කෘෂිකාර්මික පොහොර සේදී ඒම නිසා ජලයට අධික ලෙස නයිට්‍රේට් සහ පොස්පේට් එකතු වීමෙන් ඇල්ගී අධිකව වර්ධනය වී දියවූ ඔක්සිජන් ක්ෂය වීම.",
+      "tag": "Environmental Biology"
+    }
+  }
 ];
 
 // Helper to find a unit by ID

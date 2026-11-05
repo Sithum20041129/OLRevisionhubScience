@@ -34,6 +34,12 @@ export default function UnitPage({ onOpenQuiz }) {
   // Retrieve current unit
   const currentUnit = getUnitById(id) || unitsData[0];
 
+  // Syllabus part determination (Grade 11 Units 9-15 are Part 2)
+  const isPart2 = (currentUnit.grade === 11 && currentUnit.unitNumber >= 9) || (currentUnit.grade === 10 && currentUnit.unitNumber > 10);
+  const partLabel = isPart2
+    ? (isSinhala ? `${currentUnit.grade} ශ්‍රේණිය විද්‍යාව - 2 වන කොටස` : `Grade ${currentUnit.grade} Science - Part 2`)
+    : (isSinhala ? `${currentUnit.grade} ශ්‍රේණිය විද්‍යාව - 1 වන කොටස` : `Grade ${currentUnit.grade} Science - Part 1`);
+
   // Scroll to top when unit changes
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -121,14 +127,14 @@ export default function UnitPage({ onOpenQuiz }) {
                       {/* Left: Syllabus Badges */}
                       <div className="flex flex-wrap items-center gap-2">
                         <span className="text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-xl bg-white/15 border border-white/25 backdrop-blur-md">
-                          {isSinhala ? `${currentUnit.grade} ශ්‍රේණිය විද්‍යාව - 1 වන කොටස` : `Grade ${currentUnit.grade} Science - Part 1`}
+                          {partLabel}
                         </span>
                           <span className={`text-xs font-bold px-3 py-1.5 rounded-xl border backdrop-blur-md flex items-center gap-1.5 ${theme.pillBg}`}>
                             <span>{theme.icon}</span>
                             <span>{theme.label}</span>
                           </span>
                           <span className="text-xs font-semibold px-2.5 py-1.5 rounded-xl bg-black/30 border border-white/10 text-slate-300">
-                            {isSinhala ? `පාඩම 0${currentUnit.unitNumber}` : `Unit 0${currentUnit.unitNumber}`}
+                            {isSinhala ? `පාඩම ${String(currentUnit.unitNumber).padStart(2, '0')}` : `Unit ${String(currentUnit.unitNumber).padStart(2, '0')}`}
                           </span>
                       </div>
 
