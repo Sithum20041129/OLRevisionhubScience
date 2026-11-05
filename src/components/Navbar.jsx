@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../context/useLanguage';
-import { Menu, X, Globe2, BookOpen, ChevronDown, Search, ArrowRight, Layers } from 'lucide-react';
+import { Menu, X, Globe2, BookOpen, ChevronDown, Search, ArrowRight, Layers, Sparkles } from 'lucide-react';
 import { unitsData } from '../data/unitsData';
 
-export default function Navbar() {
+export default function Navbar({ onOpenUpload }) {
   const navigate = useNavigate();
   const { language, toggleLanguage } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -114,8 +114,20 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Right: Actions (Bilingual Toggle & Login Button) */}
-          <div className="hidden md:flex items-center space-x-3 flex-shrink-0">
+          {/* Right: Actions (Bilingual Toggle, AI Import & Login Button) */}
+          <div className="hidden md:flex items-center space-x-2.5 flex-shrink-0">
+            {/* AI Import Studio Trigger */}
+            {onOpenUpload && (
+              <button
+                onClick={onOpenUpload}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-50 hover:bg-[#602d92] text-[#602d92] hover:text-white border border-purple-200 text-xs font-bold transition shadow-2xs cursor-pointer group"
+                title={isSinhala ? 'Gemini AI ප්‍රශ්න පත්‍ර ඇතුළත් කිරීම' : 'Import Questions & Flashcards via AI'}
+              >
+                <Sparkles className="w-3.5 h-3.5 text-[#602d92] group-hover:text-amber-300 transition-colors" />
+                <span>{isSinhala ? 'AI ඇතුළත් කිරීම' : 'AI Import'}</span>
+              </button>
+            )}
+
             {/* Bilingual Switcher Toggle */}
             <button
               onClick={toggleLanguage}
@@ -401,7 +413,20 @@ export default function Navbar() {
             FAQ
           </a>
           
-          <div className="pt-3">
+          {onOpenUpload && (
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenUpload();
+              }}
+              className="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-purple-50 text-[#602d92] font-bold text-xs border border-purple-200"
+            >
+              <Sparkles className="w-4 h-4" />
+              <span>{isSinhala ? 'AI ප්‍රශ්න පත්‍ර ඇතුළත් කිරීම' : 'AI Question Ingestion'}</span>
+            </button>
+          )}
+
+          <div className="pt-2">
             <a
               href="https://ol.lk/learn"
               target="_blank"

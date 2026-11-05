@@ -1,0 +1,773 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-11-05T15:15:18.316Z",
+  "questions": [
+    {
+      "id": "demo-q1",
+      "unitId": "g10-u1",
+      "subtopicId": "1.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "Which reagent gives a brick-red precipitate when boiled with a reducing sugar solution like glucose?",
+      "textSi": "ග්ලූකෝස් වැනි ඔක්සිහාරක සීනි ද්‍රාවණයක් සමඟ රත් කළ විට ගඩොල් රතු පැහැති අවක්ෂේපයක් ලබා දෙන ප්‍රතිකාරකය කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Iodine solution",
+        "Benedict's solution",
+        "Biuret reagent",
+        "Sudan III"
+      ],
+      "optionsSi": [
+        "අයඩින් ද්‍රාවණය",
+        "බෙනඩික්ට් ද්‍රාවණය",
+        "බයියුරෙට් ප්‍රතිකාරකය",
+        "සුඩාන් III"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Benedict's reagent reacts with reducing sugars (e.g. glucose, maltose) upon heating to form insoluble copper(I) oxide precipitate, turning from blue to green, yellow, and finally brick-red.",
+      "explanationSi": "ග්ලූකෝස් වැනි ඔක්සිහාරක සීනි බෙනඩික්ට් ද්‍රාවණය සමඟ රත් කළ විට නිල් පැහැයේ සිට කොළ, කහ සහ අවසානයේ ගඩොල් රතු පැහැ අවක්ෂේපයක් සාදයි.",
+      "competency": "1.1 Tests for organic biomolecules using laboratory chemical reagents.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q2",
+      "unitId": "g10-u2",
+      "subtopicId": "2.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Hard",
+      "textEn": "What does the area under a Velocity-Time (v-t) graph represent?",
+      "textSi": "ප්‍රවේග - කාල (v-t) ප්‍රස්ථාරයක් යටතේ වර්ගඵලයෙන් නිරූපණය වන්නේ කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Acceleration",
+        "Total Displacement",
+        "Instantaneous Speed",
+        "Force"
+      ],
+      "optionsSi": [
+        "ත්වරණය",
+        "මුළු විස්ථාපනය",
+        "ක්ෂණික වේගය",
+        "බලය"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "The integral (area under the curve) of a velocity-time graph equals the displacement traversed by the object during that time interval.",
+      "explanationSi": "ප්‍රවේග - කාල ප්‍රස්ථාරයක ප්‍රස්ථාර රේඛාව සහ කාල අක්ෂය අතර ආවරණය වන වර්ගඵලයෙන් අදාළ කාලය තුළ වස්තුව සිදුකළ විස්ථාපනය ලැබේ.",
+      "competency": "2.1 Extracts kinematic quantities from motion graphs.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q3",
+      "unitId": "g10-u3",
+      "subtopicId": "3.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2022",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "The electronic configuration of an atom is 2, 8, 7. What is its group and period in the Periodic Table?",
+      "textSi": "පරමාණුවක ඉලෙක්ට්‍රෝන වින්‍යාසය 2, 8, 7 වේ. ආවර්තිතා වගුවේ එහි කාණ්ඩය සහ ආවර්තය පිළිවෙලින් කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Period 2, Group VII",
+        "Period 3, Group VII",
+        "Period 7, Group III",
+        "Period 3, Group II"
+      ],
+      "optionsSi": [
+        "2 වන ආවර්තය, VII කාණ්ඩය",
+        "3 වන ආවර්තය, VII කාණ්ඩය",
+        "7 වන ආවර්තය, III කාණ්ඩය",
+        "3 වන ආවර්තය, II කාණ්ඩය"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Number of occupied shells (3) gives Period 3. Number of valence electrons (7) gives Group VII (Halogens).",
+      "explanationSi": "ඉලෙක්ට්‍රෝන පිරි පවතින ශක්ති මට්ටම් ගණන 3ක් බැවින් 3 වන ආවර්තය ද, සංයුජතා ඉලෙක්ට්‍රෝන ගණන 7ක් බැවින් VII කාණ්ඩය ද නියෝජනය කරයි.",
+      "competency": "3.1 Relates atomic configuration to periodic table placement.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q6",
+      "unitId": "g10-u6",
+      "subtopicId": "6.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "Which organelle synthesizes ATP molecules via aerobic respiration in eukaryotic cells?",
+      "textSi": "යූකැරියෝටා සෛලවල සෛලීය ශ්වසනය මඟින් ATP ශක්තිය නිපදවන සෛල ඉන්ද්‍රියිකාව කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Ribosome",
+        "Mitochondrion",
+        "Golgi Complex",
+        "Chloroplast"
+      ],
+      "optionsSi": [
+        "රයිබොසෝමය",
+        "මයිටොකොන්ඩ්‍රියම",
+        "ගොල්ගි දේහය",
+        "හරිතලවය"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Mitochondria are the primary sites of aerobic respiration, oxidizing glucose to generate cellular energy in the form of ATP.",
+      "explanationSi": "මයිටොකොන්ඩ්‍රියා සෛලයේ බලශක්ති බලාගාරය වන අතර එහිදී ග්ලූකෝස් ඔක්සිකරණයෙන් සෛලයට අවශ්‍ය ATP ශක්තිය නිපදවයි.",
+      "competency": "6.1 Identifies cellular organelles and associates structure with biological function.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-1",
+      "unitId": "g11-u1",
+      "subtopicId": "1.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "Which of the following plant tissues is responsible for the translocation of synthesized food (sucrose) in plants?",
+      "textSi": "ශාක තුළ සංස්ලේෂණය කළ ආහාර (සුක්‍රෝස්) පරිවහනය කිරීම සඳහා වගකියනු ලබන ශාක පටකය කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Xylem tissue",
+        "Phloem tissue",
+        "Parenchyma tissue",
+        "Collenchyma tissue"
+      ],
+      "optionsSi": [
+        "ශෛලම පටකය",
+        "ප්ලෝයම පටකය",
+        "මෘදුස්තර පටකය",
+        "ස්ථූලකෝණාස්තර පටකය"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Phloem tissue translocates organic solutes (mainly sucrose) from photosynthesizing leaves to storage organs through sieve tube elements and companion cells.",
+      "explanationSi": "ප්‍රභාසංස්ලේෂක පත්‍රවල සිට ගබඩා අංග කරා පෙනේර නළ මූලද්‍රව්‍ය සහ සහකාර සෛල ඔස්සේ කාබනික ආහාර පරිවහනය කරන්නේ ප්ලෝයම පටකයයි.",
+      "competency": "1.1 Understands structure and functions of plant tissues.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-2",
+      "unitId": "g11-u2",
+      "subtopicId": "2.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2022 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "During an experiment to demonstrate that light is necessary for photosynthesis, why are potted green plants kept in darkness for 48 hours prior to the experiment?",
+      "textSi": "ප්‍රභාසංස්ලේෂණය සඳහා ආලෝකය අවශ්‍ය බව පෙන්වීමේ පරීක්ෂණයකට පෙර, බඳුන් කළ ශාකය පැය 48ක් අඳුරේ තබන්නේ ඇයි?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "To stop respiration",
+        "To destroy chlorophyll",
+        "To destarch the leaves completely",
+        "To absorb carbon dioxide"
+      ],
+      "optionsSi": [
+        "ශ්වසනය නැවැත්වීමට",
+        "ක්ලෝරොෆිල් විනාශ කිරීමට",
+        "පත්‍රවල ඇති පිෂ්ඨය සම්පූර්ණයෙන්ම ඉවත් කිරීමට (අපිෂ්ඨීකරණයට)",
+        "කාබන්ඩයොක්සයිඩ් අවශෝෂණයට"
+      ],
+      "correctIndex": 2,
+      "explanationEn": "Keeping plants in darkness forces them to consume stored starch via cellular respiration, ensuring that any starch detected after light exposure was freshly synthesized.",
+      "explanationSi": "ශාකය අඳුරේ තැබීමෙන් පත්‍රවල පෙර ගබඩා වූ පිෂ්ඨය ශ්වසනය සඳහා වැය වී අපිෂ්ඨීකරණය වේ. එවිට ආලෝකය ලැබුණු පසු සෑදෙන පිෂ්ඨය පමණක් පරීක්ෂා කළ හැකිය.",
+      "competency": "2.1 Demonstrates scientific experiments related to photosynthesis.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-3",
+      "unitId": "g11-u3",
+      "subtopicId": "3.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part II)",
+      "year": 2023,
+      "difficulty": "Hard",
+      "textEn": "What is the concentration in mol dm⁻³ of a solution prepared by dissolving 4.0 g of NaOH (molar mass = 40 g mol⁻¹) in water to make 500 cm³ of solution?",
+      "textSi": "NaOH 4.0 g ක් (මවුලික ස්කන්ධය = 40 g mol⁻¹) ජලයේ දියකර 500 cm³ ක ද්‍රාවණයක් පිළියෙල කළ විට එහි සාන්ද්‍රණය mol dm⁻³ වලින් කොපමණද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "0.1 mol dm⁻³",
+        "0.2 mol dm⁻³",
+        "0.4 mol dm⁻³",
+        "1.0 mol dm⁻³"
+      ],
+      "optionsSi": [
+        "0.1 mol dm⁻³",
+        "0.2 mol dm⁻³",
+        "0.4 mol dm⁻³",
+        "1.0 mol dm⁻³"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Moles of NaOH = 4.0 g / 40 g mol⁻¹ = 0.1 mol. Volume = 500 cm³ = 0.5 dm³. Concentration C = n / V = 0.1 mol / 0.5 dm³ = 0.2 mol dm⁻³.",
+      "explanationSi": "NaOH මවුල ගණන = 4.0 / 40 = 0.1 mol. පරිමාව = 500 / 1000 = 0.5 dm³. සාන්ද්‍රණය C = n / V = 0.1 / 0.5 = 0.2 mol dm⁻³.",
+      "competency": "3.2 Solves stoichiometric concentration calculations for chemical solutions.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-4",
+      "unitId": "g11-u4",
+      "subtopicId": "4.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Hard",
+      "textEn": "A sound wave has a frequency of 500 Hz and travels through air at 340 m s⁻¹. What is its wavelength?",
+      "textSi": "වාතය තුළ 340 m s⁻¹ ප්‍රවේගයෙන් ගමන් කරන ධ්වනි තරංගයක සංඛ්‍යාතය 500 Hz වේ. එහි තරංග ආයාමය කොපමණද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "0.68 m",
+        "1.47 m",
+        "170 m",
+        "170,000 m"
+      ],
+      "optionsSi": [
+        "0.68 m",
+        "1.47 m",
+        "170 m",
+        "170,000 m"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "Using the wave formula v = fλ: λ = v / f = 340 m s⁻¹ / 500 Hz = 0.68 m.",
+      "explanationSi": "v = fλ තරංග සමීකරණය භාවිතයෙන්: λ = v / f = 340 / 500 = 0.68 m.",
+      "competency": "4.1 Applies wave speed equations to solve physical problems.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-5",
+      "unitId": "g11-u5",
+      "subtopicId": "5.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Hard",
+      "textEn": "An object is placed at the center of curvature (2F) of a concave mirror. What are the characteristics of the image formed?",
+      "textSi": "අවතල දර්පණයක වක්‍රතා කේන්ද්‍රය (2F) මත වස්තුවක් තැබූ විට සෑදෙන ප්‍රතිබිම්බයේ ලක්ෂණ මොනවාද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Real, inverted, same size as object, at 2F",
+        "Virtual, erect, magnified, behind mirror",
+        "Real, inverted, diminished, between F and 2F",
+        "Real, inverted, magnified, beyond 2F"
+      ],
+      "optionsSi": [
+        "තාත්විකයි, යටිකුරුයි, වස්තුව තරම්මයි, 2F මත පිහිටයි",
+        "අතාත්විකයි, උඩුකුරුයි, විශාලිතයි, දර්පණය පිටුපසින් පිහිටයි",
+        "තාත්විකයි, යටිකුරුයි, කුඩායි, F සහ 2F අතර පිහිටයි",
+        "තාත්විකයි, යටිකුරුයි, විශාලිතයි, 2F ට ඔබ්බෙන් පිහිටයි"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "When an object is placed at the center of curvature (C = 2F) of a concave mirror, the reflected rays converge at C to produce a real, inverted image of the same size as the object.",
+      "explanationSi": "අවතල දර්පණයක වක්‍රතා කේන්ද්‍රය (2F) මත වස්තුවක් තැබූ විට, පරාවර්තී කිරණ නැවත 2F හිදී ඡේදනය වී වස්තුවේ ප්‍රමාණයටම සමාන, තාත්වික, යටිකුරු ප්‍රතිබිම්බයක් සාදයි.",
+      "competency": "5.2 Constructs ray diagrams for curved spherical mirrors.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-6",
+      "unitId": "g11-u6",
+      "subtopicId": "6.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "Which hormone is secreted by the islets of Langerhans in the pancreas to convert excess blood glucose into glycogen in the liver?",
+      "textSi": "රුධිරයේ ඇති අතිරික්ත ග්ලූකෝස් අක්මාව තුළ ග්ලයිකොජන් බවට පත් කිරීම සඳහා අග්න්‍යාශයේ ලැන්ගර්හැන්ස් දූපත් මගින් ස්‍රාවය කරන හෝමෝනය කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Glucagon",
+        "Insulin",
+        "Thyroxine",
+        "Adrenaline"
+      ],
+      "optionsSi": [
+        "ග්ලූකොගන්",
+        "ඉන්සියුලින්",
+        "තයිරොක්සින්",
+        "ඇඩ්‍රිනලින්"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Beta cells of the pancreatic islets of Langerhans secrete insulin, which lowers elevated blood glucose by promoting cellular glucose uptake and conversion to stored glycogen.",
+      "explanationSi": "රුධිරයේ ග්ලූකෝස් මට්ටම ඉහළ ගිය විට අග්න්‍යාශයේ බීටා සෛල මඟින් ඉන්සියුලින් ස්‍රාවය කර අතිරික්ත ග්ලූකෝස් අක්මාව හා පේශිවල ග්ලයිකොජන් ලෙස තැන්පත් කරයි.",
+      "competency": "6.5 Explains homeostatic regulation mechanisms in the human body.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-7",
+      "unitId": "g11-u7",
+      "subtopicId": "7.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2022 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "Which gas is liberated when dilute hydrochloric acid reacts with calcium carbonate (CaCO3)?",
+      "textSi": "තනුක හයිඩ්‍රොක්ලෝරික් අම්ලය කැල්සියම් කාබනේට් (CaCO3) සමඟ ප්‍රතික්‍රියා කළ විට පිටවන වායුව කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Hydrogen (H2)",
+        "Oxygen (O2)",
+        "Carbon dioxide (CO2)",
+        "Chlorine (Cl2)"
+      ],
+      "optionsSi": [
+        "හයිඩ්‍රජන් (H2)",
+        "ඔක්සිජන් (O2)",
+        "කාබන්ඩයොක්සයිඩ් (CO2)",
+        "ක්ලෝරීන් (Cl2)"
+      ],
+      "correctIndex": 2,
+      "explanationEn": "Acids react with metal carbonates to form a salt, water, and liberate carbon dioxide gas (CaCO3 + 2HCl -> CaCl2 + H2O + CO2).",
+      "explanationSi": "අම්ල ලෝහ කාබනේට් සමඟ ප්‍රතික්‍රියා කළ විට ලවණය, ජලය සහ කාබන්ඩයොක්සයිඩ් වායුව පිටකරයි (CaCO3 + 2HCl -> CaCl2 + H2O + CO2).",
+      "competency": "7.1 Investigates chemical reactions of acids with carbonates.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-8",
+      "unitId": "g11-u8",
+      "subtopicId": "8.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Hard",
+      "textEn": "Which of the following is an example of an endothermic process in chemistry?",
+      "textSi": "පහත සඳහන් ඒවා අතරින් රසායන විද්‍යාවේ තාපාවශෝෂක ක්‍රියාවලියකට උදාහරණයක් වන්නේ කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Dissolving solid ammonium chloride (NH4Cl) in water",
+        "Reaction between magnesium ribbon and dilute hydrochloric acid",
+        "Neutralisation between sodium hydroxide and hydrochloric acid",
+        "Burning of a candle in air"
+      ],
+      "optionsSi": [
+        "ඝන ඇමෝනියම් ක්ලෝරයිඩ් (NH4Cl) ජලයේ දියවීම",
+        "මැග්නීසියම් පටියක් තනුක හයිඩ්‍රොක්ලෝරික් අම්ලය සමඟ ප්‍රතික්‍රියා කිරීම",
+        "සෝඩියම් හයිඩ්‍රොක්සයිඩ් සහ හයිඩ්‍රොක්ලෝරික් අම්ලය අතර උදාසීනීකරණය",
+        "වාතය තුළ ඉටිපන්දමක් දැල්වීම"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "Dissolution of solid ammonium chloride absorbs thermal energy from the aqueous solution, resulting in a measurable drop in temperature (endothermic process).",
+      "explanationSi": "ඝන ඇමෝනියම් ක්ලෝරයිඩ් ජලයේ දියවීමේදී පරිසරයෙන් තාපය අවශෝෂණය කරන බැවින් උෂ්ණත්වය පහළ බසී (තාපාවශෝෂක ක්‍රියාවලියකි).",
+      "competency": "8.2 Distinguishes between exothermic and endothermic chemical processes.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-9",
+      "unitId": "g11-u9",
+      "subtopicId": "9.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "Which physical property of water is responsible for aquatic life surviving under ice in frozen lakes during severe winters?",
+      "textSi": "දැඩි ශීත ඍතුවේදී මිදුණු විල්වල අයිස් තට්ටුව යට ජලජ ජීවීන්ට ජීවත්වීමට ඉඩ සලසන ජලයේ භෞතික ගුණය කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Anomalous expansion of water between 0 °C and 4 °C (maximum density at 4 °C)",
+        "High specific heat capacity of ice compared to liquid water",
+        "Low thermal conductivity of solid metals",
+        "High latent heat of vaporisation of water"
+      ],
+      "optionsSi": [
+        "0 °C සිට 4 °C අතර ජලයේ විෂම ප්‍රසාරණය (4 °C දී උපරිම ඝනත්වය ලැබීම)",
+        "ද්‍රව ජලයට සාපේක්ෂව අයිස්වල විශිෂ්ට තාප ධාරිතාව ඉහළ වීම",
+        "ඝන ලෝහවල තාප සන්නායකතාව අඩු වීම",
+        "ජලයේ වාෂ්පීභවනයේ විශිෂ්ට ගුප්ත තාපය ඉහළ අගයක් ගැනීම"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "Water reaches its maximum density at 4 °C. As surface water cools below 4 °C, it expands, becomes less dense, and floats as surface ice (insulating layer), while 4 °C liquid water remains at the bottom.",
+      "explanationSi": "ජලය 4 °C දී උපරිම ඝනත්වයට පත් වේ. මතුපිට ජලය 4 °C ට වඩා සිසිල් වන විට ප්‍රසාරණය වී ඝනත්වය අඩුවී මතුපිට පාවෙන අයිස් තට්ටුවක් සාදයි; පතුලේ 4 °C ජලය රැඳී ජලජ ජීවීන්ට ආරක්ෂාව සපයයි.",
+      "competency": "9.4 Explains practical applications and natural consequences of thermal expansion.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-10",
+      "unitId": "g11-u10",
+      "subtopicId": "10.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "An electric kettle rated at 2000 W is used for 30 minutes every day. What is the electrical energy consumed by the kettle in 30 days in kilowatt-hours (units)?",
+      "textSi": "2000 W ක්ෂමතාවක් සහිත විදුලි කේතලයක් දිනකට මිනිත්තු 30 බැගින් භාවිතා කරයි. දින 30 කදී එම කේතලය මඟින් පරිභෝජනය කරන විද්‍යුත් ශක්තිය කිලෝවොට් පැය (ඒකක) කීයක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "15 kWh",
+        "30 kWh",
+        "60 kWh",
+        "120 kWh"
+      ],
+      "optionsSi": [
+        "15 kWh",
+        "30 kWh",
+        "60 kWh",
+        "120 kWh"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Power = 2000 W = 2 kW. Time per day = 0.5 hours. Energy per day = 2 kW × 0.5 h = 1 kWh. For 30 days: 1 kWh × 30 = 30 kWh (30 units).",
+      "explanationSi": "ක්ෂමතාව = 2000 W = 2 kW. දිනකට කාලය = පැය 0.5. දිනකට වැයවන ශක්තිය = 2 kW × පැය 0.5 = 1 kWh. දින 30 සඳහා: 1 kWh × 30 = 30 kWh (ඒකක 30).",
+      "competency": "10.2 Calculates electrical energy consumption in kilowatt-hours.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-11",
+      "unitId": "g11-u11",
+      "subtopicId": "11.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Hard",
+      "textEn": "How many p-n junction diodes are connected together to construct a full-wave bridge rectifier?",
+      "textSi": "පූර්ණ තරංග පාලම් සෘජුකාරකයක් නිර්මාණය කිරීම සඳහා p-n සන්ධි ඩයෝඩ කීයක් එකිනෙක සම්බන්ධ කළ යුතුද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "optionsSi": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanationEn": "A full-wave bridge rectifier uses 4 diodes arranged in a bridge loop to conduct current through the load in the same direction during both positive and negative AC half-cycles.",
+      "explanationSi": "පූර්ණ තරංග පාලම් සෘජුකාරකයක් සඳහා ඩයෝඩ 4 ක් පාලම් ආකාරයෙන් සම්බන්ධ කරනු ලැබේ. එමඟින් ප්‍රත්‍යාවර්ත ධාරාවේ ධන හා සෘණ අර්ධ චක්‍ර දෙකේදීම එකම දිශාවකට ධාරාව ගලා යයි.",
+      "competency": "11.4 Analyzes AC rectification circuits using semiconductor diodes.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-12",
+      "unitId": "g11-u12",
+      "subtopicId": "12.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Hard",
+      "textEn": "When electroplating an iron spoon with silver, which metal should be used as the anode and what should the electrolyte be?",
+      "textSi": "යකඩ හැන්දක් රිදී ලෝහයෙන් විද්‍යුත් ආලේපනය කිරීමේදී ඇනෝඩය ලෙස යොදාගත යුතු ලෝහය සහ විද්‍යුත් විච්ඡේද්‍යය විය යුත්තේ කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Anode: Pure Silver; Electrolyte: Silver nitrate solution",
+        "Anode: Iron spoon; Electrolyte: Silver nitrate solution",
+        "Anode: Pure Silver; Electrolyte: Iron sulfate solution",
+        "Anode: Carbon rod; Electrolyte: Dilute sulfuric acid"
+      ],
+      "optionsSi": [
+        "ඇනෝඩය: පිරිසිදු රිදී; විද්‍යුත් විච්ඡේද්‍යය: රිදී නයිට්‍රේට් ද්‍රාවණය",
+        "ඇනෝඩය: යකඩ හැන්ද; විද්‍යුත් විච්ඡේද්‍යය: රිදී නයිට්‍රේට් ද්‍රාවණය",
+        "ඇනෝඩය: පිරිසිදු රිදී; විද්‍යුත් විච්ඡේද්‍යය: අයන් සල්ෆේට් ද්‍රාවණය",
+        "ඇනෝඩය: කාබන් දණ්ඩ; විද්‍යුත් විච්ඡේද්‍යය: තනුක සල්ෆියුරික් අම්ලය"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "In electroplating, the coating metal (pure Silver) must be connected to the anode (positive terminal) so it oxidises to Ag⁺ ions, while the object to be coated (iron spoon) is at the cathode. The electrolyte must contain ions of the coating metal (e.g., AgNO₃).",
+      "explanationSi": "විද්‍යුත් ආලේපනයේදී ආලේප කරන ලෝහය (රිදී) ඇනෝඩය ලෙසත් ආලේප ලබන ද්‍රව්‍යය (යකඩ හැන්ද) කැතෝඩය ලෙසත් තැබිය යුතු අතර, විද්‍යුත් විච්ඡේද්‍යය ආලේප කරන ලෝහයේ ලවණ ද්‍රාවණයක් (AgNO₃) විය යුතුය.",
+      "competency": "12.2 Demonstrates understanding of electroplating and industrial electrolysis.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-13",
+      "unitId": "g11-u13",
+      "subtopicId": "13.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Hard",
+      "textEn": "A step-down transformer has 1000 turns in the primary coil and 100 turns in the secondary coil. If an alternating voltage of 240 V is supplied to the primary coil, what is the output voltage from the secondary coil?",
+      "textSi": "අපක්‍රමණ පරිණාමකයක ප්‍රාථමික දඟරයේ පොටවල් 1000 ක් සහ ද්විතීයික දඟරයේ පොටවල් 100 ක් ඇත. ප්‍රාථමික දඟරයට 240 V ප්‍රත්‍යාවර්ත වෝල්ටීයතාවක් ලබාදුනහොත් ද්විතීයික දඟරයෙන් ලැබෙන ප්‍රතිදාන වෝල්ටීයතාව කොපමණද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "12 V",
+        "24 V",
+        "48 V",
+        "2400 V"
+      ],
+      "optionsSi": [
+        "12 V",
+        "24 V",
+        "48 V",
+        "2400 V"
+      ],
+      "correctIndex": 1,
+      "explanationEn": "Using the transformer equation Vp / Vs = Np / Ns: 240 / Vs = 1000 / 100 => Vs = 240 / 10 = 24 V.",
+      "explanationSi": "පරිණාමක සමීකරණයට අනුව Vp / Vs = Np / Ns: 240 / Vs = 1000 / 100 => Vs = 240 / 10 = 24 V ලැබේ.",
+      "competency": "13.3 Solves numerical problems related to transformers and induction.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-14",
+      "unitId": "g11-u14",
+      "subtopicId": "14.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "Which reagent is commonly used in laboratory tests to easily distinguish an unsaturated alkene (ethene) from a saturated alkane (ethane)?",
+      "textSi": "අසංතෘප්ත ඇල්කීනයක් (එතීන්) සහ සංතෘප්ත ඇල්කේනයක් (එතේන්) රසායනාගාරයේදී පහසුවෙන් වෙන්කර හඳුනාගැනීම සඳහා යොදාගන්නා ප්‍රතිකාරකය කුමක්ද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Bromine water (aqueous bromine solution)",
+        "Lime water (aqueous calcium hydroxide)",
+        "Acidified potassium dichromate solution",
+        "Dilute hydrochloric acid"
+      ],
+      "optionsSi": [
+        "බ්‍රෝමීන් ජලය (රතු-දුඹුරු පැහැති බ්‍රෝමීන් ද්‍රාවණය)",
+        "හුණු දියර (කැල්සියම් හයිඩ්‍රොක්සයිඩ් ද්‍රාවණය)",
+        "අම්ලික පොටෑසියම් ඩයික්‍රෝමේට් ද්‍රාවණය",
+        "තනුක හයිඩ්‍රොක්ලෝරික් අම්ලය"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "Ethene has a reactive carbon-carbon double bond (C=C) that undergoes an addition reaction with red-brown bromine water, rapidly decolourising it without needing sunlight, whereas ethane does not react under normal conditions.",
+      "explanationSi": "එතීන්හි අසංතෘප්ත ද්විත්ව බන්ධනයක් (C=C) ඇති බැවින් බ්‍රෝමීන් ජලය සමඟ ක්ෂණිකව ආකලන ප්‍රතික්‍රියා කර රතු-දුඹුරු පැහැය වර්ණ රහිත කරයි. එතේන් සාමාන්‍ය තත්ත්ව යටතේ එසේ ප්‍රතික්‍රියා නොකරයි.",
+      "competency": "14.1 Distinguishes between saturated and unsaturated hydrocarbons using chemical tests.",
+      "structuredParts": []
+    },
+    {
+      "id": "demo-q11-15",
+      "unitId": "g11-u15",
+      "subtopicId": "15.1",
+      "type": "mcq",
+      "paperSource": "G.C.E. O/L 2023 (Part I)",
+      "year": 2023,
+      "difficulty": "Medium",
+      "textEn": "Which of the following ecological pyramids can NEVER be inverted in any natural, balanced ecosystem?",
+      "textSi": "ස්වාභාවික, සමතුලිත කිසිදු පරිසර පද්ධතියක කණපිට පෙරළුණු (ප්‍රතිලෝම) ස්වභාවයක් නොගන්නේ පහත සඳහන් කුමන පාරිසරික පිරමිඩයද?",
+      "diagramUrl": "",
+      "optionsEn": [
+        "Pyramid of Energy",
+        "Pyramid of Numbers",
+        "Pyramid of Biomass in an aquatic ecosystem",
+        "Pyramid of Biomass in a forest ecosystem"
+      ],
+      "optionsSi": [
+        "ශක්ති පිරමිඩය",
+        "සංඛ්‍යා පිරමිඩය",
+        "ජලජ පරිසර පද්ධතියක ජෛව ස්කන්ධ පිරමිඩය",
+        "වනාන්තර පරිසර පද්ධතියක ජෛව ස්කන්ධ පිරමිඩය"
+      ],
+      "correctIndex": 0,
+      "explanationEn": "According to the laws of thermodynamics, energy is always lost as metabolic heat at each trophic transfer (roughly 90% lost, only ~10% transferred), so a Pyramid of Energy is ALWAYS upright and can never be inverted.",
+      "explanationSi": "තාපගති විද්‍යාවේ නියමයන්ට අනුව එක් පෝෂී මට්ටමකින් ඊළඟ මට්ටමට ශක්තිය ගමන් කිරීමේදී ශක්තියෙන් 90% ක් පමණ තාපය ලෙස හානි වන බැවින් ශක්ති පිරමිඩයක් සැමවිටම ඍජු වන අතර කිසිවිටෙකත් ප්‍රතිලෝම නොවේ.",
+      "competency": "15.2 Evaluates energy flow dynamics through ecological pyramids.",
+      "structuredParts": []
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "demo-fc1",
+      "unitId": "g10-u1",
+      "subtopicId": "1.1",
+      "topicEn": "Biomolecules Classification",
+      "topicSi": "ජෛව අණු වර්ගීකරණය",
+      "frontEn": "What are the building blocks of proteins?",
+      "frontSi": "ප්‍රෝටීනවල තැනුම් ඒකකය වන්නේ කුමක්ද?",
+      "backEn": "Amino acids, linked together by peptide bonds.",
+      "backSi": "පෙප්ටයිඩ බන්ධන මඟින් එකිනෙක බැඳුණු ඇමයිනෝ අම්ල වේ.",
+      "tag": "Biomolecules"
+    },
+    {
+      "id": "demo-fc11-1",
+      "unitId": "g11-u1",
+      "subtopicId": "1.1",
+      "topicEn": "Living Tissues",
+      "topicSi": "ජීවී පටක",
+      "frontEn": "What are the four primary types of animal tissues?",
+      "frontSi": "ප්‍රධාන සත්ත්ව පටක වර්ග හතර මොනවාද?",
+      "backEn": "1. Epithelial tissue, 2. Connective tissue, 3. Muscular tissue, 4. Nervous tissue.",
+      "backSi": "1. උපකලා පටකය, 2. සම්බන්ධක පටකය, 3. පේශි පටකය, 4. ස්නායු පටකය.",
+      "tag": "Tissues"
+    },
+    {
+      "id": "demo-fc11-2",
+      "unitId": "g11-u2",
+      "subtopicId": "2.1",
+      "topicEn": "Photosynthesis Products",
+      "topicSi": "ප්‍රභාසංස්ලේෂණයේ ඵල",
+      "frontEn": "What is the primary organic molecule produced during photosynthesis and in what form is it stored?",
+      "frontSi": "ප්‍රභාසංස්ලේෂණයේදී සෑදෙන මූලික කාබනික අණුව කුමක්ද? එය ගබඩා වන්නේ කුමන ආකාරයෙන්ද?",
+      "backEn": "Primary product: Glucose (C6H12O6); Stored as: Insoluble Starch.",
+      "backSi": "මූලික ඵලය: ග්ලූකෝස් (C6H12O6); ගබඩා වන්නේ: ජලයේ අද්‍රාව්‍ය පිෂ්ඨය ලෙස.",
+      "tag": "Photosynthesis"
+    },
+    {
+      "id": "demo-fc11-3",
+      "unitId": "g11-u3",
+      "subtopicId": "3.1",
+      "topicEn": "Mixture Separation",
+      "topicSi": "මිශ්‍රණ වෙන් කිරීම",
+      "frontEn": "Which physical property difference is utilized in fractional distillation to separate miscible liquids?",
+      "frontSi": "එකිනෙක මිශ්‍ර වන ද්‍රව භාගික ආසවනයෙන් වෙන් කිරීමේදී පාදක කරගන්නා භෞතික ගුණයේ වෙනස කුමක්ද?",
+      "backEn": "Differences in their boiling points (typically close boiling points).",
+      "backSi": "ඒවායේ තාපාංක අතර පවතින වෙනස (ආසන්න තාපාංක සහිත ද්‍රව).",
+      "tag": "Separation"
+    },
+    {
+      "id": "demo-fc11-4",
+      "unitId": "g11-u4",
+      "subtopicId": "4.1",
+      "topicEn": "Sound & Ultrasound",
+      "topicSi": "ධ්වනිය හා අතිධ්වනිය",
+      "frontEn": "What is the normal audible frequency range for human ears and what are frequencies above this called?",
+      "frontSi": "මිනිස් කනට ඇසෙන සාමාන්‍ය ශ්‍රව්‍යතා සීමාව කුමක්ද? ඊට වැඩි සංඛ්‍යාත හඳුන්වන්නේ කෙසේද?",
+      "backEn": "Audible range: 20 Hz to 20,000 Hz (20 kHz). Above 20 kHz: Ultrasound.",
+      "backSi": "ශ්‍රව්‍යතා සීමාව: 20 Hz සිට 20,000 Hz (20 kHz) දක්වා. 20 kHz ට වැඩි තරංග: අතිධ්වනිය (Ultrasound).",
+      "tag": "Waves"
+    },
+    {
+      "id": "demo-fc11-5",
+      "unitId": "g11-u5",
+      "subtopicId": "5.1",
+      "topicEn": "Vision Defects",
+      "topicSi": "දෘෂ්ටි දෝෂ",
+      "frontEn": "What type of lens is prescribed to correct short-sightedness (myopia) and why?",
+      "frontSi": "කෙටිදුර දෘෂ්ටිකත්වය (Myopia) නිවැරදි කිරීමට යොදන කාච වර්ගය කුමක්ද? ඒ ඇයි?",
+      "backEn": "Concave (diverging) lens; it diverges incoming light rays so the image focuses accurately onto the retina rather than in front of it.",
+      "backSi": "අවතල (අපසාරී) කාච; ඇස තුළට එන ආලෝක කිරණ තරමක් අපසාරී කර දෘෂ්ටිවිතානය ඉදිරියෙන් නාභිගත වීම වළක්වා දෘෂ්ටිවිතානය මත නාභිගත කරවයි.",
+      "tag": "Optics"
+    },
+    {
+      "id": "demo-fc11-6",
+      "unitId": "g11-u6",
+      "subtopicId": "6.1",
+      "topicEn": "Excretory System",
+      "topicSi": "පිටකිරීමේ පද්ධතිය",
+      "frontEn": "What are the structural and functional filtration units of the human kidney?",
+      "frontSi": "මිනිස් වෘක්කයේ ව්‍යුහාත්මක හා කෘත්‍යාත්මක පෙරීමේ ඒකකය වන්නේ කුමක්ද?",
+      "backEn": "Nephrons (approximately 1 to 1.25 million per kidney).",
+      "backSi": "වෘක්කාණු (Nephrons) - එක් වෘක්කයක මිලියන 1 සිට 1.25 පමණ දක්වා පවතී.",
+      "tag": "Human Body"
+    },
+    {
+      "id": "demo-fc11-7",
+      "unitId": "g11-u7",
+      "subtopicId": "7.1",
+      "topicEn": "pH Scale",
+      "topicSi": "pH පරිමාණය",
+      "frontEn": "What is the pH range for acidic, neutral, and basic (alkaline) solutions at 25 °C?",
+      "frontSi": "25 °C දී ආම්ලික, උදාසීන සහ භාස්මික ද්‍රාවණවල pH පරාසයන් මොනවාද?",
+      "backEn": "Acidic: pH < 7; Neutral: pH = 7 (pure water); Basic/Alkaline: pH > 7 (up to 14).",
+      "backSi": "ආම්ලික: pH < 7; උදාසීන: pH = 7 (පිරිසිදු ජලය); භාස්මික: pH > 7 (14 දක්වා).",
+      "tag": "Acids & Bases"
+    },
+    {
+      "id": "demo-fc11-8",
+      "unitId": "g11-u8",
+      "subtopicId": "8.1",
+      "topicEn": "Thermochemistry",
+      "topicSi": "තාප රසායනය",
+      "frontEn": "In an energy level diagram for an exothermic reaction, is the energy of products higher or lower than reactants?",
+      "frontSi": "තාපදායක ප්‍රතික්‍රියාවක ශක්ති මට්ටම් සටහනක ඵලවල ශක්තිය ප්‍රතික්‍රියකවල ශක්තියට වඩා වැඩිද අඩුද?",
+      "backEn": "Lower; energy is released to the surroundings (Enthalpy change ΔH is negative).",
+      "backSi": "අඩුය; ප්‍රතික්‍රියාවේදී පරිසරයට ශක්තිය මුදාහරින බැවින් ඵලවල ශක්තිය ප්‍රතික්‍රියකවල ශක්තියට වඩා අඩු වේ.",
+      "tag": "Heat Changes"
+    },
+    {
+      "id": "demo-fc11-9",
+      "unitId": "g11-u9",
+      "subtopicId": "9.1",
+      "topicEn": "Specific Latent Heat",
+      "topicSi": "විශිෂ්ට ගුප්ත තාපය",
+      "frontEn": "What is the SI unit of specific latent heat?",
+      "frontSi": "විශිෂ්ට ගුප්ත තාපයේ ජාත්‍යන්තර (SI) ඒකකය කුමක්ද?",
+      "backEn": "J kg⁻¹ (Joules per kilogram).",
+      "backSi": "J kg⁻¹ (කිලෝග්‍රෑමයට ජූල්).",
+      "tag": "Thermal Physics"
+    },
+    {
+      "id": "demo-fc11-10",
+      "unitId": "g11-u10",
+      "subtopicId": "10.1",
+      "topicEn": "Safety Devices",
+      "topicSi": "ආරක්ෂිත උපාංග",
+      "frontEn": "What is the primary function of an RCCB (Residual Current Circuit Breaker) in a domestic wiring system?",
+      "frontSi": "ගෘහ විදුලි පරිපථයක RCCB (ඉතිරි ධාරා පරිපථ බිඳිනය) මඟින් ඉටුවන ප්‍රධාන කාර්යය කුමක්ද?",
+      "backEn": "Detects current leakages to ground and rapidly trips the circuit to protect humans from fatal electric shock.",
+      "backSi": "පරිපථයෙන් භූමියට ධාරා කාන්දු වීමක් හඳුනාගෙන වහාම පරිපථය බිඳදමා මිනිසුන් විදුලි සැර වැදීමෙන් ආරක්ෂා කිරීම.",
+      "tag": "Domestic Electricity"
+    },
+    {
+      "id": "demo-fc11-11",
+      "unitId": "g11-u11",
+      "subtopicId": "11.1",
+      "topicEn": "Transistor Terminals",
+      "topicSi": "ට්‍රාන්සිස්ටර අග්‍ර",
+      "frontEn": "What are the three terminals of a bipolar junction transistor (BJT)?",
+      "frontSi": "ද්විධ්‍රැව සන්ධි ට්‍රාන්සිස්ටරයක (BJT) අග්‍ර 3 නම් කරන්න?",
+      "backEn": "Emitter (E), Base (B), and Collector (C).",
+      "backSi": "විමෝචකය (Emitter - E), පාදම (Base - B), සහ සංග්‍රාහකය (Collector - C).",
+      "tag": "Electronics"
+    },
+    {
+      "id": "demo-fc11-12",
+      "unitId": "g11-u12",
+      "subtopicId": "12.1",
+      "topicEn": "Daniel Cell",
+      "topicSi": "ඩැනියෙල් කෝෂය",
+      "frontEn": "What is the function of the porous pot or salt bridge in a Daniel cell?",
+      "frontSi": "ඩැනියෙල් කෝෂයක සිදුරු සහිත බඳුනේ හෝ ලවණ පාලමේ කාර්යය කුමක්ද?",
+      "backEn": "Allows ion flow to maintain electrical neutrality while preventing direct mixing of the two electrolytes.",
+      "backSi": "ද්‍රාවණ දෙක සෘජුව මිශ්‍ර වීම වළක්වමින්, අභ්‍යන්තර පරිපථය සම්පූර්ණ කිරීමට අයන ගමන් කිරීමට ඉඩ සැලසීම.",
+      "tag": "Electrochemistry"
+    },
+    {
+      "id": "demo-fc11-13",
+      "unitId": "g11-u13",
+      "subtopicId": "13.1",
+      "topicEn": "Commutator Function",
+      "topicSi": "කොමියුටේටරයේ කාර්යය",
+      "frontEn": "What is the purpose of the split-ring commutator in a direct current (DC) motor?",
+      "frontSi": "සරල ධාරා (DC) මෝටරයක පැළුම් වලලු කොමියුටේටරයේ කාර්යය කුමක්ද?",
+      "backEn": "Reverses the direction of electric current in the rotating coil every half rotation to keep it rotating continuously in one direction.",
+      "backSi": "දඟරය එකම දිශාවකට අඛණ්ඩව භ්‍රමණය කරවීම සඳහා සෑම අර්ධ භ්‍රමණයකට වරක් දඟරය තුළ ධාරාවේ දිශාව මාරු කිරීම.",
+      "tag": "Electromagnetism"
+    },
+    {
+      "id": "demo-fc11-14",
+      "unitId": "g11-u14",
+      "subtopicId": "14.1",
+      "topicEn": "Plastics Classification",
+      "topicSi": "ප්ලාස්ටික් වර්ගීකරණය",
+      "frontEn": "What is the key physical difference between thermoplastics and thermosetting plastics when heated?",
+      "frontSi": "තාපය හමුවේ තාපස්ථාප්‍ය ප්ලාස්ටික් සහ තාපසවි ප්ලාස්ටික් අතර ඇති ප්‍රධාන භෞතික වෙනස කුමක්ද?",
+      "backEn": "Thermoplastics soften on heating and can be remoulded repeatedly; thermosetting plastics permanently harden and decompose rather than melt upon heating.",
+      "backSi": "තාපස්ථාප්‍ය ප්ලාස්ටික් රත්කළ විට මෘදු වී නැවත නැවත හැඩගැස්විය හැක; තාපසවි ප්ලාස්ටික් රත්කළ විට දිය නොවී වියෝජනය වන අතර නැවත හැඩගැස්විය නොහැක.",
+      "tag": "Organic Chemistry"
+    },
+    {
+      "id": "demo-fc11-15",
+      "unitId": "g11-u15",
+      "subtopicId": "15.1",
+      "topicEn": "Eutrophication",
+      "topicSi": "සුපෝෂණය",
+      "frontEn": "What causes eutrophication in aquatic freshwater bodies?",
+      "frontSi": "ජලජ පරිසර පද්ධතිවල සුපෝෂණය (Eutrophication) ඇතිවීමට හේතුව කුමක්ද?",
+      "backEn": "Excessive enrichment of water with plant nutrients (especially nitrates and phosphates from agricultural runoff/fertilizers), causing explosive algal bloom and severe oxygen depletion.",
+      "backSi": "කෘෂිකාර්මික පොහොර සේදී ඒම නිසා ජලයට අධික ලෙස නයිට්‍රේට් සහ පොස්පේට් එකතු වීමෙන් ඇල්ගී අධිකව වර්ධනය වී දියවූ ඔක්සිජන් ක්ෂය වීම.",
+      "tag": "Environmental Biology"
+    }
+  ],
+  "imports": [
+    {
+      "id": "imp-1793891667625",
+      "importedAt": "2026-11-05T15:14:27.625Z",
+      "paperInfo": {
+        "title": "G.C.E. O/L 2023 Science Examination",
+        "year": 2023
+      },
+      "questionsCount": 2,
+      "flashcardsCount": 1,
+      "affectedUnits": {
+        "g10-u1": {
+          "questions": 1,
+          "flashcards": 1
+        },
+        "g11-u9": {
+          "questions": 1,
+          "flashcards": 0
+        }
+      }
+    }
+  ]
+}

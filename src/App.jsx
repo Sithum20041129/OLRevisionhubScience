@@ -20,7 +20,7 @@ import Footer from './components/Footer';
 import { unitsData } from './data/unitsData';
 import { Layers } from 'lucide-react';
 
-function HomePage() {
+function HomePage({ onOpenUpload }) {
   const { language } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGrade, setSelectedGrade] = useState('all');
@@ -132,7 +132,7 @@ function HomePage() {
       <WhatsAppSection />
 
       {/* 7. Learning Platform Features Section */}
-      <FeaturesSection onOpenUpload={() => {}} />
+      <FeaturesSection onOpenUpload={onOpenUpload || (() => {})} />
 
       {/* 8. FAQ Section */}
       <FaqSection />
@@ -151,13 +151,21 @@ function RevisionHubApp() {
     <div className="min-h-screen flex flex-col bg-gray-50 selection:bg-[#602d92] selection:text-white font-sans text-gray-800">
       
       {/* 1. Global OL.LK Navigation */}
-      <Navbar />
+      <Navbar onOpenUpload={() => setIsUploadModalOpen(true)} />
 
       {/* 2. Routes (Home Page vs Unit Detail Page) */}
       <main className="flex-1">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/unit/:id" element={<UnitPage onOpenQuiz={(u) => setActiveQuizUnit(u)} />} />
+          <Route path="/" element={<HomePage onOpenUpload={() => setIsUploadModalOpen(true)} />} />
+          <Route
+            path="/unit/:id"
+            element={
+              <UnitPage
+                onOpenQuiz={(u) => setActiveQuizUnit(u)}
+                onOpenFlashcards={(u) => setActiveFlashcardUnit(u)}
+              />
+            }
+          />
         </Routes>
       </main>
 

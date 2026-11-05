@@ -20,7 +20,7 @@ import {
   Layers
 } from 'lucide-react';
 
-export default function UnitPage({ onOpenQuiz }) {
+export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
   const { id } = useParams();
   const navigate = useNavigate();
   const { language, t } = useLanguage();
@@ -30,6 +30,7 @@ export default function UnitPage({ onOpenQuiz }) {
   const [activeSubtopic, setActiveSubtopic] = useState(null);
   const [downloadSuccess, setDownloadSuccess] = useState(null);
   const [copiedLink, setCopiedLink] = useState(false);
+  const [liveCounts, setLiveCounts] = useState(null);
 
   // Retrieve current unit
   const currentUnit = getUnitById(id) || unitsData[0];
@@ -39,6 +40,25 @@ export default function UnitPage({ onOpenQuiz }) {
   const partLabel = isPart2
     ? (isSinhala ? `${currentUnit.grade} ශ්‍රේණිය විද්‍යාව - 2 වන කොටස` : `Grade ${currentUnit.grade} Science - Part 2`)
     : (isSinhala ? `${currentUnit.grade} ශ්‍රේණිය විද්‍යාව - 1 වන කොටස` : `Grade ${currentUnit.grade} Science - Part 1`);
+
+  // Fetch live question & flashcard counts from backend
+  useEffect(() => {
+    let isMounted = true;
+    fetch(`/api/units/${currentUnit.id}/content`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (isMounted && data && data.success) {
+          setLiveCounts({
+            questionsCount: data.totalQuestions,
+            flashcardsCount: data.totalFlashcards
+          });
+        }
+      })
+      .catch(() => {});
+    return () => {
+      isMounted = false;
+    };
+  }, [currentUnit.id]);
 
   // Scroll to top when unit changes
   useEffect(() => {
@@ -256,7 +276,7 @@ export default function UnitPage({ onOpenQuiz }) {
                           <ChevronDown className="w-3.5 h-3.5 text-purple-300/60 group-hover:text-purple-200 group-hover:translate-y-0.5 transition-all" />
                         </div>
                         <p className="text-xl sm:text-2xl font-black text-white">
-                          {currentUnit.totalQuestions || 20}+
+                          {liveCounts ? liveCounts.questionsCount : (currentUnit.totalQuestions || 20)}+
                         </p>
                       </button>
 
@@ -414,7 +434,7 @@ export default function UnitPage({ onOpenQuiz }) {
                           <div className="flex flex-wrap items-center gap-4 pt-2 text-xs text-slate-200 font-semibold">
                             <div className="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-xl border border-white/10">
                               <HelpCircle className="w-4 h-4 text-cyan-400" />
-                              <span>{currentUnit.totalQuestions || 20} {isSinhala ? 'ප්‍රශ්න' : 'Questions'}</span>
+                              <span>{liveCounts ? liveCounts.questionsCount : (currentUnit.totalQuestions || 20)} {isSinhala ? 'ප්‍රශ්න' : 'Questions'}</span>
                             </div>
                             <div className="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-xl border border-white/10">
                               <Clock className="w-4 h-4 text-purple-300" />
@@ -427,18 +447,27 @@ export default function UnitPage({ onOpenQuiz }) {
                           </div>
                         </div>
 
-                        {/* Action Button */}
-                        <div className="lg:col-span-4 flex flex-col items-center justify-center lg:items-end">
+                        {/* Action Buttons: Quiz + Flashcards */}
+                        <div className="lg:col-span-4 flex flex-col items-center justify-center lg:items-end gap-3">
                           <button
                             onClick={() => onOpenQuiz(currentUnit)}
-                            className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white hover:bg-slate-100 text-[#602d92] font-black text-sm sm:text-base shadow-xl flex items-center justify-center gap-3 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer"
+                            className="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-white hover:bg-slate-100 text-[#602d92] font-black text-sm sm:text-base shadow-xl flex items-center justify-center gap-2.5 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer"
                           >
                             <Sparkles className="w-5 h-5 text-[#602d92]" />
                             <span>{isSinhala ? 'ප්‍රශ්නාවලිය අරඹන්න' : 'Start Unit Quiz'}</span>
                             <ChevronRight className="w-5 h-5" />
                           </button>
-                          <p className="text-[11px] text-slate-300 mt-2.5 text-center lg:text-right">
-                            {isSinhala ? '100% නොමිලේ • පිළිතුරු විවරණ සහිතයි' : '100% Free • With Full Step-by-Step Explanations'}
+
+                          <button
+                            onClick={() => onOpenFlashcards && onOpenFlashcards(currentUnit)}
+                            className="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-white/15 hover:bg-white/25 text-white border border-white/25 font-bold text-sm sm:text-base shadow-md flex items-center justify-center gap-2.5 transform hover:-translate-y-0.5 active:translate-y-0 transition cursor-pointer backdrop-blur-md"
+                          >
+                            <Layers className="w-5 h-5 text-cyan-300" />
+                            <span>{isSinhala ? 'Flashcards පුහුණුව' : 'Practice Flashcards'}</span>
+                          </button>
+
+                          <p className="text-[11px] text-slate-300 mt-0.5 text-center lg:text-right">
+                            {isSinhala ? '100% නොමිලේ • විවරණ සහ Flashcards සහිතයි' : '100% Free • With Full Step-by-Step Explanations'}
                           </p>
                         </div>
 
