@@ -121,7 +121,7 @@ export default function UnitPage({ onOpenQuiz }) {
                       {/* Left: Syllabus Badges */}
                       <div className="flex flex-wrap items-center gap-2">
                         <span className="text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-xl bg-white/15 border border-white/25 backdrop-blur-md">
-                          {isSinhala ? `10 ශ්‍රේණිය විද්‍යාව - 1 වන කොටස` : `Grade 10 Science - Part 1`}
+                          {isSinhala ? `${currentUnit.grade} ශ්‍රේණිය විද්‍යාව - 1 වන කොටස` : `Grade ${currentUnit.grade} Science - Part 1`}
                         </span>
                           <span className={`text-xs font-bold px-3 py-1.5 rounded-xl border backdrop-blur-md flex items-center gap-1.5 ${theme.pillBg}`}>
                             <span>{theme.icon}</span>
@@ -320,7 +320,7 @@ export default function UnitPage({ onOpenQuiz }) {
                         <p className="text-xs sm:text-sm text-slate-500 mt-1">
                           {isSinhala
                             ? 'පෙළපොතේ අන්තර්ගතය අනුව එක් එක් අනුමාතෘකාවට අදාළ විෂය කරුණු මෙතැනින් අධ්‍යයනය කරන්න.'
-                            : 'Master each syllabus subtopic step-by-step according to the Grade 10 Science curriculum.'}
+                            : `Master each syllabus subtopic step-by-step according to the Grade ${currentUnit.grade} Science curriculum.`}
                         </p>
                       </div>
 

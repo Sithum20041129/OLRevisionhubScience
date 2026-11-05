@@ -961,42 +961,60 @@ export const unitsData = [
   },
 
   // ==========================================
-  // GRADE 11 SCIENCE UNITS (SYLLABUS CONTINUATION)
+  // GRADE 11 SCIENCE - PART 1 (ACTUAL UNITS FROM TEXTBOOK)
   // ==========================================
   {
     id: "g11-u1",
     grade: 11,
     unitNumber: 1,
     category: "biology",
-    titleEn: "Biosphere & Ecosystem Dynamics",
-    titleSi: "ජීවගෝලය හා පරිසර පද්ධති ගතිකත්වය",
-    descriptionEn: "Biomes, food chains, energy pyramids, biogeochemical cycles (carbon, nitrogen), and environmental conservation.",
-    descriptionSi: "ජෛව කලාප, ආහාර ජාල, ශක්ති පිරමිඩ, ජෛව භූ-රසායනික චක්‍ර සහ පාරිසරික සංරක්ෂණය.",
+    titleEn: "Living Tissues",
+    titleSi: "ජීවී පටක",
+    descriptionEn: "Plant and animal tissues: classification, cellular organization, structural adaptations, and biological functions in living organisms.",
+    descriptionSi: "ශාක සහ සත්ත්ව පටක: වර්ගීකරණය, සෛලීය සංවිධානය, ව්‍යුහාත්මක අනුවර්තන සහ ජීවීන් තුළ කායික කෘත්‍යයන්.",
     subtopics: [
       {
-        id: "11.1.1",
-        titleEn: "Biomes & Biosphere",
-        titleSi: "ජෛව කලාප සහ ජීවගෝලය",
-        descriptionEn: "Tropical rain forests, dry zones, aquatic ecosystems.",
-        descriptionSi: "තෙත් කලාපීය වැසි වනාන්තර, වියළි කලාප සහ ජලජ පරිසර පද්ධති."
+        id: "1.1",
+        titleEn: "Plant Tissues",
+        titleSi: "ශාක පටක",
+        descriptionEn: "Meristematic tissues (apical, intercalary, lateral) and permanent tissues (simple: parenchyma, collenchyma, sclerenchyma; complex: xylem, phloem).",
+        descriptionSi: "විභාජක පටක (අග්‍රස්ථ, අන්තරස්ථ, පාර්ශ්වික) සහ ස්ථිර පටක (සරල: මෘදුස්තර, ස්ථූලකෝණාස්තර, දෘඪස්තර; සංකීර්ණ: ශෛලම, ප්ලෝයම)."
       },
       {
-        id: "11.1.2",
-        titleEn: "Energy Flow & Ecological Pyramids",
-        titleSi: "ශක්ති ගලායාම සහ පාරිසරික පිරමිඩ",
-        descriptionEn: "Food chains, food webs, pyramids of number, biomass, and energy.",
-        descriptionSi: "ආහාර දාම, ආහාර ජාල, සංඛ්‍යා, ජෛව ස්කන්ධ හා ශක්ති පිරමිඩ."
+        id: "1.2",
+        titleEn: "Animal Tissues",
+        titleSi: "සත්ත්ව පටක",
+        descriptionEn: "Four major animal tissue groups: epithelial tissue, connective tissue (blood, bone, cartilage, areolar), muscular tissue (smooth, skeletal, cardiac), and nervous tissue.",
+        descriptionSi: "ප්‍රධාන සත්ත්ව පටක කාණ්ඩ හතර: උපකලා පටක, සම්බන්ධක පටක (රුධිරය, අස්ථි, කාටිලේජ), පේශි පටක (සිනිඳු, ඇටසැකිලි, හෘත්) සහ ස්නායු පටක."
       }
     ],
     pastPapers: [
       {
         id: "p11-1-1",
         year: "2023",
-        nameEn: "G.C.E. O/L 2023 - Ecosystems",
-        nameSi: "අ.පො.ස. සා/පෙළ 2023 - පරිසර පද්ධති",
+        nameEn: "G.C.E. O/L 2023 - Plant & Animal Tissues",
+        nameSi: "අ.පො.ස. සා/පෙළ 2023 - ශාක හා සත්ත්ව පටක",
         fileType: "PDF",
-        size: "2.1 MB",
-        coverage: "Food webs, Carbon cycle"
+        size: "2.0 MB",
+        coverage: "Xylem & phloem structure, epithelial tissue functions"
+      },
+      {
+        id: "p11-1-2",
+        year: "2022",
+        nameEn: "G.C.E. O/L 2022 - Structured Essay Q2",
+        nameSi: "අ.පො.ස. සා/පෙළ 2022 - ව්‍යුහගත රචනා ප්‍රශ්නය 02",
+        fileType: "PDF",
+        size: "1.8 MB",
+        coverage: "Meristematic vs permanent tissues, neuron structure"
+      },
+      {
+        id: "p11-1-3",
+        year: "2021",
+        nameEn: "Western Province Target Paper 2021",
+        nameSi: "බස්නාහිර පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        fileType: "PDF",
+        size: "2.3 MB",
+        coverage: "Complex plant tissues, connective tissues"
       }
     ],
     quizInfo: {
@@ -1005,60 +1023,186 @@ export const unitsData = [
       difficulty: "Medium"
     },
     totalQuestions: 20,
-    totalFlashcards: 15,
-    targetPapers: ["O/L 2023", "Western Prov. 2023"],
-    demoQuestion: null,
-    demoFlashcard: null
+    totalFlashcards: 16,
+    targetPapers: ["O/L 2023", "O/L 2022", "Western Prov. 2023"],
+    demoQuestion: {
+      id: "demo-q11-1",
+      paperSource: "G.C.E. O/L 2023 (Part I)",
+      textEn: "Which of the following plant tissues is responsible for the translocation of synthesized food (sucrose) in plants?",
+      textSi: "ශාක තුළ සංස්ලේෂණය කළ ආහාර (සුක්‍රෝස්) පරිවහනය කිරීම සඳහා වගකියනු ලබන ශාක පටකය කුමක්ද?",
+      optionsEn: ["Xylem tissue", "Phloem tissue", "Parenchyma tissue", "Collenchyma tissue"],
+      optionsSi: ["ශෛලම පටකය", "ප්ලෝයම පටකය", "මෘදුස්තර පටකය", "ස්ථූලකෝණාස්තර පටකය"],
+      correctIndex: 1,
+      explanationEn: "Phloem tissue translocates organic solutes (mainly sucrose) from photosynthesizing leaves to storage organs through sieve tube elements and companion cells.",
+      explanationSi: "ප්‍රභාසංස්ලේෂක පත්‍රවල සිට ගබඩා අංග කරා පෙනේර නළ මූලද්‍රව්‍ය සහ සහකාර සෛල ඔස්සේ කාබනික ආහාර පරිවහනය කරන්නේ ප්ලෝයම පටකයයි.",
+      competency: "1.1 Understands structure and functions of plant tissues."
+    },
+    demoFlashcard: {
+      id: "demo-fc11-1",
+      topicEn: "Living Tissues",
+      topicSi: "ජීවී පටක",
+      frontEn: "What are the four primary types of animal tissues?",
+      frontSi: "ප්‍රධාන සත්ත්ව පටක වර්ග හතර මොනවාද?",
+      backEn: "1. Epithelial tissue, 2. Connective tissue, 3. Muscular tissue, 4. Nervous tissue.",
+      backSi: "1. උපකලා පටකය, 2. සම්බන්ධක පටකය, 3. පේශි පටකය, 4. ස්නායු පටකය.",
+      tag: "Tissues"
+    }
   },
+
   {
     id: "g11-u2",
     grade: 11,
     unitNumber: 2,
-    category: "chemistry",
-    titleEn: "Chemical Reactions, Rate & Energy",
-    titleSi: "රසායනික ප්‍රතික්‍රියා, සීඝ්‍රතාව හා ශක්තිය",
-    descriptionEn: "Collision theory, catalysts, activation energy, endothermic vs exothermic reactions, and reaction rate measurements.",
-    descriptionSi: "ගැටුම් වාදය, උත්ප්‍රේරක, සක්‍රියන ශක්තිය, තාප අවශෝෂක/දායක ප්‍රතික්‍රියා සහ ප්‍රතික්‍රියා සීඝ්‍රතාව.",
+    category: "biology",
+    titleEn: "Photosynthesis",
+    titleSi: "ප්‍රභාසංස්ලේෂණය",
+    descriptionEn: "The biochemical process converting light energy to chemical energy: essential factors, light and dark reactions, products, and ecological significance.",
+    descriptionSi: "ආලෝක ශක්තිය රසායනික ශක්තිය බවට පත් කිරීමේ ජෛව රසායනික ක්‍රියාවලිය: අවශ්‍ය සාධක, ඵල සහ පාරිසරික වැදගත්කම.",
     subtopics: [
       {
-        id: "11.2.1",
-        titleEn: "Rate of Reaction Factors",
-        titleSi: "ප්‍රතික්‍රියා සීඝ්‍රතාව කෙරෙහි බලපාන සාධක",
-        descriptionEn: "Concentration, surface area, temperature, and catalysts.",
-        descriptionSi: "සාන්ද්‍රණය, පෘෂ්ඨ වර්ගඵලය, උෂ්ණත්වය සහ උත්ප්‍රේරක."
+        id: "2.1",
+        titleEn: "Factors Affecting Photosynthesis",
+        titleSi: "ප්‍රභාසංස්ලේෂණයට බලපාන සාධක",
+        descriptionEn: "Essential external and internal factors: light intensity, wavelength, carbon dioxide concentration, water availability, chlorophyll, and temperature.",
+        descriptionSi: "අත්‍යවශ්‍ය බාහිර හා අභ්‍යන්තර සාධක: ආලෝක තීව්‍රතාව, කාබන්ඩයොක්සයිඩ් සාන්ද්‍රණය, ජල සැපයුම, ක්ලෝරොෆිල් සහ ප්‍රශස්ත උෂ්ණත්වය."
+      },
+      {
+        id: "2.2",
+        titleEn: "Products of Photosynthesis",
+        titleSi: "ප්‍රභාසංස්ලේෂණයේ ඵල",
+        descriptionEn: "Primary product glucose, by-product oxygen gas, starch condensation for storage, and translocation as sucrose via phloem.",
+        descriptionSi: "ප්‍රධාන ඵලය ග්ලූකෝස්, අතුරු ඵලය ඔක්සිජන්, ගබඩා කිරීම සඳහා පිෂ්ඨය බවට පත්වීම සහ සුක්‍රෝස් ලෙස ප්ලෝයම හරහා පරිවහනය."
+      },
+      {
+        id: "2.3",
+        titleEn: "Importance of Photosynthesis",
+        titleSi: "ප්‍රභාසංස්ලේෂණයේ වැදගත්කම",
+        descriptionEn: "Sustaining life on Earth, introducing solar energy into ecological food chains, and maintaining the global oxygen-carbon dioxide balance.",
+        descriptionSi: "පෘථිවියේ ජීවය පවත්වා ගැනීම, සූර්ය ශක්තිය ආහාර දාම තුළට ඇතුළත් කිරීම සහ ගෝලීය ඔක්සිජන්-කාබන්ඩයොක්සයිඩ් සමතුලිතතාව රැකගැනීම."
       }
     ],
-    pastPapers: [],
+    pastPapers: [
+      {
+        id: "p11-2-1",
+        year: "2023",
+        nameEn: "G.C.E. O/L 2023 - Photosynthesis MCQs & Essay",
+        nameSi: "අ.පො.ස. සා/පෙළ 2023 - ප්‍රභාසංස්ලේෂණය බහුවරණ හා රචනා",
+        fileType: "PDF",
+        size: "2.2 MB",
+        coverage: "Factors affecting rate, starch test on leaves"
+      },
+      {
+        id: "p11-2-2",
+        year: "2022",
+        nameEn: "G.C.E. O/L 2022 - Light & Dark Reactions",
+        nameSi: "අ.පො.ස. සා/පෙළ 2022 - ආලෝක හා අඳුරු ප්‍රතික්‍රියා",
+        fileType: "PDF",
+        size: "1.9 MB",
+        coverage: "Destarching experiments, oxygen evolution evidence"
+      },
+      {
+        id: "p11-2-3",
+        year: "2021",
+        nameEn: "Southern Province Target Paper 2021",
+        nameSi: "දකුණු පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        fileType: "PDF",
+        size: "2.4 MB",
+        coverage: "Limiting factors of photosynthesis"
+      }
+    ],
     quizInfo: {
-      totalQuestions: 18,
-      durationMinutes: 20,
-      difficulty: "Hard"
+      totalQuestions: 22,
+      durationMinutes: 25,
+      difficulty: "Medium"
     },
-    totalQuestions: 18,
-    totalFlashcards: 14,
-    targetPapers: ["O/L 2022", "North-Western 2023"],
-    demoQuestion: null,
-    demoFlashcard: null
+    totalQuestions: 22,
+    totalFlashcards: 18,
+    targetPapers: ["O/L 2023", "O/L 2022", "Southern Prov. 2023"],
+    demoQuestion: {
+      id: "demo-q11-2",
+      paperSource: "G.C.E. O/L 2022 (Part I)",
+      textEn: "During an experiment to demonstrate that light is necessary for photosynthesis, why are potted green plants kept in darkness for 48 hours prior to the experiment?",
+      textSi: "ප්‍රභාසංස්ලේෂණය සඳහා ආලෝකය අවශ්‍ය බව පෙන්වීමේ පරීක්ෂණයකට පෙර, බඳුන් කළ ශාකය පැය 48ක් අඳුරේ තබන්නේ ඇයි?",
+      optionsEn: ["To stop respiration", "To destroy chlorophyll", "To destarch the leaves completely", "To absorb carbon dioxide"],
+      optionsSi: ["ශ්වසනය නැවැත්වීමට", "ක්ලෝරොෆිල් විනාශ කිරීමට", "පත්‍රවල ඇති පිෂ්ඨය සම්පූර්ණයෙන්ම ඉවත් කිරීමට (අපිෂ්ඨීකරණයට)", "කාබන්ඩයොක්සයිඩ් අවශෝෂණයට"],
+      correctIndex: 2,
+      explanationEn: "Keeping plants in darkness forces them to consume stored starch via cellular respiration, ensuring that any starch detected after light exposure was freshly synthesized.",
+      explanationSi: "ශාකය අඳුරේ තැබීමෙන් පත්‍රවල පෙර ගබඩා වූ පිෂ්ඨය ශ්වසනය සඳහා වැය වී අපිෂ්ඨීකරණය වේ. එවිට ආලෝකය ලැබුණු පසු සෑදෙන පිෂ්ඨය පමණක් පරීක්ෂා කළ හැකිය.",
+      competency: "2.1 Demonstrates scientific experiments related to photosynthesis."
+    },
+    demoFlashcard: {
+      id: "demo-fc11-2",
+      topicEn: "Photosynthesis Products",
+      topicSi: "ප්‍රභාසංස්ලේෂණයේ ඵල",
+      frontEn: "What is the primary organic molecule produced during photosynthesis and in what form is it stored?",
+      frontSi: "ප්‍රභාසංස්ලේෂණයේදී සෑදෙන මූලික කාබනික අණුව කුමක්ද? එය ගබඩා වන්නේ කුමන ආකාරයෙන්ද?",
+      backEn: "Primary product: Glucose (C6H12O6); Stored as: Insoluble Starch.",
+      backSi: "මූලික ඵලය: ග්ලූකෝස් (C6H12O6); ගබඩා වන්නේ: ජලයේ අද්‍රාව්‍ය පිෂ්ඨය ලෙස.",
+      tag: "Photosynthesis"
+    }
   },
+
   {
     id: "g11-u3",
     grade: 11,
     unitNumber: 3,
-    category: "biology",
-    titleEn: "Genetics and Heredity",
-    titleSi: "ප්‍රවේණිය හා පාරම්පරික ලක්ෂණ",
-    descriptionEn: "Mendelian genetics, monohybrid crosses, DNA structure, chromosomes, sex determination, and genetic disorders.",
-    descriptionSi: "මෙන්ඩලීය ප්‍රවේණිය, ඒකමුහුම් අභිජනනය, DNA අණුක ව්‍යුහය, වර්ණදේහ සහ ප්‍රවේණික රෝග.",
+    category: "chemistry",
+    titleEn: "Mixtures",
+    titleSi: "මිශ්‍රණ",
+    descriptionEn: "Types of mixtures, solution concentration expressions, and separation techniques for pure chemical components.",
+    descriptionSi: "මිශ්‍රණ වර්ග, ද්‍රාවණවල සංයුතිය සහ සාන්ද්‍රණය ප්‍රකාශ කිරීමේ ක්‍රම සහ මිශ්‍රණවල සංරචක වෙන් කිරීමේ ශිල්පක්‍රම.",
     subtopics: [
       {
-        id: "11.3.1",
-        titleEn: "Mendel's Laws & Monohybrid Crosses",
-        titleSi: "මෙන්ඩල්ගේ නියම සහ ඒකමුහුම් අභිජනනය",
-        descriptionEn: "Phenotypic and genotypic 3:1 and 1:2:1 ratios in pea plants.",
-        descriptionSi: "ගෙවතු මෑ ශාකවල 3:1 සහ 1:2:1 සංසිද්ධි හා ප්‍රවේණිදර්ශ අනුපාත."
+        id: "3.1",
+        titleEn: "Types of Mixtures",
+        titleSi: "මිශ්‍රණ වර්ග",
+        descriptionEn: "Homogeneous mixtures (true solutions) vs heterogeneous mixtures (suspensions, emulsions, and colloidal systems).",
+        descriptionSi: "සමජාතීය මිශ්‍රණ (සත්‍ය ද්‍රාවණ) සහ විෂමජාතීය මිශ්‍රණ (ප්‍රලම්භන, තෛලෝද සහ කලිල පද්ධති)."
+      },
+      {
+        id: "3.2",
+        titleEn: "Composition of Mixtures & Concentration",
+        titleSi: "මිශ්‍රණවල සංයුතිය හා සාන්ද්‍රණය",
+        descriptionEn: "Mass fraction, volume fraction, mass-volume percentage, molar concentration (mol dm⁻³, g dm⁻³), and dilution calculations (C1V1 = C2V2).",
+        descriptionSi: "ස්කන්ධ භාගය, පරිමා භාගය, ස්කන්ධ-පරිමා ප්‍රතිශතය, මවුලික සාන්ද්‍රණය (mol dm⁻³, g dm⁻³) සහ ද්‍රාවණ තනුක කිරීම් (C1V1 = C2V2)."
+      },
+      {
+        id: "3.3",
+        titleEn: "Separation of Compounds in Mixtures",
+        titleSi: "මිශ්‍රණවල සංරචක වෙන් කිරීම",
+        descriptionEn: "Principles and laboratory methods: filtration, crystallization, simple distillation, fractional distillation, separating funnels, and paper chromatography.",
+        descriptionSi: "මූලධර්ම සහ රසායනාගාර ක්‍රම: පෙරීම, ස්ඵටිකීකරණය, සරල ආසවනය, භාගික ආසවනය, විභේදක පුනීල භාවිතය සහ කඩදාසි වර්ණලේඛ ශිල්පය."
       }
     ],
-    pastPapers: [],
+    pastPapers: [
+      {
+        id: "p11-3-1",
+        year: "2023",
+        nameEn: "G.C.E. O/L 2023 - Concentration Calculations",
+        nameSi: "අ.පො.ස. සා/පෙළ 2023 - සාන්ද්‍රණ ගණනය කිරීම්",
+        fileType: "PDF",
+        size: "2.1 MB",
+        coverage: "mol dm⁻³ calculations, fractional distillation apparatus"
+      },
+      {
+        id: "p11-3-2",
+        year: "2022",
+        nameEn: "G.C.E. O/L 2022 - Mixture Separation Techniques",
+        nameSi: "අ.පො.ස. සා/පෙළ 2022 - මිශ්‍රණ සංරචක වෙන් කිරීමේ ශිල්පක්‍රම",
+        fileType: "PDF",
+        size: "1.9 MB",
+        coverage: "Paper chromatography Rf values, separating funnels"
+      },
+      {
+        id: "p11-3-3",
+        year: "2021",
+        nameEn: "Western Province Target Paper 2021",
+        nameSi: "බස්නාහිර පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        fileType: "PDF",
+        size: "2.2 MB",
+        coverage: "Mass fraction and solution preparation"
+      }
+    ],
     quizInfo: {
       totalQuestions: 25,
       durationMinutes: 30,
@@ -1066,39 +1210,542 @@ export const unitsData = [
     },
     totalQuestions: 25,
     totalFlashcards: 20,
-    targetPapers: ["O/L 2023", "Southern Prov. 2021"],
-    demoQuestion: null,
-    demoFlashcard: null
+    targetPapers: ["O/L 2023", "O/L 2022", "Western Prov. 2023"],
+    demoQuestion: {
+      id: "demo-q11-3",
+      paperSource: "G.C.E. O/L 2023 (Part II)",
+      textEn: "What is the concentration in mol dm⁻³ of a solution prepared by dissolving 4.0 g of NaOH (molar mass = 40 g mol⁻¹) in water to make 500 cm³ of solution?",
+      textSi: "NaOH 4.0 g ක් (මවුලික ස්කන්ධය = 40 g mol⁻¹) ජලයේ දියකර 500 cm³ ක ද්‍රාවණයක් පිළියෙල කළ විට එහි සාන්ද්‍රණය mol dm⁻³ වලින් කොපමණද?",
+      optionsEn: ["0.1 mol dm⁻³", "0.2 mol dm⁻³", "0.4 mol dm⁻³", "1.0 mol dm⁻³"],
+      optionsSi: ["0.1 mol dm⁻³", "0.2 mol dm⁻³", "0.4 mol dm⁻³", "1.0 mol dm⁻³"],
+      correctIndex: 1,
+      explanationEn: "Moles of NaOH = 4.0 g / 40 g mol⁻¹ = 0.1 mol. Volume = 500 cm³ = 0.5 dm³. Concentration C = n / V = 0.1 mol / 0.5 dm³ = 0.2 mol dm⁻³.",
+      explanationSi: "NaOH මවුල ගණන = 4.0 / 40 = 0.1 mol. පරිමාව = 500 / 1000 = 0.5 dm³. සාන්ද්‍රණය C = n / V = 0.1 / 0.5 = 0.2 mol dm⁻³.",
+      competency: "3.2 Solves stoichiometric concentration calculations for chemical solutions."
+    },
+    demoFlashcard: {
+      id: "demo-fc11-3",
+      topicEn: "Mixture Separation",
+      topicSi: "මිශ්‍රණ වෙන් කිරීම",
+      frontEn: "Which physical property difference is utilized in fractional distillation to separate miscible liquids?",
+      frontSi: "එකිනෙක මිශ්‍ර වන ද්‍රව භාගික ආසවනයෙන් වෙන් කිරීමේදී පාදක කරගන්නා භෞතික ගුණයේ වෙනස කුමක්ද?",
+      backEn: "Differences in their boiling points (typically close boiling points).",
+      backSi: "ඒවායේ තාපාංක අතර පවතින වෙනස (ආසන්න තාපාංක සහිත ද්‍රව).",
+      tag: "Separation"
+    }
   },
+
   {
     id: "g11-u4",
     grade: 11,
     unitNumber: 4,
     category: "physics",
-    titleEn: "Current Electricity & Circuitry",
-    titleSi: "ධාරා විද්‍යුතය හා පරිපථ",
-    descriptionEn: "Ohm's law, potential difference, series and parallel circuits, equivalent resistance, and electrical power calculation.",
-    descriptionSi: "ඕම්ගේ නියමය, විභව අන්තරය, ශ්‍රේණිගත හා සමාන්තරගත පරිපථ, සමක ප්‍රතිරෝධය සහ විද්‍යුත් ක්ෂමතාව.",
+    titleEn: "Waves and their Applications",
+    titleSi: "තරංග හා ඒවායේ යෙදීම්",
+    descriptionEn: "Wave mechanics, properties of transverse and longitudinal waves, the electromagnetic spectrum, and acoustics and ultrasound applications.",
+    descriptionSi: "තරංග යාන්ත්‍ර විද්‍යාව, තිරස් හා අන්වායාම තරංග, විද්‍යුත් චුම්බක වර්ණාවලිය, ධ්වනි තරංග සහ අතිධ්වනි යෙදීම්.",
     subtopics: [
       {
-        id: "11.4.1",
-        titleEn: "Ohm's Law & Resistance",
-        titleSi: "ඕම්ගේ නියමය සහ ප්‍රතිරෝධය",
-        descriptionEn: "V = IR relationship, factors affecting conductor resistance.",
-        descriptionSi: "V = IR සමීකරණය සහ සන්නායකයක ප්‍රතිරෝධය කෙරෙහි බලපාන සාධක."
+        id: "4.1",
+        titleEn: "Mechanical Waves",
+        titleSi: "යාන්ත්‍රික තරංග",
+        descriptionEn: "Wave propagation, transverse and longitudinal waves, crests, troughs, compressions, rarefactions, and wave parameters (v = fλ).",
+        descriptionSi: "තරංග සම්ප්‍රේෂණය, තිරස් හා අන්වායාම තරංග, ශීර්ෂ, නිම්න, සම්පීඩන, විරලන සහ තරංග සමීකරණය (v = fλ)."
+      },
+      {
+        id: "4.2",
+        titleEn: "Electromagnetic Waves",
+        titleSi: "විද්‍යුත් චුම්බක තරංග",
+        descriptionEn: "Characteristics of EM waves, electromagnetic spectrum (Radio, Microwaves, Infrared, Visible, UV, X-rays, Gamma rays), and practical communications technologies.",
+        descriptionSi: "විද්‍යුත් චුම්බක තරංගවල ලක්ෂණ, විද්‍යුත් චුම්බක වර්ණාවලිය (රේඩියෝ, ක්ෂුද්‍ර තරංග, අධෝරක්ත, දෘශ්‍ය, පාරජම්බුල, X-කිරණ, ගැමා කිරණ) සහ සන්නිවේදන යෙදීම්."
+      },
+      {
+        id: "4.3",
+        titleEn: "Sound & Acoustics",
+        titleSi: "ධ්වනිය",
+        descriptionEn: "Longitudinal sound propagation, speed of sound in media, reflection, echo, reverberation, ultrasound, and human audible range 20 Hz - 20 kHz.",
+        descriptionSi: "ධ්වනි තරංග සම්ප්‍රේෂණය, මාධ්‍ය තුළ ධ්වනි ප්‍රවේගය, පරාවර්තනය, ප්‍රතිරාවය, අනුරාවය, අතිධ්වනිය සහ මිනිසාගේ ශ්‍රව්‍යතා සීමාව (20 Hz - 20 kHz)."
       }
     ],
-    pastPapers: [],
+    pastPapers: [
+      {
+        id: "p11-4-1",
+        year: "2023",
+        nameEn: "G.C.E. O/L 2023 - Wave Equation & Echo Problems",
+        nameSi: "අ.පො.ස. සා/පෙළ 2023 - තරංග සමීකරණය හා ප්‍රතිරාවය ගැටලු",
+        fileType: "PDF",
+        size: "2.0 MB",
+        coverage: "v = fλ calculations, echo sounding depth determination"
+      },
+      {
+        id: "p11-4-2",
+        year: "2022",
+        nameEn: "G.C.E. O/L 2022 - Electromagnetic Spectrum",
+        nameSi: "අ.පො.ස. සා/පෙළ 2022 - විද්‍යුත් චුම්බක වර්ණාවලිය",
+        fileType: "PDF",
+        size: "1.8 MB",
+        coverage: "Wavelength ordering and modern telecommunication uses"
+      },
+      {
+        id: "p11-4-3",
+        year: "2021",
+        nameEn: "Central Province Target Paper 2021",
+        nameSi: "මධ්‍යම පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        fileType: "PDF",
+        size: "2.3 MB",
+        coverage: "Ultrasound in SONAR and medicine"
+      }
+    ],
     quizInfo: {
-      totalQuestions: 22,
+      totalQuestions: 24,
       durationMinutes: 30,
       difficulty: "Hard"
     },
-    totalQuestions: 22,
+    totalQuestions: 24,
+    totalFlashcards: 18,
+    targetPapers: ["O/L 2023", "O/L 2022", "Central Prov. 2023"],
+    demoQuestion: {
+      id: "demo-q11-4",
+      paperSource: "G.C.E. O/L 2023 (Part I)",
+      textEn: "A sound wave has a frequency of 500 Hz and travels through air at 340 m s⁻¹. What is its wavelength?",
+      textSi: "වාතය තුළ 340 m s⁻¹ ප්‍රවේගයෙන් ගමන් කරන ධ්වනි තරංගයක සංඛ්‍යාතය 500 Hz වේ. එහි තරංග ආයාමය කොපමණද?",
+      optionsEn: ["0.68 m", "1.47 m", "170 m", "170,000 m"],
+      optionsSi: ["0.68 m", "1.47 m", "170 m", "170,000 m"],
+      correctIndex: 0,
+      explanationEn: "Using the wave formula v = fλ: λ = v / f = 340 m s⁻¹ / 500 Hz = 0.68 m.",
+      explanationSi: "v = fλ තරංග සමීකරණය භාවිතයෙන්: λ = v / f = 340 / 500 = 0.68 m.",
+      competency: "4.1 Applies wave speed equations to solve physical problems."
+    },
+    demoFlashcard: {
+      id: "demo-fc11-4",
+      topicEn: "Sound & Ultrasound",
+      topicSi: "ධ්වනිය හා අතිධ්වනිය",
+      frontEn: "What is the normal audible frequency range for human ears and what are frequencies above this called?",
+      frontSi: "මිනිස් කනට ඇසෙන සාමාන්‍ය ශ්‍රව්‍යතා සීමාව කුමක්ද? ඊට වැඩි සංඛ්‍යාත හඳුන්වන්නේ කෙසේද?",
+      backEn: "Audible range: 20 Hz to 20,000 Hz (20 kHz). Above 20 kHz: Ultrasound.",
+      backSi: "ශ්‍රව්‍යතා සීමාව: 20 Hz සිට 20,000 Hz (20 kHz) දක්වා. 20 kHz ට වැඩි තරංග: අතිධ්වනිය (Ultrasound).",
+      tag: "Waves"
+    }
+  },
+
+  {
+    id: "g11-u5",
+    grade: 11,
+    unitNumber: 5,
+    category: "physics",
+    titleEn: "Geometrical Optics",
+    titleSi: "ජ්‍යාමිතික ප්‍රකාශ විද්‍යාව",
+    descriptionEn: "Reflection and refraction of light, image formation by plane mirrors, spherical curved mirrors, and lenses, and optical instruments.",
+    descriptionSi: "ආලෝක පරාවර්තනය සහ වර්තනය, තල දර්පණ, ගෝලීය දර්පණ, කාච මගින් ප්‍රතිබිම්බ සෑදීම සහ ප්‍රකාශ උපකරණ.",
+    subtopics: [
+      {
+        id: "5.1",
+        titleEn: "Reflection of Light & Plane Mirrors",
+        titleSi: "ආලෝක පරාවර්තනය සහ තල දර්පණ",
+        descriptionEn: "Laws of reflection, regular vs diffuse reflection, plane mirror images, lateral inversion, and periscopes.",
+        descriptionSi: "පරාවර්තන නියම, නියමිත හා විසිරි පරාවර්තනය, තල දර්පණ මඟින් සාදන ප්‍රතිබිම්බවල ලක්ෂණ, පාර්ශ්වික අපවර්තනය සහ පරිදර්ශකය."
+      },
+      {
+        id: "5.2",
+        titleEn: "Curved (Spherical) Mirrors",
+        titleSi: "ගෝලීය දර්පණ",
+        descriptionEn: "Concave and convex mirrors, pole, center of curvature, principal axis, principal focus, focal length, ray diagrams, and practical uses.",
+        descriptionSi: "අවතල හා උත්තල දර්පණ, ධ්‍රැවය, වක්‍රතා කේන්ද්‍රය, ප්‍රධාන අක්ෂය, නාභිය, නාභීය දුර, කිරණ සටහන් සහ ප්‍රායෝගික යෙදීම්."
+      },
+      {
+        id: "5.3",
+        titleEn: "Refraction of Light & Total Internal Reflection",
+        titleSi: "ආලෝක වර්තනය සහ පූර්ණ අභ්‍යන්තර පරාවර්තනය",
+        descriptionEn: "Laws of refraction, refractive index, apparent depth, critical angle, total internal reflection, and optical fiber applications.",
+        descriptionSi: "වර්තන නීති, වර්තනාංකය, මවාපෙනෙන ගැඹුර, අවධි කෝණය, පූර්ණ අභ්‍යන්තර පරාවර්තනය සහ ප්‍රකාශ තන්තු තාක්ෂණය."
+      },
+      {
+        id: "5.4",
+        titleEn: "Lenses & Optical Instruments",
+        titleSi: "කාච සහ ප්‍රකාශ උපකරණ",
+        descriptionEn: "Convex and concave lenses, ray diagrams, image characteristics, magnification, vision defects and corrective spectacles, microscopes, and telescopes.",
+        descriptionSi: "උත්තල හා අවතල කාච, කිරණ සටහන්, ප්‍රතිබිම්බ ලක්ෂණ, රේඛීය විශාලනය, ඇසේ දෘෂ්ටි දෝෂ හා නිවැරදි කිරීම්, අන්වීක්ෂ සහ දුරේක්ෂ."
+      }
+    ],
+    pastPapers: [
+      {
+        id: "p11-5-1",
+        year: "2023",
+        nameEn: "G.C.E. O/L 2023 - Ray Diagrams & Convex Lenses",
+        nameSi: "අ.පො.ස. සා/පෙළ 2023 - කිරණ සටහන් හා උත්තල කාච",
+        fileType: "PDF",
+        size: "2.3 MB",
+        coverage: "Convex lens ray construction, eye defect correction"
+      },
+      {
+        id: "p11-5-2",
+        year: "2022",
+        nameEn: "G.C.E. O/L 2022 - Total Internal Reflection",
+        nameSi: "අ.පො.ස. සා/පෙළ 2022 - පූර්ණ අභ්‍යන්තර පරාවර්තනය",
+        fileType: "PDF",
+        size: "1.9 MB",
+        coverage: "Critical angle, optical fibers, glass prism paths"
+      },
+      {
+        id: "p11-5-3",
+        year: "2021",
+        nameEn: "North-Western Province Target Paper 2021",
+        nameSi: "වයඹ පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        fileType: "PDF",
+        size: "2.5 MB",
+        coverage: "Concave mirror ray diagrams and magnification"
+      }
+    ],
+    quizInfo: {
+      totalQuestions: 26,
+      durationMinutes: 30,
+      difficulty: "Hard"
+    },
+    totalQuestions: 26,
+    totalFlashcards: 20,
+    targetPapers: ["O/L 2023", "O/L 2022", "North-Western 2023"],
+    demoQuestion: {
+      id: "demo-q11-5",
+      paperSource: "G.C.E. O/L 2023 (Part I)",
+      textEn: "An object is placed at the center of curvature (2F) of a concave mirror. What are the characteristics of the image formed?",
+      textSi: "අවතල දර්පණයක වක්‍රතා කේන්ද්‍රය (2F) මත වස්තුවක් තැබූ විට සෑදෙන ප්‍රතිබිම්බයේ ලක්ෂණ මොනවාද?",
+      optionsEn: [
+        "Real, inverted, same size as object, at 2F",
+        "Virtual, erect, magnified, behind mirror",
+        "Real, inverted, diminished, between F and 2F",
+        "Real, inverted, magnified, beyond 2F"
+      ],
+      optionsSi: [
+        "තාත්විකයි, යටිකුරුයි, වස්තුව තරම්මයි, 2F මත පිහිටයි",
+        "අතාත්විකයි, උඩුකුරුයි, විශාලිතයි, දර්පණය පිටුපසින් පිහිටයි",
+        "තාත්විකයි, යටිකුරුයි, කුඩායි, F සහ 2F අතර පිහිටයි",
+        "තාත්විකයි, යටිකුරුයි, විශාලිතයි, 2F ට ඔබ්බෙන් පිහිටයි"
+      ],
+      correctIndex: 0,
+      explanationEn: "When an object is placed at the center of curvature (C = 2F) of a concave mirror, the reflected rays converge at C to produce a real, inverted image of the same size as the object.",
+      explanationSi: "අවතල දර්පණයක වක්‍රතා කේන්ද්‍රය (2F) මත වස්තුවක් තැබූ විට, පරාවර්තී කිරණ නැවත 2F හිදී ඡේදනය වී වස්තුවේ ප්‍රමාණයටම සමාන, තාත්වික, යටිකුරු ප්‍රතිබිම්බයක් සාදයි.",
+      competency: "5.2 Constructs ray diagrams for curved spherical mirrors."
+    },
+    demoFlashcard: {
+      id: "demo-fc11-5",
+      topicEn: "Vision Defects",
+      topicSi: "දෘෂ්ටි දෝෂ",
+      frontEn: "What type of lens is prescribed to correct short-sightedness (myopia) and why?",
+      frontSi: "කෙටිදුර දෘෂ්ටිකත්වය (Myopia) නිවැරදි කිරීමට යොදන කාච වර්ගය කුමක්ද? ඒ ඇයි?",
+      backEn: "Concave (diverging) lens; it diverges incoming light rays so the image focuses accurately onto the retina rather than in front of it.",
+      backSi: "අවතල (අපසාරී) කාච; ඇස තුළට එන ආලෝක කිරණ තරමක් අපසාරී කර දෘෂ්ටිවිතානය ඉදිරියෙන් නාභිගත වීම වළක්වා දෘෂ්ටිවිතානය මත නාභිගත කරවයි.",
+      tag: "Optics"
+    }
+  },
+
+  {
+    id: "g11-u6",
+    grade: 11,
+    unitNumber: 6,
+    category: "biology",
+    titleEn: "Biological Processes in Human Body",
+    titleSi: "මිනිස් සිරුරේ ජීව ක්‍රියාවලි",
+    descriptionEn: "Human physiology: digestion, respiration, excretion, blood circulation, nervous and endocrine coordination, and homeostatic regulation.",
+    descriptionSi: "මිනිසාගේ කායික විද්‍යාව: ආහාර ජීර්ණය, ශ්වසනය, පිටකිරීම, රුධිර සංසරණය, සමායෝජනය සහ සමස්ථිතිය.",
+    subtopics: [
+      {
+        id: "6.1",
+        titleEn: "Process of Food Digestion",
+        titleSi: "ආහාර ජීර්ණ ක්‍රියාවලිය",
+        descriptionEn: "Human alimentary canal, digestive secretions, enzymes (amylase, pepsin, trypsin, lipase), absorption in villi, and assimilation.",
+        descriptionSi: "ආහාර මාර්ග පද්ධතිය, ජීර්ණ යුෂ, එන්සයිම (ඇමයිලේස්, පෙප්සින්, ට්‍රිප්සින්, ලයිපේස්), ක්ෂුද්‍රාන්තයේ ආන්ත්‍රික අංගුලිකා මඟින් අවශෝෂණය සහ ඒකීකරණය."
+      },
+      {
+        id: "6.2",
+        titleEn: "Process of Respiration",
+        titleSi: "ශ්වසන ක්‍රියාවලිය",
+        descriptionEn: "Respiratory system, breathing mechanisms (inhalation, exhalation), alveolar gas exchange, and cellular respiration (aerobic and anaerobic).",
+        descriptionSi: "ශ්වසන පද්ධතිය, ආශ්වාස ප්‍රශ්වාස යාන්ත්‍රණය, ගර්තවල වායු හුවමාරුව සහ සෛලීය ශ්වසනය (ස්වායු හා නිර්වායු)."
+      },
+      {
+        id: "6.3",
+        titleEn: "Process of Excretion",
+        titleSi: "පිටකිරීමේ ක්‍රියාවලිය",
+        descriptionEn: "Human urinary system, internal structure of kidney, nephron, ultrafiltration, selective reabsorption, and urine formation.",
+        descriptionSi: "මිනිසාගේ මුත්‍ර වාහිනී පද්ධතිය, වෘක්කයේ අභ්‍යන්තර ව්‍යුහය, වෘක්කාණුව, පාරපෙරීම, වරණීය ප්‍රතිඅවශෝෂණය සහ මුත්‍රා සෑදීම."
+      },
+      {
+        id: "6.4",
+        titleEn: "Process of Blood Circulation",
+        titleSi: "රුධිර සංසරණ ක්‍රියාවලිය",
+        descriptionEn: "Internal structure of heart, cardiac cycle, blood vessels, systemic and pulmonary double circulation, blood groups ABO and Rh factor, and transfusions.",
+        descriptionSi: "හෘදයේ අභ්‍යන්තර ව්‍යුහය, හෘද චක්‍රය, රුධිර නාල, ද්විත්ව සංසරණය, ABO රුධිර ගණ සහ Rh සාධකය, රුධිර පාරවිලයනය."
+      },
+      {
+        id: "6.5",
+        titleEn: "Coordination and Homeostasis in Humans",
+        titleSi: "මිනිසාගේ සමායෝජනය හා සමස්ථිතිය",
+        descriptionEn: "Nervous coordination, reflex arcs, endocrine system and hormones, thermoregulation, and blood glucose homeostasis.",
+        descriptionSi: "ස්නායු සමායෝජනය, ප්‍රත්‍යාවර්ත චාපය, අන්තරාසර්ග පද්ධතිය හා හෝමෝන, දේහ උෂ්ණත්ව පාලනය සහ රුධිර ග්ලූකෝස් සමස්ථිතිය."
+      }
+    ],
+    pastPapers: [
+      {
+        id: "p11-6-1",
+        year: "2023",
+        nameEn: "G.C.E. O/L 2023 - Human Physiology Essay",
+        nameSi: "අ.පො.ස. සා/පෙළ 2023 - මානව කායික විද්‍යාව රචනා",
+        fileType: "PDF",
+        size: "2.4 MB",
+        coverage: "Cardiac cycle & double circulation, nephron structure"
+      },
+      {
+        id: "p11-6-2",
+        year: "2022",
+        nameEn: "G.C.E. O/L 2022 - Digestive Enzymes & Homeostasis",
+        nameSi: "අ.පො.ස. සා/පෙළ 2022 - ජීර්ණ එන්සයිම හා සමස්ථිතිය",
+        fileType: "PDF",
+        size: "2.0 MB",
+        coverage: "Alimentary canal secretions, blood sugar insulin-glucagon regulation"
+      },
+      {
+        id: "p11-6-3",
+        year: "2021",
+        nameEn: "Western Province Target Paper 2021",
+        nameSi: "බස්නාහිර පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        fileType: "PDF",
+        size: "2.3 MB",
+        coverage: "Reflex action, gas exchange in alveoli"
+      }
+    ],
+    quizInfo: {
+      totalQuestions: 28,
+      durationMinutes: 35,
+      difficulty: "Medium"
+    },
+    totalQuestions: 28,
+    totalFlashcards: 22,
+    targetPapers: ["O/L 2023", "O/L 2022", "Western Prov. 2022"],
+    demoQuestion: {
+      id: "demo-q11-6",
+      paperSource: "G.C.E. O/L 2023 (Part I)",
+      textEn: "Which hormone is secreted by the islets of Langerhans in the pancreas to convert excess blood glucose into glycogen in the liver?",
+      textSi: "රුධිරයේ ඇති අතිරික්ත ග්ලූකෝස් අක්මාව තුළ ග්ලයිකොජන් බවට පත් කිරීම සඳහා අග්න්‍යාශයේ ලැන්ගර්හැන්ස් දූපත් මගින් ස්‍රාවය කරන හෝමෝනය කුමක්ද?",
+      optionsEn: ["Glucagon", "Insulin", "Thyroxine", "Adrenaline"],
+      optionsSi: ["ග්ලූකොගන්", "ඉන්සියුලින්", "තයිරොක්සින්", "ඇඩ්‍රිනලින්"],
+      correctIndex: 1,
+      explanationEn: "Beta cells of the pancreatic islets of Langerhans secrete insulin, which lowers elevated blood glucose by promoting cellular glucose uptake and conversion to stored glycogen.",
+      explanationSi: "රුධිරයේ ග්ලූකෝස් මට්ටම ඉහළ ගිය විට අග්න්‍යාශයේ බීටා සෛල මඟින් ඉන්සියුලින් ස්‍රාවය කර අතිරික්ත ග්ලූකෝස් අක්මාව හා පේශිවල ග්ලයිකොජන් ලෙස තැන්පත් කරයි.",
+      competency: "6.5 Explains homeostatic regulation mechanisms in the human body."
+    },
+    demoFlashcard: {
+      id: "demo-fc11-6",
+      topicEn: "Excretory System",
+      topicSi: "පිටකිරීමේ පද්ධතිය",
+      frontEn: "What are the structural and functional filtration units of the human kidney?",
+      frontSi: "මිනිස් වෘක්කයේ ව්‍යුහාත්මක හා කෘත්‍යාත්මක පෙරීමේ ඒකකය වන්නේ කුමක්ද?",
+      backEn: "Nephrons (approximately 1 to 1.25 million per kidney).",
+      backSi: "වෘක්කාණු (Nephrons) - එක් වෘක්කයක මිලියන 1 සිට 1.25 පමණ දක්වා පවතී.",
+      tag: "Human Body"
+    }
+  },
+
+  {
+    id: "g11-u7",
+    grade: 11,
+    unitNumber: 7,
+    category: "chemistry",
+    titleEn: "Acids, Bases and Salts",
+    titleSi: "අම්ල, භස්ම හා ලවණ",
+    descriptionEn: "Chemical properties of acids and bases, acid-base indicators, the pH scale, neutralisation reactions, and classification of salts.",
+    descriptionSi: "අම්ල සහ භස්මවල රසායනික ගුණ, අම්ල-භස්ම දර්ශක, pH පරිමාණය, උදාසීනීකරණ ප්‍රතික්‍රියා සහ ලවණ වර්ගීකරණය.",
+    subtopics: [
+      {
+        id: "7.1",
+        titleEn: "Acids & Chemical Reactions",
+        titleSi: "අම්ල සහ රසායනික ප්‍රතික්‍රියා",
+        descriptionEn: "Characteristic acid properties, strong vs weak acids, reactions with reactive metals, metal oxides, hydroxides, and carbonates.",
+        descriptionSi: "අම්ලවල ගුණ, ප්‍රබල හා දුබල අම්ල, ලෝහ, භස්ම සහ ලෝහ කාබනේට් සමඟ සිදුවන ප්‍රතික්‍රියා."
+      },
+      {
+        id: "7.2",
+        titleEn: "Bases & Alkalis",
+        titleSi: "භස්ම සහ ක්ෂාර",
+        descriptionEn: "Characteristic base properties, strong vs weak bases, water-soluble bases (alkalis), and safe laboratory handling.",
+        descriptionSi: "භස්මවල ගුණ, ප්‍රබල හා දුබල භස්ම, ජලයේ ද්‍රාව්‍ය භස්ම (ක්ෂාර) සහ රසායනාගාර ආරක්ෂාව."
+      },
+      {
+        id: "7.3",
+        titleEn: "Salts & Solubility Rules",
+        titleSi: "ලවණ සහ ද්‍රාව්‍යතා නීති",
+        descriptionEn: "Definition of salts, normal salts, acid salts, basic salts, solubility rules in water, and preparation methods.",
+        descriptionSi: "ලවණවල නිර්වචනය, ප්‍රකෘති ලවණ, අම්ල ලවණ, භස්ම ලවණ, ජලයේ ද්‍රාව්‍යතා නීති සහ පිළියෙල කිරීමේ ක්‍රම."
+      },
+      {
+        id: "7.4",
+        titleEn: "Neutralisation, Indicators & pH",
+        titleSi: "උදාසීනීකරණය, දර්ශක හා pH අගය",
+        descriptionEn: "Acid-base neutralisation reaction, indicators (litmus, methyl orange, phenolphthalein, universal indicator), pH scale (0-14), and applications in agriculture and medicine.",
+        descriptionSi: "උදාසීනීකරණ ප්‍රතික්‍රියාව, අම්ල-භස්ම දර්ශක, pH පරිමාණය (0-14) සහ කෘෂිකාර්මික හා වෛද්‍ය ක්ෂේත්‍රවල ප්‍රායෝගික යෙදීම්."
+      }
+    ],
+    pastPapers: [
+      {
+        id: "p11-7-1",
+        year: "2023",
+        nameEn: "G.C.E. O/L 2023 - Acid-Base Neutralisation & pH",
+        nameSi: "අ.පො.ස. සා/පෙළ 2023 - අම්ල-භස්ම උදාසීනීකරණය හා pH",
+        fileType: "PDF",
+        size: "2.1 MB",
+        coverage: "pH color transitions, salt formation equations"
+      },
+      {
+        id: "p11-7-2",
+        year: "2022",
+        nameEn: "G.C.E. O/L 2022 - Chemical Reactions of Acids",
+        nameSi: "අ.පො.ස. සා/පෙළ 2022 - අම්ලවල රසායනික ප්‍රතික්‍රියා",
+        fileType: "PDF",
+        size: "1.8 MB",
+        coverage: "Carbonate gas liberation, metal reactions"
+      },
+      {
+        id: "p11-7-3",
+        year: "2021",
+        nameEn: "Southern Province Target Paper 2021",
+        nameSi: "දකුණු පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        fileType: "PDF",
+        size: "2.3 MB",
+        coverage: "Classification and solubility of inorganic salts"
+      }
+    ],
+    quizInfo: {
+      totalQuestions: 24,
+      durationMinutes: 25,
+      difficulty: "Medium"
+    },
+    totalQuestions: 24,
+    totalFlashcards: 18,
+    targetPapers: ["O/L 2023", "O/L 2022", "Southern Prov. 2022"],
+    demoQuestion: {
+      id: "demo-q11-7",
+      paperSource: "G.C.E. O/L 2022 (Part I)",
+      textEn: "Which gas is liberated when dilute hydrochloric acid reacts with calcium carbonate (CaCO3)?",
+      textSi: "තනුක හයිඩ්‍රොක්ලෝරික් අම්ලය කැල්සියම් කාබනේට් (CaCO3) සමඟ ප්‍රතික්‍රියා කළ විට පිටවන වායුව කුමක්ද?",
+      optionsEn: ["Hydrogen (H2)", "Oxygen (O2)", "Carbon dioxide (CO2)", "Chlorine (Cl2)"],
+      optionsSi: ["හයිඩ්‍රජන් (H2)", "ඔක්සිජන් (O2)", "කාබන්ඩයොක්සයිඩ් (CO2)", "ක්ලෝරීන් (Cl2)"],
+      correctIndex: 2,
+      explanationEn: "Acids react with metal carbonates to form a salt, water, and liberate carbon dioxide gas (CaCO3 + 2HCl -> CaCl2 + H2O + CO2).",
+      explanationSi: "අම්ල ලෝහ කාබනේට් සමඟ ප්‍රතික්‍රියා කළ විට ලවණය, ජලය සහ කාබන්ඩයොක්සයිඩ් වායුව පිටකරයි (CaCO3 + 2HCl -> CaCl2 + H2O + CO2).",
+      competency: "7.1 Investigates chemical reactions of acids with carbonates."
+    },
+    demoFlashcard: {
+      id: "demo-fc11-7",
+      topicEn: "pH Scale",
+      topicSi: "pH පරිමාණය",
+      frontEn: "What is the pH range for acidic, neutral, and basic (alkaline) solutions at 25 °C?",
+      frontSi: "25 °C දී ආම්ලික, උදාසීන සහ භාස්මික ද්‍රාවණවල pH පරාසයන් මොනවාද?",
+      backEn: "Acidic: pH < 7; Neutral: pH = 7 (pure water); Basic/Alkaline: pH > 7 (up to 14).",
+      backSi: "ආම්ලික: pH < 7; උදාසීන: pH = 7 (පිරිසිදු ජලය); භාස්මික: pH > 7 (14 දක්වා).",
+      tag: "Acids & Bases"
+    }
+  },
+
+  {
+    id: "g11-u8",
+    grade: 11,
+    unitNumber: 8,
+    category: "chemistry",
+    titleEn: "Heat Changes Associated with Chemical Reactions",
+    titleSi: "රසායනික ප්‍රතික්‍රියා ආශ්‍රිත තාප විපර්යාස",
+    descriptionEn: "Thermochemistry: exothermic and endothermic reactions, energy level diagrams, and calculating heat changes using calorimetry equations.",
+    descriptionSi: "තාප රසායනය: තාපදායක සහ තාපාවශෝෂක ප්‍රතික්‍රියා, ශක්ති මට්ටම් සටහන් සහ Q = mcΔθ සමීකරණය භාවිතයෙන් තාප විපර්යාස ගණනය කිරීම.",
+    subtopics: [
+      {
+        id: "8.1",
+        titleEn: "Exothermic Reactions",
+        titleSi: "තාපදායක ප්‍රතික්‍රියා",
+        descriptionEn: "Chemical reactions releasing heat energy to surroundings, temperature rise, negative enthalpy change, energy level diagrams, combustion, and neutralisation.",
+        descriptionSi: "පරිසරයට තාප ශක්තිය මුදාහරින ප්‍රතික්‍රියා, උෂ්ණත්වය ඉහළ යාම, ශක්ති මට්ටම් සටහන්, දහනය සහ අම්ල-භස්ම උදාසීනීකරණය."
+      },
+      {
+        id: "8.2",
+        titleEn: "Endothermic Reactions",
+        titleSi: "තාපාවශෝෂක ප්‍රතික්‍රියා",
+        descriptionEn: "Chemical reactions absorbing heat energy from surroundings, temperature drop, positive enthalpy change, energy level diagrams, and thermal decomposition.",
+        descriptionSi: "පරිසරයෙන් තාප ශක්තිය උරාගන්නා ප්‍රතික්‍රියා, උෂ්ණත්වය පහළ යාම, ශක්ති මට්ටම් සටහන් සහ ඇමෝනියම් ක්ලෝරයිඩ් ජලයේ දියවීම."
+      },
+      {
+        id: "8.3",
+        titleEn: "Quantitative Measurement of Heat Changes",
+        titleSi: "තාප විපර්යාස ප්‍රමාණාත්මකව මැනීම",
+        descriptionEn: "Polystyrene cup calorimetry, heat change equation Q = mcΔθ, calculating molar enthalpy of neutralisation.",
+        descriptionSi: "පොලිස්ටයිරින් කෝප්ප කැලරිමීටරය, Q = mcΔθ සමීකරණය මඟින් තාප විපර්යාස සහ මවුලික උදාසීනීකරණ තාපය ගණනය කිරීම."
+      }
+    ],
+    pastPapers: [
+      {
+        id: "p11-8-1",
+        year: "2023",
+        nameEn: "G.C.E. O/L 2023 - Thermochemistry Calculations",
+        nameSi: "අ.පො.ස. සා/පෙළ 2023 - තාප රසායනික ගණනය කිරීම්",
+        fileType: "PDF",
+        size: "2.0 MB",
+        coverage: "Q = mcΔθ energy calculations, energy level diagrams"
+      },
+      {
+        id: "p11-8-2",
+        year: "2022",
+        nameEn: "G.C.E. O/L 2022 - Exothermic vs Endothermic Reactions",
+        nameSi: "අ.පො.ස. සා/පෙළ 2022 - තාපදායක හා තාපාවශෝෂක ප්‍රතික්‍රියා",
+        fileType: "PDF",
+        size: "1.8 MB",
+        coverage: "Temperature change observations, enthalpy profiles"
+      },
+      {
+        id: "p11-8-3",
+        year: "2021",
+        nameEn: "Uva Province Target Paper 2021",
+        nameSi: "ඌව පළාත් ඉලක්කගත ප්‍රශ්න පත්‍රය 2021",
+        fileType: "PDF",
+        size: "2.2 MB",
+        coverage: "Heat of neutralisation using polystyrene cups"
+      }
+    ],
+    quizInfo: {
+      totalQuestions: 20,
+      durationMinutes: 25,
+      difficulty: "Hard"
+    },
+    totalQuestions: 20,
     totalFlashcards: 16,
-    targetPapers: ["O/L 2021", "Western Prov. 2022"],
-    demoQuestion: null,
-    demoFlashcard: null
+    targetPapers: ["O/L 2023", "O/L 2022", "Uva Prov. 2023"],
+    demoQuestion: {
+      id: "demo-q11-8",
+      paperSource: "G.C.E. O/L 2023 (Part I)",
+      textEn: "Which of the following is an example of an endothermic process in chemistry?",
+      textSi: "පහත සඳහන් ඒවා අතරින් රසායන විද්‍යාවේ තාපාවශෝෂක ක්‍රියාවලියකට උදාහරණයක් වන්නේ කුමක්ද?",
+      optionsEn: [
+        "Dissolving solid ammonium chloride (NH4Cl) in water",
+        "Reaction between magnesium ribbon and dilute hydrochloric acid",
+        "Neutralisation between sodium hydroxide and hydrochloric acid",
+        "Burning of a candle in air"
+      ],
+      optionsSi: [
+        "ඝන ඇමෝනියම් ක්ලෝරයිඩ් (NH4Cl) ජලයේ දියවීම",
+        "මැග්නීසියම් පටියක් තනුක හයිඩ්‍රොක්ලෝරික් අම්ලය සමඟ ප්‍රතික්‍රියා කිරීම",
+        "සෝඩියම් හයිඩ්‍රොක්සයිඩ් සහ හයිඩ්‍රොක්ලෝරික් අම්ලය අතර උදාසීනීකරණය",
+        "වාතය තුළ ඉටිපන්දමක් දැල්වීම"
+      ],
+      correctIndex: 0,
+      explanationEn: "Dissolution of solid ammonium chloride absorbs thermal energy from the aqueous solution, resulting in a measurable drop in temperature (endothermic process).",
+      explanationSi: "ඝන ඇමෝනියම් ක්ලෝරයිඩ් ජලයේ දියවීමේදී පරිසරයෙන් තාපය අවශෝෂණය කරන බැවින් උෂ්ණත්වය පහළ බසී (තාපාවශෝෂක ක්‍රියාවලියකි).",
+      competency: "8.2 Distinguishes between exothermic and endothermic chemical processes."
+    },
+    demoFlashcard: {
+      id: "demo-fc11-8",
+      topicEn: "Thermochemistry",
+      topicSi: "තාප රසායනය",
+      frontEn: "In an energy level diagram for an exothermic reaction, is the energy of products higher or lower than reactants?",
+      frontSi: "තාපදායක ප්‍රතික්‍රියාවක ශක්ති මට්ටම් සටහනක ඵලවල ශක්තිය ප්‍රතික්‍රියකවල ශක්තියට වඩා වැඩිද අඩුද?",
+      backEn: "Lower; energy is released to the surroundings (Enthalpy change ΔH is negative).",
+      backSi: "අඩුය; ප්‍රතික්‍රියාවේදී පරිසරයට ශක්තිය මුදාහරින බැවින් ඵලවල ශක්තිය ප්‍රතික්‍රියකවල ශක්තියට වඩා අඩු වේ.",
+      tag: "Heat Changes"
+    }
   }
 ];
 

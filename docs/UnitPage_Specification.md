@@ -11,10 +11,10 @@ The **Unit Page** is a dedicated learning portal for each science unit in the G.
 ## 2. Information Architecture & URL Routing
 
 ### 2.1 Route Mapping
-- Route: `/#/unit/:id` (e.g. `/#/unit/g10-u1`, `/#/unit/g10-u2`, ...)
+- Route: `/#/unit/:id` (e.g. `/#/unit/g10-u1`, `/#/unit/g11-u1`, ...)
 - Router: `HashRouter` from `react-router-dom` (ensures zero 404 errors on GitHub Pages, static hosts, and Vite dev server).
 
-### 2.2 Grade 10 Part 1 Units (Sri Lanka National Syllabus)
+### 2.2 Grade 10 Part 1 Units (Sri Lanka National Syllabus - Edupub)
 
 | Unit ID | Unit # | Discipline | Title (English) | Title (Sinhala) | Subtopics Count |
 |---|---|---|---|---|---|
@@ -29,23 +29,39 @@ The **Unit Page** is a dedicated learning portal for each science unit in the G.
 | `g10-u9` | 09 | Physics | Resultant Force | ප්‍රතිඵලී බලය | 6 |
 | `g10-u10` | 10 | Chemistry | Chemical Bonds | රසායනික බන්ධන | 8 |
 
+### 2.3 Grade 11 Part 1 Units (Sri Lanka National Syllabus - Edupub)
+
+| Unit ID | Unit # | Discipline | Title (English) | Title (Sinhala) | Subtopics Count |
+|---|---|---|---|---|---|
+| `g11-u1` | 01 | Biology | Living Tissues | ජීවී පටක | 2 |
+| `g11-u2` | 02 | Biology | Photosynthesis | ප්‍රභාසංස්ලේෂණය | 3 |
+| `g11-u3` | 03 | Chemistry | Mixtures | මිශ්‍රණ | 3 |
+| `g11-u4` | 04 | Physics | Waves and their Applications | තරංග හා ඒවායේ යෙදීම් | 3 |
+| `g11-u5` | 05 | Physics | Geometrical Optics | ජ්‍යාමිතික ප්‍රකාශ විද්‍යාව | 4 |
+| `g11-u6` | 06 | Biology | Biological Processes in Human Body | මිනිස් සිරුරේ ජීව ක්‍රියාවලි | 5 |
+| `g11-u7` | 07 | Chemistry | Acids, Bases and Salts | අම්ල, භස්ම හා ලවණ | 4 |
+| `g11-u8` | 08 | Chemistry | Heat Changes Associated with Chemical Reactions | රසායනික ප්‍රතික්‍රියා ආශ්‍රිත තාප විපර්යාස | 3 |
+
 ---
 
 ## 3. Component Specification (`UnitPage.jsx`)
 
-### 3.1 Page Header & Navigation
-- **Back Button**: "← Back to All Lessons" / "← සියලු පාඩම්" navigating back to `/#/`.
-- **Breadcrumb**: Home / Grade 10 / Unit Title.
-- **Language Switcher**: Maintained in shared Navbar.
+### 3.1 Page Header & Navigation Controls
+- **Top Action Bar inside Hero**:
+  - `All Topics` (`සියලු පාඩම්`): Direct navigation back to the curriculum list.
+  - `Prev Lesson` (`පෙර පාඩම`): Seamless navigation to the preceding syllabus chapter.
+  - `Next Lesson` (`ඊළඟ පාඩම`): Seamless navigation to the subsequent syllabus chapter.
+  - `Share` (`බෙදාගන්න`): Copy unit URL link with visual clipboard confirmation feedback.
 
 ### 3.2 Unit Hero Banner
 - **Discipline Badge**: Color-coded (Emerald for Biology, Amber for Chemistry, Purple for Physics) with discipline icon.
 - **Title (Dual Medium)**: Primary title based on selected language (EN/SI), secondary subtitle in alternate language.
 - **Unit Description**: Concise syllabus summary.
-- **Quick Metric Counters**:
-  - Total Subtopics
-  - Practice Questions Available
-  - Past Papers Available
+- **Clickable Quick Jump Metrics**:
+  - `Subtopics` &rarr; Jumps smoothly to `#subtopics`
+  - `Practice MCQs` &rarr; Jumps smoothly to `#quiz-area`
+  - `Past Papers` &rarr; Jumps smoothly to `#past-papers`
+  - `Exam Level` &rarr; Displays "G.C.E. O/L Core"
 
 ### 3.3 Section 1: Subtopics Revision Area ("විෂය අනුමාතෘකා")
 - Grid of interactive cards for each syllabus subtopic.
@@ -62,10 +78,6 @@ The **Unit Page** is a dedicated learning portal for each science unit in the G.
 ### 3.5 Section 3: G.C.E. O/L Past Papers Area ("පසුගිය විභාග ප්‍රශ්න පත්‍ර")
 - Cards for targeted past exam questions:
   - G.C.E. O/L 2023, 2022, 2021 Part I & II questions.
-  - Provincial mock papers (Western, Central, Southern).
+  - Provincial mock papers (Western, Central, Southern, North-Western, Uva).
 - Paper badges: Year, Term, Medium (English / Sinhala).
-- "Download PDF" / "බාගත කරන්න" action buttons.
-
-### 3.6 Section 4: Sequential Navigation
-- "Previous Unit" and "Next Unit" links at the bottom allowing students to transition through the textbook chapters sequentially.
-
+- "Download PDF" / "බාගත කරන්න" action buttons with simulated feedback.
