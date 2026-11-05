@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import { useLanguage } from './context/useLanguage';
 import Navbar from './components/Navbar';
@@ -10,6 +11,7 @@ import FeaturesSection from './components/FeaturesSection';
 import FaqSection from './components/FaqSection';
 import UnitCard from './components/UnitCard';
 import UnitFilterBar from './components/UnitFilterBar';
+import UnitPage from './components/UnitPage';
 import QuizPlayerModal from './components/QuizPlayerModal';
 import FlashcardModal from './components/FlashcardModal';
 import AIPaperExtractorModal from './components/AIPaperExtractorModal';
@@ -18,17 +20,11 @@ import Footer from './components/Footer';
 import { unitsData } from './data/unitsData';
 import { Layers } from 'lucide-react';
 
-function RevisionHubContent() {
+function HomePage() {
   const { language } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGrade, setSelectedGrade] = useState('all');
   const [selectedCategory, setSelectedCategory] = useState('all');
-
-  // Modals state
-  const [activeQuizUnit, setActiveQuizUnit] = useState(null);
-  const [activeFlashcardUnit, setActiveFlashcardUnit] = useState(null);
-  const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
-  const [isRoadmapModalOpen, setIsRoadmapModalOpen] = useState(false);
 
   // Filtered Units list
   const filteredUnits = useMemo(() => {
@@ -54,11 +50,7 @@ function RevisionHubContent() {
   }, [searchQuery, selectedGrade, selectedCategory]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 selection:bg-[#602d92] selection:text-white font-sans text-gray-800">
-
-      {/* 1. OL.LK Navigation */}
-      <Navbar />
-
+    <>
       {/* 2. Auto-Changing Horizontally Paging Tabs Hero Section (3-second cycle) */}
       <HeroCarousel />
 
@@ -74,8 +66,8 @@ function RevisionHubContent() {
             <div className="w-20 h-1.5 bg-[#602d92] mx-auto rounded-full mb-3"></div>
             <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
               {language === 'en'
-                ? 'Explore all Grade 10 & 11 Science lessons at once. Select any lesson card to practice unit quizzes.'
-                : '10 සහ 11 ශ්‍රේණිවල සියලුම විද්‍යාව පාඩම් මෙතැනින් එකවර බලන්න. ප්‍රශ්නාවලි සහ පසුගිය විභාග ගැටලු සඳහා අදාළ පාඩමේ කාඩ්පත තෝරන්න.'}
+                ? 'Explore all Grade 10 & 11 Science lessons. Click "Go to Lesson" on any card to view subtopics, quiz questions, and download past papers.'
+                : '10 සහ 11 ශ්‍රේණිවල සියලුම විද්‍යාව පාඩම් මෙතැනින් එකවර බලන්න. අනුමාතෘකා, ප්‍රශ්නාවලි සහ පසුගිය විභාග ප්‍රශ්න පත්‍ර සඳහා අදාළ පාඩමේ "පාඩමට යන්න" තෝරන්න.'}
             </p>
           </div>
 
@@ -97,7 +89,6 @@ function RevisionHubContent() {
                 <UnitCard
                   key={unit.id}
                   unit={unit}
-                  onOpenQuiz={(u) => setActiveQuizUnit(u)}
                 />
               ))}
             </div>
@@ -131,22 +122,46 @@ function RevisionHubContent() {
         </div>
       </section>
 
-      {/* 4. Teachers / Faculty Section (matching ol.lk) */}
+      {/* 4. Teachers / Faculty Section */}
       <TeachersSection />
 
-      {/* 5. Timetable Section (matching ol.lk) */}
+      {/* 5. Timetable Section */}
       <TimetableSection />
 
-      {/* 6. WhatsApp Community CTA Section (matching ol.lk) */}
+      {/* 6. WhatsApp Community CTA Section */}
       <WhatsAppSection />
 
-      {/* 7. Learning Platform Features Section (matching ol.lk) */}
-      <FeaturesSection onOpenUpload={() => setIsUploadModalOpen(true)} />
+      {/* 7. Learning Platform Features Section */}
+      <FeaturesSection onOpenUpload={() => {}} />
 
-      {/* 8. FAQ Section (matching ol.lk) */}
+      {/* 8. FAQ Section */}
       <FaqSection />
+    </>
+  );
+}
 
-      {/* 9. Footer (matching ol.lk) */}
+function RevisionHubApp() {
+  // Modals state
+  const [activeQuizUnit, setActiveQuizUnit] = useState(null);
+  const [activeFlashcardUnit, setActiveFlashcardUnit] = useState(null);
+  const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
+  const [isRoadmapModalOpen, setIsRoadmapModalOpen] = useState(false);
+
+  return (
+    <div className="min-h-screen flex flex-col bg-gray-50 selection:bg-[#602d92] selection:text-white font-sans text-gray-800">
+      
+      {/* 1. Global OL.LK Navigation */}
+      <Navbar />
+
+      {/* 2. Routes (Home Page vs Unit Detail Page) */}
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/unit/:id" element={<UnitPage onOpenQuiz={(u) => setActiveQuizUnit(u)} />} />
+        </Routes>
+      </main>
+
+      {/* 3. Global Footer */}
       <Footer onOpenRoadmap={() => setIsRoadmapModalOpen(true)} />
 
       {/* Quiz Runner Modal */}
@@ -183,7 +198,9 @@ function RevisionHubContent() {
 export default function App() {
   return (
     <LanguageProvider>
-      <RevisionHubContent />
+      <HashRouter>
+        <RevisionHubApp />
+      </HashRouter>
     </LanguageProvider>
   );
 }

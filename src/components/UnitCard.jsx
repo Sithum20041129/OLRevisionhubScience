@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/useLanguage';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, BookOpen } from 'lucide-react';
 
-export default function UnitCard({ unit, onOpenQuiz }) {
+export default function UnitCard({ unit }) {
   const { language, t } = useLanguage();
+  const navigate = useNavigate();
 
   const isSinhala = language === 'si';
   const title = isSinhala ? unit.titleSi : unit.titleEn;
@@ -41,10 +43,14 @@ export default function UnitCard({ unit, onOpenQuiz }) {
     glowAccent: 'hover:shadow-slate-500/10'
   };
 
+  const handleGoToLesson = () => {
+    navigate(`/unit/${unit.id}`);
+  };
+
   return (
     <div 
       id={`lesson-${unit.id}`}
-      className={`scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group ${categoryConfig.borderAccent} ${categoryConfig.glowAccent}`}
+      className={`scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group ${categoryConfig.borderAccent} ${categoryConfig.glowAccent}`}
     >
       
       {/* Top Header Row */}
@@ -79,12 +85,22 @@ export default function UnitCard({ unit, onOpenQuiz }) {
         <p className="text-xs sm:text-sm text-slate-600 mt-2.5 line-clamp-2 leading-relaxed">
           {description}
         </p>
+
+        {/* Subtopic Count Metric */}
+        {unit.subtopics && unit.subtopics.length > 0 && (
+          <div className="mt-3 flex items-center gap-1.5 text-xs font-semibold text-slate-500">
+            <BookOpen className="w-3.5 h-3.5 text-[#602d92]" />
+            <span>
+              {unit.subtopics.length} {isSinhala ? 'අනුමාතෘකා අඩංගුයි' : 'Subtopics Included'}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Bottom Action Area: Go to Lesson */}
       <div className="mt-5 pt-4 border-t border-slate-100">
         <button
-          onClick={() => onOpenQuiz(unit)}
+          onClick={handleGoToLesson}
           className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-purple-50 hover:bg-[#602d92] text-[#602d92] hover:text-white text-xs sm:text-sm font-bold border border-purple-200/80 hover:border-[#602d92] transition-all duration-200 cursor-pointer shadow-2xs hover:shadow-md group/btn"
         >
           <span>{isSinhala ? 'පාඩමට යන්න' : 'Go to Lesson'}</span>

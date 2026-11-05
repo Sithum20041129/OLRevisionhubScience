@@ -1,0 +1,70 @@
+# Unit Page Specification & Architecture
+
+## 1. Overview
+The **Unit Page** is a dedicated learning portal for each science unit in the G.C.E. Ordinary Level Science Revision Hub. It provides students with a focused, distraction-free environment to:
+1. **Revise Subtopics**: Explore syllabus subtopics with comprehensive notes.
+2. **Practice Unit Quizzes**: Test knowledge through categorized MCQs and structured questions.
+3. **Download Past Papers**: Access real G.C.E. O/L past examination papers and provincial target papers categorized by this specific unit.
+
+---
+
+## 2. Information Architecture & URL Routing
+
+### 2.1 Route Mapping
+- Route: `/#/unit/:id` (e.g. `/#/unit/g10-u1`, `/#/unit/g10-u2`, ...)
+- Router: `HashRouter` from `react-router-dom` (ensures zero 404 errors on GitHub Pages, static hosts, and Vite dev server).
+
+### 2.2 Grade 10 Part 1 Units (Sri Lanka National Syllabus)
+
+| Unit ID | Unit # | Discipline | Title (English) | Title (Sinhala) | Subtopics Count |
+|---|---|---|---|---|---|
+| `g10-u1` | 01 | Biology | Chemical Basis of Life | ජීවයේ රසායනික පදනම | 7 |
+| `g10-u2` | 02 | Physics | Motion in a Straight Line | සරල රේඛීය චලිතය | 8 |
+| `g10-u3` | 03 | Chemistry | Structure of Matter | පදාර්ථයේ ව්‍යුහය | 8 |
+| `g10-u4` | 04 | Physics | Newton's Laws of Motion | චලිතය පිළිබඳ නිව්ටන් නියම | 6 |
+| `g10-u5` | 05 | Physics | Friction | ඝර්ෂණය | 6 |
+| `g10-u6` | 06 | Biology | Plant & Animal Cell Structure and Functions | ශාක හා සත්ත්ව සෛලවල ව්‍යුහය හා කෘත්‍ය | 7 |
+| `g10-u7` | 07 | Chemistry | Quantification of Elements and Compounds | මූලද්‍රව්‍ය හා සංයෝග ප්‍රමාණනය | 6 |
+| `g10-u8` | 08 | Biology | Characteristics of Organisms | ජීවීන්ගේ ලාක්ෂණික | 8 |
+| `g10-u9` | 09 | Physics | Resultant Force | ප්‍රතිඵලී බලය | 6 |
+| `g10-u10` | 10 | Chemistry | Chemical Bonds | රසායනික බන්ධන | 8 |
+
+---
+
+## 3. Component Specification (`UnitPage.jsx`)
+
+### 3.1 Page Header & Navigation
+- **Back Button**: "← Back to All Lessons" / "← සියලු පාඩම්" navigating back to `/#/`.
+- **Breadcrumb**: Home / Grade 10 / Unit Title.
+- **Language Switcher**: Maintained in shared Navbar.
+
+### 3.2 Unit Hero Banner
+- **Discipline Badge**: Color-coded (Emerald for Biology, Amber for Chemistry, Purple for Physics) with discipline icon.
+- **Title (Dual Medium)**: Primary title based on selected language (EN/SI), secondary subtitle in alternate language.
+- **Unit Description**: Concise syllabus summary.
+- **Quick Metric Counters**:
+  - Total Subtopics
+  - Practice Questions Available
+  - Past Papers Available
+
+### 3.3 Section 1: Subtopics Revision Area ("විෂය අනුමාතෘකා")
+- Grid of interactive cards for each syllabus subtopic.
+- Numbering badge (e.g. `1.1`, `1.2`).
+- Subtopic title in Sinhala & English.
+- Summary of learning outcomes.
+- "Revise Notes" / "පාඩම් සටහන්" action button triggering note view / modal.
+
+### 3.4 Section 2: Interactive Quiz & Practice Area ("ඒකක ප්‍රශ්නාවලිය")
+- High-contrast practice card.
+- Exam format breakdown (MCQ and structured).
+- "Start Unit Quiz" / "ප්‍රශ්නාවලිය අරඹන්න" button with question counter and difficulty indicator.
+
+### 3.5 Section 3: G.C.E. O/L Past Papers Area ("පසුගිය විභාග ප්‍රශ්න පත්‍ර")
+- Cards for targeted past exam questions:
+  - G.C.E. O/L 2023, 2022, 2021 Part I & II questions.
+  - Provincial mock papers (Western, Central, Southern).
+- Paper badges: Year, Term, Medium (English / Sinhala).
+- "Download PDF" / "බාගත කරන්න" action buttons.
+
+### 3.6 Section 4: Sequential Navigation
+- "Previous Unit" and "Next Unit" links at the bottom allowing students to transition through the textbook chapters sequentially.

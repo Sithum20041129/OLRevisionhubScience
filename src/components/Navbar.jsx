@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../context/useLanguage';
 import { Menu, X, Globe2, BookOpen, ChevronDown, Search, ArrowRight, Layers } from 'lucide-react';
 import { unitsData } from '../data/unitsData';
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const { language, toggleLanguage } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [lessonsBarOpen, setLessonsBarOpen] = useState(false);
@@ -43,26 +45,11 @@ export default function Navbar() {
     return true;
   });
 
-  // Navigate directly to the lesson card and highlight it
+  // Navigate directly to the lesson's dedicated unit page
   const navigateToLesson = (unitId) => {
     setLessonsBarOpen(false);
     setMobileMenuOpen(false);
-
-    // Give state time to update, then smooth scroll to the card
-    setTimeout(() => {
-      const el = document.getElementById(`lesson-${unitId}`);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        el.classList.add('ring-4', 'ring-[#602d92]', 'shadow-2xl');
-        setTimeout(() => {
-          el.classList.remove('ring-4', 'ring-[#602d92]', 'shadow-2xl');
-        }, 2200);
-      } else {
-        // Fallback to #units section
-        const unitsSec = document.getElementById('units');
-        if (unitsSec) unitsSec.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    navigate(`/unit/${unitId}`);
   };
 
   return (
@@ -71,7 +58,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           
           {/* Left: Brand Logo */}
-          <a className="flex-shrink-0 flex items-center gap-2.5" href="#">
+          <Link className="flex-shrink-0 flex items-center gap-2.5" to="/">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#602d92] to-indigo-600 flex items-center justify-center text-white shadow-md shadow-purple-900/20">
               <BookOpen className="w-5 h-5 text-white" />
             </div>
@@ -88,13 +75,13 @@ export default function Navbar() {
                 {isSinhala ? 'සා/පෙළ විද්‍යා පුනරීක්ෂණය' : 'Online Revision Platform'}
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* Center: Centered Navigation Links with "Lessons" Dropdown Bar Trigger */}
           <div className="hidden md:flex flex-1 items-center justify-center space-x-6 lg:space-x-8 text-sm">
-            <a className="text-gray-600 hover:text-[#602d92] transition font-semibold" href="#">
+            <Link className="text-gray-600 hover:text-[#602d92] transition font-semibold" to="/">
               {isSinhala ? 'මුල් පිටුව' : 'Home'}
-            </a>
+            </Link>
 
             {/* "Lessons" Interactive Dropdown Button */}
             <div className="relative">
@@ -200,20 +187,20 @@ export default function Navbar() {
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                 <input
                   type="text"
+                  placeholder={isSinhala ? 'පාඩම් නම හෝ අංකයෙන් සොයන්න...' : 'Search lessons by title or #...'}
                   value={barSearch}
                   onChange={(e) => setBarSearch(e.target.value)}
-                  placeholder={isSinhala ? 'පාඩමක් සොයන්න...' : 'Search lesson...'}
-                  className="w-full pl-9 pr-3 py-2 rounded-xl bg-gray-50 border border-gray-200 text-xs sm:text-sm text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#602d92]"
+                  className="w-full pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:border-[#602d92] focus:bg-white transition"
                 />
               </div>
 
-              {/* Grade Tabs inside bar */}
-              <div className="flex items-center gap-1.5 p-1 bg-gray-100 rounded-xl">
+              {/* Grade Filter Pill Tabs */}
+              <div className="flex items-center gap-1 bg-gray-100 p-1 rounded-xl self-start md:self-auto">
                 <button
                   onClick={() => setBarGradeFilter('all')}
                   className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition cursor-pointer ${
                     barGradeFilter === 'all'
-                      ? 'bg-white text-gray-900 shadow-xs'
+                      ? 'bg-[#602d92] text-white shadow-xs'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -365,13 +352,13 @@ export default function Navbar() {
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-6 pt-4 pb-6 space-y-3 shadow-lg animate-in slide-in-from-top-2">
-          <a 
+          <Link 
+            to="/"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-[#602d92] font-bold py-2 hover:bg-purple-50 rounded-xl text-center" 
-            href="#"
           >
             Home
-          </a>
+          </Link>
 
           {/* Lessons Expandable Button on Mobile */}
           <button
