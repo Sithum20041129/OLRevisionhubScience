@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/useLanguage';
 import { unitsData, getUnitById } from '../data/unitsData';
 import { 
-  ArrowLeft, 
   BookOpen, 
   FileText, 
   HelpCircle, 
@@ -17,7 +16,8 @@ import {
   GraduationCap, 
   Share2,
   Check,
-  AlertCircle
+  AlertCircle,
+  Layers
 } from 'lucide-react';
 
 export default function UnitPage({ onOpenQuiz }) {
@@ -106,77 +106,103 @@ export default function UnitPage({ onOpenQuiz }) {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
-      
-      {/* TOP NAVIGATION BREADCRUMB BAR */}
-      <div className="bg-white border-b border-slate-200 sticky top-16 sm:top-20 z-30 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
-          
-          <div className="flex items-center gap-2 sm:gap-4 overflow-hidden">
-            <button
-              onClick={() => navigate('/')}
-              className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#602d92] hover:text-indigo-800 transition py-1.5 px-3 rounded-lg hover:bg-purple-50 cursor-pointer"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>{isSinhala ? 'සියලු පාඩම් වෙත' : 'All Lessons'}</span>
-            </button>
 
-            <span className="text-slate-300">/</span>
-
-            <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500 truncate">
-              <span className="font-semibold text-slate-700">
-                {isSinhala ? `${currentUnit.grade} ශ්‍රේණිය` : `Grade ${currentUnit.grade}`}
-              </span>
-              <span>•</span>
-              <span className="truncate font-medium text-slate-600">
-                {isSinhala ? `පාඩම 0${currentUnit.unitNumber}` : `Unit 0${currentUnit.unitNumber}`}
-              </span>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <button
-              onClick={handleCopyLink}
-              title="Share lesson link"
-              className="p-2 rounded-lg text-slate-500 hover:text-[#602d92] hover:bg-purple-50 transition cursor-pointer text-xs flex items-center gap-1 font-semibold"
-            >
-              {copiedLink ? (
-                <>
-                  <Check className="w-4 h-4 text-emerald-600" />
-                  <span className="text-emerald-600 hidden sm:inline">{isSinhala ? 'පිටපත් කළා' : 'Copied'}</span>
-                </>
-              ) : (
-                <>
-                  <Share2 className="w-4 h-4" />
-                  <span className="hidden sm:inline">{isSinhala ? 'බෙදාගන්න' : 'Share'}</span>
-                </>
-              )}
-            </button>
-          </div>
-
-        </div>
-      </div>
-
-      {/* UNIT HERO BANNER */}
-      <section className={`bg-gradient-to-br ${theme.bannerBg} text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden shadow-lg`}>
+      {/* UNIT HERO BANNER & UNIT DETAILS SECTION */}
+      <section className={`bg-gradient-to-br ${theme.bannerBg} text-white py-10 sm:py-14 px-4 sm:px-6 lg:px-8 relative overflow-hidden shadow-lg`}>
         {/* Ambient background glow */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-2xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto relative z-10">
           
-          <div className="flex flex-wrap items-center gap-2.5 mb-4">
-            <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-lg bg-white/15 border border-white/25 backdrop-blur-md">
-              {isSinhala ? `10 ශ්‍රේණිය විද්‍යාව - 1 වන කොටස` : `Grade 10 Science - Part 1`}
-            </span>
-            <span className={`text-xs font-bold px-3 py-1 rounded-lg border backdrop-blur-md flex items-center gap-1.5 ${theme.pillBg}`}>
-              <span>{theme.icon}</span>
-              <span>{theme.label}</span>
-            </span>
-            <span className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-black/30 border border-white/10 text-slate-300">
-              {isSinhala ? `පාඩම් අංකය: 0${currentUnit.unitNumber}` : `Unit: 0${currentUnit.unitNumber}`}
-            </span>
+          {/* TOP ROW: BADGES & NAVIGATION ACTION BUTTONS */}
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-6 border-b border-white/15">
+            
+            {/* Left: Syllabus Badges */}
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-xl bg-white/15 border border-white/25 backdrop-blur-md">
+                {isSinhala ? `10 ශ්‍රේණිය විද්‍යාව - 1 වන කොටස` : `Grade 10 Science - Part 1`}
+              </span>
+              <span className={`text-xs font-bold px-3 py-1.5 rounded-xl border backdrop-blur-md flex items-center gap-1.5 ${theme.pillBg}`}>
+                <span>{theme.icon}</span>
+                <span>{theme.label}</span>
+              </span>
+              <span className="text-xs font-semibold px-2.5 py-1.5 rounded-xl bg-black/30 border border-white/10 text-slate-300">
+                {isSinhala ? `පාඩම 0${currentUnit.unitNumber}` : `Unit 0${currentUnit.unitNumber}`}
+              </span>
+            </div>
+
+            {/* Right: Quick Action Buttons (All Topics, Previous Lesson, Next Lesson, Share) */}
+            <div className="flex flex-wrap items-center gap-2">
+              
+              {/* All Topics / All Lessons Button */}
+              <button
+                type="button"
+                onClick={() => navigate('/')}
+                className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/15 hover:bg-white text-white hover:text-slate-900 border border-white/20 text-xs font-bold transition-all duration-200 cursor-pointer shadow-xs backdrop-blur-md group"
+                title={isSinhala ? 'සියලුම පාඩම් වෙත යන්න' : 'View All Topics / Lessons'}
+              >
+                <Layers className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                <span>{isSinhala ? 'සියලු පාඩම්' : 'All Topics'}</span>
+              </button>
+
+              {/* Previous Lesson Button */}
+              <button
+                type="button"
+                disabled={!prevUnit}
+                onClick={() => prevUnit && handleNavigateUnit(prevUnit.id)}
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all duration-200 backdrop-blur-md border ${
+                  prevUnit 
+                    ? 'bg-white/15 hover:bg-white text-white hover:text-slate-900 border-white/20 cursor-pointer shadow-xs' 
+                    : 'bg-white/5 text-white/30 border-white/10 cursor-not-allowed opacity-50'
+                }`}
+                title={prevUnit ? (isSinhala ? `පෙර පාඩම: ${prevUnit.titleSi}` : `Previous: ${prevUnit.titleEn}`) : undefined}
+              >
+                <ChevronLeft className="w-4 h-4" />
+                <span>{isSinhala ? 'පෙර පාඩම' : 'Prev Lesson'}</span>
+              </button>
+
+              {/* Next Lesson Button */}
+              <button
+                type="button"
+                disabled={!nextUnit}
+                onClick={() => nextUnit && handleNavigateUnit(nextUnit.id)}
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all duration-200 backdrop-blur-md border ${
+                  nextUnit 
+                    ? 'bg-white/15 hover:bg-white text-white hover:text-slate-900 border-white/20 cursor-pointer shadow-xs' 
+                    : 'bg-white/5 text-white/30 border-white/10 cursor-not-allowed opacity-50'
+                }`}
+                title={nextUnit ? (isSinhala ? `ඊළඟ පාඩම: ${nextUnit.titleSi}` : `Next: ${nextUnit.titleEn}`) : undefined}
+              >
+                <span>{isSinhala ? 'ඊළඟ පාඩම' : 'Next Lesson'}</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+
+              {/* Share Button */}
+              <button
+                type="button"
+                onClick={handleCopyLink}
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/15 hover:bg-white text-white hover:text-slate-900 border border-white/20 text-xs font-bold transition-all duration-200 cursor-pointer shadow-xs backdrop-blur-md"
+                title="Share lesson link"
+              >
+                {copiedLink ? (
+                  <>
+                    <Check className="w-4 h-4 text-emerald-400" />
+                    <span className="text-emerald-300 font-bold">{isSinhala ? 'පිටපත් කළා!' : 'Copied!'}</span>
+                  </>
+                ) : (
+                  <>
+                    <Share2 className="w-4 h-4" />
+                    <span>{isSinhala ? 'බෙදාගන්න' : 'Share'}</span>
+                  </>
+                )}
+              </button>
+
+            </div>
+
           </div>
 
+          {/* UNIT TITLES & DESCRIPTION */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight max-w-4xl">
             {isSinhala ? currentUnit.titleSi : currentUnit.titleEn}
           </h1>
@@ -189,7 +215,7 @@ export default function UnitPage({ onOpenQuiz }) {
             {isSinhala ? currentUnit.descriptionSi : currentUnit.descriptionEn}
           </p>
 
-          {/* Quick Metrics Bar: Clickable Buttons for Subtopics, Practice MCQs, Past Papers */}
+          {/* Quick Metrics Bar: Clickable Jump Buttons */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-white/15 max-w-3xl">
             
             {/* 1. Subtopics Clickable Button */}
@@ -249,7 +275,7 @@ export default function UnitPage({ onOpenQuiz }) {
               </p>
             </button>
 
-            {/* 4. Exam Level (Kept static, non-clickable) */}
+            {/* 4. Exam Level (Static) */}
             <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-3.5">
               <div className="flex items-center gap-2 text-amber-300 text-xs font-bold mb-1">
                 <GraduationCap className="w-4 h-4" />
@@ -496,7 +522,7 @@ export default function UnitPage({ onOpenQuiz }) {
         </section>
 
         {/* ============================================================== */}
-        {/* SECTION 4: SEQUENTIAL NAVIGATION BAR (ඊළඟ / පෙර පාඩම) */}
+        {/* SECTION 4: BOTTOM SEQUENTIAL NAVIGATION BAR (ඊළඟ / පෙර පාඩම) */}
         {/* ============================================================== */}
         <section className="pt-6 border-t border-slate-200">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
