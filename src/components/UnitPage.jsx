@@ -13,6 +13,7 @@ import {
   Sparkles, 
   ChevronRight, 
   ChevronLeft,
+  ChevronDown,
   GraduationCap, 
   Share2,
   Check,
@@ -93,6 +94,14 @@ export default function UnitPage({ onOpenQuiz }) {
   const handleNavigateUnit = (targetId) => {
     setActiveSubtopic(null);
     navigate(`/unit/${targetId}`);
+  };
+
+  // Smooth scroll to a target section on the page
+  const scrollToSection = (sectionId) => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
@@ -180,38 +189,67 @@ export default function UnitPage({ onOpenQuiz }) {
             {isSinhala ? currentUnit.descriptionSi : currentUnit.descriptionEn}
           </p>
 
-          {/* Quick Metrics Bar */}
+          {/* Quick Metrics Bar: Clickable Buttons for Subtopics, Practice MCQs, Past Papers */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-white/15 max-w-3xl">
-            <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-3.5">
-              <div className="flex items-center gap-2 text-cyan-400 text-xs font-bold mb-1">
-                <BookOpen className="w-4 h-4" />
-                <span>{isSinhala ? 'අනුමාතෘකා' : 'Subtopics'}</span>
+            
+            {/* 1. Subtopics Clickable Button */}
+            <button
+              type="button"
+              onClick={() => scrollToSection('subtopics')}
+              title={isSinhala ? 'විෂය අනුමාතෘකා වෙත යන්න' : 'Jump to Subtopics'}
+              className="text-left bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/10 hover:border-cyan-400/50 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg"
+            >
+              <div className="flex items-center justify-between text-cyan-400 text-xs font-bold mb-1">
+                <div className="flex items-center gap-1.5">
+                  <BookOpen className="w-4 h-4" />
+                  <span>{isSinhala ? 'අනුමාතෘකා' : 'Subtopics'}</span>
+                </div>
+                <ChevronDown className="w-3.5 h-3.5 text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-y-0.5 transition-all" />
               </div>
               <p className="text-xl sm:text-2xl font-black text-white">
                 {currentUnit.subtopics?.length || 0}
               </p>
-            </div>
+            </button>
 
-            <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-3.5">
-              <div className="flex items-center gap-2 text-purple-300 text-xs font-bold mb-1">
-                <HelpCircle className="w-4 h-4" />
-                <span>{isSinhala ? 'ප්‍රශ්නාවලි ගැටලු' : 'Practice MCQs'}</span>
+            {/* 2. Practice MCQs Clickable Button */}
+            <button
+              type="button"
+              onClick={() => scrollToSection('quiz-area')}
+              title={isSinhala ? 'ප්‍රශ්නාවලිය වෙත යන්න' : 'Jump to Quiz Practice'}
+              className="text-left bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/10 hover:border-purple-400/50 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg"
+            >
+              <div className="flex items-center justify-between text-purple-300 text-xs font-bold mb-1">
+                <div className="flex items-center gap-1.5">
+                  <HelpCircle className="w-4 h-4" />
+                  <span>{isSinhala ? 'ප්‍රශ්නාවලි ගැටලු' : 'Practice MCQs'}</span>
+                </div>
+                <ChevronDown className="w-3.5 h-3.5 text-purple-300/60 group-hover:text-purple-200 group-hover:translate-y-0.5 transition-all" />
               </div>
               <p className="text-xl sm:text-2xl font-black text-white">
                 {currentUnit.totalQuestions || 20}+
               </p>
-            </div>
+            </button>
 
-            <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-3.5">
-              <div className="flex items-center gap-2 text-emerald-300 text-xs font-bold mb-1">
-                <FileText className="w-4 h-4" />
-                <span>{isSinhala ? 'පසුගිය ප්‍රශ්න පත්‍ර' : 'Past Papers'}</span>
+            {/* 3. Past Papers Clickable Button */}
+            <button
+              type="button"
+              onClick={() => scrollToSection('past-papers')}
+              title={isSinhala ? 'පසුගිය ප්‍රශ්න පත්‍ර වෙත යන්න' : 'Jump to Past Papers'}
+              className="text-left bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/10 hover:border-emerald-400/50 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg"
+            >
+              <div className="flex items-center justify-between text-emerald-300 text-xs font-bold mb-1">
+                <div className="flex items-center gap-1.5">
+                  <FileText className="w-4 h-4" />
+                  <span>{isSinhala ? 'පසුගිය ප්‍රශ්න පත්‍ර' : 'Past Papers'}</span>
+                </div>
+                <ChevronDown className="w-3.5 h-3.5 text-emerald-300/60 group-hover:text-emerald-200 group-hover:translate-y-0.5 transition-all" />
               </div>
               <p className="text-xl sm:text-2xl font-black text-white">
                 {currentUnit.pastPapers?.length || 2}
               </p>
-            </div>
+            </button>
 
+            {/* 4. Exam Level (Kept static, non-clickable) */}
             <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-3.5">
               <div className="flex items-center gap-2 text-amber-300 text-xs font-bold mb-1">
                 <GraduationCap className="w-4 h-4" />
@@ -221,6 +259,7 @@ export default function UnitPage({ onOpenQuiz }) {
                 G.C.E. O/L Core
               </p>
             </div>
+
           </div>
 
         </div>
