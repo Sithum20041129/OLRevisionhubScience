@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/useLanguage';
 import { unitsData, getUnitById } from '../data/unitsData';
+import { getUnitRevisionData, getSubtopicNote } from '../data/subtopicNotes';
+import UnitRevisionNotes from './UnitRevisionNotes';
 import {
   BookOpen,
   FileText,
@@ -17,7 +19,10 @@ import {
   Share2,
   Check,
   AlertCircle,
-  Layers
+  AlertTriangle,
+  Layers,
+  ZoomIn,
+  X
 } from 'lucide-react';
 
 export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
@@ -28,12 +33,15 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
 
   // Selected subtopic for note reading modal
   const [activeSubtopic, setActiveSubtopic] = useState(null);
+  const [modalImage, setModalImage] = useState(null);
   const [downloadSuccess, setDownloadSuccess] = useState(null);
   const [copiedLink, setCopiedLink] = useState(false);
   const [liveCounts, setLiveCounts] = useState(null);
 
   // Retrieve current unit
   const currentUnit = getUnitById(id) || unitsData[0];
+  const unitRevisionData = getUnitRevisionData(currentUnit.id, isSinhala);
+  const detailedNote = activeSubtopic ? getSubtopicNote(currentUnit.id, activeSubtopic.id, isSinhala) : null;
 
   // Syllabus part determination (Grade 11 Units 9-15 are Part 2)
   const isPart2 = (currentUnit.grade === 11 && currentUnit.unitNumber >= 9) || (currentUnit.grade === 10 && currentUnit.unitNumber > 10);
@@ -240,7 +248,7 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                     </p>
 
                     {/* Quick Metrics Bar: Clickable Jump Buttons */}
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-white/15 max-w-3xl">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 mt-8 pt-6 border-t border-white/15 max-w-4xl">
 
                       {/* 1. Subtopics Clickable Button */}
                       <button
@@ -261,7 +269,28 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                         </p>
                       </button>
 
-                      {/* 2. Practice MCQs Clickable Button */}
+                      {/* 2. Revision Guide Jump Button (If available) */}
+                      {unitRevisionData && (
+                        <button
+                          type="button"
+                          onClick={() => scrollToSection('revision-guide')}
+                          title={isSinhala ? 'පෙළපොත් පුනරීක්ෂණ සටහන් වෙත යන්න' : 'Jump to Official Textbook Revision Guide'}
+                          className="text-left bg-emerald-950/50 hover:bg-emerald-900/60 backdrop-blur-md border border-emerald-500/40 hover:border-emerald-400 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg"
+                        >
+                          <div className="flex items-center justify-between text-emerald-400 text-xs font-bold mb-1">
+                            <div className="flex items-center gap-1.5">
+                              <Sparkles className="w-4 h-4" />
+                              <span>{isSinhala ? 'පෙළපොත් සටහන්' : 'Revision Guide'}</span>
+                            </div>
+                            <ChevronDown className="w-3.5 h-3.5 text-emerald-400/60 group-hover:text-emerald-300 group-hover:translate-y-0.5 transition-all" />
+                          </div>
+                          <p className="text-xl sm:text-2xl font-black text-white">
+                            {unitRevisionData.subtopics.length} <span className="text-xs font-semibold text-emerald-300">Modules</span>
+                          </p>
+                        </button>
+                      )}
+
+                      {/* 3. Practice MCQs Clickable Button */}
                       <button
                         type="button"
                         onClick={() => scrollToSection('quiz-area')}
@@ -280,7 +309,7 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                         </p>
                       </button>
 
-                      {/* 3. Past Papers Clickable Button */}
+                      {/* 4. Past Papers Clickable Button */}
                       <button
                         type="button"
                         onClick={() => scrollToSection('past-papers')}
@@ -299,7 +328,7 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                         </p>
                       </button>
 
-                      {/* 4. Exam Level (Static) */}
+                      {/* 5. Exam Level (Static) */}
                       <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-3.5">
                         <div className="flex items-center gap-2 text-amber-300 text-xs font-bold mb-1">
                           <GraduationCap className="w-4 h-4" />
@@ -399,6 +428,17 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                       ))}
                     </div>
                   </section>
+
+                  {/* ============================================================== */}
+                  {/* SECTION: TEXTBOOK REVISION GUIDE (පෙළපොත් පුනරීක්ෂණ සටහන්) */}
+                  {/* ============================================================== */}
+                  {unitRevisionData && (
+                    <UnitRevisionNotes
+                      revisionData={unitRevisionData}
+                      isSinhala={isSinhala}
+                      onOpenSubtopicModal={(sub) => setActiveSubtopic(sub)}
+                    />
+                  )}
 
                   {/* ============================================================== */}
                   {/* SECTION 2: INTERACTIVE PRACTICE & QUIZ AREA (ඒකක ප්‍රශ්නාවලිය) */}
@@ -609,56 +649,260 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
 
                 </main>
 
-                {/* SUBTOPIC NOTE PREVIEW MODAL */}
+                {/* SUBTOPIC NOTE PREVIEW & REVISION MODAL */}
                 {activeSubtopic && (
-                  <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-                    <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative animate-in fade-in zoom-in-95 duration-200">
+                  <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+                    <div className={`bg-white rounded-3xl w-full shadow-2xl border border-slate-200 relative animate-in fade-in zoom-in-95 duration-200 flex flex-col my-auto ${
+                      detailedNote ? 'max-w-4xl max-h-[90vh]' : 'max-w-lg p-6 sm:p-8'
+                    }`}>
 
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="text-xs font-black px-2.5 py-1 rounded-lg bg-[#602d92] text-white">
-                          {activeSubtopic.id}
+                      {/* MODAL HEADER */}
+                      <div className={`flex items-center justify-between border-b border-slate-100 ${
+                        detailedNote ? 'p-5 sm:p-6 bg-gradient-to-r from-slate-50 to-white' : 'mb-4 border-none p-0'
+                      }`}>
+                        <div className="flex items-center gap-2.5">
+                          <span className="text-xs font-black px-2.5 py-1 rounded-lg bg-emerald-600 text-white">
+                            {activeSubtopic.id}
+                          </span>
+                          {detailedNote && (
+                            <span className="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
+                              {detailedNote.textbookSection}
+                            </span>
+                          )}
+                          {detailedNote && (
+                            <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 hidden sm:flex items-center gap-1">
+                              <Clock className="w-3.5 h-3.5" />
+                              {detailedNote.readingTimeMinutes} min
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Top controls: Subtopic prev/next & close */}
+                        <div className="flex items-center gap-2">
+                          {currentUnit.subtopics && currentUnit.subtopics.length > 1 && (
+                            <div className="flex items-center gap-1 border border-slate-200 rounded-xl p-0.5 bg-slate-50">
+                              <button
+                                onClick={() => {
+                                  const idx = currentUnit.subtopics.findIndex((s) => s.id === activeSubtopic.id);
+                                  if (idx > 0) setActiveSubtopic(currentUnit.subtopics[idx - 1]);
+                                }}
+                                disabled={currentUnit.subtopics.findIndex((s) => s.id === activeSubtopic.id) === 0}
+                                className="p-1.5 rounded-lg hover:bg-white text-slate-600 disabled:opacity-30 disabled:hover:bg-transparent cursor-pointer disabled:cursor-not-allowed transition"
+                                title="Previous Subtopic"
+                              >
+                                <ChevronLeft className="w-4 h-4" />
+                              </button>
+                              <span className="text-[11px] font-bold text-slate-500 px-1">
+                                {currentUnit.subtopics.findIndex((s) => s.id === activeSubtopic.id) + 1} / {currentUnit.subtopics.length}
+                              </span>
+                              <button
+                                onClick={() => {
+                                  const idx = currentUnit.subtopics.findIndex((s) => s.id === activeSubtopic.id);
+                                  if (idx < currentUnit.subtopics.length - 1) setActiveSubtopic(currentUnit.subtopics[idx + 1]);
+                                }}
+                                disabled={currentUnit.subtopics.findIndex((s) => s.id === activeSubtopic.id) === currentUnit.subtopics.length - 1}
+                                className="p-1.5 rounded-lg hover:bg-white text-slate-600 disabled:opacity-30 disabled:hover:bg-transparent cursor-pointer disabled:cursor-not-allowed transition"
+                                title="Next Subtopic"
+                              >
+                                <ChevronRight className="w-4 h-4" />
+                              </button>
+                            </div>
+                          )}
+
+                          <button
+                            onClick={() => setActiveSubtopic(null)}
+                            className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition cursor-pointer font-bold text-sm"
+                            title="Close"
+                          >
+                            ✕
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* DETAILED REVISION CONTENT (If available) */}
+                      {detailedNote ? (
+                        <div className="overflow-y-auto p-5 sm:p-7 space-y-6 flex-1">
+                          
+                          {/* Subtopic Title Banner */}
+                          <div>
+                            <h3 className="text-xl sm:text-2xl font-black text-slate-900 leading-snug">
+                              {isSinhala ? detailedNote.titleSi : detailedNote.titleEn}
+                            </h3>
+                            <p className="text-xs sm:text-sm text-slate-500 italic mt-0.5 font-medium">
+                              {isSinhala ? detailedNote.titleEn : detailedNote.titleSi}
+                            </p>
+                          </div>
+
+                          {/* Key Takeaways */}
+                          <div className="bg-emerald-50/60 rounded-2xl p-4 border border-emerald-100 space-y-2">
+                            <p className="text-xs font-black uppercase tracking-wider text-emerald-800 flex items-center gap-1.5">
+                              <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+                              <span>{isSinhala ? 'මූලික මතක සටහන් (NIE විෂය නිර්දේශය)' : 'Core Revision Points (NIE Syllabus)'}</span>
+                            </p>
+                            <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700">
+                              {detailedNote.keyTakeaways.map((point, pIdx) => (
+                                <li key={pIdx} className="flex items-start gap-2">
+                                  <span className="text-emerald-600 font-bold">•</span>
+                                  <span>{point}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+
+                          {/* Key Definitions */}
+                          {detailedNote.keyDefinitions && detailedNote.keyDefinitions.length > 0 && (
+                            <div className="space-y-3">
+                              <p className="text-xs font-black uppercase tracking-wider text-slate-900 flex items-center gap-1.5">
+                                <BookOpen className="w-3.5 h-3.5 text-indigo-600" />
+                                <span>{isSinhala ? 'විභාගයට වැදගත් පෙළපොත් අර්ථ දැක්වීම්' : 'Key Textbook Definitions'}</span>
+                              </p>
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                {detailedNote.keyDefinitions.map((def, dIdx) => (
+                                  <div key={dIdx} className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700">
+                                    <p className="font-bold text-slate-900 text-xs mb-1 text-indigo-950">{def.term}</p>
+                                    <p className="leading-relaxed">{def.definition}</p>
+                                    {def.examTips && (
+                                      <p className="mt-2 text-[11px] text-amber-800 bg-amber-50 p-1.5 rounded border border-amber-200/60 font-medium">
+                                        💡 {isSinhala ? `විභාග උපදෙස: ${def.examTips}` : `Exam Tip: ${def.examTips}`}
+                                      </p>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Theory Sections & Diagrams */}
+                          <div className="space-y-6 pt-2">
+                            <p className="text-xs font-black uppercase tracking-wider text-slate-900 flex items-center gap-1.5">
+                              <Layers className="w-3.5 h-3.5 text-emerald-600" />
+                              <span>{isSinhala ? 'විෂය නිර්දේශ සිද්ධාන්ත සහ නිල රූප සටහන්' : 'Detailed Theory & Official Diagrams'}</span>
+                            </p>
+
+                            {detailedNote.sections.map((sec, sIdx) => (
+                              <div key={sIdx} className="space-y-3">
+                                <h4 className="text-base font-bold text-slate-900 border-l-3 border-emerald-500 pl-2.5">
+                                  {sec.heading}
+                                </h4>
+                                <div className="text-xs sm:text-sm text-slate-700 leading-relaxed whitespace-pre-line font-normal">
+                                  {sec.content}
+                                </div>
+                                {sec.diagramUrl && (
+                                  <div className="bg-slate-900 rounded-xl p-2.5 border border-slate-800 mt-2 shadow-sm">
+                                    <div 
+                                      className="relative group cursor-pointer"
+                                      onClick={() => setModalImage({ url: sec.diagramUrl, caption: sec.diagramCaption })}
+                                    >
+                                      <img
+                                        src={sec.diagramUrl}
+                                        alt={sec.diagramCaption || "Textbook diagram"}
+                                        className="w-full max-h-72 object-contain rounded-lg mx-auto bg-white/95 transition-transform group-hover:scale-[1.01]"
+                                        loading="lazy"
+                                      />
+                                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center gap-1.5 text-white font-bold text-xs">
+                                        <ZoomIn className="w-4 h-4" />
+                                        <span>{isSinhala ? 'විශාල කර බැලීමට ක්ලික් කරන්න' : 'Click to Zoom'}</span>
+                                      </div>
+                                    </div>
+                                    {sec.diagramCaption && (
+                                      <p className="text-[11px] text-slate-300 text-center mt-2 italic px-2">
+                                        {sec.diagramCaption}
+                                      </p>
+                                    )}
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Exam Pitfalls */}
+                          {detailedNote.examPitfalls && detailedNote.examPitfalls.length > 0 && (
+                            <div className="bg-amber-50/60 rounded-2xl p-4 border border-amber-200 space-y-3">
+                              <p className="text-xs font-black uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+                                <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
+                                <span>{isSinhala ? 'විභාගයේදී නොමඟ යවන පොදු වැරදි' : 'Common O/L Exam Traps to Avoid'}</span>
+                              </p>
+                              {detailedNote.examPitfalls.map((pit, pIdx) => (
+                                <div key={pIdx} className="bg-white p-3 rounded-xl border border-amber-200 text-xs space-y-1">
+                                  <p className="text-rose-700 font-medium">❌ <strong>{isSinhala ? 'පොදු වැරැද්ද:' : 'Mistake:'}</strong> {pit.trap}</p>
+                                  <p className="text-emerald-800 font-semibold">✔ <strong>{isSinhala ? 'පෙළපොතේ නිවැරදි කරුණ:' : 'Textbook Correct:'}</strong> {pit.correct}</p>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+
+                        </div>
+                      ) : (
+                        /* Standard fallback summary for other units */
+                        <div className="space-y-4">
+                          <div>
+                            <h3 className="text-xl font-black text-slate-900 leading-snug">
+                              {isSinhala ? activeSubtopic.titleSi : activeSubtopic.titleEn}
+                            </h3>
+                            <p className="text-xs text-slate-500 italic mt-0.5">
+                              {isSinhala ? activeSubtopic.titleEn : activeSubtopic.titleSi}
+                            </p>
+                          </div>
+
+                          <div className="p-4 rounded-2xl bg-purple-50/70 border border-purple-100 text-slate-700 text-sm leading-relaxed">
+                            <p className="font-semibold text-[#602d92] text-xs mb-1 uppercase tracking-wider">
+                              {isSinhala ? 'විෂය කරුණු සාරාංශය' : 'Subtopic Summary'}
+                            </p>
+                            <p>{isSinhala ? activeSubtopic.descriptionSi : activeSubtopic.descriptionEn}</p>
+                          </div>
+
+                          <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2.5">
+                            <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                            <p className="text-xs text-slate-600 leading-relaxed">
+                              {isSinhala
+                                ? 'සම්පූර්ණ විභාග සටහන් සහ අභ්‍යාස ඉක්මනින් එකතු කෙරේ.'
+                                : 'Full detailed notes, diagrams, and textbook exercises are currently being compiled.'}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* MODAL FOOTER */}
+                      <div className="p-4 sm:p-5 border-t border-slate-100 bg-slate-50/80 rounded-b-3xl flex items-center justify-between gap-3">
+                        <span className="text-xs text-slate-500 font-medium">
+                          {isSinhala ? 'ජාතික අධ්‍යාපන ආයතන (NIE) විද්‍යාව විෂය නිර්දේශය ඇසුරෙන්' : 'Strictly bounded to NIE Science Syllabus'}
                         </span>
                         <button
                           onClick={() => setActiveSubtopic(null)}
-                          className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition cursor-pointer font-bold text-sm"
+                          className="px-5 py-2.5 rounded-xl bg-slate-900 text-white font-bold text-xs hover:bg-emerald-700 transition cursor-pointer"
                         >
-                          ✕
+                          {isSinhala ? 'වසන්න' : 'Done Reading'}
                         </button>
                       </div>
 
-                      <h3 className="text-xl font-black text-slate-900 leading-snug">
-                        {isSinhala ? activeSubtopic.titleSi : activeSubtopic.titleEn}
-                      </h3>
+                    </div>
+                  </div>
+                )}
 
-                      <p className="text-xs text-slate-500 italic mt-0.5">
-                        {isSinhala ? activeSubtopic.titleEn : activeSubtopic.titleSi}
-                      </p>
-
-                      <div className="mt-4 p-4 rounded-2xl bg-purple-50/70 border border-purple-100 text-slate-700 text-sm leading-relaxed">
-                        <p className="font-semibold text-[#602d92] text-xs mb-1 uppercase tracking-wider">
-                          {isSinhala ? 'විෂය කරුණු සාරාංශය' : 'Subtopic Summary'}
+                {/* LIGHTBOX FOR MODAL IMAGES */}
+                {modalImage && (
+                  <div
+                    className="fixed inset-0 z-60 bg-black/90 flex flex-col items-center justify-center p-4"
+                    onClick={() => setModalImage(null)}
+                  >
+                    <div className="relative max-w-4xl w-full flex flex-col items-center">
+                      <button
+                        onClick={() => setModalImage(null)}
+                        className="absolute -top-10 right-0 text-white hover:text-slate-300 p-1 cursor-pointer"
+                      >
+                        <X className="w-6 h-6" />
+                      </button>
+                      <img
+                        src={modalImage.url}
+                        alt={modalImage.caption}
+                        className="max-h-[80vh] w-auto max-w-full object-contain rounded-xl bg-white shadow-2xl"
+                        onClick={(e) => e.stopPropagation()}
+                      />
+                      {modalImage.caption && (
+                        <p className="text-xs text-slate-200 mt-3 text-center bg-black/70 px-4 py-1.5 rounded-lg border border-white/10">
+                          {modalImage.caption}
                         </p>
-                        <p>{isSinhala ? activeSubtopic.descriptionSi : activeSubtopic.descriptionEn}</p>
-                      </div>
-
-                      <div className="mt-4 p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2.5">
-                        <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
-                        <p className="text-xs text-slate-600 leading-relaxed">
-                          {isSinhala
-                            ? 'සම්පූර්ණ විභාග සටහන් සහ අභ්‍යාස ඉක්මනින් එකතු කෙරේ.'
-                            : 'Full detailed notes, diagrams, and textbook exercises are currently being compiled.'}
-                        </p>
-                      </div>
-
-                      <div className="mt-6 flex justify-end gap-2">
-                        <button
-                          onClick={() => setActiveSubtopic(null)}
-                          className="px-5 py-2.5 rounded-xl bg-slate-900 text-white font-bold text-xs hover:bg-[#602d92] transition cursor-pointer"
-                        >
-                          {isSinhala ? 'වසන්න' : 'Close'}
-                        </button>
-                      </div>
-
+                      )}
                     </div>
                   </div>
                 )}

@@ -1,0 +1,1773 @@
+
+
+==================== UNIT 15 PAGE 1 (Book Page 177) ====================
+
+For free distribution
+              Biosphere
+PB 167
+Biosphere 15
+15.1 Organizational levels and interactions of biosphere
+15.1.1 Environmental equilibrium/Ecological balance
+The physical and the biological components in which interactions take place for the 
+existence of organisms is environment. Soil, water and air come under the physical 
+component and all the organisms that is plants, animals and micro organisms are 
+included in the biological component or the biotic component. Other than that 
+temperature, rainfall, humidity and sunlight come under environmental conditions.
+The organisms and the physical environment have a balanced relationship. This 
+favourable relationship is referred to as the environmental equilibrium. Even a 
+small change in the environment can affect its existence. Then it has an ability to 
+restore its conditions. But today this equilibrium is affected due to complicated 
+human activities.
+15.1.2  Organizational levels in the biosphere
+Biosphere is organized from the simplest level to complex level. This organization 
+can be shown in the following flow chart.
+Individual  Population  Community  Ecosystem  Biosphere
+Observe the organizational levels of the biosphere in the diagram given below.
+
+==================== UNIT 15 PAGE 2 (Book Page 178) ====================
+
+For free distribution
+Biosphere
+168 169
+Figure 15.1 - Organizational levels in biosphere
+Biosphere
+Ecosystem
+Community
+Population
+Individual
+• Individual
+A single organism belongs to a particular species and lives in the environment is 
+referred to as an individual.
+E.g. - Coconut plant, Elephant
+A species is a group of similar organisms who can interbreed naturally to produce 
+fertile offsprings.
+  
+Assignment 15.1
+Name different species found in a particular location of your home garden or 
+school premises.
+• Population
+A group of organisms belong to the same species in a particular geographical 
+location during a specific time period is called a population.
+E.g. -  The number of elephants lived in Yala national park in year 2011 is 5,879
+ Human population in Sri Lanka in year 2014 is 21,899,445     
+• Community
+A group of different populations, interact with each other in a particular area is 
+reffered to as community
+E.g. -  Animal community in Yala national park
+ Mangrove plant community in Negombo lagoon area
+• Ecosystem
+All the communities and the non living component with which they interact in a 
+particular area is called an ecosystem.
+E.g. -  A pond, A decaying log, A forest
+  A beach with rocks and cliffs
+
+==================== UNIT 15 PAGE 3 (Book Page 179) ====================
+
+For free distribution
+              Biosphere
+168 169
+Figure 15.2 - Interactions in a pond ecosystem
+Sun
+Air Flora
+Fauna
+Water
+Soil
+Figure 15.2 shows the interactions 
+of the living organisms with the 
+non living component in a pond eco 
+system.
+ 
+• Biosphere
+The part of the earth and its atmosphere that is inhabited by living things is called 
+biosphere. The biosphere is composed of three components.
+ ” Lithosphere - The crust and the upper mantle of the earth.
+ ” Hydrosphere - The region that includes all the oceans and fresh water 
+bodies. 70% of the earth surface is covered with water.
+ ” Atmosphere - The region that contains air around the earth.
+15.1.3  Growth of population and growth curves
+The number of organisms of a species, living in a unit area of a selected habitat is 
+called the population density.
+E.g. - Human population density of Sri Lanka in year 2014 is 329.12 km-2 
+The size of a natural population varies with time. There are four factors that affect 
+the population density.
+ ” Births  (Number of new born organisms added to the population)
+ ” Deaths (Number of organisms die in the population)
+ ” Immigration (Number of organisms add to the population from outside)
+ ” Emigration (Number of organisms leave the population)
+Number of organisms 
+add from outside
+Number of organisms 
+die in the population
+Number of organisms 
+leave the population
+Number of new 
+born organisms in 
+the population
+Figure 15.3 - Factors affecting population density in biosphere
+
+==================== UNIT 15 PAGE 4 (Book Page 180) ====================
+
+For free distribution
+Biosphere
+170 171
+Typical growth curve of population
+The number of organisms in a natural population changes with time according to 
+a particular pattern. When this pattern is expressed in a graph it will be a sigmoid 
+shaped growth curve. There are four main phases in it.
+Figure 15.4 - Typical population growth curve
+Ôùka ixLHdj
+bis,Sfï Odß;dj
+ld,h
+Number of 
+organisms
+Carrying 
+capacity
+Phase 1 - Slow growth phase (Lag phase)
+During this phase population growth increases as reproduction gets underway. 
+Often starts slowly because intially there is a shortage of reproducing individuals 
+which may widely dispersed.
+Phase 2 - High growth phase (Exponential phase/ Log phase)
+This phase represents the maximum growth rate as organisms are well adapted to 
+the environment and the number of organisms that reproduce is high. Presence of 
+favourable environmental conditions and abundance of food increases the growth 
+rate of organisms rapidly. Birth rate exceeds death rate.
+Phase 3 - Deceleration phase
+Due to the competition for resources, food shortage, spreading of diseases, predation 
+and parasitism, the growth rate of population decreases.
+Phase 4 - Stationary phase/ Stabilizing phase
+The number of organisms in a population increases till it has a population adapted 
+to environmental conditions which the environment can bear. Once it reaches its 
+carrying capacity the population achieves the dynamic equilibrium. During dynamic 
+equilibrium birth and death rates balance. Hence the growth of the population 
+is considered as zero. When it comes to this balanced situation the number of 
+organisms in the population is called as the carrying capacity.
+ ² Growth curve of  human population
+Although the growth curve of a natural population is S shaped, it takes J shape for 
+human population. That means the human population is still in exponential phase. 
+Time
+
+==================== UNIT 15 PAGE 5 (Book Page 181) ====================
+
+For free distribution
+              Biosphere
+170 171
+Ôùka ixLHdj
+ld,h
+Number of 
+organisms
+Time
+Figure 15.5 - Growth curve of human population
+It has taken 300,000 years for the human population to become, one billion. But it 
+has taken only 130 years for it to become two billions and 15 years for it to become 
+four billions. There are two reasons for this rapid growth. 
+ ” Increase of birth rate
+ ” Decrease of death rate
+The development of technology, progress in medical field and high rate of food 
+production are some of the reasons for high population growth.
+Figure 15.6 - Growth curve of human population from 1 AD to year 2013
+Number in billions
+Assignment 15.2
+According to the graph, predict the time that would take for the world human 
+population to become twice as it was in 2013.
+
+==================== UNIT 15 PAGE 6 (Book Page 182) ====================
+
+For free distribution
+Biosphere
+172 173
+15.2 Mechanisms involve in maintaining the equilibrium 
+of ecosystems 
+15.2.1  Flow of energy and nutrients
+The energy source of all ecosystems in the biosphere is the sun. Flow of energy and 
+nutrients among ecosystms is essential for the existence of the biosphere.
+ ² Food web
+The mutual relationships for food among organisms is referred to as food webs. 
+Different trophic levels of many food chains are inter-connected in a web like 
+structure in the biosphere. Due to this relationship an organism is free to depend 
+on different types of food. This helps to avoid bioaccumulation of organisms. An 
+example for a food web is given in figure 15.7 
+Hawk
+Hornbill
+Rabbit
+Rat
+Plants
+Python
+Figure 15.7 - An example for a food web
+Assignment 15.3
+Build up a food web in a pond ecosystem.
+ ² Food chains
+The sequence of energy and materials flow from producer to consumers such as 
+primary consumer and then to the secondary consumer is referred to as a food 
+chain. This can be shown in a linear diagram as follows.
+E.g. (-
+Grass  Grass hopper  Toad  Cobra  Hawk
+
+==================== UNIT 15 PAGE 7 (Book Page 183) ====================
+
+For free distribution
+              Biosphere
+172 173
+Tertiary consumer
+(Cobra)
+Quaternary 
+consumer (Hawk)
+Secondary consumer
+(Toad)
+Primary consumer
+(Grass hopper)
+Producer
+(Grass)
+Figure 15.8 - An example for a food chain
+(Toad)
+Assignment 15.4
+Observe different modes of nutrition consumed by different organisms in the 
+environment. Write down their relationships for food.
+Trophic level
+Every organism belongs to a certain trophic level according to their mode of 
+nutrition. The links of a food chain are known as trophic levels. The number of 
+trophic levels of a food chain cannot be exactly predicted. Most often it is less than 
+five links. Somehow the organisms belong to last trophic level would be carnivorous 
+predators.
+All organisms can be divided into three groups on the basis of their mode of nutrition.
+ ” Autotrophs
+ ” Heterotrophs
+ ” Decomposers
+Autotrophs
+Organisms such as green plants, algae and some bacteria which can transform simple 
+inorganic compounds into organic compounds to fulfill their nutrition requirement 
+are called autotrophs.
+According to the energy source used to produce their food, autotrophs can be 
+divided into two groups, as photo-autotrophs and chemo-autrotrophs. Green plants 
+are photo-autotrophs and some bacteria are chemo-autotrophs. 
+
+==================== UNIT 15 PAGE 8 (Book Page 184) ====================
+
+For free distribution
+Biosphere
+174 175
+Heterotrophs
+The animals that cannot produce their own food are known as heterotrophs. 
+They depend on food produced by other organisms. Therefore they are known as 
+consumers. The consumers are further divided as follows, 
+1' Primary consumers      (- They are herbivores. Feed on producers.
+2' Secondary consumers   (- They are carnivores. They can be omnivores too. 
+Feed on primary consumers.
+3' Tertiary consumers        ( They are carnivores.
+Decomposers
+Organisms feed on bodies of dead organisms and organic waste products by 
+converting complex organic compounds into simple compounds are known as 
+decomposers. Saphrophytes like bacteria and fungi belong to this group. This 
+process is called decomposition.
+Figure 15.9 - Stages of decomposition process of a dead body
+ ² Ecological pyramids
+Ecological pyramids can be built up using number of organisms, biomass and 
+energy relationships in different trophic levels of an ecosystem.
+The base of the pyramid represents, producers, and the rest of the rows represent 
+consumers in different trophic levels respectively.
+There are three types of Ecological pyramids.
+ ” Number pyramid
+ ” Biomass pyramid 
+ ” Energy pyramid
+Number pyramid
+The graphical representation of number of organisms in different trophic levels is 
+called the number pyramid. It is expressed as the number of organisms per square 
+meter (1 m2).
+The number of organisms in a particular trophic level can be greater or lesser than 
+the number of organisms in the upper trophic level. Therefore upright and inverted 
+number pyramids can be seen. 
+An upright number pyramid is shown in Figure 15.10.
+
+==================== UNIT 15 PAGE 9 (Book Page 185) ====================
+
+For free distribution
+              Biosphere
+174 175
+Figure 15.10 -  Upright number pyramid
+Tertiary consumer
+(Hawk)
+Secondary consumer
+(Coucal)
+Primary consumer
+(Cricket)
+Producers
+(Plants)
+3
+30
+200
+1000
+An inverted number pyramid is shown in figure 15.11. 
+Figure 15.11 - Inverted number pyramid
+Secondary consumer
+(Insect parasite)
+Primary consumer
+(Coconut beetle)
+Producer
+(Coconut tree)
+Biomass pyramid
+The graphical representation that shows the total amount of organic matter present 
+in different trophic levels is called biomass pyramid. By considering the dry mass 
+of organisms it is expressed as grammes per square meter per year (g m-2 yr-1)
+Mostly the biomass of consumers is less than the producers. Therefore most of the 
+time the biomass pyramids are upright. But rarely, the biomass of consumers in 
+aquatic environment is greater than that of producers. Then the biomass pyramid is 
+an inverted one.
+;D;shsl hefmkakka
+Figure 15.12 - A biomass pyramid
+Tertiary consumers
+Secondary consumers
+(Carnivores)
+Primary consumers
+(Herbivores)
+Producers
+(Plants)
+
+==================== UNIT 15 PAGE 10 (Book Page 186) ====================
+
+For free distribution
+Biosphere
+176 177
+Energy pyramid
+The graphical representation that shows the amount of energy, flows through 
+different trophic levels is called the energy pyramid. It is expressed as kilo joules 
+per square meters per year (kJ m-2 yr-1).
+Only 10% of energy in a trophic level passes to the upper trophic level. 90% of the 
+energy is dissipated to the environment. Therefore the energy in the upper trophic 
+levels is less than the lower trophic levels. So the energy pyramids are always 
+upright. The number of links in a food chain is less than five levels due to this loss 
+of energy.
+Tertiary consumers
+(Hawk)
+10 J
+100 J
+1000 J
+10000 J
+Secondary consumers
+(Toad)
+Primary consumers
+(Insect)
+Producers
+(Plants)
+Figure 15.13 - An energy pyramid
+• Flow of energy through ecosystem
+The main energy source of the biosphere is the sun. Green plants absorb sunlight, 
+and use CO2 and water as raw materials to produce glucose. This process of fixing 
+energy of sunlight is called photosynthesis. 
+The energy fixed by producers passes from organism to organism along trophic 
+levels. Only 10% of the energy of lower trophic levels passes to the upper trophic 
+levels. 90% of energy is lost in each trophic level as heat. 
+ Energy dissipation
+The loss of energy during transferring energy from one trophic level to the next, is 
+called energy dissipation. 
+
+==================== UNIT 15 PAGE 11 (Book Page 187) ====================
+
+For free distribution
+              Biosphere
+176 177
+Figure 15.14 - Energy dissipation of a cattle
+Energy obtained from 
+food is 100%
+Energy emitted with faeces 
+and excetory materials is 30%
+Energy stored in 
+body tissues is 10%
+Energy expended
+for respiration is 60%
+As a considerable amount of energy is lost during the flow of energy from one 
+trophic level to the next, the shorter food chains are efficient than longer food chains. 
+Plant
+Grasshopper
+   Toad
+Snake
+Hawk
+Figure 15.15 - A long 
+food chain
+Figure 15.16 - A short 
+food chain
+Leopard
+Elephant
+Plant
+
+==================== UNIT 15 PAGE 12 (Book Page 188) ====================
+
+For free distribution
+Biosphere
+178 179
+15.2.2  Biogeochemical cycle
+The process of cyclic circulation of essential chemical components through 
+atmosphere, hydrosphere and lithosphere of biosphere is called Biogeochemical 
+cycle.
+Cyclic circulation of water, carbon, nitrogen, oxygen and phosphorous takes 
+place in the biosphere. The natural environmental balance is maintained by these 
+Biogeochemical cycles.
+A few such Biogeochemical cycles are given below.
+ ” Carbon Cycle
+ ” Nitrogen Cycle
+ ” Phosphorous Cycle
+Among the above Biogeochemical cycles carbon and nitrogen cycles are discussed 
+in details.
+• Carbon cycle
+The main method of fixing carbon in an ecosystem is photosynthesis. Animals 
+depend on green plants and they receive carbon through those food. Decomposers 
+obtain carbon by digesting dead organisms. All organisms release carbon as CO 2 
+during respiration. When decomposers are absent, carbon in dead plants and animals 
+convert in to fossil fuels. This process needs millions of years to be completed. 
+During combustion of fossil fuels carbon releases. Micro organisms play a major 
+role in carbon cycle. They release carbon in dead matter rapidly to the atmosphere. 
+Carbon cycle is represented in the diagram 15.17.
+Carbondioxide
+(CO2)
+Decaying of dead 
+bodies
+Producing fuels
+Carbonate rocks
+Sedimentation SolutionFossilization
+Fossil fuels 
+organic matter 
+and humus
+Photosynthesis
+Respiration
+Combustion Dissolving in water        Respiration
+Decomposition
+Figure 15.17 - Carbon cycle
+
+==================== UNIT 15 PAGE 13 (Book Page 189) ====================
+
+For free distribution
+              Biosphere
+178 179
+• Nitrogen cycle
+The main source of nitrogen of earth is the atmosphere. 
+Figure 15.18 - Nitrogen cycle
+Atmospheric 
+nitrogen (N2)
+Atmospheric 
+fixation
+Industrial 
+Fixation
+Biological 
+fixation
+(bacteria)
+Dead remains 
+of plant animals 
+excretory products
+Denitrification
+(bacteria)
+Chemical fertilizers
+Decompositon
+(NH4+)
+}
+NitrificationNO -2
+NO-3
+}
+Ammonification
+The fixation of atmospheric nitrogen takes place in three main methods.
+ ” Biological fixation
+Free living bacteria in soil (Azotobacter) and symbiotic bacteria like Rhizobium 
+live inside root nodules of leguminous plants that can convert atmospheric nitrogen 
+into NH4+.
+ ” Atmospheric fixation 
+During lightning atmospheric nitrogen is converted to nitric oxide and nitrogen 
+dioxide.
+ ” Industrial fixation
+Atmospheric nitrogen converts to nitrate during industrial production of chemical 
+fertilizers.
+Nitrifying bacteria like Nitrosomonas first convert Ammonium compounds into 
+nitrites and then Nitrobacter bacteria convert nitrite to nitrates. These nitrates are 
+absorbed by plants and used to synthesise proteins. These plant proteins pass into 
+animals through food chains. 
+Due to microbial activity on dead bodies of organisms, the nitrogenous compounds 
+convert to ammonium compounds known as ammonification and collect into soil. 
+The denitrifying bacteria like Pseudomonas and Thiobacillus convert nitrates back 
+to atmospheric nitrogen. 
+Assignment 15.5
+Prepare a creative exhibit board to display the nitrogen or carbon cycle.
+
+==================== UNIT 15 PAGE 14 (Book Page 190) ====================
+
+For free distribution
+Biosphere
+180 181
+15.3 Different environmental pollutants and their effects
+Disposal of different effluents by the rapid growing population, affects the 
+environmental balance. Let us discuss about the effects of these waste materials.
+15.3.1  Environmental pollution
+Discharge of pollutants, which cause deleterious effects on natural environment is 
+called environmental pollution.
+Environmental pollution are of three types.
+² Soil pollution
+² Water pollution
+² Air pollution
+15.3.2  Factors affecting environmental pollution
+There are many factors which cause pollution. Let's do the activity 15.1 to identify 
+those pollutants.
+Activity 15.1
+Materials required  :-  Different waste materials found in environment
+Method :-
+ ² Make a list of pollutants found in the school premises after a field trip.
+ ² Classify them according to the methods given below.
+Decomposing
+Matter
+Non
+Decomposing
+Matter
+Polythene
+and
+Plastic
+Metalic
+Substance
+Glass and 
+pocelain
+Electronic
+materials
+Paper
+and 
+Cardboard 
+Disposed
+Food
+ y If you are asked to place different waste disposal bins in your school premises 
+decide what type of bins to be  placed mostly after analyzing the amount of  
+different waste materials.
+Method I
+Method II
+
+==================== UNIT 15 PAGE 15 (Book Page 191) ====================
+
+For free distribution
+              Biosphere
+180 181
+There are different types of waste materials involved in environmental pollution. 
+We have to be aware of  them to reduce their usage.
+These different types of wastes are,
+ ” Agro chemical waste
+ ” Industrial waste
+ ” Greenhouse gases
+ ” Heavy metals 
+ ” Particulate matter
+ ” Domestic waste
+ ” Electronic waste 
+ ” Nuclear waste
+• Excessive usage of agro chemicals
+The artificially synthesised chemicals for agricultural practices are called agro 
+chemicals. Mainly agrochemicals include chemical fertilizers, weedicides, 
+insecticides, and fungicides. They are used to get short term benefits, but they cause 
+many ill effects on the environment and hazardous to health.
+Weedicides, insecticides and fungicides are commonly known as pesticides. The 
+dose of a pesticide required to kill 50% of a population of a particular pest species 
+is defined as lethal dose (LD50).
+Assignment 15.6
+List out the agro chemicals that are used for a specific crop from its planting to 
+harvesting. Avoid touching those agro chemicals.
+The gazette announcement issued on 23 rd  of  December 2014 by the government 
+has banned selling and usage of chemicals such as Glyphosate, Propanil, Carbaryl, 
+Choloropyrifos and Carbofuran.
+Figure 15.19 - Different types of chemical substances sold at market
+
+==================== UNIT 15 PAGE 16 (Book Page 192) ====================
+
+For free distribution
+Biosphere
+182 183
+• Discharge of industrial effluents to the environment
+The waste materials that discharge after the production process which cannot be 
+used again are called industrial wastes. The discharge of these industrial wastes to 
+the environment causes harmful impacts on the environment. Industrial waste are 
+as follows.
+Hydrocarbons
+The compounds formed by combination of carbon and hydrogen only in different 
+ratio are called hydrocarbons.
+Methods of releasing hydrocarbons to the environment 
+ ² Release of CH4 (methane the simplest hydrocarbon) due to bacterial activity on 
+garbage and dead plant and animal matter in marshy lands.
+ ² During usage of liquid petroleum (LP gas), petrol, diesel, kerosene as fuel that 
+are obtained by fractional distillation of crude oil.
+ ² During usage of lubrication oil and greese which are products of fractional 
+distillation of crude oil.
+Emission of greenhouse gases
+The temperature of the earth is fixed by a steady state balance between the energy 
+received from the sun and the energy radiated back by the earth. Carbondioxide, 
+water vapour, methane, ozone and CFC absorb radiation given out from the earth 
+and some of it re-radiates back to the earth's surface. This re-radiation helps to warm 
+the earth and maintains a climate that will support life. This is called greenhouse 
+effect and these gases are called greenhouse gases.
+Types of greenhouse gases
+Carbondioxide    (CO 2 ) 
+Sulphurdioxide   (SO 2 ) 
+Oxides of Nitrogen   (NOx)
+Methane    (CH4 ) 
+Chloro Fluoro Carbon  (CFC)
+Water vapour    (H2O)
+Figure 15.20 - Greenhouse effect
+Due to emission of greenhouse gases enormously, global warming increases.
+Ways by which greenhouse gases released to the environment
+ ² Release of CO2 due to excessive combustion of fossil fuels.
+ ² Sulphur dioxide is released instead of CO2 due to combustion of fossil fuels and 
+eruption of volcanos.
+ ² Release of CH4 due to anaerobic decomposition of dead plant and animal matter 
+in marshy lands and garbage.
+ ² CFC is released when using refrigerators and air conditioned appliances.  
+
+==================== UNIT 15 PAGE 17 (Book Page 193) ====================
+
+For free distribution
+              Biosphere
+182 183
+Accumulation of heavy metals in the environment
+The metals with high density and higher relative molecular mass are called heavy 
+metals. Discarded metal items, instruments and parts of vehicles that contain heavy 
+metals accumulate in the environment. Some heavy metals are naturally present in 
+the soil of some areas.
+Types of heavy metals
+Mercury (Hg)
+Arsenic (As)
+Chromium (Cr)
+Cadmium (Cd)
+Lead  (Pb)
+Copper  (Cu)
+Manganese (Mn)
+Zinc  (Zn)Figure 15.21 - Soil containing heavy metals 
+Methods by which the heavy metals  released into the environment
+ ² Release of industrial wastes, wastes of zinc mines, electro plating and cadmium  
+(Cd) released during production of orange coloured pigments.
+ ² Due to excessive usage of agro chemicals, arsenic (As) is released to the 
+environment.
+ ² Release of lead (Pb) from lead mixed petrol.
+ ² Due to excessive usage of coal, discard of damaged thermometers, barometers,  
+CFL bulbs, the paints used to apply on ships and industrial wastes release 
+mercury (Hg).
+ ² Chromium (Cr) is released by paints, cement, paper and rubber. Chromium is 
+used as a pigment to colour them.
+Assignment 15.7
+ y List out the materials and appliances that is utilized at home. Discuss the ill 
+effects caused by different types of heavy metals in them.
+Particulate matter
+There are two types of particulate matter accumulated in air. They are solid 
+particulate matter and liquid particulate matter.
+
+==================== UNIT 15 PAGE 18 (Book Page 194) ====================
+
+For free distribution
+Biosphere
+184 185
+Solid particles Liquid particles
+• Carbon particles
+• Heavy metal 
+particles
+• Ash
+• Dust
+• Asbestoes
+• Water droplets
+• Liquid organic 
+particles
+• Mercury 
+droplets
+Figure 15.22 - Particulate matter of asbestoes
+Sulphurdioxide
+A colourless gas with a pungent smell. When it releases to the environment it causes 
+a big impact on the atmosphere.
+Methods of releasing SO2 to the environment ” When using coal as a fuel
+ ” During combustion of petroleum
+ ” During combustion of vulcanized rubber products
+ ” During bacterial activity on organic matter
+ ” During eruption of volcanoes
+Oxides of nitrogen (NOx) 
+Oxides of nitrogen (NO, NO2) cause a big impact on the environment once they are 
+released to the atmosphere. 
+Methods of releasing oxides of nitrogen to the environment
+• During lightning, the reaction between N 2 and O2 form oxides of nitrogen.
+• During combustion inside the engines of vehicle N 2 and O2 react together to 
+form oxides of nitrogen.
+Acid rain
+Naturally rain is little bit acidic due to dissolution of carbondioxide and 
+nitrogendioxide (NO2). The pH is about 5.6 of natural rain water. Sometimes this 
+pH decreases, that is acidity of rain increases. The reason for the increase of acidity 
+in rain is due to increase of sulphurdioxide, sulphurtrioxide and nitrogendioxide in 
+the atmosphere. 
+Sulphurdioxide is water soluble and then it makes sulphurous acid (H 2SO3) with 
+water. This sulphurous acid further oxidizes to make sulphuric acid (H 2SO4). 
+Sulphuric acid is formed due to dissolution of sulphurtrioxide too. Nitrogendioxide 
+helps in increasing acidic nature of rain. It forms nitric acid with water. Water 
+mixing with above acids to form rain is known as acid rain.
+
+==================== UNIT 15 PAGE 19 (Book Page 195) ====================
+
+For free distribution
+              Biosphere
+184 185
+Adverse effects of acid rain
+Figure 15.23 - Acid rain
+² Destruction of forests and crops.
+ ² Destruction of aquatic organisms due to 
+increase of acidity in water.
+ ² Affect the aborption of minerals by plants.
+ ² Dissolving of limestones and other rocks.
+ ² Destruction of metalic buildings, statues, and 
+other ruins.
+ ² Some poisonous heavy metals dissolve in 
+water and the concentration increases in 
+reservoirs.
+Activity 15.2
+ y Ditect the acidity of normal rain and the rain after drought period using 
+indicators.
+Domestic waste
+Figure 15.24 - Domestic-waste
+Food scraps, spoiled food, plastic and 
+polythene wastes, discarded clothes, glass 
+and porcelain items, garden wastes and 
+human excretory matter belong to domestic 
+wastes. These are added to the environment 
+continuously.
+Electronic waste
+Figure 15.25 - Electronic waste
+The electrical and electronic accessories which 
+are stopped permenantly from reselling, and 
+selling are called e-waste.
+Electronic wastes due to the modern 
+technology are added to the environment at a 
+higher rate.
+
+==================== UNIT 15 PAGE 20 (Book Page 196) ====================
+
+For free distribution
+Biosphere
+186 187
+The materials released as e- waste
+ ” Lead - Battery, circuit boards, cathode ray tubes of computers and televisions
+ ” Mercury - Thermometers, florescent lamps
+ ” Cadmium - Battery, cellular phones
+ ” Berilium - Computers, telephone, automatic electronic apparatus
+ ” Arsenic - Light emitting diodes (LED)
+ ” Polyvinylchloride (PVC) -  Computer casings, wires, etc.
+Nuclear-waste
+The radio active and high toxic materials discarded by nuclear preparation centres 
+and nuclear weapons are known as nuclear wastes. Uranium and plutonium are 
+the main elements used as nuclear fuels. The radioactivity of them can exist for 
+a longer period of time. Therefore, they are deposited in deep sea or ground after 
+covering by thick concrete or metal casing.
+• Domestic chemical-waste
+Figure 15.26 - Domestic 
+chemical - waste
+With the industrial development, the usage 
+of chemicals for domestic purposes instead 
+of natural materials has become popular. In 
+present days there are many such chemicals 
+that are used for domestic purposes. Food 
+additives, cleaning agents, medicine, paints 
+and cosmetics are the main chemicals that 
+come under domestic chemical waste.
+Food additives
+The substances that are added to food to enhance the taste, odour, appearence 
+nutrification and shelf - life are called food additives.
+E-number
+E-number is a code given by European union to indicate that the food additive is 
+experimentally proven to assure that it is safe for human consumption. Though it is 
+given by an E- number, reliability of some additives is not 100% assured.
+Activity 15.3
+Identify E-numbers of food items that is brought home. What are the substances 
+denoted by those numbers? What is the purpose of adding such things? What are 
+the adverse effects of them.
+
+==================== UNIT 15 PAGE 21 (Book Page 197) ====================
+
+For free distribution
+              Biosphere
+186 187
+Activity 15.4
+ y Do an investigation about the substances such as colourings and flavours 
+which are used for the fast foods. Fill the table using those information
+Food type Ingredients Defects
+Extra knowledge
+Materials added and 
+the objective
+Substances contained Adverse effects
+Pigments
+(Attractive colour)
+FDSC Blue No 1, FDSC Red 
+No - 40
+Beta carotene
+Allergies, Deformities in 
+children
+Sweeteners
+(Enhance sweetness)
+Sucrose, Glucose, Fructose Obesity,  Diabetes, Belly 
+protrude outwards
+Taste Enhancer
+(Enhance the taste of 
+food)
+Monosodium Glutamate 
+(MSG)
+Headache, Chest pain, 
+Weakening of taste buds, 
+Heart attack
+Preservatives
+(Preserve food without 
+spoilage)
+Ascorbic acid" BHA, BHT, 
+EDTA,
+Sodium Bensoate"
+Calcium Proponate"
+Sodium Nitrate (NaNO3)
+Allergies, V omitting, 
+Nausea, Stomachache, 
+Infertility, Cancers, 
+Mutations, Disorders in 
+liver and kidney 
+Stabilizers (Enhance the 
+texture)
+Gelatine, Pectin Diarrhoea
+Leavening agent (Make 
+porous)
+Sodium bicarbonate 
+(Baking soda) 
+Calcium carbonate
+Monocalcium phosphate
+Stomachache, Cancers
+Bleaching agents Sulphurdioxide SO 2 Breathing difficulties
+Nutrients
+(Addition of nutrients 
+that are destroyed during 
+production)
+Thyamine hydrochloride
+Riboflavin
+Folic acid
+Ascorbic acid
+Nausea, V omitting
+
+==================== UNIT 15 PAGE 22 (Book Page 198) ====================
+
+For free distribution
+Biosphere
+188 189
+Diseases caused by food additives
+ ” Wheezing
+ ” Kidney disorders
+ ” Diabetes
+ ” Cardiac diseases
+ ” Cancers (Digestive tract, Lungs, Liver, Thyroid gland)
+ ” Allergies (Skin diseases)
+ ” Disorders associated with nutrition
+ ” Diseases of nervous system
+ ” Hyperactivity of children
+ ” Mental disorders
+ ” Diseases associated with digestive tract.
+Cleaning agents
+Soap or different types of shampoo are used to cleanse skin and hair. Soap or 
+detergents are used to wash clothes and different types of cleaning agents are used 
+to clean floors and walls. Cleaning agents are important to do the cleaning activities 
+which cannot be done with water, better. The basic raw materials of soap are plant 
+oil or animal fat and a strong base like sodium hydroxide or potassium hydroxide. 
+Coconut oil and other plant oils are often used for this purpose.
+Figure 15.27 - Detergent swans
+Soap bubbles are formed less in dense water. 
+Artificial detergents are used as a solution to this. 
+These are produced with a mixture of artificially 
+synthesized chemicals. When both these types 
+are added to water, it is harmful to the aquatic 
+organisms. Furthermore, there is a threat of coral 
+reefs being destroyed in the marine areas near 
+hotels and it also affects to reduce the bio diversity 
+of fresh water sources.
+The harmful effects of the excessive use of artificial detergents are detergent swans 
+which can be seen on the surface of water systems.
+
+==================== UNIT 15 PAGE 23 (Book Page 199) ====================
+
+For free distribution
+              Biosphere
+188 189
+Medicines
+In the past, man had a sound knowledge of popular indigenous medicines and they 
+used natural medicines. At present there are different kinds of medicines at home 
+that are used without prescription to ease simple ailments. Examples are using 
+anodynes for fever, using different creams for pains and itching and using antacids 
+for gastro acidity. Moreover, when there are cuts and bruises, antiseptics like spirit 
+is used. Antiseptics is a chemical which is applied on living tissues which destroy 
+microorganisms or prevent their growth. When they are used, the correct dosage 
+should be taken on the correct time. It is very dangerous to use medicine without 
+the advice of the doctors for a long period of time. In the past, margosa, turmeric 
+liquid and salt water were used as disinfectants and at present artificial disinfectants 
+are used to clean the floor, kitchen, toilets and bathrooms. Disinfectants destroy 
+microorganisms and it is not safe for them to come into contact with living tissues. 
+Many side effects can be resulted due to their excessive use and they should be 
+used moderately. By using disinfectants often and excessively in the toilet, the 
+microorganisms that decompose faeces are destroyed.
+The following grid contains examples for medicines, disinfectants and antiseptics 
+that are used in homes.
+Medicines Disinfectants Antiseptics
+Magnesium carbonate
+Aluminum hydroxide gel
+Aqueous magnesium hydroxide (milk of magnesia)
+Phenol
+Chlorine
+Alcohol
+Iodine
+Surgical spirit
+Boric acid
+Cosmetics
+For cleanliness, beauty, health and pleasantness, people have used natural plant 
+extracts like sandalwood, turmeric and  types of clay as cosmetics for thousands of 
+years in the history. 
+At present, perfumes, bleaching creams, talc, hair colourants and bleaches, 
+deodorants and lipsticks are used as cosmetics.  There are naturally or artificially 
+synthesized oils, colourings, fragrant substances, distilled substances and 
+preservatives contained in them. Most of them are complex carbonic substances. In 
+perfumes and deodorants, there are alcohol, esters and distilled substances. When 
+these are used excessively, some diseases are caused in some people. Sometimes, 
+headaches, vomiting and breathing difficulties can occur. In most of the lipsticks, 
+there is led and the excessive usage can cause dryness and cracks on lips.
+
+==================== UNIT 15 PAGE 24 (Book Page 200) ====================
+
+For free distribution
+Biosphere
+190 191
+Mercury is present in some cream. In some other creams, carbon compound that 
+controls the formation of melanin colourant  is present. This will destroy the natural 
+protection that protects the skin from ultraviolet rays and poses the risk of skin 
+cancer. It gets into the skin and harms the connective tissues. The use of cream 
+for a long period of time can cause defects in skin. Sometimes, this can harm the 
+brain, liver and kidneys. Some hair colourings and compounds with bleaches cause 
+allergies in some people. This causes itching in the scalp, skin rashes, swelling, 
+cancers and even death.
+Paints
+A material that is applied on sufaces to protect the surface having a desired colour 
+are called paints. Paints contain three components.
+ ² Pigment - They are produced mainly by metal oxides or metal salts. 
+Bronze, gold, zinc and alminium metals are prepared into a fine powder and 
+used as pigments.
+ ² Binder or non volatile substance
+ ² Vehicle or solvent - V olatile hydrocarbonic substance such as turpentine is 
+used as vehicle. water is used as the vehicle for water soluble binders.
+• Cumbustion of fossil fuel and waste matter
+Combustion of fossil fuel enormously in factories, automobiles, petroleum power 
+stations results in emitting a  large amount of carbonmonoxide (CO), carbondioxide 
+(CO2) and sulphurdioxide (SO2). Burning of plastics and polythene too emits dioxin 
+and other gases.
+• Persistent Organic Pollutants - POPs
+Some toxic, hazardous organic substances have been identified as persistent organic 
+pollutants. They are released to the environment from different sources. These 
+pollutants have certain specific features as follows.
+ ² Persist in the environment for a long of time period
+ ² Accumulate in the body of organisms along food chains
+ ² Widely dispersed in the environment
+ ² Highly toxic
+Twelve organic pollutants have been identified as dirty dozen which can pose 
+effective threat to the earth.
+
+==================== UNIT 15 PAGE 25 (Book Page 201) ====================
+
+For free distribution
+              Biosphere
+190 191
+Extra knowledge
+Dirty dozen 
+Chemicals associated with 
+factories
+Industrial and 
+cumbustive 
+byproducts
+Pesticide
+ ” Hexacholoro benzene
+ ” Polychlorinated biphenyls /
+PCBs
+ ” Dioxin
+ ” Furan
+ ” Aldrin
+ ” Chlordane
+ ” DDT
+ ” Deildrin
+ ” Endrin
+ ” Heptachlor
+ ” Mirex
+ ” Toxaphene
+Other than those, some other compounds belong to persistent organic pollutants. 
+These POPs cause certain adverse  effects as follows,
+ ² Inborn defects
+ ² Cancers
+ ² Mental defects
+ ² Weakness of the immunity and function of reproductive system.
+15.3.3. Adverse effects of environmental pollution
+• Direct effects of environmental pollution
+Acid rain
+It is mentioned in page 184 about acid rain. Acid rain has been described as a 
+harmful condition caused by the industrial wastes such as oxides of nitrogen and 
+sulphur.
+Global warming
+Greenhouse effect occurs in the atmosphere with the high concentration of the 
+polyatomic molecules of greenhouse gases such as carbondioxide, methane, CFC 
+etc. High amount of energy received from sun is refracted away from the earth 
+when the greenhouse gases exceed their permissible level. Hence, the temperature 
+of the atmosphere increases. This is called global warming. Changes that occur due  
+to global warming are shown in Figure 15.28
+
+==================== UNIT 15 PAGE 26 (Book Page 202) ====================
+
+For free distribution
+Biosphere
+192 193
+Air Temperature Near Surface (Troposphere) 
+Humidity
+Temperature Over Oceans
+Sea Level
+Snow Cover
+Glaciers
+Sea Surface Temperature
+Ocean Heat Content
+Temperature Over Land
+Sea Ice
+Figure 15.28 - Changes that occur due to global warming
+Ill effects of greenhouse effect
+ ² Melting of polar Glaciers due to global warming
+ ² Rising of sea level and small islands will be submerged
+ ² Change of global climatic patterns
+Depletion of ozane layer
+Ozone is a trimetric molecule of oxygen. This is a thin layer found at 25 km away 
+from the earth surface. At higher atmosphere oxygen absorbs Ultra Violet radiation 
+and forms atomic oxygen.This atomic oxygen is highly reactive. They react with O2
+to form O3. This O3 is converted back to O2 and natural equilibrium is maintained. 
+This ozone layer acts as a protective shield to prevent the entry of harmful UV 
+radiation to the earth surface. But gases like CFC and nitric oxide (NO) destroy 
+ozone layer by detaching O2. CFC at higher atmosphere obtain solar radiation and  
+is converted to atomic chlorine. This atomic chlorin reacts with O3 and breaksdown 
+ozone molecules. Similarly nitric oxide also reacts with ozone to destroy them.
+Due to the depletion of ozone layer, holes appear in it. As a result, radiation with 
+high energy reaches the earth surface.
+Ill effects of ozone layer depletion
+ ² Cause cataracts
+ ² Cause mutations
+ ² Reduce  body immunity
+ ² Affect photosynthesis and reduce crop yield
+
+==================== UNIT 15 PAGE 27 (Book Page 203) ====================
+
+For free distribution
+              Biosphere
+192 193
+Photo chemical smog
+It is a yellow coloured mist that is formed due to reaction, resulted between sunlight 
+and the chemicals in vehicle emission, which causes eye irritation and vision 
+impairment.
+Extra knowledge
+The oxides of nitrogen released due to combustion of fossil fuel and unburnt 
+hydrocarbons transforms into ozone aldehyde, Peroxy Acetyl Nitrate (PAN), Peroxy 
+Benzyl Nitrate (PBN) at 150C in the presence of sunlight. Due to these secondary 
+pollutants, photochemical smog is formed. 
+Figure 15.29 - Photochemical SMOG
+Adverse effects of photochemical SMOG
+ ² Cause respiratory tract disorders like cough, wheezing etc.
+ ² Toxic to plants. So plant growth and food production is affected.
+ ² Vision is affected due to turbidity.
+ ² The quality of rubber and clothes reduces due to bleaching.
+Biomagnification
+Figure 15.30 - Biomagnification
+160 mg /l
+110 mg /l37 mg /l11 mg /l
+10 mg /l
+8 mg /l
+0'005 mg /l
+0'00-0 002 mg /l Collection of toxic chemical pollutants 
+along with food chains from one 
+trophic level to the other is called 
+biomagnification.
+
+==================== UNIT 15 PAGE 28 (Book Page 204) ====================
+
+For free distribution
+Biosphere
+194 195
+Extra knowledge
+Dichloro Diphenyl Trichloro Ethane (DDT)" Poly Chlorinated Biphenyl (PCB), 
+Mercury, Copper (heavy metals ) accumulate in the body of organisms.
+Features of bioaccumulated substances
+ ² These substances do not degrade easily and retain for a longer period of time
+ ² Can pass from one organism to the other
+ ² Soluble in lipids
+ ² Become active as biochemicals
+These substances enter into lower trophic levels in micro amounts. But they get 
+concentrated along higher trophic levels.
+Eutrophication
+Figure 15.31 - Eutrophicated reservoir
+Phosphate and nitrate concentration in 
+reservoirs increases due to waste 
+materials from industries, agrochemicals, 
+faecal matter and detergents. As a result 
+algae grow excessively and form a green 
+coloured foamy layer. This incident is 
+known as eutrification. The over 
+populated algae die due to competition 
+and anaerobic bacteria act on these dead 
+matter and emit gases such as hydrogen 
+sulphide (H2S) ammonia (NH3), methane 
+(CH4)which result an unpleasant odour.
+Ill effects of eutrofication 
+ ² Loss of transparency of water
+ ² Unable to utilize water
+ ² Reduction of bio diversity due to death of aquatic plants and animals
+ ² Loss of beauty of reservoirs
+Increase of radiation level
+Exposure to radiation increases day by day' These radiations are released by natural 
+sources and due to human activities. Especially destruction of ozone layer and 
+accidents in nuclear power stations are the reasons for this situation.
+E.g. (¡- Fukushima power station in Japan, Churnobill power station in Russia
+
+==================== UNIT 15 PAGE 29 (Book Page 205) ====================
+
+For free distribution
+              Biosphere
+194 195
+Figure 15.32 -  Accidents in nuclear power stations
+• Indirect effects of environmental pollution
+Loss of habitats of organisms
+The natural environment where a plant or an animal lives is known as a habitat. 
+These habitats are lost due to environmental pollution. Wild elephants tempt to 
+destroy villages and agricultural lands due to the loss of their habitat. That is a 
+result of environmental pollution.
+Desertification
+The change of the ground condition making unsuitable for the plant growth is called 
+desertification. Deforestation, greenhouse effect, salination and natural causes such 
+as weather changes are the reasons for desertification. Irregular monsoon rains 
+causing droughts is a result of this.
+Reduction of crop yield
+When the conditions required for photosynthesis are not present in optimum levels 
+the productivity of plants is affected. Therefore, the yield is reduced. Lands become 
+infirtile due to their constant use for agriculture. The productivity of plants decreases 
+through water, land and air pollution.
+Constructions and degradation of natural environment
+Metal statues, buildings, ruins and marble buildings are eroded by acid rains. Natural 
+limestones also degrade due to acid rains. As temperature of the environment 
+increases wall plasters and paintings of Taj Mahal is at a risk of deterioration.
+
+==================== UNIT 15 PAGE 30 (Book Page 206) ====================
+
+For free distribution
+Biosphere
+196 197
+Health issues
+As environment is polluted, the infectious (contagious) and non - infectious 
+(non-contagious) diseases spread rapidly in the environment. Due to improper 
+disposal of garbage, diseases like Dengue spread.
+Reduction of biodiversity
+Reduction of number of species in a unit area of biosphere is known as reduction 
+of biodiversity. When pruning some plants used in landscaping some parts are 
+removed. When ornamental fish like catfish grow in size they are released to the 
+natural water bodies. These organisms become a threat to other organisms in the 
+natural environment and affect the biodiversity. 
+Introduction of invasive species
+Invasive species are results of the changes in the environment ' These species can 
+tolerate the conditions and therefore invade the habitats of native species.
+E.g. - Giant Mimosa, Trout, Andara, Lantana
+Assignment 15.8
+Prepare a report about invasive plants and animal species of Sri Lanka.
+Economical losses
+An extra amount of financial input and effort is needed to revise the environment 
+and maintain it.
+15.4 The factors that affect the life style of human and the 
+problems created
+15.4.1 Factors that affects the life style of human
+Several factors on earth affect the life style of human. Industrialization, urbanization, 
+commercial agriculture and irrigation systems are some of them.
+ ² Industrialization
+The process by which a country transforms primarily from an agricultural society 
+to a society that produces goods and services is called industrialization. The 
+industrialization initiated from Western Europe in AD 1800 with the technological 
+development and insufficiency of small scale production.
+
+==================== UNIT 15 PAGE 31 (Book Page 207) ====================
+
+For free distribution
+              Biosphere
+196 197
+ ² Urbanization
+Aggregation of people in areas with abundant resources with the growth of human 
+population is called urbanization. People migrate to cities in search for employments 
+and comfortable life style. As a result, urbanization takes place.
+Figure 15.33 - View of an urban area
+ ² Commercial agriculture
+Large scale agriculture which exceeds the subsistance food production and 
+commercial intentions are called as commercial agriculture. Here, use of modified 
+varieties to obtain productive harvest, agrochemicals and machinary are taken into 
+consideration.
+ ² Irrigation systems
+Instead of depending on direct rain water, man constructed tanks, ponds, reservoirs, 
+canals, dams and tunnels to obtain water for agricultural purposes. They are 
+considered as irrigation systems.
+ ² Utilizing materials and energy abundantly and differently
+Due to technological development and complex needs of life, materials harmful 
+to environment in a great extent are being used while minimum labour is spent 
+whereas machinery is used consuming energy. 
+15.4.2  Problems that arise due to changes in life style
+ ² Growth of non contagious diseases and dissabilities
+Diseases which  are not spread  from one person to the other are called as 
+non contagious diseases. According to data of World Health Organization 
+(WHO) annually 38 million people die due to these type of diseases. Most 
+comman contagious diseases are cancers, pulmonary diseases and diabetes 
+Excessive consumption of tobacco and liquor, wrong food habits and lack of 
+physical exercises are the causes for these diseases. Non contagious diseases have 
+
+==================== UNIT 15 PAGE 32 (Book Page 208) ====================
+
+For free distribution
+Biosphere
+198 199
+become a major problem in Sri Lanka today. Out of the deaths occured due to 
+diseases, 60% had occured due to non contagious diseases. Out of them several 
+diseases are given below.
+Chronic Kidney Disease /CKD
+Chronic Kidney Disease or renal failure is spreading gradually in agricultural areas 
+in Sri Lanka. Gradual loss of kidney functions including the urine production is 
+known as renal failure.There are two main forms of renal failure as follows,
+1. Acute renal failure
+Loss of kidney function temporarily for a few hours or days is a feature of acute 
+renal failure. It is often reversible with immediate treatment.
+2. Chronic renal failure
+Chronic renal disease causes gradual loss of kidney function which is not reversible.
+Other causes for renal failure are,
+ ” Diabetes
+ ” High blood pressure
+ ” Constant urine infections
+ ” Calculi in bladder
+ ” Urinary tract Infections
+ ” Intoxication (snake,wasp, hornet venum, agrochemicals)
+ ” Allergies
+Symptoms of renal failure
+Figure 15.34 - Patches due to clinical kidney 
+disease
+ ” Urinary urgancy may 
+occur frequently at night
+ ” Little or no urine output
+ ” Pain in the back
+ ” Swelling of feet and 
+ankle
+ ” Weakness, pale skin
+ ” Urine contain protein
+ ” Rashes on palm and soles
+
+==================== UNIT 15 PAGE 33 (Book Page 209) ====================
+
+For free distribution
+              Biosphere
+198 199
+Speciality of the kidney disease
+ ” Though acute renal failure occurs due to uncontrolled diabetes or high 
+blood pressure people might have chronic kidney disease without any prior 
+disease.
+ ” Most of the people who have the disease are engaged in agriculture.
+Tendency of people who spray the agrochemicals having the disease is 
+high.
+ ” The first patient was reported from Padaviya Govi Janapadaya in 1994. 
+Though at the beginning farmers of 50-60 years of age were seen to have 
+the disease, later people of 25-30 years of age have got the disease at 
+present. 
+ ” Delayed symptoms keep the patient ignorant about this disease. Sometimes 
+when the patient realizes, he is affected by the disease and 40-60% of the 
+kidney has lost its function.
+ ” Most of the people affected are identified to be drinking hard water 
+Factors that have been identified to be contrtibuting to CKD
+ ” Toxic elements emmited by blue green algae.
+ ” Absorption of agrochemical into body.
+ ” Absolutely heavy metals such as Cd, Pb, As 
+ ” Drinking water with floride
+ ” Dehydration
+ ” Using drugs without any control
+ ” Consumption of liquor
+Measures that can be taken to avoid CKD
+ ” Refraining from using agrochemicals, and food for which agrochemicals 
+are used
+ ” Maintaining a wholesome life style to control and prevent diabetes and 
+high blood pressure
+ ” Minimizing the frequent urine infections during childhood or which adults 
+are affected from
+ ” An adult drinking 3.5-4.5 litres or 5-6 bottles of clean water a day
+ ” Receiving medical treatment for skin allergies immediately
+ ” Refrain from improper use of pain killers
+ ” Refrain from liquor consumption and smoking
+Diabetes
+Increase of blood glucose level above the normal level is known as diabetes. 
+Normally, insuline converts the excess glucose in the blood into glycogen and 
+allows it to store in the liver. Failing of the secretion of insulin due to dysfunction 
+or inborn absence of beta cells in the Islets of Langerhans which is located in the 
+
+==================== UNIT 15 PAGE 34 (Book Page 210) ====================
+
+For free distribution
+Biosphere
+200 201
+pancreas, secretion of insulin fail. When diabetes is not controlled kidney weakens 
+and gradual blindness occurs. Due to busy life style, consumption of food items 
+made of wheat floor and polished rice which are digested instantly, abstaining from 
+exercising and mental stress are some of the causes of diabetes.
+Cancer
+Cancer is a disease caused by an uncontrolled division of abnormal cells in a part of 
+the body. With the industrialization, harmful radiation, chemical and heavy metals 
+are abundant in the environment. Frequent exposure to radiation and intake of 
+heavy metals to the body, increase the possibility of a cancer.
+Heart diseases 
+Narrowed or blocked blood vessels, heart muscles, valves or rythem not functioning 
+properly lead to heart diseases. Chest pain, heart attack, strokes, thrombosis are 
+some forms of heart diseases. The main cause of heart diseases is the changes in 
+the human life style. With the industrialization, activities of human have become 
+more convenienced, lack of physical exercises, rest and mental stress cause these 
+diseases.
+Pulmonary diseases
+An unhealthy condition which affects the organs or tissues which involves in the 
+respiration such as trachea, bronchi, bronchioles, alveoli and other nerves and 
+muscles may cause pulmonary diseases. Harmful gases emitted from vehicles and 
+factories also contribute to this.
+Wheezing
+The air ways are obstructed by the mucus produced due to allergies in trachea, 
+bronchi, bronchioles and alveoli of the respiratory system. Harmful gases and dust 
+particles ( Air pollutants and irritants) remain as causes.
+Gastritis
+Inflammation and swelling in the lining of the stomach due to increasing acidity 
+is the main symptom of this disease. Not taking meals on time because of busy 
+life style, frequent consumption of food containing excessive oil and acids, mental 
+stress caused because of living under a competitive condition are the causes of this 
+disease.
+
+==================== UNIT 15 PAGE 35 (Book Page 211) ====================
+
+For free distribution
+              Biosphere
+200 201
+Cataracts
+Due to the change in the nature of proteins in the lens of the eye, the transparency 
+of the lens ceases. It is known as the cataract. Here, light does not enter the eye and 
+the eye sight is weakened. Due to the emission of harmful gases from factories, the 
+ozone layer becomes depleted. Thus, ultraviolet rays fall on earth. The exposure to 
+these rays is a cause for this disease.
+15.5 Sustainable development and environmental
+        management 
+Sustainable development is the smart use of the natural resources by safeguarding 
+the balance of the environment in such a manner that the future generations can use 
+them in the future. 
+Environmental management is the maintenance of natural resources by using them 
+in an environmental friendly manner to fulfill the needs of man. 
+15.5.1  Sustainable agricultural uses
+A sustainable development could be expected by reforestation, use of traditional 
+knowledge and technology, carbon foot print, minimizing food miles, waste 
+management and energy management. 
+• Multiple cropping
+Cultivation of different crops in one land area instead of mono cropping in large 
+scale is called multiple cropping. Multiple cropping avoids the risk of destroying 
+the cultivation with a disease and also reduce pests with high resistance.  
+Figure 15.35 -  Mono cropping Figure 15.36 -  Multiple cropping
+• Biological pest control
+The biological pest control is the use of another plant, animal or a microorganism 
+which do not harm the cultivation in order to destroy pests. Coconut catepillar 
+Promecotheca cumingii was a major coconut pest which was successfully controlled, 
+using a larval parasitoid Dimokia javanica.
+
+==================== UNIT 15 PAGE 36 (Book Page 212) ====================
+
+For free distribution
+Biosphere
+202 203
+• Use of organic fertilizer
+It is environmental friendly to use substances made by transforming complex 
+organic compounds found in animals and plant parts to simple compounds as 
+fertilizers. Organic fertilizers are the decomposed plant and animal matter which 
+help to improve, soil structure and porosity to enhance the activity of soil organisms.
+Assignment 15.9
+Engage in a discussion about the advantages caused to the environment by using 
+the above mentioned agricultural uses.
+ ² Reforestation for environmental balance
+Environmental management is the maintenance of natural resources by using them 
+in an environmental friendly manner to fulfill the needs of man. 
+As a result of changing the environment by man according to his necessity, the 
+forest cover gradually decreased. Specially, paddy cultivation, vegetable cultivation, 
+tea cultivation, rubber cultivation and large scale development projects were the 
+reasons for this situation.
+At present, we experience the harmful effects of the decrease of the natural forest 
+cover. Therefore, in order to reestablish the environmental balance, it is necessary 
+to do reforestation in suitable areas.
+Figure 15.37 -  Reforestation
+15.5.2  Traditional knowledge and use of technology
+ ² Agriculture
+It is mentioned that during the rule of King Parakramabahu the Great, our country 
+was self sufficient with rice and rice had even been exported. But, at present, we are 
+unable to achieve such heights although machines and agricultural chemicals are 
+excessively  used. Therefore, instead of seeds and agricultural chemicals purchased 
+from multinational companies, it is the high time to use traditional agricultural 
+methods such as local seeds and cultivation methods.
+
+==================== UNIT 15 PAGE 37 (Book Page 213) ====================
+
+For free distribution
+              Biosphere
+202 203
+ Some important information of traditional varieties of paddy
+Extra knowledge
+Type of paddy Function
+'Kuruluthuda'  ² Induce spermatogenesis
+ ² Make body strength
+ ² Reduce joint pain
+ ² Increase immunity
+ ² Act on excretory system readily
+'Kahawanu'  ² Facilitate digestion of food
+ ² Facilitate absorption of sugar
+ ² Prevent carcinogenic properties
+'Rathhal'  ² Activate excretory system
+ ² Make the body comfortable
+ ² Cure lung diseases and fever
+ ² Heal abdominal disorders
+ ² Clean urine and bile
+'Madathawalu'  ² Removal of toxic metals from body
+ ² Prevent diabetes
+ ² Avoid gene mutations
+ ² Enhance immunity
+ ² Growth and repair of tissues
+ ² Cooling of body
+'Suwadal'  ² Control eye diseases
+ ² Induce nerve activities and control diseases
+ ² Aids in spermatogenesis 
+ ² Reduce oedema
+ ² Anti-diabetic properties
+'Mavee'  ² Anti-diabetic properties
+ ² Reduce burning sensation, Thridosha and 
+prevent constipation  
+ ² Improve skin condition 
+'Kaluheenati'  ² Prevent constipation
+ ² Anti cancerous properties or carcinogenic 
+properties
+ ² Body warming
+ ² Aids in spermatogenesis
+
+==================== UNIT 15 PAGE 38 (Book Page 214) ====================
+
+For free distribution
+Biosphere
+204 205
+ ² The technology of  irrigation
+Sri Lankan irrigation system is one of the unique water management systems in 
+the world. Historical large tank can be identified as a great technical attempt with a 
+very complex scientific knowledge.
+Figure 15.38 -  An ancient tank bund
+The reservoir constructed 
+across a river, canal or a branch 
+of it with the aim of collecting 
+sufficient water for agricultural 
+activities is known as a tank. 
+Tank
+Canal
+Out spill
+River
+Tank bund
+Sluice
+Ralapanawa
+Bisokotuwa
+Head wall
+Figure 15.39 -  Major parts of a tank
+The large tanks distributed in the dry zone of 
+Sri Lanka hold a huge water capacity. Major 
+factor that should be paid attention to 
+constructing such large scale tanks is, 
+keeping the collected water for a long time. 
+Also by controlling the pressure caused by 
+its colossal capacity of collected water and 
+controlling the power caused by its extremely 
+destructive pressure when the water is taken 
+out for use.
+There are several functions done by tank bund, sluice, Bisokotuwa (Sluice gate), 
+Ralapanawa and canal, which are considered as the major parts of a tank. The tank 
+bund was built with soil connecting the hills from either side.
+The robustness is essential if the stability of the tank bund and needs to be protected. 
+To maintain this situation a systematic methodology has been applied. Tank bund 
+had been constructed of several soil layers. It had been made of several thoroughly 
+beaten layers such as, a layer of clay, soil, gravel and clay (Kirimeti) layer, kept one 
+on one. 
+
+==================== UNIT 15 PAGE 39 (Book Page 215) ====================
+
+For free distribution
+              Biosphere
+204 205
+\
+Figure 15.40 -  A sluice gate
+When water in large tanks is taken out a 
+huge pressure is exerted and the magnitude 
+of pressure increases with the height of 
+water column. The sluice was built at a 
+specific level on the tank bund using huge 
+pieces of stones in a way that it began from 
+the area where water is filled in the tank 
+bund and going under the tank bund or 
+piercing it. A slab of stone, connected to the 
+sluice vertically was used to release water. 
+There are more than one sluice made in 
+tanks with a high bund.
+Bisokotuwa is also a part of the sluice. It means that the rectangular space made of 
+stones, from which water flows out from the tank. Its purpose is to take water out 
+with less pressure level after releasing water at different pressure levels. The mud 
+sluice is at the bottom level of a tank bund. This mud sluice was used to remove 
+alluvial collected after a rainy season.
+When a tank is filled with water, waves occur on its surface, and the waves can 
+erode the bund. The Ralapanawa is made by keeping stones on the interior slope of 
+the tank bund. A  brink (Isweti) is built to avoid collecting water with eroded mud, 
+sand and gravel, to the tank water.
+The small sized water tanks built in the upper part of tank collect water first and 
+next the large tank.
+The upper part of tank that is Head wall (Wew Ismaththa) is the water catchment 
+area. Clearing forest, cultivation and building of houses is strickly prohibited in this 
+area. 
+The surrounding area parellel to the water level is known as wew thawulla and this 
+is rich with natural habitats of flora and fauna. 
+Accordingly, tank is a marvellous human creation that is compatible with nature.
+Assignment 15.10
+Make a scientific investigation about the technology of irrigation system of Sri 
+Lanka, and prepare a report.
+ ² Conventional food patterns
+Food comprises of a collection of nutrition, healthyness, culture, tradition, 
+environment, creation, folk tales, literature, technology, etc. The traditional food 
+patterns improved the quality of life of our people. But consumption of oily, starchy 
+
+==================== UNIT 15 PAGE 40 (Book Page 216) ====================
+
+For free distribution
+Biosphere
+206 207
+food, flavourings and bad food habits cause number of issues in public health. This 
+condition has influenced the tendency of non-contagious diseases like high blood 
+pressure and diabetes. 
+Important facts about natural flavourings
+ ” The most reactive parts of a food
+ ” Improve the colour, taste, odour and appetite of food.
+ ” Contain bactericidal properties
+ ” Minimize, harmful effects caused by food
+ ” Has unique taste and quality, which cannot be obtained by artificial flavourings.
+E.g. (-¡ Cinnamon ¡  Control the blood glucose level.
+ Reduce diseases caused by phlegm
+  Has anticancer properties
+Clove      ¡  Give pleasant odour to mouth
+  Relieve pain
+  Destroy microorganism (Detergent property)
+Pepper ¡  Stimulate digestion of food 
+  Relieve abdominal disorders
+ ² Indegeneous medical science
+This field consists of Aurveda, Siddha, Unani and native medicinal fields, which 
+has history of thousands of years. Ayurveda is one of the important medical fields, 
+descended from India. It is a perfect science with two traditions. 
+1. Clinical medicine (Kayachikithsa)
+2. Surgical science
+According to Ayurveda there are three types of reaction that take place in human 
+body. Those three factors are known as Va, Pith and Kapha. 
+   'Va'   -  Air
+   'Pith'   -  Bile
+   'Kapha'  -  Phlegm
+Imbalance of these three factors cause diseases according to Ayurveda. Ayurveda 
+field of medicine, use plants, or parts of plants to treat patients.
+Treatments are given in three ways
+1. Medicine 2. Food 3. Exercises
+In Ayurvedic medicine, treatments are done to the cause or root to the disease. 
+Body activity is not controlled artificially by giving medicine (drugs) externally. 
+Therefore  side effects are not resulted. 
+
+==================== UNIT 15 PAGE 41 (Book Page 217) ====================
+
+For free distribution
+              Biosphere
+206 207
+Food is also a significant factor to cure diseases. It should be consumed to balance 
+Va, Pith and kapha the three factors.
+Its main target is not only curing diseases, but also maintaining physically and 
+mentally fit healthy life.  
+15.5.3  Carbon footprint and minimization of food mile
+ ² Carbon footprint
+The amount of carbondioxide released into the atmosphere as a result of the activities 
+of a particular individual, organization or community is a carbon footprint. Total 
+carbonfoot print cannot be calculated as CO2 is naturally produced  whereas it needs 
+more data.
+ ² Water footprint
+The amount of fresh water utilized in the production or supply of the goods and 
+services used by a particular person or group.
+ 24,000 l 15,500 l 
+Figure 15.41 -  Water footprints of several foods
+Chocolate 1kg Beef 1kg Eggs 1kg Sugar 1kg Coffee 1kg
+4,400 l 1,500 l 140 l 
+ ² Food mile
+The distance over which a food item is transported during the journey from producer 
+to consumer, is known as food mile.
+The food mile changes according to the quantity of food and the place it is produced.
+E.g. -  Food mile of some of the foods that you take for your breakfast can be 
+calculated as follows. Suppose you are in kurunegala.
+^1&
+Rice      (Taken from your paddy)
+Potato curry  (Taken from Welimada area)
+Coconut      (Taken from your coconut trees)
+Eggs      (Taken from a poultry farm of your area)
+     Summation
+1 mile
+100 miles
+0 mile
+10 miles
+111 miles
+
+==================== UNIT 15 PAGE 42 (Book Page 218) ====================
+
+For free distribution
+Biosphere
+208 209
+^2&
+String hoppers made    (Rice taken from Polonnaruwa)
+up of rice floor  
+Dhal curry  (Taken from Misur area of India)
+Coconuts  (Taken from your home garden)
+Coconut sambol (Taken from Jaffna)
+^3&
+Bread    (Wheat flour taken from America)
+Fish curry  (Taken from Negombo)
+Coconuts (Taken from your home garden)
+Coconut sambol  (Taken from Chennai, India)
+As long as the food mile is short, sustainability and environmental friendliness is 
+high. Therefore we should take actions to shorten the magnitude of food mile.
+15.5.4  Waste management
+Consumption of substances becomes greater with the increase of human population. 
+Eventhough natural waste materials deteriorate gradually, they get collected to the 
+environment rapidly. Odour of such waste spreads in urban areas, rather than in 
+villages. Non deteriorative materials such as polythene, plastic, electrical cells, 
+electronic waste, electric bulbs and, printed coloured newspapers get collected 
+in the environment continuously. When burning these waste materials gases such 
+as dioxine emits. When these waste materials are burried, soil gets polluted and 
+heavy metals get collected into soil. Public is unaware of the danger of them. It 
+is very important to be knowledgeable that gradual disposal of the tiny piece of 
+plastic, battery of a mobile phone CFL bulb be catostrophic. It is our responsibility 
+to collect waste matter separately and forward it to the process of recycling. 
+The waste handling technique named 4R is practised in waste management
+Reuse -  Use as many items as possible again and again. 
+E.g. Polythene
+Reduce -  Unnecessary items should be avoided or minimized.
+E.g. - Avoid taking antibiotics and vitamins unnecessarily
+85  miles
+925  miles
+0  mile 
+185  miles
+1195  miles
+9340  miles
+44  miles
+0  mile
+800  miles
+10184  miles
+  Summation
+Summation
+
+==================== UNIT 15 PAGE 43 (Book Page 219) ====================
+
+For free distribution
+              Biosphere
+208 209
+Replace - Use of eco friendly substances instead of incompatible materials with 
+nature.
+E.g.  - Use of organic fertilizer instead of chemical fertilizer.
+Recycle -  Process to convert different raw materials, animal dung and dead bodies 
+into new products to prevent waste of potentially useful materials.
+E.g. - Production of bio gas using animal excretory matter, dung and  
+dead matter.
+ Recyling polythene and plastic in order to produce fuel.
+15.5.5  Energy management
+Consumer is provided with an opportunity to utilize energy with the aim of 
+conservation of energy and minimization of cost. Planning and monitoring of 
+energy production and consumption is required for sustainable utilization and then 
+fulfil the needs of the consumer. This process is referred to as energy management.
+• Energy crisis and technological issues
+Drastic increase of price of economically important energy resources due to their 
+constricted supply is referred to as energy crisis. Fuel oil crisis, electiricity crisis 
+and dearth of energy resources also indicate this problem. Energy crisis occurs as a 
+result of the great demand for the supply of limited natural energy resources.
+Reasons for energy crisis
+ ² Drastic growth of human population
+ ² Increase of the number of industries 
+ ² Over consumption of energy
+ ² Wasting energy
+ ² Non investigation of renewable energy resources 
+ ² War activities
+ ² Political problems
+Technical problems arise during the management of available energy. Technology 
+for extraction of energy resources, methodology of purifying energy resources are 
+some of them.
+Assignment 15.11
+List out the steps you follow to utilize energy with minimum wastage.
+• Monitoring of daily energy consumption
+It is necessary to be aware and compare the energy consumption by measuring it 
+daily. Then wastage can be minimized.
+
+==================== UNIT 15 PAGE 44 (Book Page 220) ====================
+
+For free distribution
+Biosphere
+210 211
+• Energy auditing
+The purpose of monitoring is to visit different institutions, and make 
+recommendations and advise based on the results of the respective energy audits 
+and make the authorities aware related to energy consumption.
+In this context making the public enthusiastic on reduction of energy consumption 
+and improving energy efficiency are ensured.
+• Energy efficiency
+Energy efficiency is defined as utilization of minimum quantity of energy for a 
+particular service through effective management of energy consumption.
+It is possible to improve energy management and control through energy efficiency. 
+It also enables to provide an enhanced service by utilizing minimum energy. 
+However this does not mean that the service is withheld or controlled. 
+Assignment 15.12
+Investigate the electrical appliances at your home and record their wattage (power). 
+Hence compare their level of energy consumption.
+• Sustainable energy use
+In sustainable use maintenance of a certain aspect at a desired status/level is 
+expected. Due to technical reasons, utilization of most renewable energy resources 
+still remains at a lower level.
+E.g. Solor energy, Wind energy, Biomass
+Importance of utilizing natural energy in architecture
+In constucting a house some steps need to be taken in order to maintain good indoor 
+air circulation. When natural sunlight incidents upon the surfaces the temperature 
+of indoor environment increases. Hence it is not desirable to place fenestrations 
+(windows) on East and West walls of the house. Especially since heat transfer from 
+the western side is high, it is not done. By placing windows on North and South 
+directions good air circulation and natural cooling can be maintained within the 
+house. Electrical energy consumption for air conditioning can be minimized to a 
+great extent by means of natural ventilation. Day light harvesting can be utilized 
+for reducing electrical energy consumption due to artificial lighting. This enables 
+a substantial reduction of operational cost of a building. Using thick curtains can 
+also lead to reduction of heat transfer in air conditioned spaces. This considerably 
+reduces energy consumption for air conditioning. Rain water harvesting can 
+be applied as an energy conservation measure. In boiler systems exhaust gases 
+discharged through the chimney stack contain high temperature waste heat which 
+can be extracted to heat boiler feed water and as an air pre-heater. With the utilization 
+
+==================== UNIT 15 PAGE 45 (Book Page 221) ====================
+
+For free distribution
+              Biosphere
+210 211
+of eco-friendly natural energy sources it is possible to minimize the adverse effects 
+on the environment. 
+Different Conventions, Legislations and Acts are in function at international and 
+national level for the management and sustainable use of the environment.
+Several examples for international conventions are given below.
+ ” Montreal protocol to control the gases which harm the ozone layer
+ ” Kyoto protocol to minimize the emission of greenhouse gases
+State institutions under the Ministry of Environment, Central Environment 
+Authority, Marine Environment Protection Authority,  Geological Survey and 
+Mines Bureau, State Timber Corporation, National Gem and Jewellery Authority 
+implement law, rules and regulations related to environmental management.   
+Assignment 15.13
+Prepare a booklet on renewable energy sources.
+ ” There is a natural balance among living organisms, physical component and the 
+environmental conditions in the biosphere. This balanced relationship is known 
+as the environmental equilibrium.
+ ” The increasing human population and their activities cause the breakdown of 
+the ecological balance.
+ ” The simple organizational level that is individual, organize to form population, 
+community, ecosystem and finally forms the biosphere.
+ ” The flow of energy and natural minerals among organisms is essential to 
+maintain the ecological balance.
+ ” The flow of energy and nutrient among organisms occur through food chains, 
+food webs and bio geo-chemical cycles.
+ ” Environmental pollution is the breakdown of ecological balance due to the 
+waste materials released to the environment by man.
+ ” Agro chemicals, industrialized waste, greenhouse gases, heavy metals, 
+particulate matter, food additives, cleaning agents medicine, detergents and 
+perfumes are the main causative agents of environmental pollution.
+ ” Man is experiencing direct and indirect effects of environmental pollution at 
+present. 
+ ” Usage of indegenous knowledge and technology, indegenous medicines waste 
+management and energy management are some of the effective ways for 
+sustainable development.
+Summary
