@@ -132,7 +132,7 @@ function HomePage({ onOpenUpload }) {
       <WhatsAppSection />
 
       {/* 7. Learning Platform Features Section */}
-      <FeaturesSection onOpenUpload={onOpenUpload || (() => {})} />
+      <FeaturesSection onOpenUpload={onOpenUpload || (() => { })} />
 
       {/* 8. FAQ Section */}
       <FaqSection />
@@ -149,7 +149,7 @@ function RevisionHubApp() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 selection:bg-[#602d92] selection:text-white font-sans text-gray-800">
-      
+
       {/* 1. Global OL.LK Navigation */}
       <Navbar onOpenUpload={() => setIsUploadModalOpen(true)} />
 
