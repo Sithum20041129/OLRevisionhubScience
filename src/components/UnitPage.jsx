@@ -4,6 +4,7 @@ import { useLanguage } from '../context/useLanguage';
 import { unitsData, getUnitById } from '../data/unitsData';
 import { getUnitRevisionData, getSubtopicNote } from '../data/subtopicNotes';
 import UnitRevisionNotes from './UnitRevisionNotes';
+import FormattedContent, { InlineText } from './FormattedContent';
 import {
   BookOpen,
   FileText,
@@ -15,7 +16,6 @@ import {
   ChevronRight,
   ChevronLeft,
   ChevronDown,
-  GraduationCap,
   Share2,
   Check,
   AlertCircle,
@@ -247,74 +247,34 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                       {isSinhala ? currentUnit.descriptionSi : currentUnit.descriptionEn}
                     </p>
 
-                    {/* Quick Metrics Bar: Clickable Jump Buttons */}
-                    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 mt-8 pt-6 border-t border-white/15 max-w-4xl">
+                    {/* Quick Metrics Bar: Clickable Action Buttons */}
+                    <div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-8 pt-6 border-t border-white/15">
 
-                      {/* 1. Subtopics Clickable Button */}
+                      {/* Practice MCQs Clickable Button */}
                       <button
                         type="button"
-                        onClick={() => scrollToSection('subtopics')}
-                        title={isSinhala ? 'විෂය අනුමාතෘකා වෙත යන්න' : 'Jump to Subtopics'}
-                        className="text-left bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/10 hover:border-cyan-400/50 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg"
-                      >
-                        <div className="flex items-center justify-between text-cyan-400 text-xs font-bold mb-1">
-                          <div className="flex items-center gap-1.5">
-                            <BookOpen className="w-4 h-4" />
-                            <span>{isSinhala ? 'අනුමාතෘකා' : 'Subtopics'}</span>
-                          </div>
-                          <ChevronDown className="w-3.5 h-3.5 text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-y-0.5 transition-all" />
-                        </div>
-                        <p className="text-xl sm:text-2xl font-black text-white">
-                          {currentUnit.subtopics?.length || 0}
-                        </p>
-                      </button>
-
-                      {/* 2. Revision Guide Jump Button (If available) */}
-                      {unitRevisionData && (
-                        <button
-                          type="button"
-                          onClick={() => scrollToSection('revision-guide')}
-                          title={isSinhala ? 'පෙළපොත් පුනරීක්ෂණ සටහන් වෙත යන්න' : 'Jump to Official Textbook Revision Guide'}
-                          className="text-left bg-emerald-950/50 hover:bg-emerald-900/60 backdrop-blur-md border border-emerald-500/40 hover:border-emerald-400 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg"
-                        >
-                          <div className="flex items-center justify-between text-emerald-400 text-xs font-bold mb-1">
-                            <div className="flex items-center gap-1.5">
-                              <Sparkles className="w-4 h-4" />
-                              <span>{isSinhala ? 'පෙළපොත් සටහන්' : 'Revision Guide'}</span>
-                            </div>
-                            <ChevronDown className="w-3.5 h-3.5 text-emerald-400/60 group-hover:text-emerald-300 group-hover:translate-y-0.5 transition-all" />
-                          </div>
-                          <p className="text-xl sm:text-2xl font-black text-white">
-                            {unitRevisionData.subtopics.length} <span className="text-xs font-semibold text-emerald-300">Modules</span>
-                          </p>
-                        </button>
-                      )}
-
-                      {/* 3. Practice MCQs Clickable Button */}
-                      <button
-                        type="button"
-                        onClick={() => scrollToSection('quiz-area')}
-                        title={isSinhala ? 'ප්‍රශ්නාවලිය වෙත යන්න' : 'Jump to Quiz Practice'}
-                        className="text-left bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/10 hover:border-purple-400/50 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg"
+                        onClick={() => onOpenQuiz && onOpenQuiz(currentUnit)}
+                        title={isSinhala ? 'ප්‍රශ්නාවලිය වහාම අරඹන්න' : 'Start Practice MCQs Quiz'}
+                        className="text-left bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/10 hover:border-purple-400/50 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg min-w-[150px] sm:min-w-[180px]"
                       >
                         <div className="flex items-center justify-between text-purple-300 text-xs font-bold mb-1">
                           <div className="flex items-center gap-1.5">
                             <HelpCircle className="w-4 h-4" />
                             <span>{isSinhala ? 'ප්‍රශ්නාවලි ගැටලු' : 'Practice MCQs'}</span>
                           </div>
-                          <ChevronDown className="w-3.5 h-3.5 text-purple-300/60 group-hover:text-purple-200 group-hover:translate-y-0.5 transition-all" />
+                          <ChevronRight className="w-3.5 h-3.5 text-purple-300/60 group-hover:text-purple-200 group-hover:translate-x-0.5 transition-all" />
                         </div>
                         <p className="text-xl sm:text-2xl font-black text-white">
                           {liveCounts ? liveCounts.questionsCount : (currentUnit.totalQuestions || 20)}+
                         </p>
                       </button>
 
-                      {/* 4. Past Papers Clickable Button */}
+                      {/* Past Papers Clickable Button */}
                       <button
                         type="button"
                         onClick={() => scrollToSection('past-papers')}
                         title={isSinhala ? 'පසුගිය ප්‍රශ්න පත්‍ර වෙත යන්න' : 'Jump to Past Papers'}
-                        className="text-left bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/10 hover:border-emerald-400/50 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg"
+                        className="text-left bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/10 hover:border-emerald-400/50 rounded-2xl p-3.5 transition-all duration-200 cursor-pointer group transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-lg min-w-[150px] sm:min-w-[180px]"
                       >
                         <div className="flex items-center justify-between text-emerald-300 text-xs font-bold mb-1">
                           <div className="flex items-center gap-1.5">
@@ -327,17 +287,6 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                           {currentUnit.pastPapers?.length || 2}
                         </p>
                       </button>
-
-                      {/* 5. Exam Level (Static) */}
-                      <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-3.5">
-                        <div className="flex items-center gap-2 text-amber-300 text-xs font-bold mb-1">
-                          <GraduationCap className="w-4 h-4" />
-                          <span>{isSinhala ? 'විභාග මට්ටම' : 'Exam Level'}</span>
-                        </div>
-                        <p className="text-sm sm:text-base font-bold text-white mt-1">
-                          G.C.E. O/L Core
-                        </p>
-                      </div>
 
                     </div>
 
@@ -669,12 +618,6 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                               {detailedNote.textbookSection}
                             </span>
                           )}
-                          {detailedNote && (
-                            <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 hidden sm:flex items-center gap-1">
-                              <Clock className="w-3.5 h-3.5" />
-                              {detailedNote.readingTimeMinutes} min
-                            </span>
-                          )}
                         </div>
 
                         {/* Top controls: Subtopic prev/next & close */}
@@ -743,7 +686,7 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                               {detailedNote.keyTakeaways.map((point, pIdx) => (
                                 <li key={pIdx} className="flex items-start gap-2">
                                   <span className="text-emerald-600 font-bold">•</span>
-                                  <span>{point}</span>
+                                  <span><InlineText text={point} /></span>
                                 </li>
                               ))}
                             </ul>
@@ -760,7 +703,7 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                                 {detailedNote.keyDefinitions.map((def, dIdx) => (
                                   <div key={dIdx} className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700">
                                     <p className="font-bold text-slate-900 text-xs mb-1 text-indigo-950">{def.term}</p>
-                                    <p className="leading-relaxed">{def.definition}</p>
+                                    <div className="leading-relaxed"><InlineText text={def.definition} /></div>
                                     {def.examTips && (
                                       <p className="mt-2 text-[11px] text-amber-800 bg-amber-50 p-1.5 rounded border border-amber-200/60 font-medium">
                                         💡 {isSinhala ? `විභාග උපදෙස: ${def.examTips}` : `Exam Tip: ${def.examTips}`}
@@ -784,9 +727,7 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                                 <h4 className="text-base font-bold text-slate-900 border-l-3 border-emerald-500 pl-2.5">
                                   {sec.heading}
                                 </h4>
-                                <div className="text-xs sm:text-sm text-slate-700 leading-relaxed whitespace-pre-line font-normal">
-                                  {sec.content}
-                                </div>
+                                <FormattedContent text={sec.content} />
                                 {sec.diagramUrl && (
                                   <div className="bg-slate-900 rounded-xl p-2.5 border border-slate-800 mt-2 shadow-sm">
                                     <div 
@@ -824,8 +765,8 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
                               </p>
                               {detailedNote.examPitfalls.map((pit, pIdx) => (
                                 <div key={pIdx} className="bg-white p-3 rounded-xl border border-amber-200 text-xs space-y-1">
-                                  <p className="text-rose-700 font-medium">❌ <strong>{isSinhala ? 'පොදු වැරැද්ද:' : 'Mistake:'}</strong> {pit.trap}</p>
-                                  <p className="text-emerald-800 font-semibold">✔ <strong>{isSinhala ? 'පෙළපොතේ නිවැරදි කරුණ:' : 'Textbook Correct:'}</strong> {pit.correct}</p>
+                                  <p className="text-rose-700 font-medium">❌ <strong>{isSinhala ? 'පොදු වැරැද්ද:' : 'Mistake:'}</strong> <InlineText text={pit.trap} /></p>
+                                  <p className="text-emerald-800 font-semibold">✔ <strong>{isSinhala ? 'පෙළපොතේ නිවැරදි කරුණ:' : 'Textbook Correct:'}</strong> <InlineText text={pit.correct} /></p>
                                 </div>
                               ))}
                             </div>

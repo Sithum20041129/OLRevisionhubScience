@@ -5,7 +5,6 @@ import {
   CheckCircle, 
   AlertTriangle, 
   Layers, 
-  Clock, 
   ZoomIn, 
   Info,
   Maximize2,
@@ -13,6 +12,7 @@ import {
   Languages
 } from 'lucide-react';
 import { getUnitRevisionData } from '../data/subtopicNotes';
+import FormattedContent, { InlineText } from './FormattedContent';
 
 export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSinhala, onOpenSubtopicModal }) {
   // Allow toggling medium directly within the revision guide
@@ -34,80 +34,49 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
   return (
     <section id="revision-guide" className="scroll-mt-28 space-y-8">
       {/* SECTION HEADER */}
-      <div className="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden border border-emerald-500/20">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-        
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="bg-white rounded-3xl p-6 sm:p-8 text-slate-900 shadow-sm relative overflow-hidden border border-slate-200">
+        <div className="relative z-10 flex flex-col sm:flex-row sm:items-start justify-between gap-6">
           <div className="space-y-3 max-w-3xl">
-            
-            {/* Top badges & Medium Switcher */}
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
-                {isSi ? 'නිල පෙළපොත් පුනරීක්ෂණ සටහන්' : 'Official Textbook Revision Guide'}
-              </span>
-              <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-black/40 text-slate-300 border border-white/10">
-                {isSi ? `11 ශ්‍රේණිය • ${data.textbookCode}` : `Grade 11 • ${data.textbookCode}`}
-              </span>
-              <span className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-emerald-400/10 text-emerald-300 border border-emerald-400/20">
-                {data.textbookPages}
-              </span>
-
-              {/* Medium Toggle Pill */}
-              <div className="inline-flex items-center gap-1 bg-black/50 p-1 rounded-xl border border-white/20 ml-auto sm:ml-0">
-                <Languages className="w-3.5 h-3.5 text-emerald-400 ml-1.5" />
-                <button
-                  onClick={() => setOverrideMedium('en')}
-                  className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition cursor-pointer ${
-                    !isSi ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-300 hover:text-white'
-                  }`}
-                >
-                  English
-                </button>
-                <button
-                  onClick={() => setOverrideMedium('si')}
-                  className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition cursor-pointer ${
-                    isSi ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-300 hover:text-white'
-                  }`}
-                >
-                  සිංහල
-                </button>
-              </div>
-            </div>
-
-            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white flex items-center gap-3">
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 flex items-center gap-3">
               <span>
                 {isSi
                   ? '15 වන ඒකකය - සම්පූර්ණ විෂය නිර්දේශ පුනරීක්ෂණ සටහන්'
                   : 'Complete Unit 15 Textbook Revision Guide'}
               </span>
-              <span className="text-emerald-400 text-lg">🌱</span>
+              <span className="text-emerald-600 text-lg">🌱</span>
             </h2>
 
-            <p className="text-sm text-slate-200 leading-relaxed font-normal">
+            <p className="text-sm text-slate-600 leading-relaxed font-normal">
               {isSi ? data.overviewSi : data.overviewEn}
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row md:flex-col gap-2 shrink-0">
-            <div className="bg-black/30 backdrop-blur-md px-4 py-3 rounded-2xl border border-white/10 text-center">
-              <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">
-                {isSi ? 'අනුමාතෘකා' : 'Subtopics'}
-              </p>
-              <p className="text-2xl font-black text-emerald-400">{data.subtopics.length} {isSi ? 'ඒකක' : 'Modules'}</p>
-            </div>
-            <div className="bg-black/30 backdrop-blur-md px-4 py-3 rounded-2xl border border-white/10 text-center">
-              <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">
-                {isSi ? 'පෙළපොත් රූප සටහන්' : 'Textbook Figures'}
-              </p>
-              <p className="text-2xl font-black text-cyan-400">20+ {isSi ? 'රූප' : 'Diagrams'}</p>
-            </div>
+          {/* Medium Toggle Pill in Upper Right Corner */}
+          <div className="inline-flex items-center gap-1 bg-slate-100 p-1.5 rounded-xl border border-slate-200 self-start sm:self-auto shrink-0 shadow-2xs">
+            <Languages className="w-4 h-4 text-emerald-600 ml-1" />
+            <button
+              onClick={() => setOverrideMedium('en')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+                !isSi ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              English
+            </button>
+            <button
+              onClick={() => setOverrideMedium('si')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+                isSi ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              සිංහල
+            </button>
           </div>
         </div>
 
         {/* HIGH YIELD SUMMARY ACCORDION / HIGHLIGHTS */}
-        <div className="mt-6 pt-6 border-t border-white/10">
-          <p className="text-xs font-bold uppercase tracking-wider text-emerald-300 flex items-center gap-2 mb-3">
-            <Sparkles className="w-4 h-4" />
+        <div className="mt-6 pt-6 border-t border-slate-100">
+          <p className="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-2 mb-3">
+            <Sparkles className="w-4 h-4 text-emerald-600" />
             <span>
               {isSi
                 ? 'විභාග ඉලක්කගත මූලික විෂය කරුණු (පෙළපොත ඇසුරෙන්)'
@@ -116,9 +85,9 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {data.summaryPoints.slice(0, 6).map((point, idx) => (
-              <div key={idx} className="bg-black/25 rounded-xl p-3 border border-white/10 flex items-start gap-2.5 text-xs text-slate-200">
-                <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span className="leading-snug">{point}</span>
+              <div key={idx} className="bg-slate-50 hover:bg-emerald-50/40 transition-colors rounded-xl p-3.5 border border-slate-200/80 flex items-start gap-2.5 text-xs text-slate-700 shadow-2xs">
+                <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <span className="leading-snug"><InlineText text={point} /></span>
               </div>
             ))}
           </div>
@@ -146,11 +115,6 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
                   {subtopic.id}
                 </span>
                 <span>{isSi ? subtopic.titleSi : subtopic.titleEn}</span>
-                <span className={`text-[10px] px-1.5 py-0.5 rounded ${
-                  isActive ? 'bg-emerald-700/60 text-emerald-100' : 'bg-slate-200/60 text-slate-500'
-                }`}>
-                  {subtopic.readingTimeMinutes} {isSi ? 'මිනි' : 'min'}
-                </span>
               </button>
             );
           })}
@@ -164,19 +128,6 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
           {/* HEADER BAR */}
           <div className="p-6 sm:p-8 bg-gradient-to-br from-slate-50 to-white flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-black px-2.5 py-1 rounded-lg bg-emerald-600 text-white">
-                  {isSi ? `අනුමාතෘකාව ${activeSubtopic.id}` : `Subtopic ${activeSubtopic.id}`}
-                </span>
-                <span className="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg border border-slate-200">
-                  {activeSubtopic.textbookSection}
-                </span>
-                <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5" />
-                  {activeSubtopic.readingTimeMinutes} {isSi ? 'මිනිත්තු පුනරීක්ෂණය' : 'min revision'}
-                </span>
-              </div>
-
               <h3 className="text-2xl font-black text-slate-900 tracking-tight">
                 {isSi ? activeSubtopic.titleSi : activeSubtopic.titleEn}
               </h3>
@@ -210,7 +161,7 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
                   <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 text-[11px] font-bold mt-0.5">
                     {idx + 1}
                   </div>
-                  <span className="leading-relaxed">{takeaway}</span>
+                  <span className="leading-relaxed"><InlineText text={takeaway} /></span>
                 </div>
               ))}
             </div>
@@ -236,13 +187,13 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
                         {isSi ? 'අර්ථ දැක්වීම' : 'Definition'}
                       </span>
                     </div>
-                    <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
-                      {def.definition}
-                    </p>
+                    <div className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                      <InlineText text={def.definition} />
+                    </div>
                     {def.examTips && (
                       <p className="text-[11px] text-amber-800 bg-amber-50 rounded-lg p-2 mt-2 border border-amber-200/60 flex items-start gap-1.5">
                         <Info className="w-3.5 h-3.5 shrink-0 mt-0.5 text-amber-600" />
-                        <span><strong>{isSi ? 'විභාග උපදෙස:' : 'Exam Tip:'}</strong> {def.examTips}</span>
+                        <span><strong>{isSi ? 'විභාග උපදෙස:' : 'Exam Tip:'}</strong> <InlineText text={def.examTips} /></span>
                       </p>
                     )}
                   </div>
@@ -268,9 +219,7 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
                   {section.heading}
                 </h5>
 
-                <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-700 leading-relaxed whitespace-pre-line font-normal">
-                  {section.content}
-                </div>
+                <FormattedContent text={section.content} />
 
                 {/* DIAGRAM EMBED */}
                 {section.diagramUrl && (
@@ -316,13 +265,13 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
                       <span className="font-black text-rose-600 uppercase text-[11px] shrink-0 bg-rose-50 px-2 py-0.5 rounded border border-rose-200">
                         {isSi ? 'පොදු වැරැද්ද ❌' : 'Common Mistake ❌'}
                       </span>
-                      <span>{pitfall.trap}</span>
+                      <span><InlineText text={pitfall.trap} /></span>
                     </div>
                     <div className="flex items-start gap-2 text-emerald-800 text-xs sm:text-sm font-medium">
                       <span className="font-black text-emerald-600 uppercase text-[11px] shrink-0 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                         {isSi ? 'පෙළපොතේ නිවැරදි කරුණ ✔' : 'Textbook Correct ✔'}
                       </span>
-                      <span>{pitfall.correct}</span>
+                      <span><InlineText text={pitfall.correct} /></span>
                     </div>
                   </div>
                 ))}

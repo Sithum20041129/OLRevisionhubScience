@@ -101,14 +101,14 @@ export const unit15RevisionData = {
           heading: "15.1.3 Growth of Population and Growth Curves",
           content: `**Population Density** is the number of individuals of a single species per unit area or unit volume at a given time. Four core demographic parameters determine population density fluctuations:
 
-- **Natality (Birth rate)**: Number of live births per unit time (Increases density $[+]$).
-- **Immigration**: Influx of individuals from outside into the population (Increases density $[+]$).
-- **Mortality (Death rate)**: Number of deaths per unit time (Decreases density $[-]$).
-- **Emigration**: Outflow of individuals leaving the population (Decreases density $[-]$).
+- **Natality (Birth rate)**: Number of live births per unit time (Increases density [+]).
+- **Immigration**: Influx of individuals from outside into the population (Increases density [+]).
+- **Mortality (Death rate)**: Number of deaths per unit time (Decreases density [-]).
+- **Emigration**: Outflow of individuals leaving the population (Decreases density [-]).
 
-$$\\text{Net Population Change} = (\\text{Natality} + \\text{Immigration}) - (\\text{Mortality} + \\text{Emigration})$$
+Net Population Change = (Natality + Immigration) - (Mortality + Emigration)
 
-When $(N + I) > (M + E)$, the population increases. When $(N + I) = (M + E)$, the population reaches zero growth equilibrium.`,
+When (N + I) > (M + E), the population increases. When (N + I) = (M + E), the population reaches zero growth equilibrium.`,
           diagramUrl: "/images/unit15/fig_15_3_population_factors.png",
           diagramCaption: "Figure 15.3 - Factors affecting population density in the biosphere (Natality, Immigration, Mortality, Emigration)."
         },
@@ -119,7 +119,7 @@ When $(N + I) > (M + E)$, the population increases. When $(N + I) = (M + E)$, th
 1. **Lag Phase (Initial slow growth)**: Individuals adapt to the new habitat, synthesize enzymes, mature reproductively, and establish home ranges. Growth is slow.
 2. **Log / Exponential Phase (Rapid acceleration)**: Environmental resistance is low; nutrients, space, and shelter are plentiful. Birth rate vastly exceeds death rate, producing rapid geometric population increase.
 3. **Deceleration Phase (Retardation)**: As population density nears the carrying capacity, resources become constrained. Intraspecific competition intensifies, waste accumulates, and growth rate slows down.
-4. **Stationary Phase (Equilibrium)**: Natality equals mortality. The population size stabilizes and fluctuates around the carrying capacity ($K$).`,
+4. **Stationary Phase (Equilibrium)**: Natality equals mortality. The population size stabilizes and fluctuates around the carrying capacity (K).`,
           diagramUrl: "/images/unit15/fig_15_4_growth_curve.png",
           diagramCaption: "Figure 15.4 - Typical population growth curve (Sigmoid curve showing Lag, Exponential, Deceleration, and Stationary phases)."
         },
@@ -161,7 +161,7 @@ Advances in medical antibiotics, immunization, disease eradication, mechanized a
         {
           term: "Autotrophs (Producers)",
           definition: "Organisms that synthesize organic food substances from simple inorganic raw materials using light energy through photosynthesis (e.g., green plants, algae, cyanobacteria).",
-          examTips: "Always occupy Trophic Level 1 ($T_1$) at the base of every ecological pyramid."
+          examTips: "Always occupy Trophic Level 1 (T₁) at the base of every ecological pyramid."
         },
         {
           term: "Heterotrophs (Consumers)",
@@ -180,7 +180,7 @@ Advances in medical antibiotics, immunization, disease eradication, mechanized a
         },
         {
           term: "Nitrification",
-          definition: "The biological oxidation of ammonium ($NH_4^+$) to nitrite ($NO_2^-$) by Nitrosomonas, followed by the oxidation of nitrite to nitrate ($NO_3^-$) by Nitrobacter.",
+          definition: "The biological oxidation of ammonium (NH₄⁺) to nitrite (NO₂⁻) by Nitrosomonas, followed by the oxidation of nitrite to nitrate (NO₃⁻) by Nitrobacter.",
           examTips: "State both bacteria and their specific substrate/product conversions."
         }
       ],
@@ -189,10 +189,10 @@ Advances in medical antibiotics, immunization, disease eradication, mechanized a
           heading: "15.2.1 Flow of Energy and Nutrients",
           content: `The primary radiant driver of our planet is sunlight. 
 
-- **Autotrophic Producers**: Convert solar radiant energy into chemical energy stored in glucose bonds via photosynthesis ($6CO_2 + 6H_2O \\xrightarrow{\\text{light, chlorophyll}} C_6H_{12}O_6 + 6O_2$).
+- **Autotrophic Producers**: Convert solar radiant energy into chemical energy stored in glucose bonds via photosynthesis (6CO₂ + 6H₂O ──(light / chlorophyll)──> C₆H₁₂O₆ + 6O₂).
 - **Primary Consumers (Herbivores)**: Graze upon autotrophs (e.g., caterpillars, cattle, grasshoppers).
 - **Secondary & Tertiary Consumers (Carnivores)**: Prey on herbivores and other carnivores (e.g., toads, coucals, cobras, hawks).
-- **Decomposers & Detritivores**: Saprophytic fungi and bacteria decompose dead plant and animal remains, breaking complex organic compounds into mineral ions ($NH_4^+, NO_3^-, PO_4^{3-}$), returning them to the soil solution.`,
+- **Decomposers & Detritivores**: Saprophytic fungi and bacteria decompose dead plant and animal remains, breaking complex organic compounds into mineral ions (NH₄⁺, NO₃⁻, PO₄³⁻), returning them to the soil solution.`,
           diagramUrl: "/images/unit15/fig_15_7_food_web.png",
           diagramCaption: "Figure 15.7 - Complex food web showing interconnected feeding relationships among producers, herbivores, and multiple carnivore trophic levels."
         },
@@ -200,7 +200,7 @@ Advances in medical antibiotics, immunization, disease eradication, mechanized a
           heading: "Food Chains vs. Food Webs",
           content: `A **Food Chain** is a simplified, linear sequence representing the feeding pathway through which energy and nutrients pass from producers to higher consumers:
 
-$$\\text{Paddy Plant } (T_1) \\longrightarrow \\text{Caterpillar } (T_2) \\longrightarrow \\text{Bird } (T_3) \\longrightarrow \\text{Hawk } (T_4)$$
+Paddy Plant (T₁) ──> Caterpillar (T₂) ──> Bird (T₃) ──> Hawk (T₄)
 
 In natural ecosystems, linear food chains do not operate independently. Most animals consume multiple prey species and are consumed by several predators, creating a multi-branched **Food Web**. Food webs confer stability: if one prey species suffers a population collapse, predators can switch to alternative food sources without ecosystem collapse.`,
           diagramUrl: "/images/unit15/fig_15_8_food_chain.png",
@@ -212,10 +212,10 @@ In natural ecosystems, linear food chains do not operate independently. Most ani
 
 1. **Pyramid of Numbers**: Represents the number of individuals present at each trophic level.
    - *Upright Number Pyramid*: Characteristic of grasslands and ponds where millions of tiny grass plants/algae support fewer herbivores and very few carnivores.
-   - *Inverted / Spindle Number Pyramid*: Occurs in forest ecosystems where a single massive tree ($T_1$) supports thousands of herbivorous insects ($T_2$), which host parasitic mites ($T_3$).
-2. **Pyramid of Biomass**: Represents the total dry weight of organic matter at each trophic level ($g/m^2$ or $kg/ha$).
+   - *Inverted / Spindle Number Pyramid*: Occurs in forest ecosystems where a single massive tree (T₁) supports thousands of herbivorous insects (T₂), which host parasitic mites (T₃).
+2. **Pyramid of Biomass**: Represents the total dry weight of organic matter at each trophic level (g/m² or kg/ha).
    - Generally upright in terrestrial ecosystems because plant biomass far exceeds consumer biomass.
-3. **Pyramid of Energy**: Represents the total energy content processed per unit area per year ($J/m^2/\\text{year}$).
+3. **Pyramid of Energy**: Represents the total energy content processed per unit area per year (J / m² / year).
    - **MUST ALWAYS BE UPRIGHT** in all ecosystems without exception! According to the Second Law of Thermodynamics, energy cannot be created, and each energy conversion generates non-recoverable heat.`,
           diagramUrl: "/images/unit15/fig_15_10_11_12_pyramids.png",
           diagramCaption: "Figures 15.10, 15.11, 15.12 - Upright number pyramid, inverted number pyramid, and biomass pyramid."
@@ -224,11 +224,11 @@ In natural ecosystems, linear food chains do not operate independently. Most ani
           heading: "The 10% Energy Transfer Law & Energy Dissipation",
           content: `Only roughly **10%** of the energy stored in biomass at a given trophic level is successfully incorporated into the tissues of the next trophic level.
 
-Consider an energy input of $10,000\\text{ J}$ at the producer level:
-- Producers ($T_1$): $10,000\\text{ J}$
-- Primary Consumers ($T_2$): $1,000\\text{ J}$ ($10\\%$)
-- Secondary Consumers ($T_3$): $100\\text{ J}$ ($1\\%$)
-- Tertiary Consumers ($T_4$): $10\\text{ J}$ ($0.1\\%$)
+Consider an energy input of 10,000 J at the producer level:
+- Producers (T₁): 10,000 J
+- Primary Consumers (T₂): 1,000 J (10%)
+- Secondary Consumers (T₃): 100 J (1%)
+- Tertiary Consumers (T₄): 10 J (0.1%)
 
 **Where does the missing 90% go?**
 Taking a cattle consuming grass as an example (Figure 15.14):
@@ -244,34 +244,34 @@ Taking a cattle consuming grass as an example (Figure 15.14):
           heading: "15.2.2 Biogeochemical Cycles: The Carbon Cycle",
           content: `Carbon is the elemental backbone of all biomolecules (carbohydrates, proteins, lipids, nucleic acids).
 
-- **Carbon Fixation**: Plants, phytoplankton, and cyanobacteria absorb atmospheric carbon dioxide ($CO_2$) and synthesize organic sugars via photosynthesis.
+- **Carbon Fixation**: Plants, phytoplankton, and cyanobacteria absorb atmospheric carbon dioxide (CO₂) and synthesize organic sugars via photosynthesis.
 - **Return Pathways to Atmosphere**:
-  1. *Respiration*: Plants, animals, and decomposers oxidize glucose during cellular respiration, releasing $CO_2$.
-  2. *Decomposition*: Saprophytic microbes decompose organic detritus, releasing trapped carbon back as $CO_2$.
-  3. *Combustion*: Burning biomass (forest fires) and fossil fuels (coal, petroleum, natural gas formed over millions of years) releases massive quantities of $CO_2$.
+  1. *Respiration*: Plants, animals, and decomposers oxidize glucose during cellular respiration, releasing CO₂.
+  2. *Decomposition*: Saprophytic microbes decompose organic detritus, releasing trapped carbon back as CO₂.
+  3. *Combustion*: Burning biomass (forest fires) and fossil fuels (coal, petroleum, natural gas formed over millions of years) releases massive quantities of CO₂.
   4. *Volcanic Activity & Dissolution*: Dissolution in oceans forming carbonates and bicarbonates.`,
           diagramUrl: "/images/unit15/fig_15_17_carbon_cycle.png",
           diagramCaption: "Figure 15.17 - The Carbon Cycle showing photosynthesis fixation, respiration, fossilization, and industrial combustion."
         },
         {
           heading: "The Nitrogen Cycle",
-          content: `Although nitrogen gas ($N_2$) comprises ~78% of Earth's atmosphere, plants cannot directly assimilate diatomic nitrogen because of its strong triple covalent bond ($N \\equiv N$).
+          content: `Although nitrogen gas (N₂) comprises ~78% of Earth's atmosphere, plants cannot directly assimilate diatomic nitrogen because of its strong triple covalent bond (N≡N (triple bond)).
 
 The Nitrogen Cycle involves 4 essential biological phases:
 
 1. **Nitrogen Fixation**:
-   - *Biological Fixation*: Symbiotic bacteria (*Rhizobium*) living in the root nodules of leguminous plants (e.g., Mimosa, beans, peas) convert atmospheric $N_2$ into ammonium ($NH_4^+$). Free-living soil bacteria (*Azotobacter*, *Clostridium*) and cyanobacteria (*Anabaena*, *Nostoc*) also fix nitrogen.
-   - *Atmospheric / Physical Fixation*: High-voltage lightning discharges provide thermal energy causing $N_2$ to combine with atmospheric $O_2$ into nitrogen oxides ($NO, NO_2$). These dissolve in rain to form nitrous and nitric acids, which react with soil bases to yield absorbable nitrates ($NO_3^-$).
+   - *Biological Fixation*: Symbiotic bacteria (*Rhizobium*) living in the root nodules of leguminous plants (e.g., Mimosa, beans, peas) convert atmospheric N₂ into ammonium (NH₄⁺). Free-living soil bacteria (*Azotobacter*, *Clostridium*) and cyanobacteria (*Anabaena*, *Nostoc*) also fix nitrogen.
+   - *Atmospheric / Physical Fixation*: High-voltage lightning discharges provide thermal energy causing N₂ to combine with atmospheric O₂ into nitrogen oxides (NO, NO₂). These dissolve in rain to form nitrous and nitric acids, which react with soil bases to yield absorbable nitrates (NO₃⁻).
    - *Industrial Fixation*: Synthetic production of chemical fertilizers via the Haber-Bosch process.
 2. **Nitrification**:
    - Two-step aerobic bacterial oxidation:
-   $$\\text{Ammonium } (NH_4^+) \\xrightarrow{\\text{Nitrosomonas bacteria}} \\text{Nitrite } (NO_2^-)$$
-   $$\\text{Nitrite } (NO_2^-) \\xrightarrow{\\text{Nitrobacter bacteria}} \\text{Nitrate } (NO_3^-)$$
+   Ammonium (NH₄⁺) ──(Nitrosomonas bacteria)──> Nitrite (NO₂⁻)
+   Nitrite (NO₂⁻) ──(Nitrobacter bacteria)──> Nitrate (NO₃⁻)
 3. **Assimilation**:
-   - Plant root hairs absorb dissolved nitrates ($NO_3^-$). Plants synthesize amino acids, structural proteins, and nucleic acids. Herbivores consume plants to build animal proteins.
+   - Plant root hairs absorb dissolved nitrates (NO₃⁻). Plants synthesize amino acids, structural proteins, and nucleic acids. Herbivores consume plants to build animal proteins.
 4. **Ammonification & Denitrification**:
-   - *Ammonification*: Decomposers (putrefying bacteria and fungi) break down urea, excretory products, and dead bodies, converting organic nitrogen back into ammonium compounds ($NH_4^+$).
-   - *Denitrification*: Under waterlogged, anaerobic conditions, denitrifying bacteria (*Pseudomonas*) reduce nitrates back into gaseous nitrogen ($N_2$), returning it to the atmospheric reservoir.`,
+   - *Ammonification*: Decomposers (putrefying bacteria and fungi) break down urea, excretory products, and dead bodies, converting organic nitrogen back into ammonium compounds (NH₄⁺).
+   - *Denitrification*: Under waterlogged, anaerobic conditions, denitrifying bacteria (*Pseudomonas*) reduce nitrates back into gaseous nitrogen (N₂), returning it to the atmospheric reservoir.`,
           diagramUrl: "/images/unit15/fig_15_18_nitrogen_cycle.png",
           diagramCaption: "Figure 15.18 - The Nitrogen Cycle showing biological fixation (Rhizobium, Azotobacter), nitrification (Nitrosomonas, Nitrobacter), and denitrification (Pseudomonas)."
         }
@@ -311,8 +311,8 @@ The Nitrogen Cycle involves 4 essential biological phases:
         },
         {
           term: "Acid Rain",
-          definition: "Rainfall, snow, or fog with a pH less than 5.6 caused by the atmospheric dissolution of sulfur dioxide ($SO_2$) and nitrogen oxides ($NO_x$) forming sulfuric and nitric acids.",
-          examTips: "Normal clean rainwater is slightly acidic (pH ~5.6) due to dissolved $CO_2$ forming weak carbonic acid ($H_2CO_3$). Acid rain is strictly pH < 5.6."
+          definition: "Rainfall, snow, or fog with a pH less than 5.6 caused by the atmospheric dissolution of sulfur dioxide (SO₂) and nitrogen oxides (NOₓ) forming sulfuric and nitric acids.",
+          examTips: "Normal clean rainwater is slightly acidic (pH ~5.6) due to dissolved CO₂ forming weak carbonic acid (H₂CO₃). Acid rain is strictly pH < 5.6."
         },
         {
           term: "Eutrophication",
@@ -326,7 +326,7 @@ The Nitrogen Cycle involves 4 essential biological phases:
         },
         {
           term: "Photochemical Smog",
-          definition: "A yellowish-brown atmospheric haze produced when sunlight catalyzes chemical reactions between nitrogen oxides ($NO_x$) and volatile organic hydrocarbons, generating ozone and PAN.",
+          definition: "A yellowish-brown atmospheric haze produced when sunlight catalyzes chemical reactions between nitrogen oxides (NOₓ) and volatile organic hydrocarbons, generating ozone and PAN.",
           examTips: "Requires intense solar radiation; prevalent in stagnant urban atmospheres with high automobile exhaust."
         }
       ],
@@ -335,7 +335,7 @@ The Nitrogen Cycle involves 4 essential biological phases:
           heading: "15.3.1 Environmental Pollutants and Classification",
           content: `Pollutants can be classified based on their nature and persistence:
 - **Biodegradable Pollutants**: Organic wastes that can be decomposed by microorganisms under natural conditions (e.g., domestic sewage, food waste, animal dung, paper).
-- **Non-biodegradable Pollutants**: Synthetic substances that cannot be degraded by biological organisms and persist for decades or centuries (e.g., polythene, plastics, heavy metals like $Pb, Hg, Cd$, and pesticides like DDT).`,
+- **Non-biodegradable Pollutants**: Synthetic substances that cannot be degraded by biological organisms and persist for decades or centuries (e.g., polythene, plastics, heavy metals like Pb, Hg, Cd, and pesticides like DDT).`,
           diagramUrl: "/images/unit15/fig_15_20_greenhouse_effect.png",
           diagramCaption: "Figure 15.20 - The Greenhouse Effect mechanism showing atmospheric trapping of re-radiated infrared heat."
         },
@@ -346,10 +346,10 @@ The Nitrogen Cycle involves 4 essential biological phases:
 1. **Agrochemical Pollution**: Over-application of synthetic nitrogen-phosphorus-potassium (NPK) fertilizers, weedicides (e.g., glyphosate), and organophosphate insecticides. These wash into groundwater and waterways, causing water intoxication and chronic diseases.
 2. **Industrial Effluents**: Untreated liquid waste containing strong mineral acids, caustic alkalis, organic solvents, and toxic heavy metals dumped into rivers and estuaries.
 3. **Heavy Metal Contamination**:
-   - *Lead ($Pb$)*: From lead-acid batteries, paints, cable sheathing, and older plumbing. Damaging to the central nervous system, causing developmental delays in children.
-   - *Mercury ($Hg$)*: From dental amalgams, industrial chlor-alkali processes, compact fluorescent lamps (CFLs). Causes Minamata neurological disease.
-   - *Cadmium ($Cd$)*: From nickel-cadmium rechargeable batteries and electroplating. Causes Itai-itai bone disease and renal tubular damage.
-   - *Arsenic ($As$)*: Found in contaminated agrochemical formulas and mineral deposits, implicated in chronic kidney disease.
+   - *Lead (Pb)*: From lead-acid batteries, paints, cable sheathing, and older plumbing. Damaging to the central nervous system, causing developmental delays in children.
+   - *Mercury (Hg)*: From dental amalgams, industrial chlor-alkali processes, compact fluorescent lamps (CFLs). Causes Minamata neurological disease.
+   - *Cadmium (Cd)*: From nickel-cadmium rechargeable batteries and electroplating. Causes Itai-itai bone disease and renal tubular damage.
+   - *Arsenic (As)*: Found in contaminated agrochemical formulas and mineral deposits, implicated in chronic kidney disease.
 4. **Particulate Matter (PM)**: Fine respirable suspended particles including carbon soot, fly ash from thermal power plants, cement dust, and asbestos fibers. Asbestos fibers lodge deeply in pulmonary alveoli, causing irreversible asbestosis and mesothelioma lung cancer.
 5. **Electronic Waste (E-Waste)**: Discarded desktop computers, mobile phones, cathode ray tubes, and printed circuit boards releasing toxic flame retardants, lead, and mercury into landfills.
 6. **Harmful Food Additives**:
@@ -364,15 +364,15 @@ The Nitrogen Cycle involves 4 essential biological phases:
           heading: "Acid Rain: Chemistry and Environmental Impacts",
           content: `**Chemical Genesis**:
 Combustion of high-sulfur coal in thermal power plants and fuel in internal combustion engines releases sulfur dioxide and nitrogen dioxide:
-$$SO_2 + H_2O \\longrightarrow H_2SO_3 \\quad (\\text{Sulfurous acid})$$
-$$2SO_2 + O_2 + 2H_2O \\longrightarrow 2H_2SO_4 \\quad (\\text{Sulfuric acid})$$
-$$4NO_2 + 2H_2O + O_2 \\longrightarrow 4HNO_3 \\quad (\\text{Nitric acid})$$
+SO₂ + H₂O ──> H₂SO₃  (Sulfurous acid)
+2SO₂ + O₂ + 2H₂O ──> 2H₂SO₄  (Sulfuric acid)
+4NO₂ + 2H₂O + O₂ ──> 4HNO₃  (Nitric acid)
 
 **Devastating Impacts**:
-- **Forest Destruction**: Acid rain damages protective waxy cuticles on leaves, inhibits photosynthesis, and leaches essential soil nutrient cations ($Ca^{2+}, Mg^{2+}, K^+$).
-- **Toxic Metal Mobilization**: Acidity converts insoluble aluminum silicate in soil into free aluminum ions ($Al^{3+}$), which are toxic to tree root tips and coat fish gills with suffocating mucus.
+- **Forest Destruction**: Acid rain damages protective waxy cuticles on leaves, inhibits photosynthesis, and leaches essential soil nutrient cations (Ca²⁺, Mg²⁺, K⁺).
+- **Toxic Metal Mobilization**: Acidity converts insoluble aluminum silicate in soil into free aluminum ions (Al³⁺), which are toxic to tree root tips and coat fish gills with suffocating mucus.
 - **Aquatic Ecosystem Collapse**: When lake water drops below pH 5.0, fish eggs fail to hatch, adult fish suffer reproductive failure, and aquatic food chains collapse.
-- **Architectural & Structural Corrosion**: Corrodes ancient limestone, dolomite, and marble monuments ($CaCO_3 + H_2SO_4 \\rightarrow CaSO_4 + H_2O + CO_2$) and rapidly rusts metallic iron/steel bridges and railway lines.`,
+- **Architectural & Structural Corrosion**: Corrodes ancient limestone, dolomite, and marble monuments (CaCO₃ + H₂SO₄ ──> CaSO₄ + H₂O + CO₂) and rapidly rusts metallic iron/steel bridges and railway lines.`,
           diagramUrl: "/images/unit15/fig_15_28_global_warming.png",
           diagramCaption: "Figure 15.28 - Global warming consequences: retreating glaciers, sea level rise, atmospheric temperature rise, and ocean warming."
         },
@@ -383,10 +383,10 @@ $$4NO_2 + 2H_2O + O_2 \\longrightarrow 4HNO_3 \\quad (\\text{Nitric acid})$$
 Greenhouse gases absorb this infrared radiation and re-radiate a significant portion back to Earth, trapping heat in the troposphere.
 
 **Key Greenhouse Gases**:
-- **Carbon Dioxide ($CO_2$)**: Accounts for >60% of enhanced warming; generated by fossil fuel combustion and tropical deforestation.
-- **Methane ($CH_4$)**: 25× more potent than $CO_2$; released from flooded anaerobic paddy fields, ruminant livestock digestion (cattle enteric fermentation), and landfill waste decomposition.
-- **Nitrous Oxide ($N_2O$)**: Produced by excessive synthetic nitrogenous fertilizers and nylon manufacturing.
-- **Chlorofluorocarbons ($CFCs$) & Hydrofluorocarbons**: Industrial refrigerants, aerosol propellants, and blowing agents with very high global warming potential.
+- **Carbon Dioxide (CO₂)**: Accounts for >60% of enhanced warming; generated by fossil fuel combustion and tropical deforestation.
+- **Methane (CH₄)**: 25× more potent than CO₂; released from flooded anaerobic paddy fields, ruminant livestock digestion (cattle enteric fermentation), and landfill waste decomposition.
+- **Nitrous Oxide (N₂O)**: Produced by excessive synthetic nitrogenous fertilizers and nylon manufacturing.
+- **Chlorofluorocarbons (CFCs) & Hydrofluorocarbons**: Industrial refrigerants, aerosol propellants, and blowing agents with very high global warming potential.
 
 **Global Consequences**:
 - Thermal expansion of ocean water and polar ice sheet melting (Greenland and Antarctica) leading to rising sea levels and coastal land submersion.
@@ -403,7 +403,7 @@ Greenhouse gases absorb this infrared radiation and re-radiate a significant por
 3. Dense algal mats cover the water surface, preventing sunlight from reaching submerged aquatic plants, causing their death.
 4. When the massive algal biomass dies, populations of aerobic saprophytic bacteria multiply exponentially, consuming all **Dissolved Oxygen (DO)** in the water column.
 5. The water becomes hypoxic/anoxic. Fish, prawns, and aquatic organisms suffocate and die en masse.
-6. Anaerobic bacteria take over, producing foul-smelling toxic gases like hydrogen sulfide ($H_2S$) and methane ($CH_4$).
+6. Anaerobic bacteria take over, producing foul-smelling toxic gases like hydrogen sulfide (H₂S) and methane (CH₄).
 
 **Biomagnification (Biological Amplification)**:
 When persistent organic pollutants (e.g., DDT) or heavy metals (e.g., methylmercury) enter an aquatic ecosystem, they are absorbed by micro-algae at low concentrations (e.g., 0.00005 ppm). Because these compounds are lipophilic (fat-soluble) and cannot be metabolized or excreted:
@@ -476,7 +476,7 @@ In predatory birds, high DDT causes calcium metabolism disruption, leading to pa
 In Sri Lanka today, over 60% of hospital mortalities are attributable to preventable NCDs:
 - **Cardiovascular Diseases**: Atherosclerosis, coronary arterial disease, and high blood pressure caused by diets rich in saturated animal fats and trans-fatty acids, combined with sedentary habits and smoking.
 - **Type 2 Diabetes Mellitus**: Insulin resistance triggered by excess refined carbohydrate intake, obesity, and absence of physical workouts.
-- **Chronic Kidney Disease (CKDu)**: Widespread in Rajarata (Anuradhapura, Polonnaruwa) and surrounding farming belts. Associated with long-term exposure to heavy metals ($Cd, As$), fluoride, and hard water via contaminated agrochemicals and poorly stored aluminum cooking utensils.
+- **Chronic Kidney Disease (CKDu)**: Widespread in Rajarata (Anuradhapura, Polonnaruwa) and surrounding farming belts. Associated with long-term exposure to heavy metals (Cd, As), fluoride, and hard water via contaminated agrochemicals and poorly stored aluminum cooking utensils.
 - **Chronic Pulmonary Illnesses**: Bronchial asthma, wheezing, and Chronic Obstructive Pulmonary Disease (COPD) caused by vehicle exhaust and industrial particulate matter.
 - **Cancers**: Carcinomas triggered by synthetic carcinogenic additives, pesticide residues in food and water, ionizing radiation, and asbestos fibers.
 
@@ -524,7 +524,7 @@ In Sri Lanka today, over 60% of hospital mortalities are attributable to prevent
         },
         {
           term: "Carbon Footprint",
-          definition: "The total amount of greenhouse gases (expressed in equivalent tons of carbon dioxide, $CO_2e$) emitted directly and indirectly by an individual, event, organization, or product across its lifecycle.",
+          definition: "The total amount of greenhouse gases (expressed in equivalent tons of carbon dioxide, CO₂e) emitted directly and indirectly by an individual, event, organization, or product across its lifecycle.",
           examTips: "Includes direct fuel combustion and indirect energy/manufacturing emissions."
         },
         {
@@ -624,7 +624,7 @@ An **energy audit** benchmarks electricity and fuel usage in schools, hospitals,
 - **Biomass & Dendro-Thermal Energy**: Growing fast-growing fuelwood species (*Gliricidia sepium*) for industrial thermal boilers and power generation.
 
 **International Environmental Conventions**:
-- **Montreal Protocol (1987)**: International treaty successfully phasing out the manufacture and consumption of ozone-depleting substances ($CFCs$, halons).
+- **Montreal Protocol (1987)**: International treaty successfully phasing out the manufacture and consumption of ozone-depleting substances (CFCs, halons).
 - **Kyoto Protocol & Paris Climate Agreement**: Binding international accords mandating nationwide greenhouse gas reduction commitments to prevent global mean temperature from exceeding 1.5°C to 2.0°C above pre-industrial levels.
 - **Basel Convention**: Controls the transboundary movement and disposal of hazardous and electronic wastes, preventing developed nations from dumping toxic waste in developing countries.
 - **Stockholm Convention**: A global treaty to eliminate or restrict the production and use of Persistent Organic Pollutants (POPs / The 'Dirty Dozen' including DDT, PCBs, dioxins).
