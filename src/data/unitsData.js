@@ -2442,6 +2442,7 @@ export const unitsData = [
     "grade": 11,
     "unitNumber": 15,
     "category": "biology",
+    "heroBannerImage": "/images/hero-biosphere-banner.png",
     "titleEn": "Biosphere",
     "titleSi": "ජීවගෝලය",
     "descriptionEn": "Ecological organizational levels, ecosystem equilibrium, energy flow and biogeochemical cycles (carbon, nitrogen, water), environmental pollution (air, water, soil), climate change, and sustainable development.",

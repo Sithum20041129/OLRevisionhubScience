@@ -2,19 +2,24 @@ import React, { useState } from 'react';
 import { 
   BookOpen, 
   Sparkles, 
-  CheckCircle, 
-  AlertTriangle, 
   Layers, 
   ZoomIn, 
-  Info,
   Maximize2,
   X,
-  Languages
+  Languages,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import { getUnitRevisionData } from '../data/subtopicNotes';
 import FormattedContent, { InlineText } from './FormattedContent';
 
-export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSinhala, onOpenSubtopicModal }) {
+export default function UnitRevisionNotes({ 
+  revisionData, 
+  isSinhala: initialIsSinhala, 
+  onOpenSubtopicModal,
+  activeSubtopicId,
+  onSubtopicChange
+}) {
   // Allow toggling medium directly within the revision guide
   const [overrideMedium, setOverrideMedium] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -25,124 +30,131 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
   const isSi = currentMedium === 'si';
   const data = getUnitRevisionData(unitId, isSi) || revisionData;
 
-  const [activeTabId, setActiveTabId] = useState(data?.subtopics?.[0]?.id || '15.1');
+  const [internalTabId, setInternalTabId] = useState(null);
+  const activeTabId = activeSubtopicId ?? internalTabId ?? data?.subtopics?.[0]?.id ?? '15.1';
+
+  const handleTabChange = (tabId) => {
+    setInternalTabId(tabId);
+    if (onSubtopicChange) onSubtopicChange(tabId);
+  };
 
   if (!data) return null;
 
   const activeSubtopic = data.subtopics.find((s) => s.id === activeTabId) || data.subtopics[0];
+  const currentIndex = data.subtopics.findIndex((s) => s.id === activeSubtopic.id);
+  const prevSubtopic = currentIndex > 0 ? data.subtopics[currentIndex - 1] : null;
+  const nextSubtopic = currentIndex < data.subtopics.length - 1 ? data.subtopics[currentIndex + 1] : null;
+
+  const handlePrevSubtopic = () => {
+    if (prevSubtopic) handleTabChange(prevSubtopic.id);
+  };
+
+  const handleNextSubtopic = () => {
+    if (nextSubtopic) handleTabChange(nextSubtopic.id);
+  };
 
   return (
-    <section id="revision-guide" className="scroll-mt-28 space-y-8">
-      {/* SECTION HEADER */}
-      <div className="bg-white rounded-3xl p-6 sm:p-8 text-slate-900 shadow-sm relative overflow-hidden border border-slate-200">
-        <div className="relative z-10 flex flex-col sm:flex-row sm:items-start justify-between gap-6">
-          <div className="space-y-3 max-w-3xl">
-            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 flex items-center gap-3">
-              <span>
-                {isSi
-                  ? '15 වන ඒකකය - සම්පූර්ණ විෂය නිර්දේශ පුනරීක්ෂණ සටහන්'
-                  : 'Complete Unit 15 Textbook Revision Guide'}
-              </span>
-              <span className="text-emerald-600 text-lg">🌱</span>
-            </h2>
+    <section id="revision-guide" className="scroll-mt-28 space-y-6">
+      {/* SUBTOPIC TOPIC NAVIGATION BAR */}
+      <div id="subtopic-nav-bar" className="scroll-mt-28 bg-white rounded-2xl p-4 sm:p-5 shadow-xs border border-slate-200 flex items-center justify-between gap-3 sm:gap-6">
+        
+        {/* PREVIOUS SUBTOPIC BUTTON (<) */}
+        <button
+          type="button"
+          onClick={handlePrevSubtopic}
+          disabled={currentIndex <= 0}
+          className={`flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl border transition-all duration-200 shrink-0 ${
+            currentIndex > 0
+              ? 'bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white border-slate-200 hover:border-emerald-600 shadow-2xs hover:shadow-md cursor-pointer group'
+              : 'bg-slate-50 text-slate-300 border-slate-200/60 cursor-not-allowed opacity-40'
+          }`}
+          title={prevSubtopic ? (isSi ? `පෙර: ${prevSubtopic.id} ${prevSubtopic.titleSi}` : `Previous: ${prevSubtopic.id} ${prevSubtopic.titleEn}`) : undefined}
+          aria-label="Previous subtopic"
+        >
+          <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:-translate-x-0.5 transition-transform" />
+        </button>
 
-            <p className="text-sm text-slate-600 leading-relaxed font-normal">
-              {isSi ? data.overviewSi : data.overviewEn}
-            </p>
-          </div>
-
-          {/* Medium Toggle Pill in Upper Right Corner */}
-          <div className="inline-flex items-center gap-1 bg-slate-100 p-1.5 rounded-xl border border-slate-200 self-start sm:self-auto shrink-0 shadow-2xs">
-            <Languages className="w-4 h-4 text-emerald-600 ml-1" />
-            <button
-              onClick={() => setOverrideMedium('en')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
-                !isSi ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              English
-            </button>
-            <button
-              onClick={() => setOverrideMedium('si')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
-                isSi ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              සිංහල
-            </button>
-          </div>
-        </div>
-
-        {/* HIGH YIELD SUMMARY ACCORDION / HIGHLIGHTS */}
-        <div className="mt-6 pt-6 border-t border-slate-100">
-          <p className="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-2 mb-3">
-            <Sparkles className="w-4 h-4 text-emerald-600" />
-            <span>
-              {isSi
-                ? 'විභාග ඉලක්කගත මූලික විෂය කරුණු (පෙළපොත ඇසුරෙන්)'
-                : 'Core Curriculum Pillars (Strictly Bounded to Textbook)'}
+        {/* CURRENT TOPIC CONTENT (COMPLETELY HELD) */}
+        <div className="flex-1 text-center min-w-0 px-1 sm:px-4">
+          <div className="flex items-center justify-center gap-2 mb-1.5 flex-wrap">
+            <span className="text-xs font-black px-2.5 py-0.5 rounded-md bg-emerald-600 text-white shadow-2xs">
+              {activeSubtopic.id}
             </span>
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            {data.summaryPoints.slice(0, 6).map((point, idx) => (
-              <div key={idx} className="bg-slate-50 hover:bg-emerald-50/40 transition-colors rounded-xl p-3.5 border border-slate-200/80 flex items-start gap-2.5 text-xs text-slate-700 shadow-2xs">
-                <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                <span className="leading-snug"><InlineText text={point} /></span>
-              </div>
-            ))}
+            <span className="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-md border border-slate-200/80">
+              {isSi ? `${data.subtopics.length} න් ${currentIndex + 1} වන අනුමාතෘකාව` : `Subtopic ${currentIndex + 1} of ${data.subtopics.length}`}
+            </span>
           </div>
-        </div>
-      </div>
 
-      {/* SUBTOPICS NAVIGATION TABS */}
-      <div className="bg-white rounded-2xl p-2 shadow-xs border border-slate-200">
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-thin">
-          {data.subtopics.map((subtopic) => {
-            const isActive = subtopic.id === activeTabId;
-            return (
-              <button
-                key={subtopic.id}
-                onClick={() => setActiveTabId(subtopic.id)}
-                className={`flex items-center gap-2.5 px-4 py-3 rounded-xl font-bold text-xs whitespace-nowrap transition-all cursor-pointer ${
-                  isActive
-                    ? 'bg-emerald-600 text-white shadow-md'
-                    : 'bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200/60'
-                }`}
-              >
-                <span className={`px-2 py-0.5 rounded-md text-[11px] font-extrabold ${
-                  isActive ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'
-                }`}>
-                  {subtopic.id}
-                </span>
-                <span>{isSi ? subtopic.titleSi : subtopic.titleEn}</span>
-              </button>
-            );
-          })}
+          <h3 className="text-base sm:text-xl md:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+            {isSi ? activeSubtopic.titleSi : activeSubtopic.titleEn}
+          </h3>
+
+          <p className="text-xs sm:text-sm text-slate-500 italic mt-0.5 font-medium">
+            {isSi ? activeSubtopic.titleEn : activeSubtopic.titleSi}
+          </p>
         </div>
+
+        {/* NEXT SUBTOPIC BUTTON (>) */}
+        <button
+          type="button"
+          onClick={handleNextSubtopic}
+          disabled={currentIndex >= data.subtopics.length - 1}
+          className={`flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl border transition-all duration-200 shrink-0 ${
+            currentIndex < data.subtopics.length - 1
+              ? 'bg-slate-50 hover:bg-emerald-600 text-slate-700 hover:text-white border-slate-200 hover:border-emerald-600 shadow-2xs hover:shadow-md cursor-pointer group'
+              : 'bg-slate-50 text-slate-300 border-slate-200/60 cursor-not-allowed opacity-40'
+          }`}
+          title={nextSubtopic ? (isSi ? `ඊළඟ: ${nextSubtopic.id} ${nextSubtopic.titleSi}` : `Next: ${nextSubtopic.id} ${nextSubtopic.titleEn}`) : undefined}
+          aria-label="Next subtopic"
+        >
+          <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-0.5 transition-transform" />
+        </button>
+
       </div>
 
       {/* ACTIVE SUBTOPIC REVISION CARD */}
       {activeSubtopic && (
-        <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden divide-y divide-slate-100">
+        <div id="subtopic-revision-card" className="scroll-mt-28 bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden divide-y divide-slate-100">
           
-          {/* HEADER BAR */}
-          <div className="p-6 sm:p-8 bg-gradient-to-br from-slate-50 to-white flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div>
-              <h3 className="text-2xl font-black text-slate-900 tracking-tight">
-                {isSi ? activeSubtopic.titleSi : activeSubtopic.titleEn}
-              </h3>
-              <p className="text-sm text-slate-500 italic mt-0.5 font-medium">
-                {isSi ? activeSubtopic.titleEn : activeSubtopic.titleSi}
-              </p>
-            </div>
+          {/* TOOLBAR */}
+          <div className="px-6 py-4 bg-gradient-to-r from-slate-50 to-white flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <span className="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200 self-start sm:self-auto">
+              {activeSubtopic.textbookSection}
+            </span>
 
-            <button
-              onClick={() => onOpenSubtopicModal && onOpenSubtopicModal(activeSubtopic)}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-purple-50 hover:bg-[#602d92] text-[#602d92] hover:text-white font-bold text-xs border border-purple-200 transition-all cursor-pointer shadow-xs self-start md:self-auto"
-            >
-              <Maximize2 className="w-4 h-4" />
-              <span>{isSi ? 'සම්පූර්ණ තිරයෙන් කියවන්න' : 'Open Reader Modal'}</span>
-            </button>
+            <div className="flex items-center gap-2.5 ml-auto">
+              {/* Language toggle pill */}
+              <div className="inline-flex items-center gap-1 bg-white p-1 rounded-xl border border-slate-200 shadow-2xs">
+                <Languages className="w-3.5 h-3.5 text-emerald-600 ml-1" />
+                <button
+                  type="button"
+                  onClick={() => setOverrideMedium('en')}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                    !isSi ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setOverrideMedium('si')}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                    isSi ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  සිංහල
+                </button>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => onOpenSubtopicModal && onOpenSubtopicModal(activeSubtopic)}
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-purple-50 hover:bg-[#602d92] text-[#602d92] hover:text-white font-bold text-xs border border-purple-200 transition-all cursor-pointer shadow-xs"
+              >
+                <Maximize2 className="w-4 h-4" />
+                <span>{isSi ? 'සම්පූර්ණ තිරයෙන් කියවන්න' : 'Open Reader Modal'}</span>
+              </button>
+            </div>
           </div>
 
           {/* KEY TAKEAWAYS */}
@@ -174,8 +186,8 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
                 <BookOpen className="w-4 h-4 text-indigo-600" />
                 <span>
                   {isSi
-                    ? 'විභාගයට වැදගත් නිල පෙළපොත් අර්ථ දැක්වීම්'
-                    : 'Textbook Definitions for O/L Exam'}
+                    ? 'ප්‍රධාන අර්ථ දැක්වීම්'
+                    : 'Key definitions'}
                 </span>
               </h4>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -190,12 +202,6 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
                     <div className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
                       <InlineText text={def.definition} />
                     </div>
-                    {def.examTips && (
-                      <p className="text-[11px] text-amber-800 bg-amber-50 rounded-lg p-2 mt-2 border border-amber-200/60 flex items-start gap-1.5">
-                        <Info className="w-3.5 h-3.5 shrink-0 mt-0.5 text-amber-600" />
-                        <span><strong>{isSi ? 'විභාග උපදෙස:' : 'Exam Tip:'}</strong> <InlineText text={def.examTips} /></span>
-                      </p>
-                    )}
                   </div>
                 ))}
               </div>
@@ -246,38 +252,6 @@ export default function UnitRevisionNotes({ revisionData, isSinhala: initialIsSi
               </div>
             ))}
           </div>
-
-          {/* EXAM PITFALLS */}
-          {activeSubtopic.examPitfalls && activeSubtopic.examPitfalls.length > 0 && (
-            <div className="p-6 sm:p-8 bg-amber-50/50">
-              <h4 className="text-xs font-extrabold uppercase tracking-wider text-amber-900 flex items-center gap-2 mb-4">
-                <AlertTriangle className="w-4 h-4 text-amber-600" />
-                <span>
-                  {isSi
-                    ? 'විභාගයේදී සිදුවන පොදු වැරදි සහ නොමඟ යවන ප්‍රශ්න'
-                    : 'Common O/L Exam Pitfalls & Misconceptions'}
-                </span>
-              </h4>
-              <div className="space-y-3">
-                {activeSubtopic.examPitfalls.map((pitfall, idx) => (
-                  <div key={idx} className="bg-white rounded-2xl p-4 border border-amber-200 shadow-xs space-y-2">
-                    <div className="flex items-start gap-2 text-rose-700 text-xs sm:text-sm">
-                      <span className="font-black text-rose-600 uppercase text-[11px] shrink-0 bg-rose-50 px-2 py-0.5 rounded border border-rose-200">
-                        {isSi ? 'පොදු වැරැද්ද ❌' : 'Common Mistake ❌'}
-                      </span>
-                      <span><InlineText text={pitfall.trap} /></span>
-                    </div>
-                    <div className="flex items-start gap-2 text-emerald-800 text-xs sm:text-sm font-medium">
-                      <span className="font-black text-emerald-600 uppercase text-[11px] shrink-0 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                        {isSi ? 'පෙළපොතේ නිවැරදි කරුණ ✔' : 'Textbook Correct ✔'}
-                      </span>
-                      <span><InlineText text={pitfall.correct} /></span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
 
         </div>
       )}
