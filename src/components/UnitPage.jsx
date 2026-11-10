@@ -138,7 +138,8 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
     }
   };
 
-  const heroBgImage = currentUnit.heroBannerImage || (currentUnit.id === 'g11-u15' ? '/images/hero-biosphere-banner.png' : null);
+  const isUnit11 = currentUnit.unitNumber === 11 || currentUnit.id === 'g11-u11';
+  const heroBgImage = currentUnit.heroBannerImage || (!isUnit11 ? '/images/common.jpg' : null);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
