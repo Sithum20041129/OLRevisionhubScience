@@ -968,6 +968,7 @@ export const unitsData = [
     grade: 11,
     unitNumber: 1,
     category: "biology",
+    heroBannerImage: "/images/hero-living-tissues-banner.png",
     titleEn: "Living Tissues",
     titleSi: "ජීවී පටක",
     descriptionEn: "Plant and animal tissues: classification, cellular organization, structural adaptations, and biological functions in living organisms.",

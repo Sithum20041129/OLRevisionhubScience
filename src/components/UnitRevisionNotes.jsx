@@ -31,7 +31,9 @@ export default function UnitRevisionNotes({
   const data = getUnitRevisionData(unitId, isSi) || revisionData;
 
   const [internalTabId, setInternalTabId] = useState(null);
-  const activeTabId = activeSubtopicId ?? internalTabId ?? data?.subtopics?.[0]?.id ?? '15.1';
+  const validPropTabId = activeSubtopicId && data?.subtopics?.some((s) => s.id === activeSubtopicId) ? activeSubtopicId : null;
+  const validInternalTabId = internalTabId && data?.subtopics?.some((s) => s.id === internalTabId) ? internalTabId : null;
+  const activeTabId = validPropTabId ?? validInternalTabId ?? data?.subtopics?.[0]?.id ?? '1.1';
 
   const handleTabChange = (tabId) => {
     setInternalTabId(tabId);

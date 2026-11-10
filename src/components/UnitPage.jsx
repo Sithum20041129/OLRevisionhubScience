@@ -34,7 +34,13 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
   const [modalImage, setModalImage] = useState(null);
   const [downloadSuccess, setDownloadSuccess] = useState(null);
   const [copiedLink, setCopiedLink] = useState(false);
-  const [activeRevisionTabId, setActiveRevisionTabId] = useState('15.1');
+  const [activeRevisionTabId, setActiveRevisionTabId] = useState(null);
+  const [prevId, setPrevId] = useState(id);
+
+  if (prevId !== id) {
+    setPrevId(id);
+    setActiveRevisionTabId(null);
+  }
 
   // Retrieve current unit
   const currentUnit = getUnitById(id) || unitsData[0];
@@ -370,6 +376,7 @@ export default function UnitPage({ onOpenQuiz, onOpenFlashcards }) {
         {/* ============================================================== */}
         {unitRevisionData && (
           <UnitRevisionNotes
+            key={currentUnit.id}
             revisionData={unitRevisionData}
             isSinhala={isSinhala}
             activeSubtopicId={activeRevisionTabId}
