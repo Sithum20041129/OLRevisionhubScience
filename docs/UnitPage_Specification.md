@@ -1,95 +1,232 @@
 # Unit Page Specification & Architecture
 
-## 1. Overview
-The **Unit Page** is a dedicated learning portal for each science unit in the G.C.E. Ordinary Level Science Revision Hub. It provides students with a focused, distraction-free environment to:
-1. **Revise Subtopics**: Explore syllabus subtopics with comprehensive notes.
-2. **Practice Unit Quizzes**: Test knowledge through categorized MCQs and structured questions.
-3. **Download Past Papers**: Access real G.C.E. O/L past examination papers and provincial target papers categorized by this specific unit.
+## 1. Executive Summary & Purpose
+The **Unit Page** (`UnitPage.jsx`) is the primary learning portal for every science unit in the G.C.E. Ordinary Level Science Revision Hub. It provides a modern, distraction-free, textbook-aligned revision environment for Sri Lankan students (covering Grades 10 & 11 in both English and Sinhala mediums).
+
+This specification documents the current architecture, UI components, state management, design tokens, and user experience flows based on recent refinements.
 
 ---
 
-## 2. Information Architecture & URL Routing
-
-### 2.1 Route Mapping
-- Route: `/#/unit/:id` (e.g. `/#/unit/g10-u1`, `/#/unit/g11-u1`, ...)
-- Router: `HashRouter` from `react-router-dom` (ensures zero 404 errors on GitHub Pages, static hosts, and Vite dev server).
-
-### 2.2 Grade 10 Part 1 Units (Sri Lanka National Syllabus - Edupub)
-
-| Unit ID | Unit # | Discipline | Title (English) | Title (Sinhala) | Subtopics Count |
-|---|---|---|---|---|---|
-| `g10-u1` | 01 | Biology | Chemical Basis of Life | ජීවයේ රසායනික පදනම | 7 |
-| `g10-u2` | 02 | Physics | Motion in a Straight Line | සරල රේඛීය චලිතය | 8 |
-| `g10-u3` | 03 | Chemistry | Structure of Matter | පදාර්ථයේ ව්‍යුහය | 8 |
-| `g10-u4` | 04 | Physics | Newton's Laws of Motion | චලිතය පිළිබඳ නිව්ටන් නියම | 6 |
-| `g10-u5` | 05 | Physics | Friction | ඝර්ෂණය | 6 |
-| `g10-u6` | 06 | Biology | Plant & Animal Cell Structure and Functions | ශාක හා සත්ත්ව සෛලවල ව්‍යුහය හා කෘත්‍ය | 7 |
-| `g10-u7` | 07 | Chemistry | Quantification of Elements and Compounds | මූලද්‍රව්‍ය හා සංයෝග ප්‍රමාණනය | 6 |
-| `g10-u8` | 08 | Biology | Characteristics of Organisms | ජීවීන්ගේ ලාක්ෂණික | 8 |
-| `g10-u9` | 09 | Physics | Resultant Force | ප්‍රතිඵලී බලය | 6 |
-| `g10-u10` | 10 | Chemistry | Chemical Bonds | රසායනික බන්ධන | 8 |
-
-### 2.3 Grade 11 Part 1 Units (Sri Lanka National Syllabus - Edupub)
-
-| Unit ID | Unit # | Discipline | Title (English) | Title (Sinhala) | Subtopics Count |
-|---|---|---|---|---|---|
-| `g11-u1` | 01 | Biology | Living Tissues | ජීවී පටක | 2 |
-| `g11-u2` | 02 | Biology | Photosynthesis | ප්‍රභාසංස්ලේෂණය | 3 |
-| `g11-u3` | 03 | Chemistry | Mixtures | මිශ්‍රණ | 3 |
-| `g11-u4` | 04 | Physics | Waves and their Applications | තරංග හා ඒවායේ යෙදීම් | 3 |
-| `g11-u5` | 05 | Physics | Geometrical Optics | ජ්‍යාමිතික ප්‍රකාශ විද්‍යාව | 4 |
-| `g11-u6` | 06 | Biology | Biological Processes in Human Body | මිනිස් සිරුරේ ජීව ක්‍රියාවලි | 5 |
-| `g11-u7` | 07 | Chemistry | Acids, Bases and Salts | අම්ල, භස්ම හා ලවණ | 4 |
-| `g11-u8` | 08 | Chemistry | Heat Changes Associated with Chemical Reactions | රසායනික ප්‍රතික්‍රියා ආශ්‍රිත තාප විපර්යාස | 3 |
-
-### 2.4 Grade 11 Part 2 Units (Sri Lanka National Syllabus - Edupub)
-
-| Unit ID | Unit # | Discipline | Title (English) | Title (Sinhala) | Subtopics Count |
-|---|---|---|---|---|---|
-| `g11-u9` | 09 | Physics | Heat | තාපය | 5 |
-| `g11-u10` | 10 | Physics | Power and Energy of Electric Appliances | විද්‍යුත් උපකරණවල ක්ෂමතාව සහ ශක්තිය | 5 |
-| `g11-u11` | 11 | Physics | Electronics | ඉලෙක්ට්‍රොනික විද්‍යාව | 5 |
-| `g11-u12` | 12 | Chemistry | Electrochemistry | විද්‍යුත් රසායනය | 3 |
-| `g11-u13` | 13 | Physics | Electromagnetism and Electromagnetic Induction | විද්‍යුත් චුම්බකත්වය සහ විද්‍යුත් චුම්බක ප්‍රේරණය | 3 |
-| `g11-u14` | 14 | Chemistry | Hydrocarbons and Their Derivatives | හයිඩ්‍රොකාබන සහ ඒවායේ ව්‍යුත්පන්න | 3 |
-| `g11-u15` | 15 | Biology | Biosphere | ජීවගෝලය | 5 |
+## 2. Core Philosophy & Design Guidelines
+1. **Curriculum Alignment**: All contents, subtopics, and terminology strictly mirror the National Institute of Education (NIE) official textbooks (`ENG11U15.pdf`, `SIN11U15.pdf`, etc.).
+2. **Frosted Glass Aesthetic**: Modern semi-transparent glassmorphism (`bg-white/30 backdrop-blur-md border border-white/30`) over high-resolution unit hero artwork with high-contrast text (`text-slate-900`, `text-slate-700`).
+3. **Zero Clutter / Action-Oriented**: Removed redundant summary banners, badge counts, and inline quiz blocks in favor of high-yield subtopic notes and direct-launch hero action buttons.
+4. **Readable Typography (No Raw LaTeX)**: All scientific equations, chemical reactions, and formulas render cleanly in human-readable Unicode (e.g., `CO₂`, `NO₃⁻`, `──>`) via `<FormattedContent />` and `<InlineText />`.
+5. **Dual Medium Support**: Instant bilingual switching (English / සිංහල) globally and locally within the revision guide.
 
 ---
 
-## 3. Component Specification (`UnitPage.jsx`)
+## 3. High-Level Page Structure & Visual Hierarchy
 
-### 3.1 Page Header & Navigation Controls
-- **Top Action Bar inside Hero**:
-  - `All Topics` (`සියලු පාඩම්`): Direct navigation back to the curriculum list.
-  - `Prev Lesson` (`පෙර පාඩම`): Seamless navigation to the preceding syllabus chapter.
-  - `Next Lesson` (`ඊළඟ පාඩම`): Seamless navigation to the subsequent syllabus chapter.
-  - `Share` (`බෙදාගන්න`): Copy unit URL link with visual clipboard confirmation feedback.
+```mermaid
+flowchart TD
+    Hero["1. Hero Banner (Banner Image + Frosted Glass Cards + 3 Direct Action Buttons)"]
+    SubtopicsGrid["2. Subtopics Grid (5 Cards with Direct 'Revise Notes' Buttons)"]
+    SubtopicNavBar["3. Subtopic Topic Navigation Bar (< 15.x Full Topic Title >)"]
+    SubtopicCard["4. Active Subtopic Notes Card (Toolbar + Key Takeaways + Key Definitions + Theory Sections)"]
+    PastPapers["5. Past Papers Section (National & Provincial Exam Papers)"]
 
-### 3.2 Unit Hero Banner
-- **Discipline Badge**: Color-coded (Emerald for Biology, Amber for Chemistry, Purple for Physics) with discipline icon.
-- **Title (Dual Medium)**: Primary title based on selected language (EN/SI), secondary subtitle in alternate language.
-- **Unit Description**: Concise syllabus summary.
-- **Clickable Quick Jump Metrics**:
-  - `Subtopics` &rarr; Jumps smoothly to `#subtopics`
-  - `Practice MCQs` &rarr; Jumps smoothly to `#quiz-area`
-  - `Past Papers` &rarr; Jumps smoothly to `#past-papers`
-  - `Exam Level` &rarr; Displays "G.C.E. O/L Core"
+    Hero -->|"Practice MCQs"| QuizModal["Interactive Quiz Modal"]
+    Hero -->|"Flashcards"| FlashcardsModal["Flashcards Modal"]
+    Hero -->|"Past Papers"| PastPapers
+    SubtopicsGrid -->|"Revise Notes"| SubtopicNavBar
+    SubtopicNavBar --> SubtopicCard
+    SubtopicCard -->|"Open Reader Modal"| ReaderModal["Full-Screen Reader Modal"]
+```
 
-### 3.3 Section 1: Subtopics Revision Area ("විෂය අනුමාතෘකා")
-- Grid of interactive cards for each syllabus subtopic.
-- Numbering badge (e.g. `1.1`, `1.2`).
-- Subtopic title in Sinhala & English.
-- Summary of learning outcomes.
-- "Revise Notes" / "පාඩම් සටහන්" action button triggering note view / modal.
+---
 
-### 3.4 Section 2: Interactive Quiz & Practice Area ("ඒකක ප්‍රශ්නාවලිය")
-- High-contrast practice card.
-- Exam format breakdown (MCQ and structured).
-- "Start Unit Quiz" / "ප්‍රශ්නාවලිය අරඹන්න" button with question counter and difficulty indicator.
+## 4. Component Breakdown & Specifications
 
-### 3.5 Section 3: G.C.E. O/L Past Papers Area ("පසුගිය විභාග ප්‍රශ්න පත්‍ර")
-- Cards for targeted past exam questions:
-  - G.C.E. O/L 2023, 2022, 2021 Part I & II questions.
-  - Provincial mock papers (Western, Central, Southern, North-Western, Uva).
-- Paper badges: Year, Term, Medium (English / Sinhala).
-- "Download PDF" / "බාගත කරන්න" action buttons with simulated feedback.
+### 4.1 Unit Hero Section
+- **Background Visuals**:
+  - Optional high-res illustration banner (e.g. `/images/hero-biosphere-banner.png` defined in `heroBannerImage` of `unitsData.js`).
+  - Subtle `bg-white/10` wash to keep illustrations vibrant and visible without dark tint overlays.
+- **Top Quick Navigation Pill**:
+  - `All Topics` (`සියලු පාඩම්`): Navigates back to the curriculum dashboard.
+  - `Prev Lesson` (`පෙර පාඩම`): Navigates to previous unit.
+  - `Next Lesson` (`ඊළඟ පාඩම`): Navigates to next unit.
+  - `Share` (`බෙදාගන්න`): Copies unit URL with clipboard confirmation toast.
+  - Styled with frosted glass: `bg-white/30 backdrop-blur-md border border-white/30`.
+- **Unit Title & Overview Card**:
+  - Frosted container (`bg-white/30 backdrop-blur-md border border-white/30 shadow-xs`).
+  - Unit title (Sinhala / English based on active language, with alternate language subtitle in italic).
+  - Concise syllabus overview paragraph.
+- **Hero Direct Action Buttons (3 Symmetrical Action Cards)**:
+  - Width: `min-w-[210px] sm:min-w-[240px]` with frosted glass styling (`bg-white/30 hover:bg-white/50 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4.5`).
+  - **No count numbers** (clean, text + icon design).
+  1. **Practice MCQs** (`HelpCircle` icon, purple theme):
+     - Action: Immediately launches the interactive quiz modal via `onOpenQuiz(currentUnit)`.
+  2. **Practice Flashcards** (`Layers` icon, blue theme):
+     - Action: Immediately launches the flashcards modal via `onOpenFlashcards(currentUnit)`.
+  3. **Past Papers** (`FileText` icon, emerald theme):
+     - Action: Smooth-scrolls down to `#past-papers`.
+
+---
+
+### 4.2 Subtopics Overview Grid (`#subtopics`)
+- **Direct Entry**: Top section title banner has been removed so students transition immediately from hero actions into subtopic browsing.
+- **Card Layout**: Responsive 1 / 2 / 3 column grid (`grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5`).
+- **Card Elements**:
+  - Subtopic number badge (`15.1`, `15.2`, etc.).
+  - `Syllabus Core` (`විෂය නිර්දේශගතයි`) badge.
+  - Bilingual topic title and description.
+  - **Revise Notes Button** (`සටහන් කියවන්න`):
+    - Handler: `handleReviseSubtopic(subtopic)`
+    - Action: Activates the matching tab ID (`activeRevisionTabId`) and executes a smooth scroll directly to `#subtopic-nav-bar`.
+
+---
+
+### 4.3 Textbook Revision Guide (`UnitRevisionNotes.jsx`)
+*Note: The redundant top header box ("Complete Unit 15 Textbook Revision Guide" card with core curriculum pillars) has been removed.*
+
+#### 4.3.1 Subtopic Topic Navigation Bar (`#subtopic-nav-bar`)
+- **Full-Width Topic Display**:
+  - White rounded card (`bg-white rounded-2xl p-4 sm:p-5 shadow-xs border border-slate-200`).
+  - Displays the full subtopic title in the active medium, alternate medium subtitle, unit badge (`15.1`), and progress badge (e.g. `Subtopic 1 of 5` / `5 න් 1 වන අනුමාතෘකාව`).
+- **Interactive Navigation Buttons**:
+  - **`<` (Previous)** on the left end: Navigates to previous subtopic. Disabled on the first subtopic.
+  - **`>` (Next)** on the right end: Navigates to next subtopic. Disabled on the final subtopic.
+  - Accessible hover tooltips display the adjacent subtopic names.
+
+#### 4.3.2 Active Subtopic Revision Card (`#subtopic-revision-card`)
+- **Card Toolbar**:
+  - Displays textbook section pagination (e.g., `Section 15.1 (Pages 1-8)`).
+  - **Local Language Toggle Pill**: `English | සිංහල` buttons allowing students to toggle notes medium on the fly without affecting the whole site.
+  - **Open Reader Modal Button**: `Maximize2` button launching the full-screen reader modal.
+- **Key Takeaways & Essential Concepts**:
+  - Highlight container (`bg-emerald-50/40`) with numbered takeaways (`activeSubtopic.keyTakeaways`).
+- **Key Definitions (Glossary)**:
+  - Header: **"Key definitions"** (Sinhala: **"ප්‍රධාන අර්ථ දැක්වීම්"**).
+  - Clean term and definition cards (`term`, `definition`).
+  - *Exam Tip sub-boxes and Common Pitfalls sections have been eliminated for maximum clarity.*
+- **Theory Sections & Embedded Diagrams**:
+  - Formatted paragraphs rendered using `<FormattedContent text={section.content} />`.
+  - Supports Markdown subheadings (`###`), bullet lists (`-`), numbered steps (`1.`), and bold emphasis (`**...**`).
+  - Embedded diagrams with caption and hover-to-zoom overlays (`ZoomIn` lightbox modal).
+
+---
+
+### 4.4 Past Papers Section (`#past-papers`)
+- **Curated Exam Papers**: National G.C.E. O/L Past Papers (2021–2023) and Provincial Target Papers.
+- **Filter Controls**: Year, Paper Part (Part I MCQ / Part II Structured Essay), and Language Medium.
+- **Action**: One-click download with animated toast confirmation feedback.
+
+---
+
+### 4.5 Modals & Overlays
+1. **Interactive Quiz Modal**:
+   - Triggered from Hero button (`Practice MCQs`).
+   - Timed examination simulator with instant rationales and score analysis.
+2. **Flashcards Modal**:
+   - Triggered from Hero button (`Practice Flashcards`).
+   - Interactive flip cards for rapid memorization of key terms and concepts.
+3. **Full-Screen Subtopic Reader Modal**:
+   - Distraction-free reading view with font size adjustment and print support.
+4. **Lightbox Image Lightbox**:
+   - Full-resolution preview for textbook diagrams and charts with ESC key closing.
+
+---
+
+## 5. Data Architecture & File Organization
+
+```
+Science/
+├── public/
+│   └── images/
+│       └── hero-biosphere-banner.png       # High-res hero banner asset
+├── src/
+│   ├── components/
+│   │   ├── UnitPage.jsx                   # Main unit page container & hero
+│   │   ├── UnitRevisionNotes.jsx          # Textbook notes & subtopic navigator
+│   │   └── FormattedContent.jsx           # Clean Unicode & Markdown parser
+│   ├── data/
+│   │   ├── unitsData.js                   # Unit metadata, descriptions, banner paths
+│   │   └── subtopicNotes/
+│   │       ├── index.js                   # Subtopic note exports & getters
+│   │       ├── g11-u15.js                 # English comprehensive textbook notes
+│   │       └── g11-u15-si.js              # Sinhala comprehensive textbook notes
+└── docs/
+    └── UnitPage_Specification.md          # This architectural specification
+```
+
+### 5.1 Unit Metadata Schema (`unitsData.js`)
+```javascript
+{
+  id: "g11-u15",
+  unitNumber: 15,
+  grade: 11,
+  discipline: "Biology",
+  titleEn: "Biosphere",
+  titleSi: "ජීවගෝලය",
+  descriptionEn: "Explore the biosphere...",
+  descriptionSi: "ජීවගෝලයේ සංවිධාන මට්ටම්...",
+  heroBannerImage: "/images/hero-biosphere-banner.png",
+  subtopics: [
+    {
+      id: "15.1",
+      titleEn: "Organizational Levels & Interactions of Biosphere",
+      titleSi: "ජීවගෝලයේ සංවිධාන මට්ටම් සහ අන්තර්ක්‍රියා",
+      descriptionEn: "...",
+      descriptionSi: "..."
+    },
+    // ...
+  ]
+}
+```
+
+### 5.2 Subtopic Notes Schema (`subtopicNotes/g11-u15.js`)
+```javascript
+{
+  unitId: "g11-u15",
+  subtopics: [
+    {
+      id: "15.1",
+      textbookSection: "Section 15.1 (Pages 1 - 8)",
+      titleEn: "Organizational Levels & Interactions of Biosphere",
+      titleSi: "ජීවගෝලයේ සංවිධාන මට්ටම් සහ අන්තර්ක්‍රියා",
+      keyTakeaways: [ "Takeaway 1", "Takeaway 2" ],
+      keyDefinitions: [
+        {
+          term: "Biosphere (ජීවගෝලය)",
+          definition: "The global ecological system integrating all living beings..."
+        }
+      ],
+      sections: [
+        {
+          heading: "15.1.1 Levels of Organization",
+          content: "### Hierarchy\n- **Organism**: Single individual\n- **Population**: ...",
+          diagram: {
+            url: "/images/units/g11-u15/levels.png",
+            caption: "Organizational hierarchy of the biosphere"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+---
+
+## 6. How to Replicate / Create a New Unit Page
+To create or adapt another Science unit (e.g., `g11-u14`, `g10-u1`) according to this standard:
+
+1. **Add Unit Entry in `src/data/unitsData.js`**:
+   - Specify unit metadata, dual-language title, description, and list of subtopics.
+   - If a custom artwork banner is available, supply `heroBannerImage: "/images/hero-[unit].png"`.
+
+2. **Author Subtopic Notes in `src/data/subtopicNotes/`**:
+   - Create `[unit-id].js` (English) and `[unit-id]-si.js` (Sinhala).
+   - Follow the schema: `keyTakeaways`, `keyDefinitions` (`term`, `definition`), and `sections` with `heading`, `content`, and optional `diagram`.
+   - **Important**: Format chemical equations with Unicode arrows (`──>`) and subscripts (`CO₂`, `H₂O`). Do not use raw LaTeX dollar delimiters (`$`, `$$`).
+
+3. **Register in `src/data/subtopicNotes/index.js`**:
+   - Import the English and Sinhala files and add them to `unitRevisionDataRegistry`.
+
+4. **Verify Page Features**:
+   - Ensure the Hero section displays the 3 direct action buttons: **Practice MCQs**, **Practice Flashcards**, and **Past Papers**.
+   - Check that clicking **Revise Notes** on any subtopic card scrolls directly to `#subtopic-nav-bar`.
+   - Verify that `<` and `>` navigate smoothly between subtopics.
+   - Verify that the language toggle switches between English and Sinhala notes accurately.
+   - Run `npm run lint` and `npm run build` to confirm zero errors.
