@@ -1,5 +1,6 @@
 /**
  * Aggregator & Loader for Subtopic Revision Notes (Bilingual: English & Sinhala)
+ * Complete Grade 11 Science Curriculum (Units 1 - 15)
  */
 import { unit1RevisionData } from './g11-u1.js';
 import { unit1RevisionDataSi } from './g11-u1-si.js';
@@ -17,6 +18,18 @@ import { unit7RevisionData } from './g11-u7.js';
 import { unit7RevisionDataSi } from './g11-u7-si.js';
 import { unit8RevisionData } from './g11-u8.js';
 import { unit8RevisionDataSi } from './g11-u8-si.js';
+import { unit9RevisionData } from './g11-u9.js';
+import { unit9RevisionDataSi } from './g11-u9-si.js';
+import { unit10RevisionData } from './g11-u10.js';
+import { unit10RevisionDataSi } from './g11-u10-si.js';
+import { unit11RevisionData } from './g11-u11.js';
+import { unit11RevisionDataSi } from './g11-u11-si.js';
+import { unit12RevisionData } from './g11-u12.js';
+import { unit12RevisionDataSi } from './g11-u12-si.js';
+import { unit13RevisionData } from './g11-u13.js';
+import { unit13RevisionDataSi } from './g11-u13-si.js';
+import { unit14RevisionData } from './g11-u14.js';
+import { unit14RevisionDataSi } from './g11-u14-si.js';
 import { unit15RevisionData } from './g11-u15.js';
 import { unit15RevisionDataSi } from './g11-u15-si.js';
 
@@ -29,6 +42,12 @@ const subtopicNotesRegistryEn = {
   'g11-u6': unit6RevisionData,
   'g11-u7': unit7RevisionData,
   'g11-u8': unit8RevisionData,
+  'g11-u9': unit9RevisionData,
+  'g11-u10': unit10RevisionData,
+  'g11-u11': unit11RevisionData,
+  'g11-u12': unit12RevisionData,
+  'g11-u13': unit13RevisionData,
+  'g11-u14': unit14RevisionData,
   'g11-u15': unit15RevisionData,
 };
 
@@ -41,6 +60,12 @@ const subtopicNotesRegistrySi = {
   'g11-u6': unit6RevisionDataSi,
   'g11-u7': unit7RevisionDataSi,
   'g11-u8': unit8RevisionDataSi,
+  'g11-u9': unit9RevisionDataSi,
+  'g11-u10': unit10RevisionDataSi,
+  'g11-u11': unit11RevisionDataSi,
+  'g11-u12': unit12RevisionDataSi,
+  'g11-u13': unit13RevisionDataSi,
+  'g11-u14': unit14RevisionDataSi,
   'g11-u15': unit15RevisionDataSi,
 };
 
@@ -72,6 +97,18 @@ export {
   unit7RevisionDataSi, 
   unit8RevisionData, 
   unit8RevisionDataSi, 
+  unit9RevisionData, 
+  unit9RevisionDataSi, 
+  unit10RevisionData, 
+  unit10RevisionDataSi, 
+  unit11RevisionData, 
+  unit11RevisionDataSi, 
+  unit12RevisionData, 
+  unit12RevisionDataSi, 
+  unit13RevisionData, 
+  unit13RevisionDataSi, 
+  unit14RevisionData, 
+  unit14RevisionDataSi, 
   unit15RevisionData, 
   unit15RevisionDataSi 
 };
